@@ -1,0 +1,183 @@
+pristine:8e97870fc573101c7e95b918436086917333b952211e6afdbee824eda63eafeb
+[Initial add of the style file
+daniel@astro.psu.edu**20050502203231] 
+hash: 0000000211-48ae228373463acce683e0746e585215d80cb71582fc43f643d25e7b6ae65a30
+[Ruled section headings
+daniel@astro.psu.edu**20050502211138
+ Add a test override of \section that puts rules below the section headings,
+ although there are reasons to think this might not be all that great a way
+ of setting a resume.
+ ***DARCS**
+ 
+ Write the long patch description into this file.
+ The first line of this file will be the patch name.
+ Everything in this file from the above ***DARCS*** line on will be ignored.
+ 
+ This patch contains the following changes:
+ 
+ M ./resume.sty +14
+] 
+hash: 0000000778-a54737986275f5fa39665c28dd014029feb01a201746e552bd015aa980df2d04
+[Add resume file
+daniel@astro.psu.edu**20050502211247
+ At the moment this just has some junk to test my style file with.
+] 
+hash: 0000000324-1cc0d6543036fa7ad5552b85857a61262e1e333d3875189369b241d6ad7ffa17
+[Make resume a class, not a style.
+dburrows@debian.org**20050503014345] 
+hash: 0000000348-acfeab331d0902db9778c44e1240adade7af2e2e50bc8b2177679f38d3b42a10
+[Use times/T1 for typesetting stuff
+dburrows@debian.org**20050503014512] 
+hash: 0000000148-a0ffbcd217cfc74ad953996d6cd9f49d95281f5e0419b2157994c129ca5117f9
+[Don't make section headings extra-big.
+dburrows@debian.org**20050503014544] 
+hash: 0000000220-b5dd5f06118434bd6594181ceebf186c64626ddf48f68e5914e6b2b1a2ae4966
+[Add basic title-generation support to the class.
+dburrows@debian.org**20050503022444] 
+hash: 0000000476-a8dfb3cdbd459e8eb1913381079e6a9f54f1f7f326fa06a14598cdd966ef1100
+[Use the new title support in the test file.
+dburrows@debian.org**20050503022638] 
+hash: 0000000803-23e48aacbc7b6a348353f82d0b8f1c26b6fcdb521f9fff97eeaad1eb724ad78f
+[Make the title a bit snazzier.
+dburrows@debian.org**20050503030121] 
+hash: 0000000679-854b2d4bd47aee700f38d2103281943cf69ee2b16e379051cee506f5210b49c5
+[Don't indent section headings.
+dburrows@debian.org**20050503033017] 
+hash: 0000000158-26f73c35f7ba81eed0a25947ada6404645beb52e7d560e6fe81f3f0e5d05e6bc
+[Add a command to typeset affiliations.
+dburrows@debian.org**20050503033051] 
+hash: 0000000495-9038604e8675738f709212c4b4cc58d3686f8a66b9e3073add0751d28a3b4fe7
+[Use the new affiliation support in the test file.
+dburrows@debian.org**20050503033114] 
+hash: 0000001158-e043859d6d4218980a77b6b29ba6244e2b5ff80152acb70aec455655d471587b
+[Redefine the subsection command.
+dburrows@debian.org**20050503034116] 
+hash: 0000000191-4a404425aed67dc8438d71d37399ea43d4bcf12a416e188cd0ac91a2164be09f
+[Test the subsection command.
+dburrows@debian.org**20050503034132] 
+hash: 0000000311-df83804d11b6a1f8460969ff160c1b4bfe613a2459973435e44cf58379d1be76
+[Make the jobs section a bit more complicated, for testing purposes.
+dburrows@debian.org**20050503034152] 
+hash: 0000000791-f7276ec9489349f15d24071289b00ac15431a6829ae7bfedfebcf2418a296c7c
+[Fix an uncommented newline.
+dburrows@debian.org**20050503034325] 
+hash: 0000000142-839db97c2feb8b43c5ff369d1a626a85e0593b0183878e7c7a98b066fc316e27
+[Add \nointerlineskip to fight vertical spreading.
+dburrows@debian.org**20050503125332] 
+hash: 0000000427-5f7ec7e59fcfebfff4616071a4d74a6a62829b4f1aff17a9fa6b6ff1aa33251d
+[Further reduce vertical space.
+dburrows@debian.org**20050503125528
+ I did this by explicitly ending a paragraph after each
+ section heading, and adding a \nointerlineskip directive.
+] 
+hash: 0000000508-a9a2ebef4db6637dd80979440232c79aa17d8d0f548c3cbbb549188bb49186c0
+[Add contact info descriptors.
+dburrows@debian.org**20050503145530] 
+hash: 0000002254-6072be51ab11402630e90f6a6efcb1cc70ee62dbb0db790b071f4943a033d744
+[Use the contact info descriptors
+dburrows@debian.org**20050503145601] 
+hash: 0000000785-e5da95fd7ee5e4783f3724202055410b756d1981f16518acb29e40196ffc4841
+[Mark rules as "left" or "right" rules for future expansion.
+dburrows@debian.org**20050503150148] 
+hash: 0000000756-23e1403504b90c64ab01f26df82878f9e9dea4f01834aaf339efa999412194d7
+[DEBUG patch: use 100 lines of error context
+dburrows@debian.org**20050503150236] 
+hash: 0000000141-c437298bf78ac23dbbd79e086753eb0224945c06b820daf8a032dad85c6c566d
+[Don't suppress space after a \subsection.
+dburrows@debian.org**20050503154015] 
+hash: 0000000248-45b94c22dea5162a30c3afbd45c108a8aad50d885e9e09b8637228eac5c1178c
+[Use compactlist to save space.
+dburrows@debian.org**20050503154039
+ Without the change to not eat space after \subsection,
+ you'll notice that one of the lists is placed in a really
+ ugly way.
+] 
+hash: 0000000750-32609b37963ebd4476e869f997dad0b525593db07b6811f33c8d49084523ddfe
+[Add basic colored-rule support.
+dburrows@debian.org**20050503160149
+ By default, rules are dark gray, but this can be changed by
+ modifying the "rulecolor" color (with \definecolor).  Note:
+ this modification requires xxcolor (part of pgf).
+] 
+hash: 0000000575-e99d2e82100be1c5dd4faa181c72aadd3d91de357d6372d9c589b2b2d970f8fe
+[Use PGF lines, not built-in LaTeX commands, to display rules.
+dburrows@debian.org**20050503161145] 
+hash: 0000000585-6b6013ff161245b1ffdc6f52be24f9397199a80b4b3626efa9649dc2934ef782
+[Introduce support for shaded rules (fairly subtle by default).
+dburrows@debian.org**20050503162926] 
+hash: 0000001141-c770f990fb33f9bdd4cc848af4b45940d7863b533ea33ea8eb6c59a13649a7d2
+[Make the buffering space appear before the second title rule, not after.
+dburrows@debian.org**20050503164045] 
+hash: 0000000224-aad6349deb0a1bb0e704b981887a4224b731f6c59eb103b78970fbd9ef5398e8
+[Decrease the default header buffering.
+dburrows@debian.org**20050503164233] 
+hash: 0000000161-6865f3d1f39e8698c7c72ece9d22a29f1398314213f1e9b296ad19ad1b7d126c
+[Use colored rules in the example.
+dburrows@debian.org**20050503164344] 
+hash: 0000000141-dd550df35abd2b5bf2d01a9f401cc7df0a188eb4bd536ff8342078df6b193939
+[Move the errorcontextlines setting to the test file.
+dburrows@debian.org**20050503165329] 
+hash: 0000000273-642b5170c1f3f3fd3d57c38f3d5b762238a4bb5fbced01c07bb2a87e9a833916
+[Remove some no-longer-relevant comments.
+daniel@astro.psu.edu**20050503192703] 
+hash: 0000000199-5c817a63f5fb89a0075ae7ec757bc43515bc6d129476d3f4d427fc1c0edb0862
+[Use Large, not large, to display the \author.
+daniel@astro.psu.edu**20050503193433] 
+hash: 0000000474-f73f7465646d799a79b6c9ee6496219be747e1b5524d9e61a1ff4e0a9ba40278
+[Make sections slightly closer to text above them, but also make their titles more prominent.
+daniel@astro.psu.edu**20050503193511] 
+hash: 0000000493-76dcba5caa92f1c710bc3e93df4fbd386c51dadd5bcd5337f0a33d6bcd487de7
+[Place an explicit space between the name and the email address.
+daniel@astro.psu.edu**20050503194027] 
+hash: 0000000304-0e4784065a69907b1878de6323b7f70077fded0df99b4ad38b78232306b8e574
+[Add \secskip space at the top of each section, as a semi-hack to make spacing come out better.
+daniel@astro.psu.edu**20050503202320] 
+hash: 0000000443-1e4a0e0b77d66f24a8bf7747fadc8f7068942706ed7dc14ef2bebab928001611
+[Add a copyright notice (oops)
+daniel@astro.psu.edu**20050503203552] 
+hash: 0000000273-6434518fbcdce95d8da5e4759a5157bbecd078801900bd92e3af9305cef7a6c9
+[Quit using the deprecated '\bf' command.
+daniel@astro.psu.edu**20050503210421] 
+hash: 0000000567-b9ed4d8e617f9f4ea51bf7dd7e5054abd7370d9d99a3487b2364348e8618da1d
+[Encourage breaks before sections and affiliations.
+dburrows@debian.org**20050505023251] 
+hash: 0000000532-fe848caaf809c1cb221fb3b5e591a9918371ac25c912cb00fcdaa2548886fbbe
+[Make the sample resume extremely silly.
+dburrows@debian.org**20050505023324] 
+hash: 0000003895-dcf409d0a35ed52f871d34792f196905cb1f159700266258a7e368049fa0cf91
+[Add a silly comment.
+dburrows@debian.org**20050505023407] 
+hash: 0000000125-f5140a21d578b690ea3d3b71bef939cc40f48bc61317e903dc55d877075930ab
+[Rename the resume to make it clear that it's a sample.
+dburrows@debian.org**20050505122632] 
+hash: 0000000130-242f32a4e820f027c19bf239fe0e7af828a01b000368aaae1f38eccff2ad6010
+[RFC2606 compliance
+dburrows@debian.org**20050608213738
+ As suggested by RFC2606, use .example for example email addresses, not .net.
+] 
+hash: 0000000327-d6e14b48c456b17b4319170961f954f0f0539c7fecb2960fcb6ca3249d4d096a
+[Disable page numbers by default.
+dburrows@debian.org**20050617214031
+ On single-page resumes, it looks silly to have a
+ lonely "1" down at the bottom of the resume.  You
+ can turn page numbers back on using \pagestyle{normal}.
+ If anyone can figure out how to disable page numbering
+ iff the document has a single page, that would be
+ absolutely wonderful (multi-pass solutions are ok).
+] 
+hash: 0000000462-879b34f28a094c06816f0b0e3125d9337ec8ffcdab5a6c4d2770942f43c924f8
+[Extend vertical margins by default
+dburrows@debian.org**20050617214208
+ Modified the default page geometry of resumes to provide
+ more vertical space for listing your MANY and VARIED
+ accomplishments.  Yes, this was prompted by my resume
+ becoming just a hair longer than one page.  This is
+ done using the geometry package, so you should use the
+ \geometry command to handle any additional geometry
+ changes (like shrinking the margins to balance text
+ between pages).
+] 
+hash: 0000000547-24f3ff27860d480064324ede274934073032a1c2139ae3da625e21760f606bc1
+[Use boldface text instead of italics to display affiliation 'roles'.
+Daniel Burrows <dburrows@debian.org>**20051019212049] 
+hash: 0000000191-926b8b547b51ce3dd088df038361cd2efcc21681bf3f5deb1c68d54b10e39e28
