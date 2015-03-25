@@ -188,7 +188,7 @@ The term Ubiquitous Computing was first defined by Mark Weiser [33] in the late 
 \end{figure}
 \newline
 \newline
-The passage of time has shown that betting Weiser was right. For Weiser, [35] evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and the various types of applications on non-conventional computing devices, are just some of the examples that can confirm: the Ubiquitous Computing (the third age) is already a reality.
+The passage of time has shown that betting Weiser was right. For Weiser, [35] evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and the various types of applications on non-conventional computing devices, are just some of the examples that can confirm: the Ubiquitous Computing (the third age) is already a reality. Figure 1 shows a chart with the ages of computing.
 \newline
 \newline
 
@@ -208,7 +208,7 @@ The concept of pervasive computing implies that the computer is embedded invisib
 
 \subsection{Ubiquitous Computing}
 
-As can be seen in Figure 1.1, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing [14, 24]. Ubiquitous is an adjective originated from Latin (ubiquu) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
+As can be seen in Figure 2, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing [14, 24]. Ubiquitous is an adjective originated from Latin (ubiquu) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
 \begin{figure}[h]
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/ubiq.png}
     \caption{Ubiquitous Computing: intersection between pervasive and mobile computing}
@@ -238,9 +238,16 @@ Generally, ubiquitous applications receive sensor data from other service provid
 \subsection{Internet of Things}
 
 The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (eg, routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing internet of things’ applications are potentially diverse. Monitoring of environmental and personal health, monitoring and control of industrial processes, including agriculture, smart spaces and smart cities are just some examples of the IoT applications [5].
+\newline
+\newline
+The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of captured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object, which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet[H. Kopetz, Real-Time Systems. Design Principles for Distributed Embedded
+Applications. Kluwer Academic Publications, 1997].
+\newline
+\newline
+Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes the sensor data and supports a wireless communication link to the Internet[H. Kopetz, Real-Time Systems. Design Principles for Distributed Embedded
+Applications. Kluwer Academic Publications, 1997].
 
 \subsection{Hardware}
-
 One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, microcontrollers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
 
 
@@ -278,61 +285,10 @@ The fact that both the hardware and the Arduino software be developed in an open
 \newline
 Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in [19].
 
-\paragraph{Features}
-
-There are dozens of Arduino’s types with different sizes, amount of memory and interfaces. To illustrate the possibilities of use and describe the Arduino, we will use the model "UNO" as an example.
-\newline
-\newline
-The hardware Arduino UNO can be sub-divided into six blocks described below. They can be seen in Figure XXX.
-\newline
-\newline
-Power Supply: Responsible for receiving the external power supply, which can have a voltage of at least 7 Volts, 35 Volts as the maximum and a minimum current of 300mA. The power supply filter and then regulates the input voltage for two outputs of 5 and 3.3 volts each. The function of this block is to deliver the voltages of 5 and 3.3 Volts for that the Central Processing Unit (CPU) and other circuits work.
-\newline
-\newline
-CPU Core: The core processing of an Arduino board is a microcontroller chip (see section 2.2.1). Arduino developers have chosen to use the company's microcontroller line of ATMEL4 company. The line used is the ATmega. There are official Arduino boards with several models in this line, but the most common are the boards with ATmega8 chips, AT-Mega162 and ATMEGA328P. These models differ in the amount of Read Only Memory (ROM) and configuration of input and output modules available.
-\newline
-\newline
-Inputs and Outputs: The number and options of input and output from an Arduino microcontroller depend on the chip used. The ATmega8, for example, has 28-pin electrical connectors. Is through these pins that you can control the chip, send data to your memory and trigger external devices connected to the Arduino. The pins are divided into:
-
-\begin{itemize}
-\item Digital pin to input or output (programmable) - 14 pins;	
-\item Analog input pins or digital input / output (programmable) - 6 pins;
-\item Power pins (gnd, 5V, 3.3V) - 5 pins;
-\item Reset pin - 1 pin;	
-\item Pins to connect the crystal oscillator - 2 pins;
-\end{itemize}
-
-The first two items on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Arduino is coupled to the sensors to capture environmental information. Among the 14 digital input / output pins there are 2 pins that match the serial communication module USART (Universal Synchronous Asynchronous Receiver Transmitter) [13]. This module allows communication between a computer (for example) and the Arduino (see Special Pins section). All pins (digital or analog) have more than one function. The pins can be input or output, some may serve for analog readings and also for digital input. The roles of each are defined in the code of possible programs that can be run on the Arduino.
-
-\paragraph{Digital Inputs}
-
-There are 20 pins that can be used as digital inputs. There are 14 digital pins and more 6 analog pins. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off). 
-\newline
-\newline
-From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). You can not know how much voltage is being applied to the pin. For this you must use the analog inputs.
-
-\paragraph{Analog Inputs}
-
-There are 6 analog inputs. Unlike a digital input, which only informs whether there is or not a voltage applied to its pin, the analog input is capable of measuring the applied voltage. Through analog input, you can use sensors that convert any physical quantity in a voltage value which is then read by the analog input.
-
-\paragraph{Digital outputs}
-
-With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. You can program the Arduino (UNO) for at most 20 digital outputs. But you can use one or more pins to control a pack of other pins and this can increase this limit use of digital pins.
-
-\paragraph{Special Pins}
-
-Arduino pins have some special characteristics which can be used from the software functions encoded by a software programmer. Are they:
-\begin{itemize}
-
-\item PWM - Pulse Width Modulation [4]: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pins 3, 5, 6, 9, 10 and 11. The PWM function is detailed in Section 3.2.1;
-
-\item USART - Universal Serial asynchronous receiver/transmitter: One pin can be used to transmit and another to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for USART pins 0 (RX receives data) and 1 (tx sends data);
-
-\item Analog Comparator: These pins can be used to compare two external voltages without making a program that reads these tensions and compare. This is a very quick way to compare voltages and is made by the hardware without involving programming. Are used pins 6 and 7;
-\item External Interrupt: The pins 2 and 3 can be programmed to notify the software running on the Arduino about any change in its state. For example, you can connect a button to these pins and every time someone presses the button the program is diverted to a particular block set by the programmer.
-
-\item SPI Port - Serial Peripheral Interface [29]: These are pins that allow synchronous serial communication faster than USART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 10 (SS), 11 (MOSI), 12 (MISO) and 13 (SCK).
-\end{itemize}
+\subsubsection{BeagleBone}
+The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip.[7] The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
+\newline\newline
+BeagleBone is an \$89 Manufacturer suggested retail price (MSRP), credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
 
 \subsubsection{Raspberry Pi}
 
@@ -349,25 +305,93 @@ The proposal of the Raspberry Pi is therefore be a low-cost computer, with the a
 \newline
 \newline
 Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 and the B and B+ models, which costs \$ 35. As for the price, there is not much difference between the hardware models. The main differences are the amount of USB ports (1, 2 and 4 in the models A, B and B +, respectively), the Ethernet port (model A does not have) and ram (256MB on the model A against 512 for the others).
-\begin{figure}[h]
-    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
-    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
-}
-\end{figure}
+%\begin{figure}[h]
+%    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
+%    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
+%}
+%\end{figure}
+
+\paragraph{Features}
+The original Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),[1] which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,[8] and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.[9] The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage.[10]
+\newline
+\newline
+In 2014, the Raspberry Pi Foundation launched the Compute Module, which packages a BCM2835 with 512 MB RAM and an eMMC flash chip into a module for use as a part of embedded systems.[11]
+The Foundation provides Debian and Arch Linux ARM distributions for download.[12] Tools are available for Python as the main programming language, with support for BBC BASIC (via the RISC OS image or the Brandy Basic clone for Linux),[14] C, C++, Java, Perl and Ruby.
+\newline
+\newline
+Some other features presents on RPI:
+\begin{itemize}
+\item Display Serial Interface Connector (DSI): This connector receives a flat-ribbon cable of 15 pins that can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen;	
+\item Camera Serial Interface(CSI) Connector: This port allows a camera module be directly coupled to the card;
+\item P2 and P3 connectors: These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used;
+\item Pin Protection: Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components you attach to them as there is a risk you will permanently damage your Pi. Short circuits and wiring mistakes could also ruin your day so double check everything. A multimeter is probably going to help a lot here as you can double check wiring before you connect to the Pi.
+\end{itemize}
+
+ 
+\paragraph{Power Supply}
+The device is powered by 5v micro USB. Exactly how much current (mA) the Raspberry Pi requires is dependent on what you hook up to it. We have found that purchasing a 1.2A (1200mA) power supply from a reputable retailer will provide you with ample power to run your Raspberry Pi for most applications, though you may want to get a 2.5A (2500mA) if you want to use all 4 USB ports on the Model B without using an external powered USB hub.
+\newline
+\newline
+The power requirements of the Raspberry Pi increase as you make use of the various interfaces on the Raspberry Pi. The GPIO pins can draw 50mA safely (that is 50mA distributed across all the pins! An individual GPIO pin can only safely draw 16mA), the HDMI port uses 50mA, the camera module requires 250mA, and keyboards and mice can take as little as 100mA or over 1000mA! Check the power rating of the devices you plan to connect to the Pi and purchase a power supply accordingly. If you’re not sure, buy a powered hub.
+
+\paragraph{Processor}
+The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),[1] which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU,[8] and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
+%[1]"BCM2835 Media Processor; Broadcom". Broadcom.com. 1 September 2011. Retrieved 6 May 2012.http://www.broadcom.com/products/BCM2835
+%[8]Brose, Moses (30 January 2012). "Broadcom BCM2835 SoC has the most powerful mobile GPU in the world?". Grand MAX. Archived from the original on 13 April 2012. Retrieved 13 April 2012.https://web.archive.org/web/20120413184701/http://www.grandmax.net/2012/01/broadcom-bcm2835-soc-has-powerful.html
+%[9] "Model B now ships with 512MB of RAM". Raspberrypi.org. Retrieved 15 October 2012.http://www.raspberrypi.org/model-b-now-ships-with-512mb-of-ram/
+%[10] "Verified USB Peripherals and SDHC Cards;". Elinux.org. Retrieved 6 May 2012.http://elinux.org/RPi_VerifiedPeripherals
+%[11] http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/
+%[14] "Brandy Basic". Jaguar.orpheusweb.co.uk. 26 July 2005. Retrieved 6 May 2012. http://jaguar.orpheusweb.co.uk/branpage.html
+
+\paragraph{Inputs and Outputs}
+The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins.In this paper we will present only the pins availlable in the model B.The pins are divided into:
+%http://www.raspberrypi.org/documentation/usage/gpio/README.md
+
+\begin{itemize}
+\item Digital pin to input or output (programmable) - 17 pins;	
+\item Analog input pins or digital input / output (programmable) - 6 pins;
+\item Power pins (gnd, 5V, 3.3V) - 9 pins;
+\end{itemize}
+
+The first item on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Raspberry Pi is coupled to the sensors to capture environmental information. Among the 17 digital input / output pins there are 2 pins that match the serial communication module UART (Universal asynchronous receiver/transmitter). This module allows communication between a computer (for example) and the Raspberry Pi (see Special Pins section). All pins have more than one function, pins can be input or output, and the roles of each are defined in the code of possible programs that can be run on the RPi.
+
+\paragraph{Digital Inputs}
+
+All 17 programable pins can be used as digital inputs. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off).
+\newline
+\newline
+From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). You can not know how much voltage is being applied to the pin.
+
+
+\paragraph{Analog Inputs}
+The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a microcontroller due to the available Linux versions not being true real-time. 
+
+\paragraph{Digital outputs}
+With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. You can program the RPi for all 17 digital outputs.
 
 \paragraph{Special Pins}
 
+RPi pins have some special characteristics which can be used from the software functions encoded by a software programmer. Are they:
+%http://pi.gadgetoid.com/pinout
 \begin{itemize}
-\item Display Serial Interface Connector (DSI)- This connector receives a flat-ribbon cable of 15 pins that can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen.
+%\item Display Serial Interface Connector (DSI)- This connector receives a flat-ribbon cable of 15 pins that can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen.
+%\item Camera Serial Interface(CSI) Connector  - This port allows a camera module be directly coupled to the card.
+%\item P2 and P3 connectors - These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used.
+%\item Power Pins - The header provides 5V on Pins 2 and 4, and 3.3V on Pin 1. The 3.3V supply is limited to 50mA. The 5V supply draws current directly from your microUSB supply so can use whatever is left over after the board has taken its share. A 1A power supply could supply up to 300mA once the board has drawn 700mA.
+%\item Pin Protection - Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components you attach to them as there is a risk you will permanently damage your Pi. Short circuits and wiring mistakes could also ruin your day so double check everything. A multimeter is probably going to help a lot here as you can double check wiring before you connect to the Pi.
+%\item  Basic GPIO - The header provides 17 Pins that can be configured as inputs and outputs. By default they are all configured as inputs except GPIO 14 \& 15. In order to use these pins you must tell the system whether they are inputs or outputs. This can be achieved a number of ways and it depends on how you intend to control them. I intend on using Python.
 
-\item Camera Serial Interface(CSI) Connector  - This port allows a camera module be directly coupled to the card.
 
-\item P2 and P3 connectors - These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used.
+\item PWM - Pulse Width Modulation: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12;
 
-\item Power Pins - The header provides 5V on Pin 2 and 3.3V on Pin 1. The 3.3V supply is limited to 50mA. The 5V supply draws current directly from your microUSB supply so can use whatever is left over after the board has taken its share. A 1A power supply could supply up to 300mA once the board has drawn 700mA.
+\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) can be used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data);%http://pi.gadgetoid.com/pinout/uart
 
-\item Pin Protection - Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components you attach to them as there is a risk you will permanently damage your Pi. Short circuits and wiring mistakes could also ruin your day so double check everything. A multimeter is probably going to help a lot here as you can double check wiring before you connect to the Pi.
-\item  Basic GPIO - The header provides 17 Pins that can be configured as inputs and outputs. By default they are all configured as inputs except GPIO 14 \& 15. In order to use these pins you must tell the system whether they are inputs or outputs. This can be achieved a number of ways and it depends on how you intend to control them. I intend on using Python.
+\item SPI Port - Serial Peripheral Interface: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Inpu(MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1).
+%http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
+
+\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL)
+%https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c
+%http://en.wikipedia.org/wiki/I%C2%B2C
 \end{itemize}
 
 \paragraph{GPIO in Python}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  24 MAR 2015 16:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  25 MAR 2015 15:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,170 +546,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 211--219
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 249--256
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 249--256
+Underfull \hbox (badness 10000) in paragraph at lines 240--249
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--266
+Underfull \hbox (badness 10000) in paragraph at lines 256--263
 
  []
 
 
-Overfull \hbox (11.06807pt too wide) in paragraph at lines 259--266
+Underfull \hbox (badness 10000) in paragraph at lines 256--263
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 266--273
+
+ []
+
+
+Overfull \hbox (11.06807pt too wide) in paragraph at lines 266--273
 \T1/aer/m/n/9 com-put-ing plat-form based on a sim-ple board with in-put/output
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--266
+Underfull \hbox (badness 10000) in paragraph at lines 266--273
 
  []
 
 
-Overfull \hbox (1.65955pt too wide) in paragraph at lines 259--266
+Overfull \hbox (1.65955pt too wide) in paragraph at lines 266--273
 \T1/aer/m/n/9 con-struc-tion pro-cess, mak-ing it sim-pler, al-low-ing peo-ple 
 from
  []
 
 
-Overfull \hbox (2.17592pt too wide) in paragraph at lines 259--266
+Overfull \hbox (2.17592pt too wide) in paragraph at lines 266--273
 \T1/aer/m/n/9 dif-fer-ent fields of knowl-edge be-ing able to build their proje
 cts.
  []
 
 
-Underfull \vbox (badness 4752) has occurred while \output is active []
-
- [3]
-Underfull \hbox (badness 10000) in paragraph at lines 276--280
+Underfull \hbox (badness 10000) in paragraph at lines 283--287
 
  []
 
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 291.
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--296
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 283--296
-
- []
-
-
-Overfull \hbox (17.87234pt too wide) in paragraph at lines 299--300
-[]\T1/aer/m/n/9 Analog in-put pins or dig-i-tal in-put / out-put (pro-grammable
+(/usr/share/texlive/texmf-dist/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
 )
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 291.
+
+Overfull \hbox (3.31938pt too wide) in paragraph at lines 289--292
+\T1/aer/m/n/9 The Bea-gle-Board is a low-power open-source hard-ware single-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 309--313
+Underfull \hbox (badness 10000) in paragraph at lines 289--292
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--313
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--313
 
  []
 
 [4]
-Overfull \hbox (25.80034pt too wide) in paragraph at lines 329--330
-[]\T1/aer/m/n/9 USART - Uni-ver-sal Se-rial asyn-chronous re-ceiver/transmitter
-:
+Overfull \hbox (7.87372pt too wide) in paragraph at lines 315--323
+\T1/aer/m/n/9 The orig-i-nal Rasp-berry Pi is based on the Broad-com BCM2835
  []
 
 
-Overfull \hbox (3.24768pt too wide) in paragraph at lines 334--335
-\T1/aer/m/n/9 pins that al-low syn-chronous se-rial com-mu-ni-ca-tion faster
- []
-
-File: pictures/RaspiModelB.png Graphic file (type eps)
-<pictures/RaspiModelB.png>
-Overfull \hbox (12.0pt too wide) in paragraph at lines 353--355
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 339--357
+Underfull \hbox (badness 10000) in paragraph at lines 315--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--357
+Underfull \hbox (badness 10000) in paragraph at lines 315--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--357
+Underfull \hbox (badness 10000) in paragraph at lines 332--336
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 339--357
-
+Overfull \hbox (17.87234pt too wide) in paragraph at lines 352--353
+[]\T1/aer/m/n/9 Analog in-put pins or dig-i-tal in-put / out-put (pro-grammable
+)
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [5]
+Underfull \hbox (badness 10000) in paragraph at lines 360--364
+
+ []
+
+
+Overfull \hbox (9.62775pt too wide) in paragraph at lines 387--388
+\T1/aer/m/n/9 One pin(TxD) can be used to trans-mit and an-other(RxD)
+ []
+
+
+Overfull \hbox (5.24571pt too wide) in paragraph at lines 389--391
+\T1/aer/m/n/9 that al-low syn-chronous se-rial com-mu-ni-ca-tion faster than
+ []
+
+
+Overfull \hbox (11.31882pt too wide) in paragraph at lines 389--391
+\T1/aer/m/n/9 pur-pose the pins 19 as Mas-ter Out-put, Slave Inpu(MOSI),
+ []
+
 File: pictures/gpio.png Graphic file (type eps)
- <pictures/gpio.png>
-Overfull \hbox (47.28369pt too wide) in paragraph at lines 377--378
+<pictures/gpio.png>
+Overfull \hbox (47.28369pt too wide) in paragraph at lines 401--402
 [][] 
  []
 
 
-Overfull \hbox (12.4355pt too wide) in paragraph at lines 375--380
+Overfull \hbox (12.4355pt too wide) in paragraph at lines 399--404
 \T1/aer/m/n/9 The eas-i-est way to con-trol the GPIO pins is us-ing the RPi.GPI
 O
  []
 
 
-Overfull \hbox (2.12877pt too wide) in paragraph at lines 383--388
+Overfull \hbox (2.12877pt too wide) in paragraph at lines 407--412
 \T1/aer/m/n/9 the board and pe-riph-er-als, mi-cro-con-trollers/microprocessors
 ,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--388
+Underfull \hbox (badness 10000) in paragraph at lines 407--412
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 415--422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--398
+Underfull \hbox (badness 10000) in paragraph at lines 415--422
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 391--398
-
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [6]
-Underfull \hbox (badness 10000) in paragraph at lines 407--411
+Underfull \hbox (badness 10000) in paragraph at lines 431--435
 
  []
 
 No file sigproc-sp.bbl.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for T1+aett on input line 496.
-
+LaTeX Font Info:    Try loading font information for T1+aett on input line 520.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -718,12 +729,12 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 ]
 (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 3277 strings out of 494985
- 39277 string characters out of 6179674
- 108529 words of memory out of 5000000
- 6444 multiletter control sequences out of 15000+600000
+ 3293 strings out of 494985
+ 39542 string characters out of 6179674
+ 110529 words of memory out of 5000000
+ 6458 multiletter control sequences out of 15000+600000
  41639 words of font info for 53 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,12n,28p,1648b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sigproc-sp.dvi (8 pages, 47268 bytes).
+Output written on sigproc-sp.dvi (8 pages, 50808 bytes).
