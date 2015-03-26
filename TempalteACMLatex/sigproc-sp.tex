@@ -150,7 +150,8 @@ La convergence des technologies de radio, microprocesseurs et appareils numériq
 \end{abstract}
 
 \selectlanguage{english} 
-\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
+\keywords{Informatique ubiquitaire, Internet des objets, Raspberry Pi, capteur, Python}
+%\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
 
 
 \section{Introduction}
@@ -305,11 +306,11 @@ The proposal of the Raspberry Pi is therefore be a low-cost computer, with the a
 \newline
 \newline
 Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 and the B and B+ models, which costs \$ 35. As for the price, there is not much difference between the hardware models. The main differences are the amount of USB ports (1, 2 and 4 in the models A, B and B +, respectively), the Ethernet port (model A does not have) and ram (256MB on the model A against 512 for the others).
-%\begin{figure}[h]
-%    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
-%    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
-%}
-%\end{figure}
+\begin{figure}[h]
+    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
+    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
+}
+\end{figure}
 
 \paragraph{Features}
 The original Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),[1] which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,[8] and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.[9] The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage.[10]
@@ -342,6 +343,13 @@ The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat 
 %[10] "Verified USB Peripherals and SDHC Cards;". Elinux.org. Retrieved 6 May 2012.http://elinux.org/RPi_VerifiedPeripherals
 %[11] http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/
 %[14] "Brandy Basic". Jaguar.orpheusweb.co.uk. 26 July 2005. Retrieved 6 May 2012. http://jaguar.orpheusweb.co.uk/branpage.html
+\paragraph{General Purpose Input/Output}
+
+Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
+\newline
+\newline
+Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM(Pulse Width Modulation), UART(Universal asynchronous receiver/transmitter) and SPI(Serial Peripheral Interface). Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others [8].
+The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
 
 \paragraph{Inputs and Outputs}
 The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins.In this paper we will present only the pins availlable in the model B.The pins are divided into:
@@ -394,37 +402,44 @@ RPi pins have some special characteristics which can be used from the software f
 %http://en.wikipedia.org/wiki/I%C2%B2C
 \end{itemize}
 
-\paragraph{GPIO in Python}
+\subsection{Software}
 
-The easiest way to control the GPIO pins is using the RPi.GPIO Python library. Installing the library is easy if you follow my RPi.GPIO Installation Guide. Once installed using the pins is as easy as in figure 2:
+\subsubsection{WiringPi}
+
+WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers (WIRING PI, 2014). Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
+
+\subsubsection{GPIO in Python}
+
+The easiest way to control the GPIO pins is using the RPi.GPIO Python library. Installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as in figure 4:
+%installation guide: http://sourceforge.net/p/raspberry-gpio-python/wiki/install/
 \begin{figure}[h]
     \includegraphics[width=0.57\textwidth,natwidth=610,natheight=642]{pictures/gpio.png}
     \caption{controlling gpio with Python}
 \end{figure}
 
-\paragraph{General Purpose Input/Output}
-
-Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
-\newline
-\newline
-Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM, UART and SPI. Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others [8].
-The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
+The RPi.GPIO module is installed by default in Raspbian. Any RPi.GPIO script must be run as root.
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
 
-The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagrams below.
+The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure 5.
+\begin{figure}[h]
+    \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
+    \caption{GPIO pins}
+\end{figure}
 \newline
 \newline
-The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, these are the numbers after "GPIO" in the green rectangles around the outside of the below diagrams:
+The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, these are the numbers after "GPIO" in the green rectangles around the outside of the diagram above.
 \newline
 \newline
 Unfortunately the BCM numbers changed between versions of the Model B, and you'll need to work out which one you have guide here. So it may be safer to use the BOARD numbers if you are going to use more than one pi in a project.
 
-\paragraph{WiringPi}
+\paragraph{Pigpio}
+%http://abyz.co.uk/rpi/pigpio/python.html
 
-WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers (WIRING PI, 2014). Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
-
-\paragraph{raspberry-gpio-python}
+Pigpio is a Python module for the Raspberry which talks to the pigpio daemon to allow control of the general purpose input outputs (GPIOs). Pigpio Python scripts may be run on Windows, Macs, and Linux machines. Only the pigpio daemon needs to be running on the Pi.
+\newline
+\newline
+Pigpio provides all the standard gpio features and in addition it provides hardware timed PWM suitable for servos, LEDs, and motors and samples/timestamps gpios 0-31 up to 1 million times per second (default 200 thousand).
 
 \section{JUSTIFICATION}
 
