@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.23)  26 MAR 2015 00:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  26 MAR 2015 15:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -26,18 +26,10 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count79
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
@@ -76,13 +68,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count80
+\inf@bad=\count79
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count81
-\leftroot@=\count82
+\uproot@=\count80
+\leftroot@=\count81
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count83
-\DOTSCASE@=\count84
+\classnum@=\count82
+\DOTSCASE@=\count83
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -91,15 +83,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count85
-\c@MaxMatrixCols=\count86
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
 \dotsspace@=\muskip10
-\c@parentequation=\count87
-\dspbrk@lvl=\count88
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
 \tag@help=\toks17
-\row@=\count89
-\column@=\count90
-\maxfields@=\count91
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
 \andhelp@=\toks18
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -123,22 +115,22 @@ Excerpts were taken from (Journal Style) 'esub2acm.cls'.
 \footheight=\dimen115
 \@maxsep=\dimen116
 \@dblmaxsep=\dimen117
-\aucount=\count92
-\originalaucount=\count93
+\aucount=\count91
+\originalaucount=\count92
 \auwidth=\dimen118
 \auskip=\dimen119
-\auskipcount=\count94
+\auskipcount=\count93
 \auskip=\dimen120
 \allauboxes=\dimen121
 \addauthors=\toks21
-\addauflag=\count95
+\addauflag=\count94
 \subtitletext=\toks22
-\savesection=\count96
-\sectioncntr=\count97
-\c@figure=\count98
-\c@table=\count99
+\savesection=\count95
+\sectioncntr=\count96
+\c@figure=\count97
+\c@table=\count98
 \titleboxnotes=\toks23
-\titleboxnoteflag=\count100
+\titleboxnoteflag=\count99
 Document Class: acm_proc_article-sp 2009/04/22 - V3.2SP - based on esub2acm.sty
  <23 April 96>
 (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
@@ -148,26 +140,26 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
 \@acmtitlebox=\box28
-\titlenotecount=\count101
+\titlenotecount=\count100
 \tntoks=\toks24
 \tntokstwo=\toks25
 \tntoksthree=\toks26
 \tntoksfour=\toks27
 \tntoksfive=\toks28
-\catcount=\count102
+\catcount=\count101
 \copyrightnotice=\toks29
 \conf=\toks30
 \confinfo=\toks31
-\c@part=\count103
-\c@section=\count104
-\c@subsection=\count105
-\c@subsubsection=\count106
-\c@paragraph=\count107
+\c@part=\count102
+\c@section=\count103
+\c@subsection=\count104
+\c@subsubsection=\count105
+\c@paragraph=\count106
 
 Using 'Abbrev' bibliography style
 LaTeX Info: Redefining \cite on input line 1236.
 \bibindent=\dimen122
-\colcntr=\count108
+\colcntr=\count107
 \saveb@x=\box29
 \copyrtyr=\toks32
 \acmcopyr=\toks33
@@ -193,17 +185,17 @@ Language: frenchb 2013/07/06 v2.6e French support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/05/16 v3.9f Babel common definitions
-\babel@savecnt=\count109
+\babel@savecnt=\count108
 \U@D=\dimen123
 )
-\FB@interchartokenstateORI=\count110
+\FB@interchartokenstateORI=\count109
 Package babel Info: Making : an active character on input line 240.
 Package babel Info: Making ; an active character on input line 241.
 Package babel Info: Making ! an active character on input line 242.
 Package babel Info: Making ? an active character on input line 243.
 \FB@Mht=\dimen124
-\std@mcc=\count111
-\dec@mcc=\count112
+\std@mcc=\count110
+\dec@mcc=\count111
 \listindentFB=\skip44
 \labelwidthFB=\skip45
 \leftmarginFB=\skip46
@@ -435,21 +427,29 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
+(/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip47
+\enit@outerparindent=\dimen126
+\enit@toks=\toks38
+\enit@inbox=\box30
+\enitdp@description=\count112
+)
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
-\ttl@box=\box30
-\beforetitleunit=\skip47
-\aftertitleunit=\skip48
-\ttl@plus=\dimen126
-\ttl@minus=\dimen127
-\ttl@toksa=\toks38
-\titlewidth=\dimen128
-\titlewidthlast=\dimen129
-\titlewidthfirst=\dimen130
+\ttl@box=\box31
+\beforetitleunit=\skip48
+\aftertitleunit=\skip49
+\ttl@plus=\dimen127
+\ttl@minus=\dimen128
+\ttl@toksa=\toks39
+\titlewidth=\dimen129
+\titlewidthlast=\dimen130
+\titlewidthfirst=\dimen131
 
 
 Package titlesec Warning: Non standard sectioning command detected
@@ -458,411 +458,326 @@ Package titlesec Warning: Non standard sectioning command detected
 ) (./sigproc-sp.aux)
 \openout1 = `sigproc-sp.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen131
-\scratchbox=\box31
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks39
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen132
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks40
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-LaTeX Info: Redefining \degres on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Info: Redefining \degres on input line 45.
 
 
 Package frenchb.ldf Warning: The definition of \@makecaption has been changed,
 (frenchb.ldf)                frenchb will NOT customise it;
-(frenchb.ldf)                reported on input line 44.
+(frenchb.ldf)                reported on input line 45.
 
-LaTeX Info: Redefining \dots on input line 44.
-LaTeX Info: Redefining \up on input line 44.
-LaTeX Font Info:    Try loading font information for U+msa on input line 117.
+LaTeX Info: Redefining \dots on input line 45.
+LaTeX Info: Redefining \up on input line 45.
+LaTeX Font Info:    Try loading font information for U+msa on input line 69.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 117.
+LaTeX Font Info:    Try loading font information for U+msb on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 117.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 69.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (16.24326pt too wide) in paragraph at lines 159--173
+Overfull \hbox (16.24326pt too wide) in paragraph at lines 86--101
 \T1/aer/m/n/9 is con-sid-ered by many as the twenty-first cen-tury's new paradi
 gm
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--173
+Underfull \hbox (badness 10000) in paragraph at lines 86--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--173
+Underfull \hbox (badness 10000) in paragraph at lines 86--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--173
+Underfull \hbox (badness 10000) in paragraph at lines 86--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 159--173
+Underfull \hbox (badness 10000) in paragraph at lines 86--101
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+ [1
 
 
 ]
-<pictures/era.png, id=11, 322.20375pt x 212.795pt>
-File: pictures/era.png Graphic file (type png)
- <use pictures/era.png>
-Package pdftex.def Info: pictures/era.png used on input line 187.
-(pdftex.def)             Requested size: 201.59692pt x 133.14589pt.
+File: pictures/era.png Graphic file (type eps)
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--195
+<pictures/era.png>
+Underfull \hbox (badness 10000) in paragraph at lines 111--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--195
+Underfull \hbox (badness 10000) in paragraph at lines 111--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 185--195
+Underfull \hbox (badness 10000) in paragraph at lines 111--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 201--205
+Underfull \hbox (badness 10000) in paragraph at lines 126--130
 
  []
 
-<pictures/ubiq.png, id=13, 341.275pt x 154.5775pt>
-File: pictures/ubiq.png Graphic file (type png)
- <use pictures/ubiq.png>
-Package pdftex.def Info: pictures/ubiq.png used on input line 214.
-(pdftex.def)             Requested size: 201.59692pt x 91.31313pt.
+File: pictures/ubiq.png Graphic file (type eps)
+<pictures/ubiq.png>
+Underfull \hbox (badness 10000) in paragraph at lines 135--143
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--220
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 163--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 163--172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--185
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 187--194
+
+ []
+
+
+Overfull \hbox (11.06807pt too wide) in paragraph at lines 187--194
+\T1/aer/m/n/9 com-put-ing plat-form based on a sim-ple board with in-put/output
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--194
+
+ []
+
+
+Overfull \hbox (1.65955pt too wide) in paragraph at lines 187--194
+\T1/aer/m/n/9 con-struc-tion pro-cess, mak-ing it sim-pler, al-low-ing peo-ple 
+from
+ []
+
+
+Overfull \hbox (2.17592pt too wide) in paragraph at lines 187--194
+\T1/aer/m/n/9 dif-fer-ent fields of knowl-edge be-ing able to build their proje
+cts.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 204--208
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 212.
+
+(/usr/share/texlive/texmf-dist/tex/latex/ae/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 212.
+
+Overfull \hbox (3.31938pt too wide) in paragraph at lines 210--213
+\T1/aer/m/n/9 The Bea-gle-Board is a low-power open-source hard-ware single-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--233
+
+ []
+
+[4]
+Overfull \hbox (7.87372pt too wide) in paragraph at lines 235--244
+\T1/aer/m/n/9 The orig-i-nal Rasp-berry Pi is based on the Broad-com BCM2835
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 235--244
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--256
+
+ []
+
+
+Overfull \hbox (2.12877pt too wide) in paragraph at lines 267--272
+\T1/aer/m/n/9 the board and pe-riph-er-als, mi-cro-con-trollers/microprocessors
+,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--272
+
+ []
+
+
+Overfull \hbox (16.99757pt too wide) in paragraph at lines 267--272
+\T1/aer/m/n/9 also sup-ports PWM(Pulse Width Mod-u-la-tion), UART(Universal
+ []
+
+[5]
+Overfull \hbox (17.87234pt too wide) in paragraph at lines 279--280
+[]\T1/aer/m/n/9 Analog in-put pins or dig-i-tal in-put / out-put (pro-grammable
+)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--290
+
+ []
+
+
+Overfull \hbox (9.62775pt too wide) in paragraph at lines 305--306
+\T1/aer/m/n/9 One pin(TxD) can be used to trans-mit and an-other(RxD)
+ []
+
+
+Overfull \hbox (5.24571pt too wide) in paragraph at lines 307--309
+\T1/aer/m/n/9 that al-low syn-chronous se-rial com-mu-ni-ca-tion faster than
+ []
+
+
+Overfull \hbox (11.31882pt too wide) in paragraph at lines 307--309
+\T1/aer/m/n/9 pur-pose the pins 19 as Mas-ter Out-put, Slave Inpu(MOSI),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--325
+
+ []
+
+[6]
+Overfull \hbox (31.32793pt too wide) in paragraph at lines 334--336
+\T1/aer/m/n/9 for ARMv7 and later pro-ces-sors (with Jazelle RCT/ThumbEE,
+ []
+
+
+Overfull \hbox (6.40686pt too wide) in paragraph at lines 336--337
+\T1/aer/m/n/9 pared to the usual desk-top com-puter ori-ented Rasp-
+ []
+
+
+Overfull \hbox (17.61893pt too wide) in paragraph at lines 339--340
+\T1/aer/m/n/9 robotics projects with LEGO, Grove, and Ar-duino.[82] 
+ []
+
+
+Overfull \hbox (12.4355pt too wide) in paragraph at lines 373--374
+\T1/aer/m/n/9 The eas-i-est way to con-trol the GPIO pins is us-ing the RPi.GPI
+O
+ []
+
+File: pictures/gpio.png Graphic file (type eps)
+<pictures/gpio.png>
+Overfull \hbox (47.28369pt too wide) in paragraph at lines 377--378
+[][] 
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: pictures/ModelAB.png Graphic file (type eps)
+<pictures/ModelAB.png>
+Underfull \hbox (badness 10000) in paragraph at lines 383--394
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--394
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[2 <./pictures/era.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 241--250
+
+Underfull \hbox (badness 10000) in paragraph at lines 397--401
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--250
+Underfull \hbox (badness 10000) in paragraph at lines 403--407
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--264
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 257--264
-
- []
-
-[3 <./pictures/ubiq.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 267--274
-
- []
-
-
-Overfull \hbox (11.06807pt too wide) in paragraph at lines 267--274
-\T1/aer/m/n/9 com-put-ing plat-form based on a sim-ple board with in-put/output
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 267--274
-
- []
-
-
-Overfull \hbox (1.65955pt too wide) in paragraph at lines 267--274
-\T1/aer/m/n/9 con-struc-tion pro-cess, mak-ing it sim-pler, al-low-ing peo-ple 
-from
- []
-
-
-Overfull \hbox (2.17592pt too wide) in paragraph at lines 267--274
-\T1/aer/m/n/9 dif-fer-ent fields of knowl-edge be-ing able to build their proje
-cts.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 284--288
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 292.
-
-(/usr/share/texlive/texmf-dist/tex/latex/ae/omsaer.fd
-File: omsaer.fd 1999/12/27
-)
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 292.
-
-Overfull \hbox (3.31938pt too wide) in paragraph at lines 290--293
-\T1/aer/m/n/9 The Bea-gle-Board is a low-power open-source hard-ware single-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--293
-
- []
-
-<pictures/RaspiModelB.png, id=25, 1279.02844pt x 1127.71312pt>
-File: pictures/RaspiModelB.png Graphic file (type png)
-
-<use pictures/RaspiModelB.png>
-Package pdftex.def Info: pictures/RaspiModelB.png used on input line 310.
-(pdftex.def)             Requested size: 252.0pt x 222.18317pt.
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 310--312
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--314
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--314
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--314
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 296--314
-
- []
-
-[4]
-Overfull \hbox (7.87372pt too wide) in paragraph at lines 316--324
-\T1/aer/m/n/9 The orig-i-nal Rasp-berry Pi is based on the Broad-com BCM2835
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--324
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 316--324
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 333--337
-
- []
-
-
-Overfull \hbox (2.12877pt too wide) in paragraph at lines 348--353
-\T1/aer/m/n/9 the board and pe-riph-er-als, mi-cro-con-trollers/microprocessors
-,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 348--353
-
- []
-
-
-Overfull \hbox (16.99757pt too wide) in paragraph at lines 348--353
-\T1/aer/m/n/9 also sup-ports PWM(Pulse Width Mod-u-la-tion), UART(Universal
- []
-
-[5 <./pictures/RaspiModelB.png>]
-Overfull \hbox (17.87234pt too wide) in paragraph at lines 360--361
-[]\T1/aer/m/n/9 Analog in-put pins or dig-i-tal in-put / out-put (pro-grammable
-)
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 368--372
-
- []
-
-
-Overfull \hbox (9.62775pt too wide) in paragraph at lines 395--396
-\T1/aer/m/n/9 One pin(TxD) can be used to trans-mit and an-other(RxD)
- []
-
-
-Overfull \hbox (5.24571pt too wide) in paragraph at lines 397--399
-\T1/aer/m/n/9 that al-low syn-chronous se-rial com-mu-ni-ca-tion faster than
- []
-
-
-Overfull \hbox (11.31882pt too wide) in paragraph at lines 397--399
-\T1/aer/m/n/9 pur-pose the pins 19 as Mas-ter Out-put, Slave Inpu(MOSI),
- []
-
-<pictures/gpio.png, id=34, 633.36626pt x 273.02pt>
-File: pictures/gpio.png Graphic file (type png)
- <use pictures/gpio.png>
-Package pdftex.def Info: pictures/gpio.png used on input line 416.
-(pdftex.def)             Requested size: 287.28369pt x 123.84102pt.
-
-Overfull \hbox (47.28369pt too wide) in paragraph at lines 416--417
-[][] 
- []
-
-
-Overfull \hbox (12.4355pt too wide) in paragraph at lines 413--419
-\T1/aer/m/n/9 The eas-i-est way to con-trol the GPIO pins is us-ing the RPi.GPI
-O
- []
-
-[6] <pictures/ModelAB.png, id=38, 752.8125pt x 355.3275pt>
-File: pictures/ModelAB.png Graphic file (type png)
-
-<use pictures/ModelAB.png>
-Package pdftex.def Info: pictures/ModelAB.png used on input line 426.
-(pdftex.def)             Requested size: 226.79846pt x 107.04907pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--435
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 424--435
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 439--443
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 446--450
-
- []
-
+[7]
 No file sigproc-sp.bbl.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 535.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 492.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./pictures/gpio.png> <./pictures/ModelAB.png>] [8
-
-] (./sigproc-sp.aux) ) 
+) [8] (./sigproc-sp.aux) ) 
 Here is how much of TeX's memory you used:
- 4272 strings out of 494984
- 54774 string characters out of 6179648
- 126286 words of memory out of 5000000
- 7372 multiletter control sequences out of 15000+600000
- 51092 words of font info for 70 fonts, out of 8000000 for 9000
+ 3576 strings out of 494985
+ 44298 string characters out of 6179674
+ 116675 words of memory out of 5000000
+ 6736 multiletter control sequences out of 15000+600000
+ 41639 words of font info for 53 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 41i,12n,28p,1648b,310s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.en
-c}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/t
-exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmtt9.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helveti
-c/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (8 pages, 413207 bytes).
-PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
- 0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 39i,12n,28p,1648b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
 
+Output written on sigproc-sp.dvi (8 pages, 54968 bytes).

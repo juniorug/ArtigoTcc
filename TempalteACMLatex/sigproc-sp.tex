@@ -30,6 +30,7 @@
 %\usepackage{[utf8x][inputenc]}
 \usepackage[french,english]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{enumitem}
 \usepackage{graphicx,url}
 \newcommand{\subparagraph}{}
 %\AtBeginDocument{\renewcommand{\abstract}{Resumé}}
@@ -44,51 +45,9 @@
 \begin{document}
 
 \title{An Extendable Python Library To Manipulate Sensors Coupled To The Raspberry Pi}
-%\subtitle{[Extended Abstract]
-%\titlenote{A full version of this paper is available as
-%\textit{Author's Guide to Preparing ACM SIG Proceedings Using
-%\LaTeX$2_\epsilon$\ and BibTeX} at
-%\texttt{www.acm.org/eaddress.htm}}}
-%
-% You need the command \numberofauthors to handle the 'placement
-% and alignment' of the authors beneath the title.
-%
-% For aesthetic reasons, we recommend 'three authors at a time'
-% i.e. three 'name/affiliation blocks' be placed beneath the title.
-%
-% NOTE: You are NOT restricted in how many 'rows' of
-% "name/affiliations" may appear. We just ask that you restrict
-% the number of 'columns' to three.
-%
-% Because of the available 'opening page real-estate'
-% we ask you to refrain from putting more than six authors
-% (two rows with three columns) beneath the article title.
-% More than six makes the first-page appear very cluttered indeed.
-%
-% Use the \alignauthor commands to handle the names
-% and affiliations for an 'aesthetic maximum' of six authors.
-% Add names, affiliations, addresses for
-% the seventh etc. author(s) as the argument for the
-% \additionalauthors command.
-% These 'additional authors' will be output/set for you
-% without further effort on your part as the last section in
-% the body of your article BEFORE References or any Appendices.
 
-\numberofauthors{2} %  in this sample file, there are a *total*
-% of EIGHT authors. SIX appear on the 'first-page' (for formatting
-% reasons) and the remaining two appear in the \additionalauthors section.
-%
+\numberofauthors{2} 
 \author{
-% You can go ahead and credit any number of authors here,
-% e.g. one 'row of three' or two rows (consisting of one row of three
-% and a second row of one, two or three).
-%
-% The command \alignauthor (no curly braces needed) should
-% precede each author name, affiliation/snail-mail address and
-% e-mail address. Additionally, tag each line of
-% affiliation/address with \affaddr, and tag the
-% e-mail address with \email.
-%
 % 1st. author
 \alignauthor
 Edivaldo M. F. de Jesus Jr\titlenote{Aluno do curso de An\'alise e Desenvolvimento de Sistemas(ADS)}\\
@@ -104,15 +63,8 @@ Manoel C. M. Neto\titlenote{Doutor em Ci\^encia da Computa\c{c}\~ao e Professor 
        \affaddr{Barbalho, Salvador Bahia}\\
        \email{manoelnetom@ifba.edu.br}
 }
-% There's nothing stopping you putting the seventh, eighth, etc.
-% author on the opening page (as the 'third row') but we ask,
-% for aesthetic reasons that you place these 'additional authors'
-% in the \additional authors block, viz.
 
 \date{13 April 2015}
-% Just remember to make sure that the TOTAL number of authors
-% is the number that will appear on the first page PLUS the
-% number that will appear in the \additionalauthors section.
 
 \maketitle
 \selectlanguage{french} 
@@ -122,30 +74,7 @@ Manoel C. M. Neto\titlenote{Doutor em Ci\^encia da Computa\c{c}\~ao e Professor 
 
 La convergence des technologies de radio, microprocesseurs et appareils numériques personnels conduit à la notion de l'informatique ubiquitaire où les dispositifs intelligents, mobiles et fixes, de coordonner les uns avec les autres pour fournir aux utilisateurs un accès immédiat et universel aux nouveaux services de manière transparente, visant à accroître humaine capacités. Ce travail vise à définir, mettre en œuvre et valider la conception et la mise en œuvre d'une bibliothèque Python extensible pour manipuler des capteurs / actionneurs couplés à la Raspberry Pi en utilisant le module de framboise-GPIO-python. La bibliothèque utilise le modèle de fabrique abstraite pour se assurer que les capteurs / actionneurs et les événements de la même famille étant utilisés en conjonction avec moyen garanti. Sur les autres plateformes, comme Arduino, les API fournissent bibliothèques qui encapsulent la complexité de mise en œuvre et ne offrent que l'interface à utiliser. Ces bibliothèques ne existent pas encore officiellement pour ceux qui veulent utiliser Pyton comme langage de développement appliqué à la Raspberry Pi. Cet article encourage l'utilisation des technologies open source, en raison de la croissance de la libre circulation du matériel, la déduction de la possibilité d'une alternative pour les ingénieurs et les professionnels à développer leurs projets et fournir à la diffusion des connaissances. Le projet présente également les résultats obtenus en utilisant certains des capteurs mis en œuvre, la modélisation du système et les résultats décrits et 
 
-
-
-
-
-
 %A converg\^encia das tecnologias de r\'adio, dos microprocessadores e dos dispositivos eletr\^onicos digitais pessoais est\'a levando ao conceito de Computa\c{c}\~ao Ub\'iqua no qual dispositivos inteligentes, m\'oveis e estacion\'arios, coordenam-se entre si para prover aos usu\'arios acesso imediato e universal a novos servi\c{c}os, de forma transparente, que visam aumentar as capacidades humanas. Este trabalho  tem como objetivo definir, implementar e validar o projeto e implementa\c{c}\~ao de uma biblioteca Python extens\'ivel para manipular sensores / atuadores acoplados ao Raspberry Pi usando o m\'odulo raspberry-gpio-python. A biblioteca utiliza o Padr\~ao Abstract Factory para garantir que sensores/atuadores e eventos de mesma fam\'ilia sejam usados em conjunto de forma garantida. Em outras plataformas, como no Arduino, as APIs oferecem bibliotecas que encapsulam a complexidade de implementa\c{c}\~ao e oferecem apenas a interface para o uso. Essas bibliotecas ainda n\~ao existem formalmente para quem quer usar Pyton como linguagem de desenvolvimento aplicada ao Raspberry Pi. Este artigo incentiva o uso de tecnologias de c\'odigo aberto, devido ao crescimento da livre circula\c{c}\~ao de hardware, inferindo a possibilidade de uma alternativa para engenheiros e profissionais para desenvolver seus projetos e fornecem a dissemina\c{c}\~ao do conhecimento. O projeto apresenta tamb\'em os resultados obtidos utilizando alguns dos sensores implementados, a modelagem do sistema e os resultados obtidos descritos e analisados.
-
-%This paper provides a sample of a \LaTeX\ document which conforms to
-%the formatting guidelines for ACM SIG Proceedings.
-%It complements the document \textit{Author's Guide to Preparing
-%ACM SIG Proceedings Using \LaTeX$2_\epsilon$\ and Bib\TeX}. This
-%source file has been written with the intention of being
-%compiled under \LaTeX$2_\epsilon$\ and BibTeX.
-
-%The developers have tried to include every imaginable sort
-%of ``bells and whistles", such as a subtitle, footnotes on
-%title, subtitle and authors, as well as in the text, and
-%every optional component (e.g. Acknowledgments, Additional
-%Authors, Appendices), not to mention examples of
-%equations, theorems, tables and figures.
-
-%To make best use of this sample document, run it through \LaTeX\
-%5and BibTeX, and compare this source code with the printed
-%output produced by the dvi file.
 
 \end{abstract}
 
@@ -153,9 +82,7 @@ La convergence des technologies de radio, microprocesseurs et appareils numériq
 \keywords{Informatique ubiquitaire, Internet des objets, Raspberry Pi, capteur, Python}
 %\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
 
-
 \section{Introduction}
-
 The UbiComp in its various ramifications and applications, is considered by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF) [1] and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 [2], published by the Brazilian Computer Society (SBC).
 \newline
 \newline
@@ -181,7 +108,6 @@ The developer must have a degree of experience that can be considered basic to a
 \section{THEORETICAL BACKGROUND}
 
 \subsection{General Context}
-
 The term Ubiquitous Computing was first defined by Mark Weiser [33] in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a computer. He believed that in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use the computer without realizing or require specific technical knowledge. [34]
 \begin{figure}[h]
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/era.png}
@@ -197,18 +123,15 @@ The passage of time has shown that betting Weiser was right. For Weiser, [35] ev
 Terms such as ubiquitous computing, pervasive computing, nomadic computing, invisible computing, mobile computing and many others, have been used often interchangeably, although they differ conceptually and employing different organization of ideas and management of computer services. Insofar as each area progresses, these concepts will be better understood and its definitions will become clearer. This section presents the key concepts needed to understand the UbiComp besides presenting some project examples in the literature.
 
 \subsection{Mobile Computing}
-
 Mobile computing is based on the ability of a user to load or move (physically) computer services wherever it moves. In this context, the computer becomes an ever-present device that expands the ability of a user to use the services it offers, regardless of their location. Combined with the ability to access the network, mobile computing has transformed the computing an activity that can be taken almost anywhere.
 \newline
 \newline
 An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means that a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing .
 
 \subsection{Pervasive Computing}
-
 The concept of pervasive computing implies that the computer is embedded invisibly in the environment to the user [24]. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow you to control, configure and tune the application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
 
 \subsection{Ubiquitous Computing}
-
 As can be seen in Figure 2, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing [14, 24]. Ubiquitous is an adjective originated from Latin (ubiquu) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
 \begin{figure}[h]
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/ubiq.png}
@@ -237,7 +160,6 @@ Generally, ubiquitous applications receive sensor data from other service provid
 
 
 \subsection{Internet of Things}
-
 The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (eg, routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing internet of things’ applications are potentially diverse. Monitoring of environmental and personal health, monitoring and control of industrial processes, including agriculture, smart spaces and smart cities are just some examples of the IoT applications [5].
 \newline
 \newline
@@ -253,7 +175,6 @@ One of the fundamental requirements for developing ubiquitous systems is the use
 
 
 \subsubsection{Sensors and Actuators}
-
 Sensors are devices that allow us to capture information from the environment in which they are inserted, such as temperature, pressure, presence, humidity, smoke detector, light intensity, among others. In general, the sensors work transforming parts of a physical quantity into an electrical signal, which in turn can be interpreted by electronic devices [7]. In other words, sensors are components that allow an electronic device to interact with the real world.
 \newline
 \newline
@@ -263,7 +184,6 @@ According to [7], when the sensors operate directly, transforming one form of en
 An actuator as well as a sensor is a transducer that converts one form of energy into another, and can also do the opposite [7]. In other words, rather than just  transform parts of a physical quantity into an electrical signal, it can transform an electrical signal into a physical quantity such as motion, magnetism, heat, among others. For example, the relays are electromechanical devices that work with small power, but are able to control external circuits that involve high currents. They are basically composed of a coil and a set of contacts. When a current flows through the coil it creates a magnetic field that attracts and closes the contacts, remaining as long as power supply in the coil. As a result, it allows the passage of energy through the relay.
 
 \subsubsection{Arduino}
-
 Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux.
 \newline
 \newline
@@ -292,7 +212,6 @@ The BeagleBoard is a low-power open-source hardware single-board computer produc
 BeagleBone is an \$89 Manufacturer suggested retail price (MSRP), credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
 
 \subsubsection{Raspberry Pi}
-
 Raspberry Pi is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer (RASPBERY PI FUNDATION, 2014a). In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
 \newline
 \newline
@@ -306,11 +225,11 @@ The proposal of the Raspberry Pi is therefore be a low-cost computer, with the a
 \newline
 \newline
 Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 and the B and B+ models, which costs \$ 35. As for the price, there is not much difference between the hardware models. The main differences are the amount of USB ports (1, 2 and 4 in the models A, B and B +, respectively), the Ethernet port (model A does not have) and ram (256MB on the model A against 512 for the others).
-\begin{figure}[h]
-    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
-    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
-}
-\end{figure}
+%\begin{figure}[h]
+%    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
+%    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
+%}
+%\end{figure}
 
 \paragraph{Features}
 The original Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),[1] which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,[8] and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.[9] The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage.[10]
@@ -343,8 +262,8 @@ The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat 
 %[10] "Verified USB Peripherals and SDHC Cards;". Elinux.org. Retrieved 6 May 2012.http://elinux.org/RPi_VerifiedPeripherals
 %[11] http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/
 %[14] "Brandy Basic". Jaguar.orpheusweb.co.uk. 26 July 2005. Retrieved 6 May 2012. http://jaguar.orpheusweb.co.uk/branpage.html
-\paragraph{General Purpose Input/Output}
 
+\paragraph{General Purpose Input/Output}
 Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
 \newline
 \newline
@@ -364,7 +283,6 @@ The number and options of input and output from a Raspberry Pi depend on the mod
 The first item on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Raspberry Pi is coupled to the sensors to capture environmental information. Among the 17 digital input / output pins there are 2 pins that match the serial communication module UART (Universal asynchronous receiver/transmitter). This module allows communication between a computer (for example) and the Raspberry Pi (see Special Pins section). All pins have more than one function, pins can be input or output, and the roles of each are defined in the code of possible programs that can be run on the RPi.
 
 \paragraph{Digital Inputs}
-
 All 17 programable pins can be used as digital inputs. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off).
 \newline
 \newline
@@ -378,17 +296,9 @@ The Raspberry Pi does not have analog pins as Arduino, but is possible to use a 
 With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. You can program the RPi for all 17 digital outputs.
 
 \paragraph{Special Pins}
-
 RPi pins have some special characteristics which can be used from the software functions encoded by a software programmer. Are they:
 %http://pi.gadgetoid.com/pinout
 \begin{itemize}
-%\item Display Serial Interface Connector (DSI)- This connector receives a flat-ribbon cable of 15 pins that can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen.
-%\item Camera Serial Interface(CSI) Connector  - This port allows a camera module be directly coupled to the card.
-%\item P2 and P3 connectors - These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used.
-%\item Power Pins - The header provides 5V on Pins 2 and 4, and 3.3V on Pin 1. The 3.3V supply is limited to 50mA. The 5V supply draws current directly from your microUSB supply so can use whatever is left over after the board has taken its share. A 1A power supply could supply up to 300mA once the board has drawn 700mA.
-%\item Pin Protection - Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components you attach to them as there is a risk you will permanently damage your Pi. Short circuits and wiring mistakes could also ruin your day so double check everything. A multimeter is probably going to help a lot here as you can double check wiring before you connect to the Pi.
-%\item  Basic GPIO - The header provides 17 Pins that can be configured as inputs and outputs. By default they are all configured as inputs except GPIO 14 \& 15. In order to use these pins you must tell the system whether they are inputs or outputs. This can be achieved a number of ways and it depends on how you intend to control them. I intend on using Python.
-
 
 \item PWM - Pulse Width Modulation: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12;
 
@@ -404,23 +314,72 @@ RPi pins have some special characteristics which can be used from the software f
 
 \subsection{Software}
 
-\subsubsection{WiringPi}
 
+\subsubsection{Operating systems}
+Raspberry Pi primarily uses Linux-kernel-based operating systems.
+
+The ARM11 chip at the heart of the Pi (pre-Pi 2) is based on version 6 of the ARM. The current releases of several popular versions of Linux, including Ubuntu,[65] will not run on the ARM11. It is not possible to run Windows on the original Raspberry Pi, though the new Raspberry Pi 2 will be able to run Windows 10.[67] The Raspberry Pi 2 currently only supports Ubuntu Snappy Core, Raspbian, OpenELEC and RISC OS.
+\newline
+\newline
+The install manager for the Raspberry Pi is NOOBS. The operating systems included with NOOBS are:
+
+\begin{itemize}
+
+\item Archlinux ARM;
+\item OpenELEC;
+\item Pidora (Fedora Remix);
+\item Puppy Linux;
+\item Raspbmc and the XBMC open source digital media center;
+\item RISC OS – The operating system of the first ARM-based computer;
+\item Raspbian (recommended for Raspberry Pi and used in this project)[74] – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs.[77]
+\begin{itemize}
+\item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian.[78][79]
+\item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions.[80] on 16 April 2014 a GUI shell for Weston called Maynard was released.
+\item PiBang Linux is derived from Raspbian.[81]
+\item Raspbian for Robots - A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.[82]
+\end{itemize}
+%[65]Gareth Halfacree. "Raspberry Pi review: Eben Upton reveals all". linuxuser.co.uk.http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all
+%[67] Dallas, Kevin (2 February 2015). "Windows 10 Coming to Raspberry Pi 2". Building Apps for Windows. Microsoft. Retrieved 2 February 2015.http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/
+%[74]"Raspbian – Debian optimized for the Raspberry Pi hardware".http://www.raspbian.org/
+%[77]"Introducing the Pi Store". Retrieved 16 September 2014.http://www.raspberrypi.org/introducing-the-pi-store/
+%[78]Yau, Lawrence. "Raspbian Server Edition Version 2.4". The Rantings and Ravings of a Madman. sirlagz.net - Lawrence Yau. Retrieved 4 July 2013.http://sirlagz.net/2013/06/13/raspbian-server-edition-2-4/
+%[79]Raspbian wheezy". Downloads. Raspberry Pi Foundation. Retrieved 10 January 2013.http://www.raspberrypi.org/downloads
+%[80]Eben Upton (24 May 2013). "Wayland". Raspberry Pi. Retrieved 25 May 2013.http://www.raspberrypi.org/archives/4053
+%[81]"Inspired by CrunchBang Linux, and based on Raspbian. Features the Openbox desktop environment".http://www.pibanglinux.org/
+%[82]"A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.".http://sourceforge.net/projects/dexterindustriesraspbianflavor/
+\end{itemize}
+
+A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix.
+%"Other operating systems" http://en.wikipedia.org/wiki/Raspberry_Pi#cite_note-RaspbianServerEdition-78 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsubsection{WiringPi}
 WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers (WIRING PI, 2014). Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
 
 \subsubsection{GPIO in Python}
+The easiest way to control the GPIO pins is using the RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as in figure 4. Any RPi.GPIO script must be run as root because this library needs to acces /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
 
-The easiest way to control the GPIO pins is using the RPi.GPIO Python library. Installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as in figure 4:
 %installation guide: http://sourceforge.net/p/raspberry-gpio-python/wiki/install/
 \begin{figure}[h]
     \includegraphics[width=0.57\textwidth,natwidth=610,natheight=642]{pictures/gpio.png}
     \caption{controlling gpio with Python}
 \end{figure}
 
-The RPi.GPIO module is installed by default in Raspbian. Any RPi.GPIO script must be run as root.
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
-
 The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure 5.
 \begin{figure}[h]
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
@@ -435,14 +394,12 @@ Unfortunately the BCM numbers changed between versions of the Model B, and you'l
 
 \paragraph{Pigpio}
 %http://abyz.co.uk/rpi/pigpio/python.html
-
 Pigpio is a Python module for the Raspberry which talks to the pigpio daemon to allow control of the general purpose input outputs (GPIOs). Pigpio Python scripts may be run on Windows, Macs, and Linux machines. Only the pigpio daemon needs to be running on the Pi.
 \newline
 \newline
 Pigpio provides all the standard gpio features and in addition it provides hardware timed PWM suitable for servos, LEDs, and motors and samples/timestamps gpios 0-31 up to 1 million times per second (default 200 thousand).
 
 \section{JUSTIFICATION}
-
 As with other platforms, Raspberry Pi allows coupling several sensors whose handling can be made from raspberry-gpio-python or any other API available. On other platforms, such as the Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as a development language for Raspberry Pi.
 \newline
 \newline
