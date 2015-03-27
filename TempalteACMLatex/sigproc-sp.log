@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  26 MAR 2015 15:43
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  26 MAR 2015 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -726,14 +726,14 @@ Overfull \hbox (17.61893pt too wide) in paragraph at lines 339--340
  []
 
 
-Overfull \hbox (12.4355pt too wide) in paragraph at lines 373--374
+Overfull \hbox (12.4355pt too wide) in paragraph at lines 362--363
 \T1/aer/m/n/9 The eas-i-est way to con-trol the GPIO pins is us-ing the RPi.GPI
 O
  []
 
 File: pictures/gpio.png Graphic file (type eps)
 <pictures/gpio.png>
-Overfull \hbox (47.28369pt too wide) in paragraph at lines 377--378
+Overfull \hbox (47.28369pt too wide) in paragraph at lines 366--367
 [][] 
  []
 
@@ -742,12 +742,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 File: pictures/ModelAB.png Graphic file (type eps)
 <pictures/ModelAB.png>
-Underfull \hbox (badness 10000) in paragraph at lines 383--394
+Underfull \hbox (badness 10000) in paragraph at lines 372--383
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 383--394
+Underfull \hbox (badness 10000) in paragraph at lines 372--383
 
  []
 
@@ -755,18 +755,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 383--394
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--401
+Underfull \hbox (badness 10000) in paragraph at lines 386--390
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 403--407
+Underfull \hbox (badness 10000) in paragraph at lines 392--396
 
  []
 
 [7]
 No file sigproc-sp.bbl.
-LaTeX Font Info:    Try loading font information for T1+aett on input line 492.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 471.
 
 (/usr/share/texlive/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
@@ -780,4 +780,4 @@ Here is how much of TeX's memory you used:
  16 hyphenation exceptions out of 8191
  39i,12n,28p,1648b,313s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sigproc-sp.dvi (8 pages, 54968 bytes).
+Output written on sigproc-sp.dvi (8 pages, 54952 bytes).
