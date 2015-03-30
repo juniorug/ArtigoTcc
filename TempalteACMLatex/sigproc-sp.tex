@@ -28,12 +28,13 @@
 
 \documentclass{acm_proc_article-sp}
 %\usepackage{[utf8x][inputenc]}
-\usepackage[french,english]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
+\usepackage{minted}
+\usepackage{listings}
 \usepackage{graphicx,url}
 \newcommand{\subparagraph}{}
-%\AtBeginDocument{\renewcommand{\abstract}{Resumé}}
 \usepackage{titlesec}
 \setcounter{secnumdepth}{4}
 
@@ -67,20 +68,13 @@ Manoel C. M. Neto\titlenote{Doutor em Ci\^encia da Computa\c{c}\~ao e Professor 
 \date{13 April 2015}
 
 \maketitle
-\selectlanguage{french} 
-\def\startRÉSUMÉ{}
-
 \begin{abstract}
 
-La convergence des technologies de radio, microprocesseurs et appareils numériques personnels conduit à la notion de l'informatique ubiquitaire où les dispositifs intelligents, mobiles et fixes, de coordonner les uns avec les autres pour fournir aux utilisateurs un accès immédiat et universel aux nouveaux services de manière transparente, visant à accroître humaine capacités. Ce travail vise à définir, mettre en œuvre et valider la conception et la mise en œuvre d'une bibliothèque Python extensible pour manipuler des capteurs / actionneurs couplés à la Raspberry Pi en utilisant le module de framboise-GPIO-python. La bibliothèque utilise le modèle de fabrique abstraite pour se assurer que les capteurs / actionneurs et les événements de la même famille étant utilisés en conjonction avec moyen garanti. Sur les autres plateformes, comme Arduino, les API fournissent bibliothèques qui encapsulent la complexité de mise en œuvre et ne offrent que l'interface à utiliser. Ces bibliothèques ne existent pas encore officiellement pour ceux qui veulent utiliser Pyton comme langage de développement appliqué à la Raspberry Pi. Cet article encourage l'utilisation des technologies open source, en raison de la croissance de la libre circulation du matériel, la déduction de la possibilité d'une alternative pour les ingénieurs et les professionnels à développer leurs projets et fournir à la diffusion des connaissances. Le projet présente également les résultats obtenus en utilisant certains des capteurs mis en œuvre, la modélisation du système et les résultats décrits et 
-
-%A converg\^encia das tecnologias de r\'adio, dos microprocessadores e dos dispositivos eletr\^onicos digitais pessoais est\'a levando ao conceito de Computa\c{c}\~ao Ub\'iqua no qual dispositivos inteligentes, m\'oveis e estacion\'arios, coordenam-se entre si para prover aos usu\'arios acesso imediato e universal a novos servi\c{c}os, de forma transparente, que visam aumentar as capacidades humanas. Este trabalho  tem como objetivo definir, implementar e validar o projeto e implementa\c{c}\~ao de uma biblioteca Python extens\'ivel para manipular sensores / atuadores acoplados ao Raspberry Pi usando o m\'odulo raspberry-gpio-python. A biblioteca utiliza o Padr\~ao Abstract Factory para garantir que sensores/atuadores e eventos de mesma fam\'ilia sejam usados em conjunto de forma garantida. Em outras plataformas, como no Arduino, as APIs oferecem bibliotecas que encapsulam a complexidade de implementa\c{c}\~ao e oferecem apenas a interface para o uso. Essas bibliotecas ainda n\~ao existem formalmente para quem quer usar Pyton como linguagem de desenvolvimento aplicada ao Raspberry Pi. Este artigo incentiva o uso de tecnologias de c\'odigo aberto, devido ao crescimento da livre circula\c{c}\~ao de hardware, inferindo a possibilidade de uma alternativa para engenheiros e profissionais para desenvolver seus projetos e fornecem a dissemina\c{c}\~ao do conhecimento. O projeto apresenta tamb\'em os resultados obtidos utilizando alguns dos sensores implementados, a modelagem do sistema e os resultados obtidos descritos e analisados.
+This article encourages the use of open source technologies, due to the growth of free movement of hardware, inferring the possibility of an alternative for engineers and professionals to develop their projects and provide the dissemination of knowledge.
+The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors / actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library uses the Abstract Factory pattern to ensure that sensors / actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Pyton as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
 
 \end{abstract}
-
-\selectlanguage{english} 
-\keywords{Informatique ubiquitaire, Internet des objets, Raspberry Pi, capteur, Python}
-%\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
+\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
 
 \section{Introduction}
 The UbiComp in its various ramifications and applications, is considered by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF) [1] and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 [2], published by the Brazilian Computer Society (SBC).
@@ -359,13 +353,44 @@ A list of other operating systems that can be installed on Raspberry Pi but are 
 WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers (WIRING PI, 2014). Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
 
 \subsubsection{GPIO in Python}
-The easiest way to control the GPIO pins is using the RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as in figure 4. Any RPi.GPIO script must be run as root because this library needs to acces /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
+The easiest way to control the GPIO pins is using the RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
+
+
+%\begin{lstlisting}[language=Python]
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
+
+  import RPi.GPIO as GPIO
+
+  # Use GPIO numbers, not pin numbers
+  GPIO.setmode(GPIO.BCM) 
+
+  # set up GPIO channels - one input and one output
+  GPIO.setup(7, GPIO.IN) 
+  GPIO.setup(8, GPIO.OUT)
+
+  # input from GPIO7
+  input_value = GPIO.input(7)
+
+  # output to GPIO8
+  GPIO.output(8, True)
+\end{minted}
+%\end{lstlisting}
+%\newline
+%\newline
+Any RPi.GPIO script must be run as root because this library needs to acces /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
 
 %installation guide: http://sourceforge.net/p/raspberry-gpio-python/wiki/install/
-\begin{figure}[h]
-    \includegraphics[width=0.57\textwidth,natwidth=610,natheight=642]{pictures/gpio.png}
-    \caption{controlling gpio with Python}
-\end{figure}
+%\begin{figure}[h]
+%    \includegraphics[width=0.57\textwidth,natwidth=610,natheight=642]{pictures/gpio.png}
+%    \caption{controlling gpio with Python}
+%\end{figure}
 
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
