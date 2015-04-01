@@ -346,11 +346,13 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix.
 %"Other operating systems" http://en.wikipedia.org/wiki/Raspberry_Pi#cite_note-RaspbianServerEdition-78 
 
-
-
-
 \subsubsection{WiringPi}
 WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers (WIRING PI, 2014). Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
+
+\subsubsection{Python}
+Python is considered a very high level language because its syntax is simple and its dynamic typingin addition to being interpreted which makes it great for scripting and robust for various paradigms including object orientation. With all these benefits of language, Python still surprises to be an open source software being available for all major operating systems.
+[] % [http://www.enucomp.com.br/2012/conteudos/artigos/arduinoPython.pdf]
+
 
 \subsubsection{GPIO in Python}
 The easiest way to control the GPIO pins is using the RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
@@ -420,8 +422,128 @@ As with other platforms, Raspberry Pi allows coupling several sensors whose hand
 This may be a consequence of run under the Linux kernel which is not suitable for real time applications - it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program[??].
 
 \section{RELATED WORK}
+As mentioned in section ?? there is no specific library to work with python applied to Raspberry IP, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
+\newline
+\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+PrivateEyePi[] is a project developed for security/automation that uses binds programming and eletronics.%[http://projects.privateeyepi.com/]
+This is an open source project that is free of charge and can be copied, shared and modified without restriction.
+The user can use the Raspberry Pi or an tiny wireless Arduino to connect sensors and send data over the Internet.
+\newline
+\newline
+PrivateEyePi Provides tutorials for users explaining how to build, wire, convert the sensor to a wireless battery operated IOT device and how to connect it to the Internet. The project also provides a cloud based alarm system where the client can group sensors using zones. Zones can be activated and alarms triggered based on rules that can be defined.
+\newline
+\newline
+Some sensors, like relay switches, can be controlled through The Internet. users can also control the alarm system through the PrivateEyePi web based dashboard, which allows monitor the status of sensors and view temperature and humidity readings in real time from The Internet. Historical information is provided by the analytics module. The library provides also a sophisticated rules engine that permit create rules that are processed in real time to create alerts. Those methods require parameters like sensor values, time of day, days of week, alarm activated/deactivated to define rules specific to individual sensors.     
+Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermometer, DHT22 for temperature and humidity readings and a generic water sensor.
+\begin{figure}[h]
+    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/dashboardPrivateeye.png}
+    \caption{PrivateEyePi web based dashboard}
+\end{figure}
+\newline
+\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
+[] describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides backends for Python. The module named "serial" automatically selects the appropriate backend.
+\newline
+\newline
+Features:
+\begin{itemize}
+\item Same class based interface on all supported platforms.
+\item Access to the port settings through Python properties.
+\item Support for different byte sizes, stop bits, parity and flow control with RTS/CTS(Request to Send / Clear to Send) and/or Xon/Xoff.
+\item Working with or without receive timeout.
+\item File like API with “read” and “write” ("readline" etc. also supported).
+\item The files in this package are 100\% pure Python.
+\item The port is set up for binary transmission. No NULL byte stripping, CR-LF translation(carriage return-linefeed) etc. (which are many times enabled for POSIX.) This makes this module universally useful.
+\item Compatible with io library (Python 2.6+)
+\item RFC 2217 client (experimental), server provided in the examples
+\end{itemize}
+
+This work [??] describes the use of LM35 (temperature sensor) and a Light Dependent Resistor.
+\newline
+\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%http://playground.arduino.cc/Main/DHTLib
+Arduino DHTLib [??] is a library for reading temperature and humidity from the sensors of HDT11\'s famly, such as DHT11, DHT21, DHT22 DHT33 e DHT44, applied to Arduino. 
+\newline
+\newline
+The DHT11/21/22 has three lines, GND, +5V and a single data line. By means of a handshake the values are clocked out over the single digital line. Handshake for DHT21/22 is identical, but data format are different. The library is rewritten from scratch and is not compatible with earlier DHT libraries to be able to support both DHT's and stay as simple as possible and to minimize footprint.
+\newline
+\newline
+The interface supports only one function for reading the humidity and temperature from the sensors and store it in two members of the class. The read() function verifies the checksum of the data transmission and it has a time out function. If there is a checksum error the values of temperature and/or humidity might still be valid.
+\newline
+\newline
+The class has 6 read functions read11(PIN), read(PIN) and readxx(PIN) which have essentially the same interface. They read the DHT connected to PIN, and fill the two class members temperature and humidity. Multiple reads from these class members (Humidity and Temperature) will return the same (previous) values until a new read is done.
+\newline
+\newline
+The \textit{readXX()} functions return:
+
+\begin{itemize}
+\item DHTLIB\_OK (0) : if the sensor sample and its checksum is OK.
+\item DHTLIB\_ERROR\_CHECKSUM (-1) : if the checksum test failed. This means that data was received but may be incorrect.
+\item DHTLIB\_ERROR\_TIMEOUT (-2) : if a timeout occured, communication failed.
+\end{itemize}
+
+In case of a DHTLIB\_ERROR\_TIMEOUT, humidity and temperature will get the value DHTLIB\_INVALID\_VALUE. In case of DHTLIB\_ERROR\_CHECKSUM the values of humidity and temperature are left unchanged as it is impossible to determine which byte failed in the checksum. It is up to the programmer to decide what to do. One can compare with previous value, but better reread the sensor.
+\newline
+\newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%https://code.google.com/p/arduino-new-ping/
+NewPing Library for Arduino[] is an ultrasonic sensor library for arduino that was developed to work with the sensors SR04, SRF05, SRF06, DYP-ME007 and Parallax PING)))\textsuperscript{TM}. It is written with c++ and intended to use with Sketches (Software written using Arduino). 
+\newline
+\newline
+Features:
+\begin{itemize}
+\item Works with many different ultrasonic sensor models: SRF05, SRF06, DYP-ME007, Parallax PING)))\textsuperscript{TM} and SR04.
+\item Option to interface with all but the SRF06 sensor using only one Arduino pin.
+\item Doesn't lag for a full second if no ping echo is received like all other ultrasonic libraries.
+\item Ping sensors consistently and reliably at up to 30 times per second.
+\item Timer interrupt method for event-driven sketches.
+\item Built-in digital filter method ping\_median() for easy error correction.
+\item Uses port registers when accessing pins for faster execution and smaller code size.
+\item Allows setting of a maximum distance where pings beyond that distance are read as no ping "clear".
+\item Ease of using multiple sensors (example sketch that pings 15 sensors).
+\item More accurate distance calculation (cm, inches and microseconds).
+\item Doesn't use pulseIn, which is slow and gives incorrect results with some ultrasonic sensor models.
+\item Actively developed with features being added and bugs/issues addressed. 
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code
+Adafruit's Raspberry-Pi Python Code Library[] is the most closed work with this paper. It is a growing collection of libraries and example python scripts written by Limor Fried, Kevin Townsend and Mikey Sklar under BSD license for controlling a variety of Adafruit electronics with a Raspberry Pi.
+\newline
+\newline
+This library provides a collection of python scripts to work with sensors, providing classes that can be used to measure values from the sensor that the class implements. 
+\newline
+\newline
+Despite being a library with a considerable amount of sensors, if the user wants to change the type of sensor in a project, it is necessary review the documentation of the new sensor to be used because the library does not use a standard for equivalent sensors.
+
+
+
 
 \section{APPLICATION DEVELOPMENT}
+
+Many small embedded systems exist to collect data from sensors, analyse the data, and either take an appropriate action or send that sensor data to another system for processing. One of the many challenges of embedded systems design is the fact that parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
+\newline
+\newline
+Creating new drivers is a relatively easy task, but integrating them into existing systems is both error prone and time consuming since sensors rarely use the exact same units of measurement. By reducing all data to a single sensors/event family type and settling on specific, standardised SI units for each sensor family the same sensor types return values that are comparable with any other similar sensor. This enables users to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
+\newline
+\newline
+%This Library provides a common interface and data type for any supported sensor. It defines some basic information about the sensor (sensor limits, etc.), and returns standard SI units of a specific type and scale for each supported sensor type.
+%\newline
+%\newline
+LibsensorPy provides a simple abstraction layer between user's application and the actual sensor Hardware, allowing to drop in any comparable sensor with only one or two lines of code to change in the project that uses the library. This change is essentially in the constructor since the functions to read data and get information about the sensor are defined in the family sensor class, e.g. UltrasonicSensor class.
+\newline
+\newline
+This is imporant useful for two reasons:
+
+\begin{enumerate}
+\item Users can use the data right away because it's already converted to SI units that is understandable and can compare, rather than meaningless values like 0..1023.
+\item Because SI units are standardised in the sensor library, users can also do quick sanity checks working with new sensors, or drop in any comparable sensor if needed better sensitivity or if a lower cost unit becomes available, etc.
+\end{enumerate}
+
+Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardised SI values and measurable units and conversions for each sensor can be seen in appendix XXXX 
 
 \subsection{Method/Methodology}
 
@@ -436,7 +558,19 @@ This may be a consequence of run under the Linux kernel which is not suitable fo
 \subsection{tests}
 
 \section{CONCLUSION AND FUTURE WORK}
+This work presents an extensible open source library, available at Python Package Index (PyPI), the official third-party repository for the Python programming language [] %https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.1.tar.gz
+and on Github [https://github.com/juniorug/libsensorPy], the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+\newline
+\newline
+Its goal is to facilitate the creation of ubiquitous systems.The tool is designed so that facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that type of system, using design patterns and following the SOLID principles.
+\newline
+\newline
+Some suggestions can be seen below:
+\begin{itemize}
+\item Test the sensors that have been implemented but have not been tested;
+\item Add new sensors to the library;
 
+\end{itemize}
 \section{REFERENCES}
 
 \subsection{Citations}

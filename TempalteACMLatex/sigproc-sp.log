@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  31 MAR 2015 14:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  1 APR 2015 17:11
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -831,7 +831,7 @@ Overfull \hbox (17.61893pt too wide) in paragraph at lines 333--334
  []
 
 
-Overfull \hbox (12.4355pt too wide) in paragraph at lines 356--357
+Overfull \hbox (12.4355pt too wide) in paragraph at lines 358--359
 \T1/aer/m/n/9 The eas-i-est way to con-trol the GPIO pins is us-ing the RPi.GPI
 O
  []
@@ -863,42 +863,165 @@ runsystem(rm sigproc-sp.pyg)...executed.
 
 File: pictures/ModelAB.png Graphic file (type eps)
  <pictures/ModelAB.png>
-Underfull \hbox (badness 10000) in paragraph at lines 397--408
+Underfull \hbox (badness 10000) in paragraph at lines 399--410
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 397--408
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 411--415
+Underfull \hbox (badness 10000) in paragraph at lines 399--410
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 417--421
+Underfull \hbox (badness 10000) in paragraph at lines 413--417
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 419--423
+
+ []
+
+File: pictures/dashboardPrivateeye.png Graphic file (type eps)
+<pictures/dashboardPrivateeye.png>
+Overfull \hbox (12.0pt too wide) in paragraph at lines 440--441
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--452
+
+ []
+
+
+Overfull \hbox (3.82317pt too wide) in paragraph at lines 425--452
+\T1/aer/m/n/9 The In-ter-net. users can also con-trol the alarm sys-tem through
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--452
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 425--452
+
+ []
+
+
+Overfull \hbox (16.86118pt too wide) in paragraph at lines 458--459
+\T1/aer/m/n/9 byte strip-ping, CR-LF trans-la-tion(carriage return-linefeed)
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--481
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 463--481
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 488--498
+
+ []
+
+
+Overfull \hbox (5.70172pt too wide) in paragraph at lines 488--498
+\T1/aer/m/n/9 SR04, SRF05, SRF06, DYP-ME007 and Par-al-lax PING)))$[]$.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 488--498
+
+ []
+
+
+Overfull \hbox (2.41713pt too wide) in paragraph at lines 498--499
+\T1/aer/m/n/9 SRF05, SRF06, DYP-ME007, Par-al-lax PING)))$[]$ and
+ []
+
+
+Overfull \hbox (12.86813pt too wide) in paragraph at lines 509--510
+[]\T1/aer/m/n/9 Actively de-vel-oped with fea-tures be-ing added and bugs/is-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--521
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--540
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--540
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 561--570
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--570
 
  []
 
 No file sigproc-sp.bbl.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8]
-(./sigproc-sp.aux)
+[10] (./sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5996 strings out of 494985
- 78041 string characters out of 6179674
+ 5998 strings out of 494985
+ 78096 string characters out of 6179674
  154964 words of memory out of 5000000
- 9083 multiletter control sequences out of 15000+600000
+ 9084 multiletter control sequences out of 15000+600000
  44686 words of font info for 56 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  39i,13n,37p,1204b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sigproc-sp.dvi (8 pages, 60948 bytes).
+Output written on sigproc-sp.dvi (10 pages, 77576 bytes).
