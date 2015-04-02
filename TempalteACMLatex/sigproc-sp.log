@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  1 APR 2015 17:11
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  2 APR 2015 14:48
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1000,17 +1000,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--540
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 561--570
+Underfull \hbox (badness 10000) in paragraph at lines 561--573
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 561--570
+Overfull \hbox (5.8195pt too wide) in paragraph at lines 561--573
+\T1/aer/m/n/9 type of sys-tem, us-ing de-sign pat-terns and fol-low-ing the SOL
+ID
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--573
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 561--573
 
  []
 
 No file sigproc-sp.bbl.
-[10] (./sigproc-sp.aux)
+[10] [11
+
+] (./sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1024,4 +1037,4 @@ Here is how much of TeX's memory you used:
  16 hyphenation exceptions out of 8191
  39i,13n,37p,1204b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sigproc-sp.dvi (10 pages, 77576 bytes).
+Output written on sigproc-sp.dvi (11 pages, 78424 bytes).
