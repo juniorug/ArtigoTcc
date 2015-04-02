@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  2 APR 2015 14:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  2 APR 2015 15:29
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1037,4 +1037,4 @@ Here is how much of TeX's memory you used:
  16 hyphenation exceptions out of 8191
  39i,13n,37p,1204b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sigproc-sp.dvi (11 pages, 78424 bytes).
+Output written on sigproc-sp.dvi (11 pages, 78412 bytes).
