@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.3.23)  2 APR 2015 16:38
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.31)  4 APR 2015 17:36
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -26,10 +26,18 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: dvips.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
-File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count79
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
@@ -68,13 +76,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count79
+\inf@bad=\count80
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count80
-\leftroot@=\count81
+\uproot@=\count81
+\leftroot@=\count82
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count82
-\DOTSCASE@=\count83
+\classnum@=\count83
+\DOTSCASE@=\count84
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -83,15 +91,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count84
-\c@MaxMatrixCols=\count85
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
 \dotsspace@=\muskip10
-\c@parentequation=\count86
-\dspbrk@lvl=\count87
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
 \tag@help=\toks17
-\row@=\count88
-\column@=\count89
-\maxfields@=\count90
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
 \andhelp@=\toks18
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -115,22 +123,22 @@ Excerpts were taken from (Journal Style) 'esub2acm.cls'.
 \footheight=\dimen115
 \@maxsep=\dimen116
 \@dblmaxsep=\dimen117
-\aucount=\count91
-\originalaucount=\count92
+\aucount=\count92
+\originalaucount=\count93
 \auwidth=\dimen118
 \auskip=\dimen119
-\auskipcount=\count93
+\auskipcount=\count94
 \auskip=\dimen120
 \allauboxes=\dimen121
 \addauthors=\toks21
-\addauflag=\count94
+\addauflag=\count95
 \subtitletext=\toks22
-\savesection=\count95
-\sectioncntr=\count96
-\c@figure=\count97
-\c@table=\count98
+\savesection=\count96
+\sectioncntr=\count97
+\c@figure=\count98
+\c@table=\count99
 \titleboxnotes=\toks23
-\titleboxnoteflag=\count99
+\titleboxnoteflag=\count100
 Document Class: acm_proc_article-sp 2009/04/22 - V3.2SP - based on esub2acm.sty
  <23 April 96>
 (/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
@@ -140,26 +148,26 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
 \@acmtitlebox=\box28
-\titlenotecount=\count100
+\titlenotecount=\count101
 \tntoks=\toks24
 \tntokstwo=\toks25
 \tntoksthree=\toks26
 \tntoksfour=\toks27
 \tntoksfive=\toks28
-\catcount=\count101
+\catcount=\count102
 \copyrightnotice=\toks29
 \conf=\toks30
 \confinfo=\toks31
-\c@part=\count102
-\c@section=\count103
-\c@subsection=\count104
-\c@subsubsection=\count105
-\c@paragraph=\count106
+\c@part=\count103
+\c@section=\count104
+\c@subsection=\count105
+\c@subsubsection=\count106
+\c@paragraph=\count107
 
 Using 'Abbrev' bibliography style
 LaTeX Info: Redefining \cite on input line 1236.
 \bibindent=\dimen122
-\colcntr=\count107
+\colcntr=\count108
 \saveb@x=\box29
 \copyrtyr=\toks32
 \acmcopyr=\toks33
@@ -185,7 +193,7 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2013/05/16 v3.9f Babel common definitions
-\babel@savecnt=\count108
+\babel@savecnt=\count109
 \U@D=\dimen123
 )
 \l@british = a dialect from \language\l@english 
@@ -417,7 +425,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@outerparindent=\dimen124
 \enit@toks=\toks38
 \enit@inbox=\box30
-\enitdp@description=\count109
+\enitdp@description=\count110
 )
 (/usr/local/share/texmf/tex/latex/minted/minted.sty
 Package: minted 2011/09/17 v1.7 Yet another Pygments shim for LaTeX
@@ -427,11 +435,11 @@ Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count110
+\FV@CodeLineNo=\count111
 \FV@InFile=\read1
 \FV@TabBox=\box31
-\c@FancyVerbLine=\count111
-\FV@StepNumber=\count112
+\c@FancyVerbLine=\count112
+\FV@StepNumber=\count113
 \FV@OutFile=\write3
 ) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
@@ -439,8 +447,9 @@ Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package xcolor Info: Driver file: dvips.def on input line 225.
+Package xcolor Info: Driver file: pdftex.def on input line 225.
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
 Package xcolor Info: Model `RGB' extended on input line 1353.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
 Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
@@ -451,7 +460,7 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count113
+\c@float@type=\count114
 \float@exts=\toks39
 \float@box=\box32
 \@float@everytoks=\toks40
@@ -462,15 +471,15 @@ Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count114
-\calc@Bcount=\count115
+\calc@Acount=\count115
+\calc@Bcount=\count116
 \calc@Adimen=\dimen125
 \calc@Bdimen=\dimen126
 \calc@Askip=\skip45
 \calc@Bskip=\skip46
 LaTeX Info: Redefining \setlength on input line 76.
 LaTeX Info: Redefining \addtolength on input line 77.
-\calc@Ccount=\count116
+\calc@Ccount=\count117
 \calc@Cskip=\skip47
 )
 (/usr/share/texlive/texmf-dist/tex/latex/ifplatform/ifplatform.sty
@@ -480,24 +489,18 @@ Package: ifplatform 2010/10/22 v0.4 Testing for the operating system
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 )
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is not detected.
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode is ignored in DVI mode.
+Package pdftexcmds Info: \pdfdraftmode found.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2011/03/01 v1.6 Catch the contents of a file (HO)
@@ -519,7 +522,7 @@ runsystem(rm -- "sigproc-sp.w18")...executed.
 \minted@bgbox=\box34
 \minted@code=\write4
 \@float@every@listing=\toks41
-\c@listing=\count117
+\c@listing=\count118
 )
 runsystem(which pygmentize && touch sigproc-sp.aex)...executed.
 
@@ -527,25 +530,25 @@ runsystem(rm sigproc-sp.aex)...executed.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count118
+\lst@mode=\count119
 \lst@gtempboxa=\box35
 \lst@token=\toks42
-\lst@length=\count119
+\lst@length=\count120
 \lst@currlwidth=\dimen127
-\lst@column=\count120
-\lst@pos=\count121
+\lst@column=\count121
+\lst@pos=\count122
 \lst@lostspace=\dimen128
 \lst@width=\dimen129
-\lst@newlines=\count122
-\lst@lineno=\count123
+\lst@newlines=\count123
+\lst@lineno=\count124
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
 \lst@maxwidth=\dimen130
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2013/07/10 1.5 (Carsten Heinz)
-\c@lstnumber=\count124
-\lst@skipnumbers=\count125
+\c@lstnumber=\count125
+\lst@skipnumbers=\count126
 \lst@framebox=\box36
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
@@ -588,13 +591,51 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count127
+\scratchdimen=\dimen136
+\scratchbox=\box38
+\nofMPsegments=\count128
+\nofMParguments=\count129
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count130
+\MPscratchDim=\dimen137
+\MPnumerator=\count131
+\makeMPintoPDFobject=\count132
+\everyMPtoPDFconversion=\toks45
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+))
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 runsystem(pygmentize -S default -f latex > sigproc-sp.pyg)...executed.
 
- (./sigproc-sp.pyg)
-\c@lstlisting=\count126
-LaTeX Font Info:    Try loading font information for U+msa on input line 70.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(./sigproc-sp.pyg)
+\c@lstlisting=\count133
+LaTeX Font Info:    Try loading font information for U+msa on input line 70.
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 70.
@@ -638,13 +679,16 @@ Underfull \vbox (badness 4291) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [1
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-File: pictures/era.png Graphic file (type eps)
+<pictures/era.png, id=11, 322.20375pt x 212.795pt>
+File: pictures/era.png Graphic file (type png)
+ <use pictures/era.png>
+Package pdftex.def Info: pictures/era.png used on input line 107.
+(pdftex.def)             Requested size: 201.59692pt x 133.14589pt.
 
-<pictures/era.png>
 Underfull \hbox (badness 10000) in paragraph at lines 105--115
 
  []
@@ -664,13 +708,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--124
 
  []
 
-File: pictures/ubiq.png Graphic file (type eps)
-<pictures/ubiq.png>
+<pictures/ubiq.png, id=13, 341.275pt x 154.5775pt>
+File: pictures/ubiq.png Graphic file (type png)
+ <use pictures/ubiq.png>
+Package pdftex.def Info: pictures/ubiq.png used on input line 131.
+(pdftex.def)             Requested size: 201.59692pt x 91.31313pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 129--137
 
  []
 
-[2]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2 <./pictures/era.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 157--166
 
  []
@@ -690,7 +741,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 172--179
 
  []
 
-[3]
+[3 <./pictures/ubiq.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 181--188
 
  []
@@ -784,13 +835,13 @@ Overfull \hbox (16.99757pt too wide) in paragraph at lines 261--266
 \T1/aer/m/n/9 also sup-ports PWM(Pulse Width Mod-u-la-tion), UART(Universal
  []
 
-[5]
+
 Overfull \hbox (17.87234pt too wide) in paragraph at lines 273--274
 []\T1/aer/m/n/9 Analog in-put pins or dig-i-tal in-put / out-put (pro-grammable
 )
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 280--284
 
  []
@@ -815,7 +866,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 315--319
 
  []
 
-[6]
+
 Overfull \hbox (14.38116pt too wide) in paragraph at lines 328--330
 \T1/aer/m/n/9 for ARMv7 and later pro-ces-sors (with Jazelle RC-T/Thum-
  []
@@ -825,7 +876,7 @@ Overfull \hbox (6.40686pt too wide) in paragraph at lines 330--331
 \T1/aer/m/n/9 pared to the usual desk-top com-puter ori-ented Rasp-
  []
 
-
+[6]
 Overfull \hbox (17.61893pt too wide) in paragraph at lines 333--334
 \T1/aer/m/n/9 robotics projects with LEGO, Grove, and Ar-duino.[82] 
  []
@@ -861,8 +912,13 @@ runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
 
-File: pictures/ModelAB.png Graphic file (type eps)
- <pictures/ModelAB.png>
+ <pictures/ModelAB.png, id=35, 752.8125pt x 355.3275pt>
+File: pictures/ModelAB.png Graphic file (type png)
+
+<use pictures/ModelAB.png>
+Package pdftex.def Info: pictures/ModelAB.png used on input line 401.
+(pdftex.def)             Requested size: 226.79846pt x 107.04907pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 399--410
 
  []
@@ -872,7 +928,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 399--410
 
  []
 
-[7]
+
 Underfull \hbox (badness 10000) in paragraph at lines 413--417
 
  []
@@ -882,8 +938,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 419--423
 
  []
 
-File: pictures/dashboardPrivateeye.png Graphic file (type eps)
-<pictures/dashboardPrivateeye.png>
+<pictures/dashboardPrivateeye.png, id=36, 737.75626pt x 557.08125pt>
+File: pictures/dashboardPrivateeye.png Graphic file (type png)
+
+<use pictures/dashboardPrivateeye.png>
+Package pdftex.def Info: pictures/dashboardPrivateeye.png used on input line 44
+0.
+(pdftex.def)             Requested size: 252.0pt x 190.28065pt.
+
 Overfull \hbox (12.0pt too wide) in paragraph at lines 440--441
 [][] 
  []
@@ -919,7 +981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 425--452
 
  []
 
-
+[7 <./pictures/ModelAB.png>]
 Overfull \hbox (16.86118pt too wide) in paragraph at lines 458--459
 \T1/aer/m/n/9 byte strip-ping, CR-LF trans-la-tion(carriage return-linefeed)
  []
@@ -949,7 +1011,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 463--481
 
  []
 
-[8]
+[8 <./pictures/dashboardPrivateeye.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 488--498
 
  []
@@ -999,7 +1061,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 527--540
 
  []
 
-[9]
+
 Underfull \hbox (badness 10000) in paragraph at lines 549--559
 
  []
@@ -1026,7 +1088,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 549--559
 
  []
 
-
+[9]
 Underfull \hbox (badness 10000) in paragraph at lines 584--596
 
  []
@@ -1047,20 +1109,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 584--596
 
  []
 
-[10]
 No file sigproc-sp.bbl.
-[11] (./sigproc-sp.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+[11
+
+] (./sigproc-sp.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 5998 strings out of 494985
- 78096 string characters out of 6179674
- 154964 words of memory out of 5000000
- 9084 multiletter control sequences out of 15000+600000
- 44686 words of font info for 56 fonts, out of 8000000 for 9000
+ 6739 strings out of 494984
+ 89215 string characters out of 6179648
+ 171090 words of memory out of 5000000
+ 9775 multiletter control sequences out of 15000+600000
+ 55935 words of font info for 79 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 39i,13n,37p,1204b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,37p,1204b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/urw/times/utmri8a.pfb>
+Output written on sigproc-sp.pdf (11 pages, 697453 bytes).
+PDF statistics:
+ 98 PDF objects out of 1000 (max. 8388607)
+ 64 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on sigproc-sp.dvi (11 pages, 83048 bytes).
