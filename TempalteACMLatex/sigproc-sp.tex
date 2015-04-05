@@ -264,7 +264,7 @@ The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat 
 Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
 \newline
 \newline
-Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM(Pulse Width Modulation), UART(Universal asynchronous receiver/transmitter) and SPI(Serial Peripheral Interface). Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others [8].
+Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM (Pulse Width Modulation), UART (Universal asynchronous receiver/transmitter) and SPI (Serial Peripheral Interface). Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others [8].
 The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
 
 \paragraph{Inputs and Outputs}
@@ -559,7 +559,13 @@ This is imporant useful for two reasons:
 Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardised SI values and measurable units and conversions for each sensor can be seen in appendix XXXX.
 \newline
 \newline
+By reducing all data to a single sensors 'type' and settling on specific, for each sensor family, the same sensor types return values that are comparable with any other similar sensor. This enables the user to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
+\newline
+\newline
 The purpose of this work is the focus on library's usability and the abstraction from the way that this library interacts with the sensors / actuators to capture the data, besides contributing to the open source community and the growing community of developers for the Raspberry Pi.
+\newline
+\newline
+The technologies used to develop the tool were basically the Python language and RPI.GPIO and PigPio modules that provide connection abstractions to basic pins and the special pins I2C, UART and SPI PWM.
 
 \subsection{Method/Methodology}
 To develop this project we adopted the object-oriented analysis and design (OOAD). OOAD is a popular technical approach to analyzing, designing an application, system, or business by applying the object-oriented paradigm and visual modeling throughout the development life cycles to foster better stakeholder communication and product quality.
@@ -575,17 +581,23 @@ Using Object-oriented modeling, we divided the work in two aspects: The modeling
 
 The benefits of OOM are:
 
-\begin{itemize}
-\item Efficient and effective communication
-\end{itemize}
+\subsubsection{Efficient and effective communication}
 
 Users typically have difficulties in understanding comprehensive documents and programming language codes well. Visual model diagrams can be more understandable and can allow users and stakeholders to give developers feedback on the appropriate requirements and structure of the system. A key goal of the object-oriented approach is to decrease the "semantic gap" between the system and the real world, and to have the system be constructed using terminology that is almost the same as the stakeholders use in everyday business. Object-oriented modeling is an essential tool to facilitate this.
 
-\begin{itemize}
-\item Useful and stable abstraction
-\end{itemize}
+\subsubsection{Useful and stable abstraction}
 
 Modeling helps coding. A goal of most modern software methodologies is to first address "what" questions and then address "how" questions, i.e. first determine the functionality the system is to provide without consideration of implementation constraints, and then consider how to make specific solutions to these abstract requirements, and refine them into detailed designs and codes by constraints such as technology and budget. Object-oriented modeling enables this by producing abstract and accessible descriptions of both system requirements and designs, i.e. models that define their essential structures and behaviors like processes and objects, which are important and valuable development assets with higher abstraction levels above concrete and complex source code.
+\newline
+\newline
+Patterns used:
+\begin{itemize}
+\item Abstract Factory;
+\item Singleton;
+\item Observer;
+\item Composite;
+\end{itemize}
+
 \subsection{Functional Requirements}
  
 \subsection{Non-functional Requirements}
@@ -594,26 +606,325 @@ Modeling helps coding. A goal of most modern software methodologies is to first 
 
 \subsection{Architecture}
 
+The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations.
+\newline
+\newline
+Main components:
+\begin{itemize}
+\item AbstractSensorFactory: Declares an interface for operations that create abstract sensors and events;
+\item ConcreteFactories: Implement operations to create concrete sensors and events;
+\item AbstractSensor: Declares an interface for sensors;
+\item AbstractActuator: Declares an interface to the actuators;
+\item AbstractEvent: declares an interface for the events;
+\item ConcreteSensors, ConcreteActuators, ConcreteEvents: Define the concrete objects to be created by the corresponding concrete factory and implement AbstractSensor, AbstractActuator and AbstractEvent interfaces respectively.
+
+\end{itemize}
+
+A single instance of the concrete factory is created at run-time, using the Singleton pattern. This factory creates products with a particular implementation. To create other products from a different family, one should use a different factory. The concrete factory class being used appears only once in the application, facilitating changes. The product family changes all at once, promoting consistency across products, ensuring that used objects are all of the same family, represented by the concrete factory being used.
+\newline
+\newline
+Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors.
+\newline
+\newline
+The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
+
+\begin{figure}[h]
+    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/composite.png}
+    \caption{Ages of Computing}
+    \label{fig:composite}
+\end{figure}
 
 
+\subsubsection{Architectural Style}
+The LibsensorPy presents characteristics of three architectural styles: 
+\begin{itemize}
+\item Traditional, influenced by programming language: Object-Oriented;
+\item Based on Implicit Invocation: Event Based and 
+\item Layered Style: Virtual Machine.
+\end{itemize}
+
+The traditional style adopted reflects the basic relationships of organization and control flow between components provided by the Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedures call and event . The Procedure Call connectors model the control flow by invocation techniques and perform data transfer between the components involved through the use of parameters. Examples of Procedure Call connectors include functions, procedures,  object oriented methods, callback and system calls
+\newline
+\newline
+The Virtual Machine style is applied when we imagine the layers between the hardware and the Raspberry py LibsensorPy library using procedure calls as connectors between the layers. We have thus the layers:
+\begin{itemize}
+\item Physical: GPIO
+\item Operating System
+\item RPi.GPIO
+\item LibsensorPy
+\end{itemize}
+
+\begin{figure}[h]
+    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
+    \caption{LibsensorPy's layers}
+    \label{fig:layers}
+\end{figure}
+
+The envent-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
+
+\subsubsection{Architectural Pattern}
+This pooject was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications.Second[20] ,a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers [5]: 
+\begin{enumerate}
+\item Sensors at the bottom, which obtain information about the environment; 
+\item Then context operators, which process this information; 
+\item Then control operators, which use this refined information to control;
+\item Actuators at the top, which finally impact the environment
+\end{enumerate}
 
 
+\begin{figure}[h]
+    \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
+    \caption{Sense-Compute-Control environment}
+    \label{fig:scc}
+\end{figure}
+
+Each layer corresponds to a separate class of components: 
+\begin{itemize}
+\item Sensors send information sensed from the environment to the context operator layer through data sources. Sensors can both push data to context operators and respond to context operator requests. We use the term "sensor" both for entities that actively retrieve information from the environment, such as system probes, and entities that store information previously collected from the environment, such as databases.
+\item Context operators refine (aggregate and interpret) the information given by the sensors. Context operators can push data to other context operators and to control operators. Context operators can also respond to requests from parent context operators. 
+\item Control operators transform the information given by the context operators into orders for the actuators. 
+\item Actuators trigger actions on the environment.
+\end{itemize}
+Sensors are proactive or reactive components whereas context operators, control operators and actuators are always reactive. These properties ensure that SCC applications are reactive to the environment state. That is, all computation is initiated by an observer interaction with a sensor.
+\newline
+\newline
+As the underlying architecture is component-based, the application can be fully distributed. To prevent concurrent handling of events in a component, all interactions of a component are queued and executed one at a time, sequentially.
+\newline
+\newline
+The application follows the five basic principles of design oriented to objects, called "SOLID". Addressed initially by Robert Martin, in an article called Principles Of Ood, the author elaborates five-oriented programming techniques to objects where each technique is one of SOLID letters of the word. These five principles are:
+\begin{itemize}
+\item Single Responsibility Principle;
+\item Open Closed Principle;
+\item Liskov Substitution Principle;
+\item Interface Segregation Principle;
+\item Dependency Inversion Principle;
+\end{itemize} 
+%\newline
+%\newline
+%
+%\newline
+%\newline
 
 
+\subsection{What is needed to install libsensorPy}
+
+Before use LibsensorPy is necessary the user configure and enable SPI and I2C ports on raspperry:
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{bash}
+
+  sudo apt-get install python-smbus
+  sudo apt-get install i2c-tools	
+
+\end{minted}
+
+For Raspbian users, check /etc/modprobe.d/raspi-blacklist.conf and comment "blacklist i2c-bcm2708" and "blacklist spi-bcm2708" by running:
+
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{bash}
+
+  sudo nano /etc/modprobe.d/raspi-blacklist.conf	
+
+\end{minted}
+
+And adding a \# (if its not there), on these informations: \textit{blacklist i2c-bcm2708} and \textit{blacklist spi-bcm2708}.
+\newline
+\newline
+For Wheezy or something-other-than-Occidentalis, add the following lines to /etc/modules: 
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{bash}
+
+  i2c-dev
+  i2c-bcm2708
+  spi-bcm2708	
+
+\end{minted}
+
+Install pigpio:
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{bash}
+
+  wget abyz.co.uk/rpi/pigpio/pigpio.zip
+  unzip pigpio.zip
+  cd PIGPIO
+  sudo make
+  sudo make install	
+\end{minted}
+
+install pip:
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{bash}
+
+  sudo apt-get install python-pip
+\end{minted}
+
+and finally install libsensorPy:
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{bash}
+
+  sudo pip install libsensorPy
+\end{minted}
 
 
+\subsection{How to extend the library}
+The Abstract Factory pattern, how it was implemented in this solution allows the extension of the library easily, following the  open/closed principle, becoming it easy to modify and avoiding the user application does not suffer from the impact of these changes. This requires user programming skills. The user can add new sensors, events and new factories. To add new sensors, simply, besides implement the sensor class, create a concrete factory that inherits from the factory refering to the sensor family to be added and overwrite the createSensor () method, making this method to create the new sensor, if desired, or call the create method of the superclass sensor, ensuring system compatibility.
+\newline
+\newline
+To add a new sensor family just create a new factory that implements the abstract methods of AbstractSensorFactory interface. If desired, is possible also to create an abstract family class for this , if there is not in  the library, creating thus a "contract", where the attributes are specified, methods and functions that the concrete sensors classes of this family are required to implement .
+\newline
+\newline
+Follows an example of how to extend the library: the HCSR04 class was implemented to create objects of the ultrasonic sensor HC-SR04. Being the family of ultrasonic sensors, this class was created as a subclass of UltrasonicSensor abstract class, which has the abstract methods \textit{distance\_in\_cm()} and \textit{setup()}  to be implemented. It has also created a concrete factory ExtendedUltrasonicSensorFactory, which inherits the UltrasonicSensorFactory class and overrides the \textit{createSensor()} method, as seen following:
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
 
+  '''
+  Created on 29/03/2015
+  @author: Junior Mascarenhas
+  File: hcsr04.py
+  '''
+  import RPi.GPIO as GPIO
+  import time
+  from abstractclass.ultrasonicSensor import \
+  		UltrasonicSensor
 
+  class HCSR04(UltrasonicSensor):
+      '''
+      classdocs
+      '''
 
+      def __init__(self,trigger=18,echo=27):
+          '''
+          Constructor
+          '''
+          UltrasonicSensor.__init__(self)
+          self.__distance = ""
+          self.__trigger = trigger
+          self.__echo = echo
+          self.setup()
+        
+      def setup(self):
+          GPIO.setmode(GPIO.BCM)
+          GPIO.setwarnings(False)
 
+      def changeSetup(self, trigger, echo):
+          self.__trigger = trigger
+          self.__echo = echo
 
+      def distance_in_cm(self):
 
+          GPIO.setup(self.__trigger,GPIO.OUT)
+          GPIO.setup(self.__echo,GPIO.IN)
+          GPIO.output(self.__trigger, GPIO.LOW)
+          time.sleep(0.3)
+          GPIO.output(self.__trigger, True)
+          time.sleep(0.00001)
+          GPIO.output(self.__trigger, False)
 
+          while (GPIO.input(self.__echo) == 0):
+              signaloff = time.time()
 
+          while GPIO.input(self.__echo) == 1:
+              signalon = time.time()
 
+          timepassed = signalon - signaloff
+          self.__distance = timepassed * 17000
+          return self.__distance
 
+\end{minted}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
 
+  '''
+  Created on 29/03/2015
+  @author: Junior Mascarenhas
+  File: extendedUltrasonicSensorFactory.py
+  '''
+
+  from abstractclass.abstractSensorFactory \
+      import AbstractSensorFactory
+  from concretefactory.ultrasonicSensorFactory \
+      import UltrasonicSensorFactory
+  from hcsr04 import HCSR04
+
+  class ExtendedUltrasonicSensorFactory\
+              (UltrasonicSensorFactory):
+      '''
+      classdocs
+      '''
+
+      def __init__(self):
+          '''
+          Constructor
+          '''
+      @staticmethod
+      def createSensor(sensorType):
+          if (sensorType == "HCSR04"):
+                  return HCSR04()
+          else:
+                  return super(sensorType)
+\end{minted}
+
+%\renewcommand{\theFancyVerbLine}{
+%  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+%\begin{listing}[H]
+%\caption{extendedUltrasonicSensorFactory.py}
+%\inputminted{python}
+%               {codes/extendedUltrasonicSensorFactory.py} 
+%\label{lst:eusf}
+%\end{listing}
+
+%\renewcommand{\theFancyVerbLine}{
+%  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+%\begin{listing}[H]
+%\caption{HCSR04.py}
+%\inputminted{python}
+%               {codes/hcsr04.py} 
+%\label{lst:hcsr04}
+%\end{listing}
 
 \subsection{Case Study}
 In this work the case study began with software verification tests which consisted of functional tests of LibsensorPy. These tests were performed as the system was being implemented.
