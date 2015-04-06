@@ -630,6 +630,14 @@ Are characterized as non-functional requirements for the proper functioning of l
 \end{tabular}
 \end{table}
 \subsection{Why not use Java}
+At the beginning of this project we decide to develop the library using Java as the programming language, Since These libraries do not yet exist formally for those who want to use Java as a development language. We thought that it could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors,the DHT11 and HC-SR04, when tried to test, we got no data from the sensors.
+\newline
+\newline
+After some research about what could be the problem, we found that we cannot assume that invoking sleep will suspend the thread for precisely the time period specified, since Thread.sleep() and the Thread.Join() methods are dependent on the operating system and the version of the JVM[????]
+%fonte: http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
+\newline
+\newline
+These sensors need to wait microsseconds between send a signal to the sensor and get back the data readed from it, And because of this not real time property from both java and the raspberry pi, we couldn’t read data from those sensors. After that we moved on to change the programming language and decided to use python, especially because it’s the recommended programming language by the Raspberry Pi developers.
 
 \subsection{Architecture}
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
@@ -911,6 +919,13 @@ Follows an example of how to extend the library: the HCSR04 class was implemente
 
 \end{minted}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{figure*}[ht]
+    \centering
+    	\includegraphics[width=0.9\textwidth]{pictures/tests.png}
+    		\caption{Testing the sensors}  
+    		\label{fig:results}  	
+\end{figure*}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -1016,25 +1031,19 @@ Below is presented \textit{dht11CompositeExample.py}, an example of how to use t
 Was then given to continue the study validation tests. These tests were performed after development's completion of LibsensorPy, and was based on the library's availability to the people who are involved in ubiquitous systems development activities.
 \newline
 \newline
-This library was presented to a group of higher education students and post graduation in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether libsensorPy meets the user needs.
+This library was presented to a post graduation student in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether libsensorPy meets the user needs.
 \newline
 \newline
-At the end of the presentation these people were invited to complete the satisfaction of libsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
+At the end of the presentation this student were invited to complete the satisfaction of libsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
 
 
 \subsection{Case Study results}
-\begin{figure*}[ht]
-    \centering
-    	\includegraphics[width=0.9\textwidth]{pictures/tests.png}
-    		\caption{Testing the sensors}  
-    		\label{fig:results}  	
-\end{figure*}
 
-The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. All interviewed during the case study, confirmed that libsensorPy meets your needs, especially among the group of post graduate students. However, these students made some notifications.
+The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. The interviewed, during the case study, confirmed that libsensorPy meets your needs. However, this students made some notifications about show more use examples.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
-We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor.
+We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
 \newline
 \newline
 Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.23)  6 APR 2015 17:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.23)  6 APR 2015 17:51
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1147,19 +1147,35 @@ Overfull \hbox (6.37938pt too wide) in paragraph at lines 618--631
 [][] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--641
+
+ []
+
+
+Overfull \hbox (5.67763pt too wide) in paragraph at lines 633--641
+\T1/aer/m/n/9 dent on the op-er-at-ing sys-tem and the ver-sion of the JVM[????
+] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 633--641
+
+ []
+
 <pictures/ClassDiagram.png, id=57, 1370.87157pt x 877.02657pt>
 File: pictures/ClassDiagram.png Graphic file (type png)
 
 <use pictures/ClassDiagram.png>
-Package pdftex.def Info: pictures/ClassDiagram.png used on input line 637.
+Package pdftex.def Info: pictures/ClassDiagram.png used on input line 645.
 (pdftex.def)             Requested size: 504.0pt x 322.43387pt.
 
-Overfull \hbox (3.27457pt too wide) in paragraph at lines 645--646
+Overfull \hbox (3.27457pt too wide) in paragraph at lines 653--654
 []\T1/aer/m/n/9 ConcreteFactories: Im-ple-ment op-er-a-tions to cre-ate con-
  []
 
 
-Overfull \hbox (2.82265pt too wide) in paragraph at lines 649--650
+Overfull \hbox (2.82265pt too wide) in paragraph at lines 657--658
 \T1/aer/m/n/9 Sen-sor, Ab-strac-tAc-tu-a-tor and Ab-stractEvent in-ter-faces
  []
 
@@ -1167,41 +1183,42 @@ Overfull \hbox (2.82265pt too wide) in paragraph at lines 649--650
 File: pictures/composite.png Graphic file (type png)
 
 <use pictures/composite.png>
-Package pdftex.def Info: pictures/composite.png used on input line 658.
+Package pdftex.def Info: pictures/composite.png used on input line 666.
 (pdftex.def)             Requested size: 504.0pt x 259.14398pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 653--662
+Underfull \hbox (badness 10000) in paragraph at lines 661--670
 
  []
 
+[11]
 
 LaTeX Warning: Reference `fig:sequence' on page \thepage  undefined on input li
-ne 666.
+ne 674.
 
-<pictures/UseCaseDiagram.png, id=59, 1085.55562pt x 576.65437pt>
+<pictures/UseCaseDiagram.png, id=62, 1085.55562pt x 576.65437pt>
 File: pictures/UseCaseDiagram.png Graphic file (type png)
 
 <use pictures/UseCaseDiagram.png>
-Package pdftex.def Info: pictures/UseCaseDiagram.png used on input line 668.
+Package pdftex.def Info: pictures/UseCaseDiagram.png used on input line 676.
 (pdftex.def)             Requested size: 504.0pt x 267.72795pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 663--672
+Underfull \hbox (badness 10000) in paragraph at lines 671--680
 
  []
 
-<pictures/SequenceDiagram.png, id=60, 1126.2075pt x 633.11531pt>
+<pictures/SequenceDiagram.png, id=63, 1126.2075pt x 633.11531pt>
 File: pictures/SequenceDiagram.png Graphic file (type png)
 
 <use pictures/SequenceDiagram.png>
-Package pdftex.def Info: pictures/SequenceDiagram.png used on input line 674.
+Package pdftex.def Info: pictures/SequenceDiagram.png used on input line 682.
 (pdftex.def)             Requested size: 504.0pt x 283.33424pt.
- [11]
-Overfull \hbox (14.74748pt too wide) in paragraph at lines 682--683
+
+Overfull \hbox (14.74748pt too wide) in paragraph at lines 690--691
 []\T1/aer/m/n/9 Traditional, in-flu-enced by pro-gram-ming lan-guage: Object-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 687--692
+Underfull \hbox (badness 10000) in paragraph at lines 695--700
 
  []
 
@@ -1209,36 +1226,36 @@ Underfull \hbox (badness 10000) in paragraph at lines 687--692
 File: pictures/machinelayers.png Graphic file (type png)
 
 <use pictures/machinelayers.png>
-Package pdftex.def Info: pictures/machinelayers.png used on input line 699.
+Package pdftex.def Info: pictures/machinelayers.png used on input line 707.
 (pdftex.def)             Requested size: 201.59692pt x 122.13101pt.
- [12 <./pictures/ClassDiagram.png> <./pictures/machinelayers.png (PNG copy)>]
-<pictures/senseComputeControl.png, id=69, 509.905pt x 362.35374pt>
-File: pictures/senseComputeControl.png Graphic file (type png)
-
-<use pictures/senseComputeControl.png>
-Package pdftex.def Info: pictures/senseComputeControl.png used on input line 71
-7.
-(pdftex.def)             Requested size: 226.79846pt x 161.17226pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[12 <./pictures/ClassDiagram.png>]
+<pictures/senseComputeControl.png, id=69, 509.905pt x 362.35374pt>
+File: pictures/senseComputeControl.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--738
+<use pictures/senseComputeControl.png>
+Package pdftex.def Info: pictures/senseComputeControl.png used on input line 72
+5.
+(pdftex.def)             Requested size: 226.79846pt x 161.17226pt.
+ [13 <./pictures/composite.png> <./pictures/machinelayers.png (PNG copy)> <./pi
+ctures/senseComputeControl.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 738--746
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 730--738
+Underfull \hbox (badness 10000) in paragraph at lines 738--746
 
  []
 
-[13 <./pictures/composite.png> <./pictures/senseComputeControl.png>]
 <pictures/VisaoEstrutural.png, id=76, 1081.03876pt x 639.89063pt>
 File: pictures/VisaoEstrutural.png Graphic file (type png)
 
 <use pictures/VisaoEstrutural.png>
-Package pdftex.def Info: pictures/VisaoEstrutural.png used on input line 747.
+Package pdftex.def Info: pictures/VisaoEstrutural.png used on input line 755.
 (pdftex.def)             Requested size: 504.0pt x 298.32718pt.
 \openout3 = `sigproc-sp.pyg'.
 
@@ -1252,13 +1269,13 @@ runsystem(rm sigproc-sp.out.pyg)...executed.
 runsystem(rm sigproc-sp.pyg)...executed.
 
 
-Overfull \hbox (13.30678pt too wide) in paragraph at lines 768--769
+Overfull \hbox (13.30678pt too wide) in paragraph at lines 776--777
 []\T1/aer/m/n/9 For Rasp-bian users, check /etc/modprobe.d/raspi-blacklist.conf
 
  []
 
 
-Overfull \hbox (19.65392pt too wide) in paragraph at lines 768--769
+Overfull \hbox (19.65392pt too wide) in paragraph at lines 776--777
 \T1/aer/m/n/9 and com-ment "black-list i2c-bcm2708" and "black-list spi-bcm2708
 "
  []
@@ -1281,183 +1298,181 @@ cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm"
 -o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
 
  (./sigproc-sp.out.pyg
-Underfull \hbox (badness 10000) in paragraph at lines 783--1
+Underfull \hbox (badness 10000) in paragraph at lines 791--1
 
  []
+
+[14 <./pictures/UseCaseDiagram.png>])
+runsystem(rm sigproc-sp.out.pyg)...executed.
+
+runsystem(rm sigproc-sp.pyg)...executed.
+
+\openout3 = `sigproc-sp.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
+cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
+-o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
+
+ (./sigproc-sp.out.pyg)
+runsystem(rm sigproc-sp.out.pyg)...executed.
+
+runsystem(rm sigproc-sp.pyg)...executed.
+
+\openout3 = `sigproc-sp.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
+cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
+-o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
+
+
+(./sigproc-sp.out.pyg)
+runsystem(rm sigproc-sp.out.pyg)...executed.
+
+runsystem(rm sigproc-sp.pyg)...executed.
+
+\openout3 = `sigproc-sp.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
+cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
+-o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
+
+ (./sigproc-sp.out.pyg)
+runsystem(rm sigproc-sp.out.pyg)...executed.
+
+runsystem(rm sigproc-sp.pyg)...executed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--856
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 849--856
+
+ []
+
+
+Overfull \hbox (3.40082pt too wide) in paragraph at lines 849--856
+\T1/aer/m/n/9 Follows an ex-am-ple of how to ex-tend the li-brary: the HCSR04
+ []
+
+
+Overfull \hbox (1.70624pt too wide) in paragraph at lines 849--856
+\T1/aer/m/n/9 fac-tory Ex-tend-edUl-tra-son-ic-Sen-sor-Fac-tory, which in-her-i
+ts the
+ []
+
+\openout3 = `sigproc-sp.pyg'.
+
+runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
+escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
+" -o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
+
+(./sigproc-sp.out.pyg [15 <./pictures/SequenceDiagram.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
 runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
 
-\openout3 = `sigproc-sp.pyg'.
 
-runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
-cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
--o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
-
- (./sigproc-sp.out.pyg)
-runsystem(rm sigproc-sp.out.pyg)...executed.
-
-runsystem(rm sigproc-sp.pyg)...executed.
-
-\openout3 = `sigproc-sp.pyg'.
-
-runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
-cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
--o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
-
- (./sigproc-sp.out.pyg)
-runsystem(rm sigproc-sp.out.pyg)...executed.
-
-runsystem(rm sigproc-sp.pyg)...executed.
-
-\openout3 = `sigproc-sp.pyg'.
-
-runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
-cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
--o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
-
- (./sigproc-sp.out.pyg)
-runsystem(rm sigproc-sp.out.pyg)...executed.
-
-runsystem(rm sigproc-sp.pyg)...executed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 841--848
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 841--848
-
- []
-
-
-Overfull \hbox (3.40082pt too wide) in paragraph at lines 841--848
-\T1/aer/m/n/9 Follows an ex-am-ple of how to ex-tend the li-brary: the HCSR04
- []
-
-
-Overfull \hbox (1.70624pt too wide) in paragraph at lines 841--848
-\T1/aer/m/n/9 fac-tory Ex-tend-edUl-tra-son-ic-Sen-sor-Fac-tory, which in-her-i
-ts the
- []
-
-[14 <./pictures/UseCaseDiagram.png>]
+<pictures/tests.png, id=85, 981.6675pt x 345.29pt>
+File: pictures/tests.png Graphic file (type png)
+ <use pictures/tests.png>
+Package pdftex.def Info: pictures/tests.png used on input line 924.
+(pdftex.def)             Requested size: 453.59692pt x 159.54659pt.
 \openout3 = `sigproc-sp.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
 escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
 " -o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
 
- (./sigproc-sp.out.pyg
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15 <./pictures/SequenceDiagram.png>])
-runsystem(rm sigproc-sp.out.pyg)...executed.
-
-runsystem(rm sigproc-sp.pyg)...executed.
-
-\openout3 = `sigproc-sp.pyg'.
-
-runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
-escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
-" -o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
-
- (./sigproc-sp.out.pyg)
+(./sigproc-sp.out.pyg [16 <./pictures/VisaoEstrutural.png>])
 runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
 
 
-<pictures/survey2.png, id=85, 1245.65375pt x 721.69624pt>
+<pictures/survey2.png, id=90, 1245.65375pt x 721.69624pt>
 File: pictures/survey2.png Graphic file (type png)
 
 <use pictures/survey2.png>
-Package pdftex.def Info: pictures/survey2.png used on input line 974.
+Package pdftex.def Info: pictures/survey2.png used on input line 989.
 (pdftex.def)             Requested size: 504.0pt x 291.99907pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 978--985
+Underfull \hbox (badness 10000) in paragraph at lines 993--1000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 978--985
+Underfull \hbox (badness 10000) in paragraph at lines 993--1000
 
  []
 
-[16 <./pictures/VisaoEstrutural.png>]
 \openout3 = `sigproc-sp.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
 escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
 " -o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
 
- (./sigproc-sp.out.pyg)
+(./sigproc-sp.out.pyg)
 runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1023
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1038
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1016--1023
-
- []
-
-<pictures/tests.png, id=90, 981.6675pt x 345.29pt>
-File: pictures/tests.png Graphic file (type png)
- <use pictures/tests.png>
-Package pdftex.def Info: pictures/tests.png used on input line 1028.
-(pdftex.def)             Requested size: 453.59692pt x 159.54659pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1041
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1038
 
  []
 
 
-Overfull \hbox (10.40866pt too wide) in paragraph at lines 1033--1041
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1050
+
+ []
+
+
+Overfull \hbox (10.40866pt too wide) in paragraph at lines 1042--1050
 \T1/aer/m/n/9 We tested the HCSR04, DHT11Temperature, DHT11Humidity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1033--1041
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1050
 
  []
 
-[17 <./pictures/survey2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1044--1056
+[17 <./pictures/tests.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1065
 
  []
 
 
-Overfull \hbox (5.8195pt too wide) in paragraph at lines 1044--1056
+Overfull \hbox (5.8195pt too wide) in paragraph at lines 1053--1065
 \T1/aer/m/n/9 type of sys-tem, us-ing de-sign pat-terns and fol-low-ing the SOL
 ID
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1044--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1065
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1044--1056
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1065
 
  []
 
 No file sigproc-sp.bbl.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 6316) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./pictures/tests.png>] [19
+ [18 <./pictures/survey2.png>] [19
 
 ] (./sigproc-sp.aux)
 
@@ -1477,7 +1492,7 @@ Here is how much of TeX's memory you used:
  9832 multiletter control sequences out of 15000+600000
  55935 words of font info for 79 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
- 41i,13n,37p,1225b,357s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 41i,13n,37p,1225b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist
@@ -1490,7 +1505,7 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (19 pages, 2455352 bytes).
+Output written on sigproc-sp.pdf (19 pages, 2456466 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
