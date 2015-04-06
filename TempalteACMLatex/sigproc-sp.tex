@@ -114,7 +114,6 @@ The passage of time has shown that betting Weiser was right. For Weiser, [35] ev
 \newline
 \newline
 
-
 Terms such as ubiquitous computing, pervasive computing, nomadic computing, invisible computing, mobile computing and many others, have been used often interchangeably, although they differ conceptually and employing different organization of ideas and management of computer services. Insofar as each area progresses, these concepts will be better understood and its definitions will become clearer. This section presents the key concepts needed to understand the UbiComp besides presenting some project examples in the literature.
 
 \subsection{Mobile Computing}
@@ -154,7 +153,6 @@ Generally, ubiquitous applications receive sensor data from other service provid
 \item Security and Privacy;
 \end{enumerate}
 
-
 \subsection{Internet of Things}
 The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (eg, routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing internet of things’ applications are potentially diverse. Monitoring of environmental and personal health, monitoring and control of industrial processes, including agriculture, smart spaces and smart cities are just some examples of the IoT applications [5].
 \newline
@@ -168,7 +166,6 @@ Applications. Kluwer Academic Publications, 1997].
 
 \subsection{Hardware}
 One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, microcontrollers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
-
 
 \subsubsection{Sensors and Actuators}
 Sensors are devices that allow us to capture information from the environment in which they are inserted, such as temperature, pressure, presence, humidity, smoke detector, light intensity, among others. In general, the sensors work transforming parts of a physical quantity into an electrical signal, which in turn can be interpreted by electronic devices [7]. In other words, sensors are components that allow an electronic device to interact with the real world.
@@ -244,7 +241,6 @@ Some other features presents on RPI:
 \item Pin Protection: Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components you attach to them as there is a risk you will permanently damage your Pi. Short circuits and wiring mistakes could also ruin your day so double check everything. A multimeter is probably going to help a lot here as you can double check wiring before you connect to the Pi.
 \end{itemize}
 
- 
 \paragraph{Power Supply}
 The device is powered by 5v micro USB. Exactly how much current (mA) the Raspberry Pi requires is dependent on what you hook up to it. We have found that purchasing a 1.2A (1200mA) power supply from a reputable retailer will provide you with ample power to run your Raspberry Pi for most applications, though you may want to get a 2.5A (2500mA) if you want to use all 4 USB ports on the Model B without using an external powered USB hub.
 \newline
@@ -285,7 +281,6 @@ All 17 programable pins can be used as digital inputs. When a pin is programmed 
 \newline
 From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). You can not know how much voltage is being applied to the pin.
 
-
 \paragraph{Analog Inputs}
 The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a microcontroller due to the available Linux versions not being true real-time. 
 
@@ -310,7 +305,6 @@ RPi pins have some special characteristics which can be used from the software f
 \end{itemize}
 
 \subsection{Software}
-
 
 \subsubsection{Operating systems}
 Raspberry Pi primarily uses Linux-kernel-based operating systems.
@@ -359,7 +353,6 @@ Python is considered a very high level language because its syntax is simple and
 
 \subsubsection{GPIO in Python}
 The easiest way to control the GPIO pins is using the RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
-
 
 %\begin{lstlisting}[language=Python]
 \renewcommand{\theFancyVerbLine}{
@@ -526,20 +519,13 @@ This library provides a collection of python scripts to work with sensors, provi
 \newline
 Despite being a library with a considerable amount of sensors, if the user wants to change the type of sensor in a project, it is necessary review the documentation of the new sensor to be used because the library does not use a standard for equivalent sensors.
 
-
-
-
 \section{PROPOSED MODEL}
-
 Many small embedded systems exist to collect data from sensors, analyse the data, and either take an appropriate action or send that sensor data to another system for processing. One of the many challenges of embedded systems design is the fact that parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
 \newline
 \newline
 Creating new drivers is a relatively easy task, but integrating them into existing systems is both error prone and time consuming since sensors rarely use the exact same units of measurement. By reducing all data to a single sensors/event family type and settling on specific, standardised SI units for each sensor family the same sensor types return values that are comparable with any other similar sensor. This enables users to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
 \newline
 \newline
-%This Library provides a common interface and data type for any supported sensor. It defines some basic information about the sensor (sensor limits, etc.), and returns standard SI units of a specific type and scale for each supported sensor type.
-%\newline
-%\newline
 LibsensorPy is an extensible library, which allows the user to interact with environment through sensors and actuators coupled to the Raspberry Pi as well as add new sensors / actuators and easy way to practice. Often programmers, who have no knowledge in electronics, and engineers who do not have programming experience need to create ubiquitous systems, requiring a lot of work to implement system's abstractions, configure logic connections between sensors and the microcontroller, capture, understand and process the data in order to make them readable.
 \newline
 \newline 
@@ -605,13 +591,12 @@ Patterns used:
 \subsection{Why not use Java}
 
 \subsection{Architecture}
-
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
-\begin{figure}[h]
-    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram.png}
+\begin{figure*}[ht]
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram.png}
     \caption{Class diagram}
     \label{fig:classDiagram}
-\end{figure}
+\end{figure*}
 
 Main components:
 \begin{itemize}
@@ -628,27 +613,27 @@ A single instance of the concrete factory is created at run-time, using the Sing
 \newline
 \newline
 Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors.
-\begin{figure}[h]
-    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/composite.png}
+\begin{figure*}[ht]
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/composite.png}
     \caption{Composite class diagram}
     \label{fig:composite}
-\end{figure}
+\end{figure*}
 
 The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
 \newline
 \newline
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
-\begin{figure}[h]
-    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
+\begin{figure*}[ht]
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
     \caption{Use Case diagram}
     \label{fig:useCase}
-\end{figure}
+\end{figure*}
 
-\begin{figure}[h]
-    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram.png}
+\begin{figure*}[t]
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram.png}
     \caption{Sequence diagram}
     \label{fig:composite}
-\end{figure}
+\end{figure*}
 
 \subsubsection{Architectural Style}
 The libsensorPy presents characteristics of three architectural styles: 
@@ -686,7 +671,6 @@ This pooject was developed under the architectural pattern Sense-Compute-Control
 \item Actuators at the top, which finally impact the environment
 \end{enumerate}
 
-
 \begin{figure}[h]
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
     \caption{Sense-Compute-Control environment}
@@ -700,6 +684,7 @@ Each layer corresponds to a separate class of components:
 \item Control operators transform the information given by the context operators into orders for the actuators. 
 \item Actuators trigger actions on the environment.
 \end{itemize}
+
 Sensors are proactive or reactive components whereas context operators, control operators and actuators are always reactive. These properties ensure that SCC applications are reactive to the environment state. That is, all computation is initiated by an observer interaction with a sensor.
 \newline
 \newline
@@ -714,21 +699,15 @@ The application follows the five basic principles of design oriented to objects,
 \item Interface Segregation Principle;
 \item Dependency Inversion Principle;
 \end{itemize} 
-%\newline
-%\newline
-%
-%\newline
-%\newline
 
 Figure~\ref{fig:view} shows the library's structural view.
-\begin{figure}[h]
-    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
+\begin{figure*}[ht]
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
     \caption{libsensorPy's structural view}
     \label{fig:view}
-\end{figure}
+\end{figure*}
 
 \subsection{What is needed to install libsensorPy}
-
 Before use libsensorPy is necessary the user configure and enable SPI and I2C ports on raspperry:
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
@@ -954,30 +933,67 @@ In this work the case study began with software verification tests which consist
 Verification tests are related to the system specification, the purpose of these tests is to verify the compliance with the library's functional requirements. The tests were performed based on test cases.
 \newline
 \newline
-We tested the DHT11Temperature, DHT11Humidity, DHT11Composite and HCSR04 sensors, figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor.
-\begin{figure}[t]
-    \centering
-    	\includegraphics[width=0.8\textwidth]{pictures/tests.png}
-    		\caption{Testing the sensors}  
-    		\label{fig:survey}  	
-\end{figure}
+Below is presented \textit{dht11CompositeExample.py}, an example of how to use the library and we used these example classes to test the library.
 
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
+
+  '''
+  Created on 29/03/2015
+  @author: Junior Mascarenhas
+  File: dht11CompositeExample.py
+  '''
+  
+  from concretefactory.compositeSensorFactory \
+  	import CompositeSensorFactory
+
+  if __name__ == '__main__':
+
+    dht11 = CompositeSensorFactory.createSensor\
+    	    ("DHT11Composite")
+    print ("Temperature in Celsius: " \
+    	+ dht11.getTemperature() + u"\u00b0" + "C")
+    print ("Temperature in Fahrenheit: " \
+    	+ dht11.getTemperatureInFahrenheit() +"F")
+    print ("Temperature in Kelvin: " \
+    	+ dht11.getTemperatureInKelvin() +"K")
+    print ("Humidity: " + dht11.getHumidity() + "%")
+\end{minted}
+Was then given to continue the study validation tests. These tests were performed after development's completion of LibsensorPy, and was based on the library's availability to the people who are involved in ubiquitous systems development activities.
+\newline
+\newline
 This library was presented to a group of higher education students and post graduation in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether libsensorPy meets the user needs.
 \newline
 \newline
-At the end of the presentation these people were invited to complete the satisfaction of libsensorPy's survey . Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
+At the end of the presentation these people were invited to complete the satisfaction of libsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
 
-\begin{figure}[t]
+\begin{figure*}[ht]
     \centering
-    	\includegraphics[width=0.8\textwidth]{pictures/survey2.png}
+    	\includegraphics[width=1.0\textwidth]{pictures/survey2.png}
     		\caption{LibsensorPy's satisfaction survey}  
     		\label{fig:survey}  	
-\end{figure}
+\end{figure*}
+
 \subsection{Case Study results}
 The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. All interviewed during the case study, confirmed that libsensorPy meets your needs, especially among the group of post graduate students. However, these students made some notifications.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
+We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor.
+
+\begin{figure*}[ht]
+    \centering
+    	\includegraphics[width=0.9\textwidth]{pictures/tests.png}
+    		\caption{Testing the sensors}  
+    		\label{fig:results}  	
+\end{figure*}
+
 Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
 \newline
 \newline
