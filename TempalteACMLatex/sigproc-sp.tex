@@ -220,9 +220,8 @@ The proposal of the Raspberry Pi is therefore be a low-cost computer, with the a
 Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 and the B and B+ models, which costs \$ 35. As for the price, there is not much difference between the hardware models. The main differences are the amount of USB ports (1, 2 and 4 in the models A, B and B +, respectively), the Ethernet port (model A does not have) and ram (256MB on the model A against 512 for the others).
 \begin{figure}[h]
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
-    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)
-	\label{fig:raspi}
-}
+    \caption{Raspberry Pi Components, model B. Font: (RASPBERY PI FUNDATION, 2014c)}
+    \label{fig:raspi}
 \end{figure}
 
 \paragraph{Features}
@@ -388,9 +387,10 @@ Any RPi.GPIO script must be run as root because this library needs to acces /dev
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
 The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure~\ref{fig:ModelAB}.
+% FONTE DA IMAGEM: http://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/
 \begin{figure}[h]
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins}
+    \caption{GPIO pins. Font: simple-guide-to-the-rpi-gpio-header-and-pins}
     \label{fig:ModelAB}
 \end{figure}
 \newline
@@ -435,9 +435,10 @@ Some sensors, like relay switches, can be controlled through The Internet. users
 \newline
  Historical information is provided by the analytics module. The library provides also a sophisticated rules engine that permit create rules that are processed in real time to create alerts. Those methods require parameters like sensor values, time of day, days of week, alarm activated/deactivated to define rules specific to individual sensors.     
 Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermometer, DHT22 for temperature and humidity readings and a generic water sensor.
+%PICTURE FONT: http://projects.privateeyepi.com/
 \begin{figure}[h]
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/dashboardPrivateeye.png}
-    \caption{PrivateEyePi web based dashboard}
+    \caption{PrivateEyePi web based dashboard. Font: projects.privateeyepi}
     \label{fig:PrivateEye}
 \end{figure}
 \newline
@@ -585,9 +586,49 @@ Patterns used:
 \end{itemize}
 
 \subsection{Functional Requirements}
+In the table \ref{table:rf} are defined the main functional requirements order to be able to meet all the objectives proposed by libsensorPy library:
  
+\begin{table}[h]
+ \caption{Functional requirements of libsensorPy}
+ \label{table:rf}
+ \begin{tabular}{|l|p{5.5cm}|l|}
+ \hline  
+ Id & Functional Requirements & Actor \\
+ \hline  
+ RF01 & Collect data sent by the sensors via the GPIO pins; & Library \\
+ \hline 
+ RF02 & Manipulate data sent by the sensors, turning them into readable data to the user; & User \\
+ \hline 
+ RF03 & Allow additions of new sensors / actuators and factories via inheritance; & User \\
+ \hline 
+ RF04 & Allow the user to set the pins to be used for connection between sensor and Raspberry; & User \\
+ \hline 
+ RF05 & Allow the creation of composite sensors, enabling a single sensor to measure more than one physical greatness; & User \\
+ \hline 
+ RF06 & Allow configuration of a set of conditions (events) que, When met, trigger an action. & User \\
+\hline  
+\end{tabular}
+\end{table}
 \subsection{Non-functional Requirements}
+Are characterized as non-functional requirements for the proper functioning of libsensorPy, the items in table \ref{table:rnf}.
 
+\begin{table}[h]
+ \caption{Non-functional requirements of libsensorPy}
+ \label{table:rnf}
+ \begin{tabular}{|l|p{4.7cm}|l|}
+ \hline  
+ Id & Non-Functional Requirements & Category \\
+ \hline  
+ RNF01 & The library must allow adition of new sensors/families; & Extensibility\\
+ \hline  
+ RNF02 & The data reported by the application must be faithful to that presented in the environment; & Confidence \\
+ \hline 
+ RNF03 & The library should be usable in any Raspberry Pi model ; & Portability \\
+ \hline 
+ RNF04 & The library will be developed using the Python language; & Software \\
+\hline  
+\end{tabular}
+\end{table}
 \subsection{Why not use Java}
 
 \subsection{Architecture}
@@ -671,9 +712,10 @@ This pooject was developed under the architectural pattern Sense-Compute-Control
 \item Actuators at the top, which finally impact the environment
 \end{enumerate}
 
+%PICTURE FONT: http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecomputecontrol-applications
 \begin{figure}[h]
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
-    \caption{Sense-Compute-Control environment}
+    \caption{Sense-Compute-Control environment. Font: Damien Cassou.}
     \label{fig:scc}
 \end{figure}
 
@@ -927,6 +969,12 @@ Follows an example of how to extend the library: the HCSR04 class was implemente
 %\end{listing}
 
 \subsection{Case Study}
+\begin{figure*}[t]
+    \centering
+    	\includegraphics[width=1.0\textwidth]{pictures/survey2.png}
+    		\caption{LibsensorPy's satisfaction survey}  
+    		\label{fig:survey}  	
+\end{figure*}
 In this work the case study began with software verification tests which consisted of functional tests of libsensorPy. These tests were performed as the system was being implemented.
 \newline
 \newline
@@ -973,20 +1021,8 @@ This library was presented to a group of higher education students and post grad
 \newline
 At the end of the presentation these people were invited to complete the satisfaction of libsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
 
-\begin{figure*}[ht]
-    \centering
-    	\includegraphics[width=1.0\textwidth]{pictures/survey2.png}
-    		\caption{LibsensorPy's satisfaction survey}  
-    		\label{fig:survey}  	
-\end{figure*}
 
 \subsection{Case Study results}
-The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. All interviewed during the case study, confirmed that libsensorPy meets your needs, especially among the group of post graduate students. However, these students made some notifications.
-\newline
-\newline
-%%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
-We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor.
-
 \begin{figure*}[ht]
     \centering
     	\includegraphics[width=0.9\textwidth]{pictures/tests.png}
@@ -994,9 +1030,16 @@ We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors
     		\label{fig:results}  	
 \end{figure*}
 
+The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. All interviewed during the case study, confirmed that libsensorPy meets your needs, especially among the group of post graduate students. However, these students made some notifications.
+\newline
+\newline
+%%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
+We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor.
+\newline
+\newline
 Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
-\newline
-\newline
+
+
 \section{CONCLUSION AND FUTURE WORK}
 This work presents an extensible open source library, available at Python Package Index (PyPI), the official third-party repository for the Python programming language [] %https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.1.tar.gz
 and on Github [https://github.com/juniorug/libsensorPy], the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
