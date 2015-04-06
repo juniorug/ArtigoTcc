@@ -71,7 +71,7 @@ Manoel C. M. Neto\titlenote{Doutor em Ci\^encia da Computa\c{c}\~ao e Professor 
 \begin{abstract}
 
 This article encourages the use of open source technologies, due to the growth of free movement of hardware, inferring the possibility of an alternative for engineers and professionals to develop their projects and provide the dissemination of knowledge.
-The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors / actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library uses the Abstract Factory pattern to ensure that sensors / actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Pyton as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
+The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors / actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses the Abstract Factory pattern to ensure that sensors / actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Pyton as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
 
 \end{abstract}
 \keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
@@ -606,9 +606,13 @@ Patterns used:
 
 \subsection{Architecture}
 
-The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations.
-\newline
-\newline
+The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
+\begin{figure}[h]
+    \includegraphics[width=0.8\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram.png}
+    \caption{Class diagram}
+    \label{fig:classDiagram}
+\end{figure}
+
 Main components:
 \begin{itemize}
 \item AbstractSensorFactory: Declares an interface for operations that create abstract sensors and events;
@@ -624,19 +628,30 @@ A single instance of the concrete factory is created at run-time, using the Sing
 \newline
 \newline
 Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors.
-\newline
-\newline
-The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
-
 \begin{figure}[h]
     \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/composite.png}
-    \caption{Ages of Computing}
+    \caption{Composite class diagram}
     \label{fig:composite}
 \end{figure}
 
+The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
+\newline
+\newline
+The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
+\begin{figure}[h]
+    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
+    \caption{Use Case diagram}
+    \label{fig:useCase}
+\end{figure}
+
+\begin{figure}[h]
+    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram.png}
+    \caption{Sequence diagram}
+    \label{fig:composite}
+\end{figure}
 
 \subsubsection{Architectural Style}
-The LibsensorPy presents characteristics of three architectural styles: 
+The libsensorPy presents characteristics of three architectural styles: 
 \begin{itemize}
 \item Traditional, influenced by programming language: Object-Oriented;
 \item Based on Implicit Invocation: Event Based and 
@@ -646,7 +661,7 @@ The LibsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by the Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedures call and event . The Procedure Call connectors model the control flow by invocation techniques and perform data transfer between the components involved through the use of parameters. Examples of Procedure Call connectors include functions, procedures,  object oriented methods, callback and system calls
 \newline
 \newline
-The Virtual Machine style is applied when we imagine the layers between the hardware and the Raspberry py LibsensorPy library using procedure calls as connectors between the layers. We have thus the layers:
+The Virtual Machine style is applied when we imagine the layers between the hardware and the Raspberry py libsensorPy library using procedure calls as connectors between the layers. We have thus the layers:
 \begin{itemize}
 \item Physical: GPIO
 \item Operating System
@@ -705,10 +720,16 @@ The application follows the five basic principles of design oriented to objects,
 %\newline
 %\newline
 
+Figure~\ref{fig:view} shows the library's structural view.
+\begin{figure}[h]
+    \includegraphics[width=0.9\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
+    \caption{libsensorPy's structural view}
+    \label{fig:view}
+\end{figure}
 
 \subsection{What is needed to install libsensorPy}
 
-Before use LibsensorPy is necessary the user configure and enable SPI and I2C ports on raspperry:
+Before use libsensorPy is necessary the user configure and enable SPI and I2C ports on raspperry:
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -927,19 +948,24 @@ Follows an example of how to extend the library: the HCSR04 class was implemente
 %\end{listing}
 
 \subsection{Case Study}
-In this work the case study began with software verification tests which consisted of functional tests of LibsensorPy. These tests were performed as the system was being implemented.
+In this work the case study began with software verification tests which consisted of functional tests of libsensorPy. These tests were performed as the system was being implemented.
 \newline
 \newline
 Verification tests are related to the system specification, the purpose of these tests is to verify the compliance with the library's functional requirements. The tests were performed based on test cases.
 \newline
 \newline
-Was then given to continue the study validation tests. These tests were performed after development's completion of LibsensorPy, and was based on the library's availability to the people who are involved in ubiquitous systems development activities.
+We tested the DHT11Temperature, DHT11Humidity, DHT11Composite and HCSR04 sensors, figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor.
+\begin{figure}[t]
+    \centering
+    	\includegraphics[width=0.8\textwidth]{pictures/tests.png}
+    		\caption{Testing the sensors}  
+    		\label{fig:survey}  	
+\end{figure}
+
+This library was presented to a group of higher education students and post graduation in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether libsensorPy meets the user needs.
 \newline
 \newline
-This library was presented to a group of higher education students and post graduation in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether LibsensorPy meets the user needs.
-\newline
-\newline
-At the end of the presentation these people were invited to complete the satisfaction of LibsensorPy's survey . Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
+At the end of the presentation these people were invited to complete the satisfaction of libsensorPy's survey . Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
 
 \begin{figure}[t]
     \centering
@@ -948,11 +974,11 @@ At the end of the presentation these people were invited to complete the satisfa
     		\label{fig:survey}  	
 \end{figure}
 \subsection{Case Study results}
-The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. All interviewed during the case study, confirmed that LibsensorPy meets your needs, especially among the group of post graduate students. However, these students made some notifications.
+The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. All interviewed during the case study, confirmed that libsensorPy meets your needs, especially among the group of post graduate students. However, these students made some notifications.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
-Analyzing the results obtained, it is concluded that the LibsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
+Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
 \newline
 \newline
 \section{CONCLUSION AND FUTURE WORK}
