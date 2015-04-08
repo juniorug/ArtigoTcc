@@ -77,7 +77,7 @@ The convergence of radio technologies, microprocessors and personal digital elec
 \keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
 
 \section{Introduction}
-The UbiComp in its various ramifications and applications, is considered by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF) [1] and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 [2], published by the Brazilian Computer Society (SBC).
+The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF) [1] and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 [2], published by the Brazilian Computer Society (SBC).
 \newline
 \newline
 Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi [3,4].
@@ -205,7 +205,7 @@ The BeagleBoard is a low-power open-source hardware single-board computer produc
 BeagleBone is an \$89 Manufacturer suggested retail price (MSRP), credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
 
 \subsubsection{Raspberry Pi}
-Raspberry Pi is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer (RASPBERY PI FUNDATION, 2014a). In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
+Raspberry Pi(RPi) is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer (RASPBERY PI FUNDATION, 2014a). In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
 \newline
 \newline
 This computer came up with the intention of reconnecting children and youth in computer programming and stimulate the creation of new projects so there is not only the consumption of the technology created by the market. While in the 1990s there was a growth in the number of children and youth who developed programming skills, starting in the 2000s, this number started to decline. (Raspbery PI Foundation, 2014b).
@@ -225,7 +225,7 @@ Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 a
 \end{figure}
 
 \paragraph{Features}
-The original Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),[1] which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,[8] and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.[9] The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage.[10]
+The original RPi is based on the Broadcom BCM2835 system on a chip (SoC),[1] which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,[8] and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.[9] The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage.[10]
 \newline
 \newline
 In 2014, the Raspberry Pi Foundation launched the Compute Module, which packages a BCM2835 with 512 MB RAM and an eMMC flash chip into a module for use as a part of embedded systems.[11]
@@ -268,7 +268,7 @@ The number and options of input and output from a Raspberry Pi depend on the mod
 
 \begin{itemize}
 \item Digital pin to input or output (programmable) - 17 pins;	
-\item Analog input pins or digital input / output (programmable) - 6 pins;
+\item Analog input pins or digital input/output - 6 pins;
 \item Power pins (gnd, 5V, 3.3V) - 9 pins;
 \end{itemize}
 
@@ -293,9 +293,9 @@ RPi pins have some special characteristics which can be used from the software f
 
 \item PWM - Pulse Width Modulation: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12;
 
-\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) can be used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data);%http://pi.gadgetoid.com/pinout/uart
+\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data);%http://pi.gadgetoid.com/pinout/uart
 
-\item SPI Port - Serial Peripheral Interface: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Inpu(MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1).
+\item SPI Port - Serial Peripheral Interface: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1).
 %http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
 
 \item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL)
@@ -321,12 +321,12 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 \item Puppy Linux;
 \item Raspbmc and the XBMC open source digital media center;
 \item RISC OS – The operating system of the first ARM-based computer;
-\item Raspbian (recommended for Raspberry Pi and used in this project)[74] – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs.[77]
+\item Raspbian (recommended for Raspberry Pi and used in this project)[74] – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs.[77]
 \begin{itemize}
 \item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian.[78][79]
 \item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions.[80] on 16 April 2014 a GUI shell for Weston called Maynard was released.
 \item PiBang Linux is derived from Raspbian.[81]
-\item Raspbian for Robots - A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.[82]
+\item Raspbian for Robots[82] - A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.
 \end{itemize}
 %[65]Gareth Halfacree. "Raspberry Pi review: Eben Upton reveals all". linuxuser.co.uk.http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all
 %[67] Dallas, Kevin (2 February 2015). "Windows 10 Coming to Raspberry Pi 2". Building Apps for Windows. Microsoft. Retrieved 2 February 2015.http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/
@@ -351,7 +351,7 @@ Python is considered a very high level language because its syntax is simple and
 
 
 \subsubsection{GPIO in Python}
-The easiest way to control the GPIO pins is using the RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
+The easiest way to control the GPIO pins is using the module RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
 
 %\begin{lstlisting}[language=Python]
 \renewcommand{\theFancyVerbLine}{
@@ -456,7 +456,7 @@ Features:
 \item Working with or without receive timeout.
 \item File like API with “read” and “write” ("readline" etc. also supported).
 \item The files in this package are 100\% pure Python.
-\item The port is set up for binary transmission. No NULL byte stripping, CR-LF translation(carriage return-linefeed) etc. (which are many times enabled for POSIX.) This makes this module universally useful.
+\item The port is set up for binary transmission. No NULL byte stripping, carriage return-linefeed translation(CR-LF) etc. (which are many times enabled for POSIX.) This makes this module universally useful.
 \item Compatible with io library (Python 2.6+)
 \item RFC 2217 client (experimental), server provided in the examples
 \end{itemize}
@@ -507,7 +507,7 @@ Features:
 \item Ease of using multiple sensors (example sketch that pings 15 sensors).
 \item More accurate distance calculation (cm, inches and microseconds).
 \item Doesn't use pulseIn, which is slow and gives incorrect results with some ultrasonic sensor models.
-\item Actively developed with features being added and bugs/issues addressed. 
+\item Actively developed with features being added and bugs/ issues addressed. 
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -555,10 +555,10 @@ The purpose of this work is the focus on library's usability and the abstraction
 The technologies used to develop the tool were basically the Python language and RPI.GPIO and PigPio modules that provide connection abstractions to basic pins and the special pins I2C, UART and SPI PWM.
 
 \subsection{Method/Methodology}
-To develop this project we adopted the object-oriented analysis and design (OOAD). OOAD is a popular technical approach to analyzing, designing an application, system, or business by applying the object-oriented paradigm and visual modeling throughout the development life cycles to foster better stakeholder communication and product quality.
+To develop this project we adopted the object-oriented analysis and design (OOAD). OOAD is a popular technical approach to analyzing, designing an application, system, or business by applying the object-oriented (OO) paradigm and visual modeling throughout the development life cycles to foster better stakeholder communication and product quality.
 \newline
 \newline
-According to the popular guide Unified Process, OOAD in modern software engineering is best conducted in an iterative and incremental way. Iteration by iteration, the outputs of OOAD activities, analysis models for Object-oriented analysis (OOA) and design models for Object-oriented design (OOD) respectively, were refined and evolved continuously driven by key factors like usability and efficiency.
+According to the popular guide Unified Process, OOAD in modern software engineering is best conducted in an iterative and incremental way. Iteration by iteration, the outputs of OOAD activities, analysis models for Object-oriented analysis (OOA) and design models for Object- oriented design (OOD) respectively, were refined and evolved continuously driven by key factors like usability and efficiency.
 \newline
 \newline
 The object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, we should check that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of your work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
@@ -687,8 +687,8 @@ The interactions between the user and the library are described in the use case 
 \subsubsection{Architectural Style}
 The libsensorPy presents characteristics of three architectural styles: 
 \begin{itemize}
-\item Traditional, influenced by programming language: Object-Oriented;
-\item Based on Implicit Invocation: Event Based and 
+\item Traditional, influenced by programming language: OO;
+\item Based on Implicit Invocation: Event Based; 
 \item Layered Style: Virtual Machine.
 \end{itemize}
 
@@ -1043,7 +1043,7 @@ The result of the case study was satisfactory. The tested sensors worked as expe
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
-We tested the HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite sensors. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
+We tested the sensors DHT11Temperature, DHT11Humidity, DHT11Composite and HCSR04. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
 \newline
 \newline
 Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
@@ -1054,7 +1054,7 @@ This work presents an extensible open source library, available at Python Packag
 and on Github [https://github.com/juniorug/libsensorPy], the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
 \newline
 \newline
-Its goal is to facilitate the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that type of system, using design patterns and following the SOLID principles.
+Its goal is to facilitate the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that system's type, using design patterns and following the SOLID principles.
 \newline
 \newline
 The library's differential is the use of Abstract Factory pattern, allowing sensors and events from the same family work together, to be easily exchanged if necessary and the same type of sensors may be replaced without being necessary changes in existing code. The library also provides basic and composite  sensors according to the client's needs, as well as a set of events related to specific types of sensors.

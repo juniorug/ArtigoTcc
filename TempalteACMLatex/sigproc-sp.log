@@ -1,20 +1,20 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.28)  7 APR 2015 22:31
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.23)  8 APR 2015 17:09
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **sigproc-sp.tex
 (./sigproc-sp.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 7 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 5 languages loaded.
 (./acm_proc_article-sp.cls
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -186,22 +186,24 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/03/24 3.9k The Babel package
+Package: babel 2013/05/16 v3.9f The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/03/24 3.9k Babel common definitions
+File: babel.def 2013/05/16 v3.9f Babel common definitions
 \babel@savecnt=\count109
 \U@D=\dimen123
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks36
 \inpenc@posthook=\toks37
 
@@ -425,7 +427,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box30
 \enitdp@description=\count110
 )
-(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
+(/usr/local/share/texmf/tex/latex/minted/minted.sty
 Package: minted 2011/09/17 v1.7 Yet another Pygments shim for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -439,7 +441,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count112
 \FV@StepNumber=\count113
 \FV@OutFile=\write3
-) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -475,8 +477,8 @@ Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bdimen=\dimen126
 \calc@Askip=\skip45
 \calc@Bskip=\skip46
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count117
 \calc@Cskip=\skip47
 )
@@ -544,19 +546,19 @@ runsystem(rm sigproc-sp.aex)...executed.
 \lst@maxwidth=\dimen130
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+File: lstmisc.sty 2013/07/10 1.5 (Carsten Heinz)
 \c@lstnumber=\count125
 \lst@skipnumbers=\count126
 \lst@framebox=\box36
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/03/04 1.5c listings configuration
+File: listings.cfg 2013/06/27 1.5pre1 listings configuration
 ))
-Package: listings 2014/03/04 1.5c (Carsten Heinz)
+Package: listings 2013/07/10 1.5 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
@@ -574,7 +576,11 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 Package titlesec Warning: Non standard sectioning command detected
 (titlesec)                Using default spacing and no format.
 
-) (./sigproc-sp.aux)
+) (./sigproc-sp.aux
+
+LaTeX Warning: Label `fig:composite' multiply defined.
+
+)
 \openout1 = `sigproc-sp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
@@ -589,8 +595,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
 LaTeX Font Info:    ... okay on input line 46.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count127
 \scratchdimen=\dimen136
@@ -646,12 +651,6 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 70.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (16.24326pt too wide) in paragraph at lines 80--95
-\T1/aer/m/n/9 is con-sid-ered by many as the twenty-first cen-tury's new paradi
-gm
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 80--95
 
  []
@@ -815,11 +814,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--226
  []
 
 [4]
-Overfull \hbox (7.87372pt too wide) in paragraph at lines 228--237
-\T1/aer/m/n/9 The orig-i-nal Rasp-berry Pi is based on the Broad-com BCM2835
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 228--237
 
  []
@@ -840,19 +834,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 259--264
  []
 
 [5 <./pictures/RaspiModelB.png>]
-Overfull \hbox (17.87234pt too wide) in paragraph at lines 271--272
-[]\T1/aer/m/n/9 Analog in-put pins or dig-i-tal in-put / out-put (pro-grammable
-)
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 278--282
 
- []
-
-
-Overfull \hbox (9.62775pt too wide) in paragraph at lines 296--297
-\T1/aer/m/n/9 One pin(TxD) can be used to trans-mit and an-other(RxD)
  []
 
 
@@ -861,34 +844,18 @@ Overfull \hbox (5.24571pt too wide) in paragraph at lines 298--300
  []
 
 
-Overfull \hbox (11.31882pt too wide) in paragraph at lines 298--300
-\T1/aer/m/n/9 pur-pose the pins 19 as Mas-ter Out-put, Slave Inpu(MOSI),
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 311--315
 
  []
 
 [6]
-Overfull \hbox (14.38116pt too wide) in paragraph at lines 324--326
-\T1/aer/m/n/9 for ARMv7 and later pro-ces-sors (with Jazelle RC-T/Thum-
+Overfull \hbox (4.24173pt too wide) in paragraph at lines 324--326
+\T1/aer/m/n/9 Thum-bEE, VFPv3, and NEON SIMD ex-ten-sions), com-
  []
 
 
 Overfull \hbox (6.40686pt too wide) in paragraph at lines 326--327
 \T1/aer/m/n/9 pared to the usual desk-top com-puter ori-ented Rasp-
- []
-
-
-Overfull \hbox (17.61893pt too wide) in paragraph at lines 329--330
-\T1/aer/m/n/9 robotics projects with LEGO, Grove, and Ar-duino.[82] 
- []
-
-
-Overfull \hbox (12.4355pt too wide) in paragraph at lines 354--355
-\T1/aer/m/n/9 The eas-i-est way to con-trol the GPIO pins is us-ing the RPi.GPI
-O
  []
 
 \openout3 = `sigproc-sp.pyg'.
@@ -916,12 +883,7 @@ runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
 
-
-
-LaTeX Warning: Reference `fig:ModelAB' on page \thepage  undefined on input lin
-e 389.
-
-<pictures/ModelAB.png, id=37, 752.8125pt x 355.3275pt>
+ <pictures/ModelAB.png, id=37, 752.8125pt x 355.3275pt>
 File: pictures/ModelAB.png Graphic file (type png)
 
 <use pictures/ModelAB.png>
@@ -951,10 +913,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 411--419
 Underfull \hbox (badness 10000) in paragraph at lines 411--419
 
  []
-
-
-LaTeX Warning: Reference `fig:PrivateEye' on page \thepage  undefined on input 
-line 433.
 
 <pictures/dashboardPrivateeye.png, id=46, 737.75626pt x 557.08125pt>
 File: pictures/dashboardPrivateeye.png Graphic file (type png)
@@ -1005,8 +963,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 421--453
  []
 
 
-Overfull \hbox (16.86118pt too wide) in paragraph at lines 459--460
-\T1/aer/m/n/9 byte strip-ping, CR-LF trans-la-tion(carriage return-linefeed)
+Overfull \hbox (1.46344pt too wide) in paragraph at lines 459--460
+\T1/aer/m/n/9 byte strip-ping, car-riage return-linefeed translation(CR-
  []
 
 [8 <./pictures/dashboardPrivateeye.png>]
@@ -1055,8 +1013,8 @@ Overfull \hbox (2.41713pt too wide) in paragraph at lines 499--500
  []
 
 
-Overfull \hbox (12.86813pt too wide) in paragraph at lines 510--511
-[]\T1/aer/m/n/9 Actively de-vel-oped with fea-tures be-ing added and bugs/is-
+Overfull \hbox (3.58044pt too wide) in paragraph at lines 510--511
+[]\T1/aer/m/n/9 Actively de-vel-oped with fea-tures be-ing added and bugs/
  []
 
 
@@ -1115,12 +1073,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 558--568
  []
 
 
-Overfull \hbox (9.22195pt too wide) in paragraph at lines 558--568
-\T1/aer/m/n/9 oriented anal-y-sis (OOA) and de-sign mod-els for Object-oriented
-
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 558--568
 
  []
@@ -1142,23 +1094,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 577--582
  []
 
 [10]
-
-LaTeX Warning: Reference `table:rf' on page \thepage  undefined on input line 5
-89.
-
-
 Overfull \hbox (1.16124pt too wide) in paragraph at lines 594--611
 [][] 
  []
 
 
-LaTeX Warning: Reference `table:rnf' on page \thepage  undefined on input line 
-613.
-
-
 Overfull \hbox (6.37938pt too wide) in paragraph at lines 618--631
 [][] 
  []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 633--641
@@ -1175,10 +1121,6 @@ Overfull \hbox (5.67763pt too wide) in paragraph at lines 633--641
 Underfull \hbox (badness 10000) in paragraph at lines 633--641
 
  []
-
-
-LaTeX Warning: Reference `fig:classDiagram' on page \thepage  undefined on inpu
-t line 643.
 
 <pictures/ClassDiagram.png, id=57, 1370.87157pt x 877.02657pt>
 File: pictures/ClassDiagram.png Graphic file (type png)
@@ -1209,14 +1151,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 661--670
 
 [11]
 
-LaTeX Warning: Reference `fig:composite' on page \thepage  undefined on input l
-ine 671.
-
-
-LaTeX Warning: Reference `fig:useCase' on page \thepage  undefined on input lin
-e 674.
-
-
 LaTeX Warning: Reference `fig:sequence' on page \thepage  undefined on input li
 ne 674.
 
@@ -1238,8 +1172,11 @@ File: pictures/SequenceDiagram3.png Graphic file (type png)
 Package pdftex.def Info: pictures/SequenceDiagram3.png used on input line 682.
 (pdftex.def)             Requested size: 504.0pt x 297.4483pt.
 
-Overfull \hbox (14.74748pt too wide) in paragraph at lines 690--691
-[]\T1/aer/m/n/9 Traditional, in-flu-enced by pro-gram-ming lan-guage: Object-
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Overfull \hbox (1.149pt too wide) in paragraph at lines 690--691
+[]\T1/aer/m/n/9 Traditional, in-flu-enced by pro-gram-ming lan-guage: OO; 
  []
 
 
@@ -1253,11 +1190,7 @@ File: pictures/machinelayers.png Graphic file (type png)
 <use pictures/machinelayers.png>
 Package pdftex.def Info: pictures/machinelayers.png used on input line 707.
 (pdftex.def)             Requested size: 201.59692pt x 122.13101pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[12 <./pictures/ClassDiagram.png>]
+ [12 <./pictures/ClassDiagram.png>]
 <pictures/senseComputeControl.png, id=69, 509.905pt x 362.35374pt>
 File: pictures/senseComputeControl.png Graphic file (type png)
 
@@ -1265,11 +1198,9 @@ File: pictures/senseComputeControl.png Graphic file (type png)
 Package pdftex.def Info: pictures/senseComputeControl.png used on input line 72
 5.
 (pdftex.def)             Requested size: 226.79846pt x 161.17226pt.
- [13 <./pictures/composite.png> <./pictures/machinelayers.png (PNG copy)> <./pi
-ctures/senseComputeControl.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 738--746
 
- []
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 738--746
@@ -1277,10 +1208,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 738--746
  []
 
 
-LaTeX Warning: Reference `fig:view' on page \thepage  undefined on input line 7
-53.
+Underfull \hbox (badness 10000) in paragraph at lines 738--746
 
-<pictures/VisaoEstrutural.png, id=76, 1081.03876pt x 639.89063pt>
+ []
+
+[13 <./pictures/composite.png> <./pictures/machinelayers.png (PNG copy)>]
+<pictures/VisaoEstrutural.png, id=75, 1081.03876pt x 639.89063pt>
 File: pictures/VisaoEstrutural.png Graphic file (type png)
 
 <use pictures/VisaoEstrutural.png>
@@ -1331,18 +1264,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 791--1
 
  []
 
-[14 <./pictures/UseCaseDiagram.png>])
-runsystem(rm sigproc-sp.out.pyg)...executed.
-
-runsystem(rm sigproc-sp.pyg)...executed.
-
-\openout3 = `sigproc-sp.pyg'.
-
-runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
-cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
--o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
-
- (./sigproc-sp.out.pyg)
+[14 <./pictures/UseCaseDiagram.png> <./pictures/senseComputeControl.png>])
 runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
@@ -1355,6 +1277,17 @@ cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm"
 
 
 (./sigproc-sp.out.pyg)
+runsystem(rm sigproc-sp.out.pyg)...executed.
+
+runsystem(rm sigproc-sp.pyg)...executed.
+
+\openout3 = `sigproc-sp.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
+cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
+-o sigproc-sp.out.pyg sigproc-sp.pyg)...executed.
+
+ (./sigproc-sp.out.pyg)
 runsystem(rm sigproc-sp.out.pyg)...executed.
 
 runsystem(rm sigproc-sp.pyg)...executed.
@@ -1452,11 +1385,6 @@ runsystem(rm sigproc-sp.out.pyg)...executed.
 runsystem(rm sigproc-sp.pyg)...executed.
 
 
-
-LaTeX Warning: Reference `fig:survey' on page \thepage  undefined on input line
- 1037.
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 1031--1038
 
  []
@@ -1465,10 +1393,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1031--1038
 Underfull \hbox (badness 10000) in paragraph at lines 1031--1038
 
  []
-
-
-LaTeX Warning: Reference `fig:results' on page \thepage  undefined on input lin
-e 1046.
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 1042--1050
@@ -1476,8 +1400,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 1042--1050
  []
 
 
-Overfull \hbox (10.40866pt too wide) in paragraph at lines 1042--1050
-\T1/aer/m/n/9 We tested the HCSR04, DHT11Temperature, DHT11Humidity
+Overfull \hbox (3.0753pt too wide) in paragraph at lines 1042--1050
+\T1/aer/m/n/9 We tested the sen-sors DHT11Temperature, DHT11Humidity,
  []
 
 
@@ -1488,12 +1412,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 1042--1050
 [17 <./pictures/tests.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1053--1065
 
- []
-
-
-Overfull \hbox (5.8195pt too wide) in paragraph at lines 1053--1065
-\T1/aer/m/n/9 type of sys-tem, us-ing de-sign pat-terns and fol-low-ing the SOL
-ID
  []
 
 
@@ -1517,16 +1435,16 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6848 strings out of 494933
- 91558 string characters out of 6178446
- 174332 words of memory out of 5000000
- 9870 multiletter control sequences out of 15000+600000
+ 6824 strings out of 494984
+ 91122 string characters out of 6179648
+ 173254 words of memory out of 5000000
+ 9832 multiletter control sequences out of 15000+600000
  55935 words of font info for 79 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
+ 16 hyphenation exceptions out of 8191
  41i,13n,37p,1225b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
@@ -1540,7 +1458,7 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on sigproc-sp.pdf (19 pages, 2511617 bytes).
+Output written on sigproc-sp.pdf (19 pages, 2458254 bytes).
 PDF statistics:
  143 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream
