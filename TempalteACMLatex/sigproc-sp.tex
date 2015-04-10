@@ -339,7 +339,7 @@ Python is considered a very high level language because its syntax is simple and
 \subsubsection{GPIO in Python}
 The easiest way to control the GPIO pins is using the module RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
 
-%\begin{lstlisting}[language=Python]
+
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -364,9 +364,7 @@ The easiest way to control the GPIO pins is using the module RPi.GPIO Python lib
   # output to GPIO8
   GPIO.output(8, True)
 \end{minted}
-%\end{lstlisting}
-%\newline
-%\newline
+
 Any RPi.GPIO script must be run as root because this library needs to acces /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
 
 %installation guide: http://sourceforge.net/p/raspberry-gpio-python/wiki/install/
@@ -394,6 +392,7 @@ Pigpio is a Python module for the Raspberry which talks to the pigpio daemon to 
 Pigpio provides all the standard gpio features and in addition it provides hardware timed PWM suitable for servos, LEDs, and motors and samples/timestamps gpios 0-31 up to 1 million times per second (default 200 thousand).
 
 \section{JUSTIFICATION}
+\label{sec:justification}
 As with other platforms, Raspberry Pi allows coupling several sensors whose handling can be made from raspberry-gpio-python or any other API available. On other platforms, such as the Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as a development language for Raspberry Pi.
 \newline
 \newline
@@ -404,7 +403,7 @@ The library proposed reconciles the use of an integrated circuit platform with m
 Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the microcontroller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
 
 \section{RELATED WORK}
-As mentioned in section ?? there is no specific library to work with python applied to Raspberry IP, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
+As mentioned in section~\ref{sec:justification}, there is no specific library to work with python applied to Raspberry IP, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -429,6 +428,39 @@ Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermomete
 \end{figure}
 \newline
 \newline
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%http://www.pingo.io/docs/
+Pingo is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
+\newline
+\newline
+To use pingo, the first step is to instantiate a Board. Each Pingo driver is a concrete board subclass.Two such classes are \textit{pingo.rpi.RaspberryPi} and \textit{pingo.arduino.ArduinoFirmata}. Pingo can automatically detect the board in most common cases.  \textit{pingo.detect.MyBoard()} will return an suitable board instance if the script is running on a supported board. If Pingo is running on an unsupported machine (eg. a notebook), it will try to find a connected Arduino using the Firmata protocol via USB and – if successful – will return a \textit{pingo.arduino.ArduinoFirmata} instance.
+\newline
+\newline
+Once having a board instance, it’s possible to access its pins through the board.pins dictionary:
+\renewcommand{\theFancyVerbLine}{
+  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
+\begin{minted}[mathescape,
+               linenos,
+               numbersep=0pt,
+               gobble=0,
+               frame=lines,
+               framesep=2mm]{python}
+
+  import pingo
+  from time import sleep
+
+  board = pingo.detect.MyBoard()
+  led_pin = board.pins[13]
+  led_pin.mode = pingo.OUT
+
+  while True:
+    led_pin.hi()
+    sleep(1)
+    led_pin.lo()
+    sleep(1)	
+\end{minted}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
 [] describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides backends for Python. The module named "serial" automatically selects the appropriate backend.
