@@ -1,47 +1,86 @@
 This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sigproc-sp.aux
-I found no \bibdata command---while reading file sigproc-sp.aux
-I found no \bibstyle command---while reading file sigproc-sp.aux
-You've used 1 entry,
-            0 wiz_defined-function locations,
-            84 strings with 503 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+The style file: abbrv.bst
+Database file #1: sigproc.bib
+Repeated entry---line 39 of file sigproc.bib
+ : @article{krishnakumarframework
+ :                               ,
+I'm skipping whatever remains of this entry
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1049 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
+while executing---line 1090 of file abbrv.bst
+Warning--empty title in Armstrong
+Warning--empty journal in krishnakumarframework
+Warning--empty year in krishnakumarframework
+You've used 5 entries,
+            2118 wiz_defined-function locations,
+            523 strings with 4595 characters,
+and the built_in function-call counts, 1307 in all, are:
+= -- 120
+> -- 63
+< -- 1
++ -- 26
+- -- 20
+* -- 76
+:= -- 237
+add.period$ -- 14
+call.type$ -- 5
+change.case$ -- 23
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 8
+duplicate$ -- 59
+empty$ -- 100
+format.name$ -- 20
+if$ -- 266
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 26
+num.names$ -- 10
+pop$ -- 34
+preamble$ -- 1
+purify$ -- 19
 quote$ -- 0
-skip$ -- 0
+skip$ -- 39
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 30
+swap$ -- 10
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+type$ -- 20
+warning$ -- 3
+while$ -- 11
+width$ -- 6
+write$ -- 49
+(There were 17 error messages)
