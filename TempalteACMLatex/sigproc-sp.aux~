@@ -31,7 +31,7 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Mobile Computing}{2}{subsection.1.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Pervasive Computing}{2}{subsection.1.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {1.4}Ubiquitous Computing}{2}{subsection.1.4}}
-\citation{doesntfit}
+\citation{krishnakumarframework}
 \citation{krishnakumarframework}
 \@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Ubiquitous Computing: intersection between pervasive and mobile computing}}{3}{figure.2}}
 \newlabel{fig:ubiq}{{2}{3}{Ubiquitous Computing: intersection between pervasive and mobile computing}{figure.2}{}}
@@ -101,11 +101,10 @@
 \bibstyle{abbrv}
 \bibdata{sigproc}
 \bibcite{carvalho2006grandes}{1}
-\bibcite{doesntfit}{2}
-\bibcite{Armstrong}{3}
-\bibcite{krishnakumarframework}{4}
-\bibcite{Trapp}{5}
-\bibcite{wirth2014making}{6}
+\bibcite{Armstrong}{2}
+\bibcite{krishnakumarframework}{3}
+\bibcite{Trapp}{4}
+\bibcite{wirth2014making}{5}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Testing the sensors}}{18}{figure.13}}
 \newlabel{fig:results}{{13}{18}{Testing the sensors}{figure.13}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {5}CONCLUSION AND FUTURE WORK}{18}{section.5}}
