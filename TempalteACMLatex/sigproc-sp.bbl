@@ -1,4 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{barr2001pulse}
+M.~Barr.
+\newblock Pulse width modulation.
+\newblock {\em Embedded Systems Programming}, 14(10):103--104, 2001.
 
 \bibitem{carvalho2006grandes}
 A.~d.~L. Carvalho, F.~d. Ponce~de Leon, et~al.
@@ -6,6 +11,11 @@ A.~d.~L. Carvalho, F.~d. Ponce~de Leon, et~al.
   brasil--2006--2016.
 \newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o},
   2006.
+
+\bibitem{dennis2013raspberry}
+A.~K. Dennis.
+\newblock {\em Raspberry Pi Home Automation with Arduino}.
+\newblock Packt Publishing Ltd, 2013.
 
 \bibitem{doesntfit}
 O.~S. DOESn’t FIt~All.
@@ -21,6 +31,19 @@ M.~K. G. M. G. S. V. J. A. K. J. G. M. L. J. L. E. L. M. J. A. M. J. e.~a.
 K.~Krishnakumar, J.~Gubbi, and R.~Buyya.
 \newblock A framework for iot sensor data analytics and visualisation in cloud
   computing environments.
+
+\bibitem{wiring}
+W.~PI.
+\newblock Wiring pi - gpio interface library for the raspberry pi – about.
+\newblock \url{http://wiringpi.com/}, October 2014.
+\newblock [Online; accessed 02-October-2014].
+
+\bibitem{rooke2001system}
+A.~M. Rooke.
+\newblock System for serial peripheral interface with embedded addressing
+  circuit for providing portion of an address for peripheral devices, Oct.~16
+  2001.
+\newblock US Patent 6,304,921.
 
 \bibitem{Trapp}
 B.~Trapp.
