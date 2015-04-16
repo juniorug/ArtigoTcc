@@ -277,7 +277,7 @@ Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM (Pul
 The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
 
 \paragraph{Inputs and Outputs}
-The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins.In this paper we will present only the pins availlable in the model B.The pins are divided into:
+The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper we will present only the pins availlable in the model B.The pins are divided into:
 %http://www.raspberrypi.org/documentation/usage/gpio/README.md
 
 \begin{itemize}
@@ -302,19 +302,18 @@ With a digital output is possible only two types of values (0 or 5 volts, 1 or 0
 
 \paragraph{Special Pins}
 RPi pins have some special characteristics which can be used from the software functions encoded by a software programmer. Are they:
-%http://pi.gadgetoid.com/pinout
+
 \begin{itemize}
 
 \item PWM - Pulse Width Modulation \cite{barr2001pulse}: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12;
 
-\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data);%http://pi.gadgetoid.com/pinout/uart
+\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data) \cite{Uart};%http://pi.gadgetoid.com/pinout/uart
 
-\item SPI Port - Serial Peripheral Interface \cite{rooke2001system}: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1).
+\item SPI Port - Serial Peripheral Interface \cite{rooke2001system}: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1) \cite{Spi}.
 %http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
 
-\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL)
+\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL) \cite{I2c}
 %https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c
-%http://en.wikipedia.org/wiki/I%C2%B2C
 \end{itemize}
 
 \subsection{Software}
