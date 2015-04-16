@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{I2c}
+adafruits.
+\newblock configuring i2c.
+\newblock
+  \url{https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c},
+  note = "[Online; accessed 15-March-2015]", September 2014.
+
 \bibitem{barr2001pulse}
 M.~Barr.
 \newblock Pulse width modulation.
@@ -63,6 +70,12 @@ R.~P. FOUNDATION.
   October 2014.
 \newblock [Online; accessed 04-October-2014].
 
+\bibitem{Uart}
+gadgetoid.
+\newblock Pinout.
+\newblock \url{http://pi.gadgetoid.com/pinout/uart}, note = "[Online; accessed
+  15-March-2015]", July 2014.
+
 \bibitem{Armstrong}
 M.~K. G. M. G. S. V. J. A. K. J. G. M. L. J. L. E. L. M. J. A. M. J. e.~a.
   J.~A.~Armstrong, P. A.~Ferguson.
@@ -112,6 +125,13 @@ raspberrypi.org.
   May 2012.
 \newblock [Online; accessed 13-March-2015].
 
+\bibitem{Spi}
+raspberrypi.org.
+\newblock Raspberri pi spi.
+\newblock
+  \url{http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md},
+  note = "[Online; accessed 15-March-2015]", July 2014.
+
 \bibitem{raspberryAbout}
 b.~RASPBERY PI~FUNDATION.
 \newblock About us. 2014b.
@@ -123,6 +143,13 @@ c.~RASPBERY PI~FUNDATION.
 \newblock Faqs. 2014c.
 \newblock \url{http://www.raspberrypi.org/help/faqs/}, October 2014.
 \newblock [Online; accessed 01-October-2014].
+
+\bibitem{raspUsage}
+raspberypi.org.
+\newblock Gpio usage.
+\newblock \url{https://www.raspberrypi.org/documentation/usage/gpio/README.md},
+  July 2014.
+\newblock [Online; accessed 15-March-2015].
 
 \bibitem{rooke2001system}
 A.~M. Rooke.

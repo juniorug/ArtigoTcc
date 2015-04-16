@@ -3,6 +3,21 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sigproc-sp.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
+I was expecting a `,' or a `}'---line 269 of file sigproc.bib
+ : 
+ : @misc{Spi,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 277 of file sigproc.bib
+ : 
+ : @misc{I2c,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 288 of file sigproc.bib
+ : 
+ : %Manoelllll
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
 Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
 while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
@@ -40,45 +55,45 @@ while executing---line 1090 of file abbrv.bst
 Warning--empty title in Armstrong
 Warning--empty journal in krishnakumarframework
 Warning--empty year in krishnakumarframework
-You've used 26 entries,
+You've used 30 entries,
             2118 wiz_defined-function locations,
-            646 strings with 7431 characters,
-and the built_in function-call counts, 6486 in all, are:
-= -- 640
-> -- 222
+            666 strings with 7990 characters,
+and the built_in function-call counts, 7335 in all, are:
+= -- 722
+> -- 250
 < -- 4
-+ -- 96
-- -- 66
-* -- 321
-:= -- 1100
-add.period$ -- 88
-call.type$ -- 26
-change.case$ -- 107
++ -- 108
+- -- 74
+* -- 353
+:= -- 1242
+add.period$ -- 101
+call.type$ -- 30
+change.case$ -- 123
 chr.to.int$ -- 0
-cite$ -- 31
-duplicate$ -- 268
-empty$ -- 595
-format.name$ -- 66
-if$ -- 1387
+cite$ -- 35
+duplicate$ -- 296
+empty$ -- 683
+format.name$ -- 74
+if$ -- 1573
 int.to.chr$ -- 0
-int.to.str$ -- 26
+int.to.str$ -- 30
 missing$ -- 18
-newline$ -- 141
-num.names$ -- 52
-pop$ -- 175
+newline$ -- 162
+num.names$ -- 60
+pop$ -- 207
 preamble$ -- 1
-purify$ -- 84
+purify$ -- 96
 quote$ -- 0
-skip$ -- 192
+skip$ -- 219
 stack$ -- 0
-substring$ -- 246
-swap$ -- 46
+substring$ -- 266
+swap$ -- 50
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 98
+type$ -- 114
 warning$ -- 5
-while$ -- 65
-width$ -- 28
-write$ -- 288
-(There were 16 error messages)
+while$ -- 73
+width$ -- 32
+write$ -- 330
+(There were 19 error messages)
