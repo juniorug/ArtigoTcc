@@ -1,8 +1,8 @@
 \begin{thebibliography}{10}
 
 \bibitem{I2c}
-adafruits.
-\newblock configuring i2c.
+Adafruit.
+\newblock Configuring i2c.
 \newblock
   \url{https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c},
   note = "[Online; accessed 15-March-2015]", September 2014.
@@ -52,6 +52,20 @@ K.~Dallas.
   \url{http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/},
   note = "[Online; accessed 25-March-2015]", February 2014.
 
+\bibitem{DamienCassou}
+C.~C. J.~L. Damien~Cassou, Émile~Balland.
+\newblock Architecture-driven-programming for sense/compute/control
+  applications.
+\newblock
+  \url{http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecomputecontrol-applications},
+  note = "[Online; accessed 19-March-2015]", May 2010.
+
+\bibitem{DanielPace}
+M.~A. P.~A. Daniel Pace~Schmitz.
+\newblock Utiliza{\c{c}}{\~a}o dos princ{\'\i}pios solid na aplica{\c{c}}{\~a}o
+  de padr{\~o}es de projeto.
+\newblock {\em Revista Engenharia de Software Magazine 50}, 2006.
+
 \bibitem{de2003computaccao}
 R.~B. de~Araujo.
 \newblock Computa{\c{c}}{\~a}o ub{\'\i}qua: Princ{\'\i}pios, tecnologias e
@@ -73,6 +87,14 @@ O.~S. DOESn’t FIt~All.
 \newblock "innovations in ubicomp products.".
 \newblock 2013.
 
+\bibitem{edwards2009architecture}
+G.~Edwards, J.~Garcia, H.~Tajalli, D.~Popescu, N.~Medvidovic, G.~Sukhatme, and
+  B.~Petrus.
+\newblock Architecture-driven self-adaptation and self-management in robotics
+  systems.
+\newblock In {\em Software Engineering for Adaptive and Self-Managing Systems,
+  2009. SEAMS'09. ICSE Workshop on}, pages 142--151. IEEE, 2009.
+
 \bibitem{Elinux}
 Elinux.org.
 \newblock Verified usb peripherals and sdhc cards;.
@@ -87,8 +109,8 @@ R.~P. FOUNDATION.
 \newblock [Online; accessed 04-October-2014].
 
 \bibitem{Uart}
-gadgetoid.
-\newblock Pinout.
+Gadgetoid.
+\newblock Pinout: Uart.
 \newblock \url{http://pi.gadgetoid.com/pinout/uart}, note = "[Online; accessed
   15-March-2015]", July 2014.
 
@@ -153,7 +175,7 @@ W.~PI.
 \newblock [Online; accessed 02-October-2014].
 
 \bibitem{Pibanglinux}
-pibanglinux.org.
+Pibanglinux.org.
 \newblock Inspired by crunchbang linux, and based on raspbian. features the
   openbox desktop environment.
 \newblock \url{http://www.pibanglinux.org/}, note = "[Online; accessed
@@ -167,11 +189,12 @@ Pigpio.
   accessed 25-March-2015]", February 2015.
 
 \bibitem{Privateeyepi}
-privateeyepi.com.
-\newblock Concurrency in java, March 2015.
+Privateeyepi.com.
+\newblock A home automation and monitoring project for raspberry pi, March
+  2015.
 
 \bibitem{gpioHeader}
-raspberrypi spy.co.uk.
+Raspberrypi-spy.co.uk.
 \newblock Simple guide to the rpi-gpio header and pins.
 \newblock
   \url{http://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/},
@@ -186,7 +209,7 @@ Raspberrypi.org.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{raspNewProduct}
-raspberrypi.org.
+Raspberrypi.org.
 \newblock Raspberry-pi compute module new product.
 \newblock
   \url{http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/},
@@ -194,13 +217,13 @@ raspberrypi.org.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{Raspbianwheezy}
-raspberrypi.org.
+Raspberrypi.org.
 \newblock Raspbian wheezy.
 \newblock \url{http://www.raspberrypi.org/downloads}, note = "[Online; accessed
   25-March-2015]", January 2013.
 
 \bibitem{Spi}
-raspberrypi.org.
+Raspberrypi.org.
 \newblock Raspberri pi spi.
 \newblock
   \url{http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md},
@@ -219,7 +242,7 @@ c.~RASPBERY PI~FUNDATION.
 \newblock [Online; accessed 01-October-2014].
 
 \bibitem{raspUsage}
-raspberypi.org.
+Raspberypi.org.
 \newblock Gpio usage.
 \newblock \url{https://www.raspberrypi.org/documentation/usage/gpio/README.md},
   July 2014.
@@ -240,7 +263,8 @@ Raspbian.
 \bibitem{Trapp}
 B.~Trapp.
 \newblock Raspberry pi: The perfect home server. linux j.
-\newblock {\em São Paulo: Sociedade Brasileira de Computação}, May 2013.
+\newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o},
+  May 2013.
 
 \bibitem{EbenUpton}
 E.~Upton.

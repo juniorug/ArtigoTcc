@@ -5,7 +5,8 @@
 \usepackage{minted}
 \usepackage{listings}
 \usepackage{graphicx,url}
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks,breaklinks]{hyperref}
+\PassOptionsToPackage{hyphens}{url}
 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -687,7 +688,7 @@ The interactions between the user and the library are described in the use case 
 \begin{figure*}[t]
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
     \caption{Sequence diagram}
-    \label{fig:composite}
+    \label{fig:sequence}
 \end{figure*}
 
 \subsubsection{Architectural Style}
@@ -729,7 +730,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 %PICTURE FONT: http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecomputecontrol-applications
 \begin{figure}[h]
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
-    \caption{Sense-Compute-Control environment. Font: Damien Cassou.}
+    \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
     \label{fig:scc}
 \end{figure}
 
@@ -747,7 +748,7 @@ Sensors are proactive or reactive components whereas context operators, control 
 As the underlying architecture is component-based, the application can be fully distributed. To prevent concurrent handling of events in a component, all interactions of a component are queued and executed one at a time, sequentially.
 \newline
 \newline
-The application follows the five basic principles of design oriented to objects, called "SOLID". Addressed initially by Robert Martin, in an article called Principles Of Ood, the author elaborates five-oriented programming techniques to objects where each technique is one of SOLID letters of the word. These five principles are:
+The application follows the five basic principles of design oriented to objects, called "SOLID" \cite{DanielPace}. Addressed initially by Robert Martin, in an article called Principles Of Ood, the author elaborates five-oriented programming techniques to objects where each technique is one of SOLID letters of the word. These five principles are:
 \begin{itemize}
 \item Single Responsibility Principle;
 \item Open Closed Principle;
@@ -779,7 +780,7 @@ Before use libsensorPy is necessary the user configure and enable SPI and I2C po
 
 \end{minted}
 
-For Raspbian users, check /etc/modprobe.d/raspi-blacklist.conf and comment "blacklist i2c-bcm2708" and "blacklist spi-bcm2708" by running:
+Check /etc/modprobe.d/raspi-blacklist.conf if using Raspbian, and comment "blacklist i2c-bcm2708" and "blacklist spi-bcm2708" by running:
 
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
@@ -1009,11 +1010,11 @@ Below is presented \textit{dht11CompositeExample.py}, an example of how to use t
     dht11 = CompositeSensorFactory.createSensor\
     	    ("DHT11Composite")
     print ("Temperature in Celsius: " \
-    	+ dht11.getTemperature() + u"\u00b0" + "C")
+    + dht11.getTemperature() + u"\u00b0" + "C")
     print ("Temperature in Fahrenheit: " \
-    	+ dht11.getTemperatureInFahrenheit() +"F")
+    + dht11.getTemperatureInFahrenheit() +"F")
     print ("Temperature in Kelvin: " \
-    	+ dht11.getTemperatureInKelvin() +"K")
+    + dht11.getTemperatureInKelvin() +"K")
     print ("Humidity: " + dht11.getHumidity() + "%")
 \end{minted}
 Was then given to continue the study validation tests. These tests were performed after development's completion of LibsensorPy, and was based on the library's availability to the people who are involved in ubiquitous systems development activities.
@@ -1038,14 +1039,13 @@ Analyzing the results obtained, it is concluded that the libsensorPy help the de
 
 
 \section{CONCLUSION AND FUTURE WORK}
-This work presents an extensible open source library, available at Python Package Index (PyPI), the official third-party repository for the Python programming language [] %https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.1.tar.gz
-and on Github [https://github.com/juniorug/libsensorPy], the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language and on Github \footnote{\url{https://github.com/juniorug/libsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
 \newline
 \newline
 Its goal is to facilitate the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that system's type, using design patterns and following the SOLID principles.
 \newline
 \newline
-The library's differential is the use of Abstract Factory pattern, allowing sensors and events from the same family work together, to be easily exchanged if necessary and the same type of sensors may be replaced without being necessary changes in existing code. The library also provides basic and composite  sensors according to the client's needs, as well as a set of events related to specific types of sensors.
+The library's differential is the use of Abstract Factory pattern, allowing sensors and events from the same family work together, to be easily exchanged if necessary and the same type of sensors may be replaced without being necessary changes in existing code. The library also provides basic and composite  sensors according to the client's needs, as well as a set of events related to specific types of sensors and unit conversions.
 \newline
 \newline
 Some suggestions can be seen below:
