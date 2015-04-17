@@ -45,12 +45,23 @@ G.~Coley.
 \newblock Take advantage of open-source hardware.
 \newblock {\em EDN}, 54(16):20--23, 2009.
 
+\bibitem{Kevin}
+K.~Dallas.
+\newblock Windows 10 coming to raspberry pi 2. building apps for windows.
+\newblock
+  \url{http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/},
+  note = "[Online; accessed 25-March-2015]", February 2014.
+
 \bibitem{de2003computaccao}
 R.~B. de~Araujo.
 \newblock Computa{\c{c}}{\~a}o ub{\'\i}qua: Princ{\'\i}pios, tecnologias e
   desafios.
 \newblock In {\em XXI Simp{\'o}sio Brasileiro de Redes de Computadores},
   volume~8, pages 11--13, 2003.
+
+\bibitem{dearduino}
+J.~J.~I. de~Souza, L.~B.~P. do~Nascimento, and P.~R. dos Santos~Filho.
+\newblock Arduino e python: Do it yourself.
 
 \bibitem{dennis2013raspberry}
 A.~K. Dennis.
@@ -125,8 +136,15 @@ J.~Krumm.
 
 \bibitem{netodesenvolvimento}
 M.~C.~M. Neto.
-\newblock Desenvolvimento de aplica{\c{c}}{\~o}es ub{\'\i}quas com ar-duino e
+\newblock Desenvolvimento de aplica{\c{c}}{\~o}es ub{\'\i}quas com arduino e
   raspbery pi.
+
+\bibitem{Oracle}
+Oracle.
+\newblock Concurrency in java.
+\newblock
+  \url{http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html},
+  note = "[Online; accessed 11-January-2015]".
 
 \bibitem{wiring}
 W.~PI.
@@ -140,6 +158,24 @@ pibanglinux.org.
   openbox desktop environment.
 \newblock \url{http://www.pibanglinux.org/}, note = "[Online; accessed
   25-March-2015]", May 2013.
+
+\bibitem{Pigpio}
+Pigpio.
+\newblock Pigpio, a python module for the raspberry which talks to the pigpio
+  daemon to allow control of the general purpose input outputs.
+\newblock \url{http://abyz.co.uk/rpi/pigpio/python.html}, note = "[Online;
+  accessed 25-March-2015]", February 2015.
+
+\bibitem{Privateeyepi}
+privateeyepi.com.
+\newblock Concurrency in java, March 2015.
+
+\bibitem{gpioHeader}
+raspberrypi spy.co.uk.
+\newblock Simple guide to the rpi-gpio header and pins.
+\newblock
+  \url{http://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/},
+  note = "[Online; accessed 25-March-2015]", June 2012.
 
 \bibitem{raspOrg}
 Raspberrypi.org.

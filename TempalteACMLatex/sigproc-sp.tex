@@ -213,7 +213,7 @@ The proposal of the Raspberry Pi is therefore be a low-cost computer, with the a
 Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 and the B and B+ models, which costs \$ 35. As for the price, there is not much difference between the hardware models. The main differences are the amount of USB ports (1, 2 and 4 in the models A, B and B +, respectively), the Ethernet port (model A does not have) and ram (256MB on the model A against 512 for the others).
 \begin{figure}[h]
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
-    \caption{Raspberry Pi Components, model B. Font: \protect\cite{raspberryFaq}}
+    \caption{Raspberry Pi Components, model B. \protect\cite{raspberryFaq}}
     \label{fig:raspi}
 \end{figure}
 
@@ -317,7 +317,7 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 
 \end{itemize}
 
-A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix ~\nameref{sec:RPiOS} \footnote{\url{http://en.wikipedia.org/wiki/Raspberry_Pi\#cite_note-RaspbianServerEdition-78}}.
+A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix~\ref{sec:RPiOS} \footnote{\url{http://en.wikipedia.org/wiki/Raspberry_Pi\#cite_note-RaspbianServerEdition-78}}.
 
 
 \subsubsection{WiringPi}
@@ -360,14 +360,13 @@ Any RPi.GPIO script must be run as root because this library needs to acces /dev
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
 The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure~\ref{fig:ModelAB}.
-% FONTE DA IMAGEM: http://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/
+
 \begin{figure}[h]
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins. Font: simple-guide-to-the-rpi-gpio-header-and-pins}
+    \caption{GPIO pins.\protect\cite{gpioHeader}}
     \label{fig:ModelAB}
 \end{figure}
-\newline
-\newline
+
 The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, these are the numbers after "GPIO" in the green rectangles around the outside of the diagram above.
 \newline
 \newline
@@ -375,7 +374,7 @@ Unfortunately the BCM numbers changed between versions of the Model B, and you'l
 
 \paragraph{Pigpio}
 %http://abyz.co.uk/rpi/pigpio/python.html
-Pigpio is a Python module for the Raspberry which talks to the pigpio daemon to allow control of the general purpose input outputs (GPIOs). Pigpio Python scripts may be run on Windows, Macs, and Linux machines. Only the pigpio daemon needs to be running on the Pi.
+Pigpio \cite{Pigpio} is a Python module for the Raspberry which talks to the pigpio daemon to allow control of the general purpose input outputs (GPIOs). Pigpio Python scripts may be run on Windows, Macs, and Linux machines. Only the pigpio daemon needs to be running on the Pi.
 \newline
 \newline
 Pigpio provides all the standard gpio features and in addition it provides hardware timed PWM suitable for servos, LEDs, and motors and samples/timestamps gpios 0-31 up to 1 million times per second (default 200 thousand).
@@ -385,7 +384,7 @@ Pigpio provides all the standard gpio features and in addition it provides hardw
 As with other platforms, Raspberry Pi allows coupling several sensors whose handling can be made from raspberry-gpio-python or any other API available. On other platforms, such as the Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as a development language for Raspberry Pi.
 \newline
 \newline
-This may be a consequence of run under the Linux kernel which is not suitable for real time applications - it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program[??].
+This may be a consequence of run under the Linux kernel which is not suitable for real time applications - it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
 \newline
 \newline
 The library proposed reconciles the use of an integrated circuit platform with microcontroller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
@@ -396,7 +395,7 @@ As mentioned in section~\ref{sec:justification}, there is no specific library to
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-PrivateEyePi[] is a project developed for security/automation that uses binds programming and eletronics.%[http://projects.privateeyepi.com/]
+PrivateEyePi\cite{Privateeyepi} is a project developed for security/automation that uses binds programming and eletronics.
 This is an open source project that is free of charge and can be copied, shared and modified without restriction.
 The user can use the Raspberry Pi or an tiny wireless Arduino to connect sensors and send data over the Internet.
 \newline
@@ -412,14 +411,13 @@ Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermomete
 %PICTURE FONT: http://projects.privateeyepi.com/
 \begin{figure}[h]
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/dashboardPrivateeye.png}
-    \caption{PrivateEyePi web based dashboard. Font: projects.privateeyepi}
+    \caption{PrivateEyePi web based dashboard.\protect\cite{Privateeyepi}}
     \label{fig:PrivateEye}
 \end{figure}
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%http://www.pingo.io/docs/
-Pingo is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
+Pingo\footnote{\url{http://www.pingo.io/docs/}} is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
 \newline
 \newline
 To use pingo, the first step is to instantiate a Board. Each Pingo driver is a concrete board subclass.Two such classes are \textit{pingo.rpi.RaspberryPi} and \textit{pingo.arduino.ArduinoFirmata}. Pingo can automatically detect the board in most common cases.  \textit{pingo.detect.MyBoard()} will return an suitable board instance if the script is running on a supported board. If Pingo is running on an unsupported machine (eg. a notebook), it will try to find a connected Arduino using the Firmata protocol via USB and – if successful – will return a \textit{pingo.arduino.ArduinoFirmata} instance.
@@ -452,7 +450,7 @@ Once having a board instance, it’s possible to access its pins through the boa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
-[] describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides backends for Python. The module named "serial" automatically selects the appropriate backend.
+\cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides backends for Python. The module named "serial" automatically selects the appropriate backend.
 \newline
 \newline
 Features:
@@ -468,12 +466,12 @@ Features:
 \item RFC 2217 client (experimental), server provided in the examples
 \end{itemize}
 
-This work [??] describes the use of LM35 (temperature sensor) and a Light Dependent Resistor.
+This work \cite{dearduino}, describes the use of LM35 (temperature sensor) and a Light Dependent Resistor.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %http://playground.arduino.cc/Main/DHTLib
-Arduino DHTLib [??] is a library for reading temperature and humidity from the sensors of HDT11\'s famly, such as DHT11, DHT21, DHT22 DHT33 e DHT44, applied to Arduino. 
+Arduino DHTLib \footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's famly, such as DHT11, DHT21, DHT22 DHT33 e DHT44, applied to Arduino. 
 \newline
 \newline
 The DHT11/21/22 has three lines, GND, +5V and a single data line. By means of a handshake the values are clocked out over the single digital line. Handshake for DHT21/22 is identical, but data format are different. The library is rewritten from scratch and is not compatible with earlier DHT libraries to be able to support both DHT's and stay as simple as possible and to minimize footprint.
@@ -498,7 +496,7 @@ In case of a DHTLIB\_ERROR\_TIMEOUT, humidity and temperature will get the value
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %https://code.google.com/p/arduino-new-ping/
-NewPing Library for Arduino[] is an ultrasonic sensor library for arduino that was developed to work with the sensors SR04, SRF05, SRF06, DYP-ME007 and Parallax PING)))\textsuperscript{TM}. It is written with c++ and intended to use with Sketches (Software written using Arduino). 
+NewPing Library for Arduino\footnote{\url{https://code.google.com/p/arduino-new-ping/}}  is an ultrasonic sensor library for arduino that was developed to work with the sensors SR04, SRF05, SRF06, DYP-ME007 and Parallax PING)))\textsuperscript{TM}. It is written with c++ and intended to use with Sketches (Software written using Arduino). 
 \newline
 \newline
 Features:
@@ -519,7 +517,7 @@ Features:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code
-Adafruit's Raspberry-Pi Python Code Library[] is the most closed work with this paper. It is a growing collection of libraries and example python scripts written by Limor Fried, Kevin Townsend and Mikey Sklar under BSD license for controlling a variety of Adafruit electronics with a Raspberry Pi.
+Adafruit's Raspberry-Pi Python Code Library\footnote{\url{https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code}} is the most closed work with this paper. It is a growing collection of libraries and example python scripts written by Limor Fried, Kevin Townsend and Mikey Sklar under BSD license for controlling a variety of Adafruit electronics with a Raspberry Pi.
 \newline
 \newline
 This library provides a collection of python scripts to work with sensors, providing classes that can be used to measure values from the sensor that the class implements. 
@@ -550,7 +548,7 @@ This is imporant useful for two reasons:
 \item Because SI units are standardised in the sensor library, users can also do quick sanity checks working with new sensors, or drop in any comparable sensor if needed better sensitivity or if a lower cost unit becomes available, etc.
 \end{enumerate}
 
-Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardised SI values and measurable units and conversions for each sensor can be seen in appendix XXXX.
+Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardised SI values and measurable units and conversions for each sensor can be seen in appendix~\ref{sec:Units}.
 \newline
 \newline
 By reducing all data to a single sensors 'type' and settling on specific, for each sensor family, the same sensor types return values that are comparable with any other similar sensor. This enables the user to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
@@ -571,7 +569,7 @@ According to the popular guide Unified Process, OOAD in modern software engineer
 The object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, we should check that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of your work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
 \newline
 \newline
-Using Object-oriented modeling, we divided the work in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used.[7]
+Using Object-oriented modeling, we divided the work in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used.
 
 The benefits of OOM are:
 
@@ -642,7 +640,7 @@ Are characterized as non-functional requirements for the proper functioning of l
 At the beginning of this project we decide to develop the library using Java as the programming language, Since These libraries do not yet exist formally for those who want to use Java as a development language. We thought that it could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors,the DHT11 and HC-SR04, when tried to test, we got no data from the sensors.
 \newline
 \newline
-After some research about what could be the problem, we found that we cannot assume that invoking sleep will suspend the thread for precisely the time period specified, since Thread.sleep() and the Thread.Join() methods are dependent on the operating system and the version of the JVM[????]
+After some research about what could be the problem, we found that we cannot assume that invoking sleep will suspend the thread for precisely the time period specified, since Thread.sleep() and the Thread.Join() methods are dependent on the operating system and the version of the JVM \cite{Oracle}.
 %fonte: http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
 \newline
 \newline
@@ -974,24 +972,6 @@ Follows an example of how to extend the library: the HCSR04 class was implemente
                   return super(sensorType)
 \end{minted}
 
-%\renewcommand{\theFancyVerbLine}{
-%  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
-%\begin{listing}[H]
-%\caption{extendedUltrasonicSensorFactory.py}
-%\inputminted{python}
-%               {codes/extendedUltrasonicSensorFactory.py} 
-%\label{lst:eusf}
-%\end{listing}
-
-%\renewcommand{\theFancyVerbLine}{
-%  \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
-%\begin{listing}[H]
-%\caption{HCSR04.py}
-%\inputminted{python}
-%               {codes/hcsr04.py} 
-%\label{lst:hcsr04}
-%\end{listing}
-
 \subsection{Case Study}
 \begin{figure*}[t]
     \centering
@@ -1075,31 +1055,15 @@ Some suggestions can be seen below:
 \item Add new sensors to the library;
 
 \end{itemize}
-%
-% The following two commands are all you need in the
-% initial runs of your .tex file to
-% produce the bibliography for the citations in your paper.
+
 \bibliographystyle{abbrv}
 \bibliography{sigproc}  % sigproc.bib is the name of the Bibliography in this case
-% You must have a proper ".bib" file
-%  and remember to run:
-% latex bibtex latex latex
-% to resolve all references
-%
-% ACM needs 'a single self-contained file'!
-%
-%APPENDICES are optional
-%\balancecolumns
+
 \appendix
-%Appendix A
-\section{Headings in Appendices}
-
-
-
 
 %%%% OTHER RASPBERRY SO'S
 
-\subsection{Other operating systems}\label{sec:RPiOS}
+\section{Other operating systems}\label{sec:RPiOS}
 \begin{itemize}
 \item Xbian– Using the Kodi (formerly XBMC) open source digital media center;
 \item openSUSE;
@@ -1119,6 +1083,64 @@ Some suggestions can be seen below:
 \item Tiny Core Linux – a minimal Linux operating system focused on providing a base system using BusyBox and FLTK;
 \item IPFire – a dedicated firewall/router distribution for the protection of a SOHO LAN;
 \end{itemize}
+
+
+\section{Units and scales}\label{sec:Units}
+Table \ref{table:units} shows units and scales provided by libsensorPy.
+\begin{table}[h]
+\caption{Units and scales}
+\label{table:units}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Sensor Family} & \textbf{Default units}     & \textbf{Other units provided} \\ \hline
+Acelerometer  & G                 & m/s2                 \\ \hline
+Altitude      & meter(m)          & Centimeter (cm)      \\ \hline
+Humidity      & Percent (\%)      &                      \\ \hline
+Light         & Lux               &                      \\ \hline
+Magnetometer  & micro-Tesla (uT)  &                      \\ \hline
+Motion        &                   &                      \\ \hline
+Pressure      & hectopascal (hPa) & psi, bar, mmHg, N/m2 \\ \hline
+Temperature   & Celsius           & Fahrenheit, Kelvin   \\ \hline
+Ultrassonic   & Centimeter (cm)   & \\                     
+\hline
+\end{tabular}
+\end{table}
+
+
+\section{Implemented Sensors }\label{sec:Implem}
+Table \ref{table:lis} shows the list of implemented sensors.
+\begin{table*}[h]
+\centering
+\caption{List of implemented sensors}
+\label{table:lis}
+\begin{tabular}{|l|l|l|l|}
+\hline
+\multicolumn{1}{|c|}{\textbf{Family}} & \multicolumn{1}{c|}{\textbf{Sensor}} & \multicolumn{1}{c|}{\textbf{Class names}} & \multicolumn{1}{c|}{\textbf{Example Script}} \\ \hline
+Acelerometer    & ADXL345         & Adxl345              & adxl345Example.py              \\
+                & LSM303D         & LSM303DAccelerometer & lsm303dAccelerometerExample.py \\ \hline
+Altitude        & BMP085          & Bmp085Altitude       & bmp085AltitudeExample.py       \\ \hline
+Humidity        & DHT11           & DHT11Humidity        & dht11HumidityExample.py        \\
+                & DHT22           & DHT22Humidity        & dht22HumidityExample.py        \\ \hline
+Lux             & TCS34725        & TCS34725             & TCS34725Example                \\ \hline
+Magnetometer    & HMC5883L        & HMC5883L             & hmc5883lExample                \\
+                & LSM303D         & LSM303DMagnetometer  & lsm303dMagnetometerExample.py  \\ \hline
+Motion          & PIR             & PIR                  & pirExample                     \\ \hline
+Pressure        & BMP085          & BMP085Pressure       & bmp085PressureExample.py       \\ \hline
+Temperature     & BMP085          & Bmp085Temperature    & bmp085TemperatureExample.py    \\
+                & DHT11           & DHT11Temperature     & dht11TemperatureExample.py     \\
+                & DHT22           & DHT22Temperature     & dht22TemperatureExample.py     \\ \hline
+Ultrassonic     & HC-SR04         & HCSR04               & hcsr04Example.py               \\
+                & Parallax Ping   & ParallaxPing         & parallaxPingExample.py         \\
+                & SRF04           & SRF04                & srf04Example.py                \\
+                & SRF05           & SRF05                & srf05Example.py                \\
+                & URM37           & URM37                & urm37Example                   \\
+                & HY-SRF05        & HYSRF05              & hysrf05Example                 \\ \hline
+Composite       & BMP085          & BMP085Composite      & bmp085CompositeExample.py      \\
+                & DHT11           & DHT11Composite       & dht11CompositeExample.py       \\
+                & DHT22           & DHT22Composite       & dht22CompositeExample.py       \\
+                & LSM303D         & LSM303DComposite     & lsm303dCompositeExample.py    \\ \hline
+\end{tabular}
+\end{table*}
 
 
 \balancecolumns
