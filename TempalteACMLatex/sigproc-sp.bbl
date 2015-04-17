@@ -40,6 +40,11 @@ A.~d.~L. Carvalho, F.~d. Ponce~de Leon, et~al.
 \newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o},
   2006.
 
+\bibitem{coley2009take}
+G.~Coley.
+\newblock Take advantage of open-source hardware.
+\newblock {\em EDN}, 54(16):20--23, 2009.
+
 \bibitem{de2003computaccao}
 R.~B. de~Araujo.
 \newblock Computa{\c{c}}{\~a}o ub{\'\i}qua: Princ{\'\i}pios, tecnologias e
@@ -76,6 +81,21 @@ gadgetoid.
 \newblock \url{http://pi.gadgetoid.com/pinout/uart}, note = "[Online; accessed
   15-March-2015]", July 2014.
 
+\bibitem{Gareth}
+G.~Halfacree.
+\newblock Raspberry pi review: Eben upton reveals all.
+\newblock
+  \url{http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all},
+  note = "[Online; accessed 25-February-2015]", 2014.
+
+\bibitem{DexterIndustries}
+D.~Industries.
+\newblock A fork of raspbian for robotics projects with lego, grove, and
+  arduino.
+\newblock
+  \url{http://sourceforge.net/projects/dexterindustriesraspbianflavor/}, note =
+  "[Online; accessed 25-March-2015]", June 2013.
+
 \bibitem{Armstrong}
 M.~K. G. M. G. S. V. J. A. K. J. G. M. L. J. L. E. L. M. J. A. M. J. e.~a.
   J.~A.~Armstrong, P. A.~Ferguson.
@@ -103,11 +123,23 @@ J.~Krumm.
 \newblock {\em Ubiquitous computing fundamentals}.
 \newblock CRC Press, 2009.
 
+\bibitem{netodesenvolvimento}
+M.~C.~M. Neto.
+\newblock Desenvolvimento de aplica{\c{c}}{\~o}es ub{\'\i}quas com ar-duino e
+  raspbery pi.
+
 \bibitem{wiring}
 W.~PI.
 \newblock Wiring pi - gpio interface library for the raspberry pi – about.
 \newblock \url{http://wiringpi.com/}, October 2014.
 \newblock [Online; accessed 02-October-2014].
+
+\bibitem{Pibanglinux}
+pibanglinux.org.
+\newblock Inspired by crunchbang linux, and based on raspbian. features the
+  openbox desktop environment.
+\newblock \url{http://www.pibanglinux.org/}, note = "[Online; accessed
+  25-March-2015]", May 2013.
 
 \bibitem{raspOrg}
 Raspberrypi.org.
@@ -124,6 +156,12 @@ raspberrypi.org.
   \url{http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/},
   May 2012.
 \newblock [Online; accessed 13-March-2015].
+
+\bibitem{Raspbianwheezy}
+raspberrypi.org.
+\newblock Raspbian wheezy.
+\newblock \url{http://www.raspberrypi.org/downloads}, note = "[Online; accessed
+  25-March-2015]", January 2013.
 
 \bibitem{Spi}
 raspberrypi.org.
@@ -151,17 +189,28 @@ raspberypi.org.
   July 2014.
 \newblock [Online; accessed 15-March-2015].
 
-\bibitem{rooke2001system}
-A.~M. Rooke.
-\newblock System for serial peripheral interface with embedded addressing
-  circuit for providing portion of an address for peripheral devices, Oct.~16
-  2001.
-\newblock US Patent 6,304,921.
+\bibitem{PiStore}
+Raspbian.
+\newblock Introducing the pi store.
+\newblock \url{http://www.raspberrypi.org/introducing-the-pi-store/}, note =
+  "[Online; accessed 25-March-2015]", September 2014.
+
+\bibitem{Raspbian}
+Raspbian.
+\newblock Raspbian – debian optimized for the raspberry pi hardware.
+\newblock \url{http://www.raspbian.org/}, note = "[Online; accessed
+  25-March-2015]", September 2014.
 
 \bibitem{Trapp}
 B.~Trapp.
 \newblock Raspberry pi: The perfect home server. linux j.
 \newblock {\em São Paulo: Sociedade Brasileira de Computação}, May 2013.
+
+\bibitem{EbenUpton}
+E.~Upton.
+\newblock Wayland.
+\newblock \url{http://www.raspberrypi.org/archives/4053}, note = "[Online;
+  accessed 25-March-2015]", May 2013.
 
 \bibitem{weiser1991}
 M.~Weiser.
@@ -183,5 +232,12 @@ M.~Wirth and J.~McCuaig.
 \newblock Making programs with the raspberry pi.
 \newblock In {\em Proceedings of the Western Canadian Conference on Computing
   Education}, page~17. ACM, 2014.
+
+\bibitem{Yau}
+L.~Yau.
+\newblock Raspbian server edition version 2.4. the rantings and ravings of a
+  madman.
+\newblock \url{http://sirlagz.net/2013/06/13/raspbian-server-edition-2-4/},
+  note = "[Online; accessed 25-March-2015]", July 2013.
 
 \end{thebibliography}

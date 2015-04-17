@@ -5,7 +5,8 @@
 \usepackage{minted}
 \usepackage{listings}
 \usepackage{graphicx,url}
-\usepackage{hyperref}
+%\usepackage{hyperref}
+\usepackage[hidelinks]{hyperref}
 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -21,7 +22,7 @@
 \usepackage{titlesec}
 \setcounter{secnumdepth}{4}
 
-%\renewcommand{\refname}{REFERENCES}
+
 \addto\captionsenglish{\renewcommand{\bibname}{REFERENCES}}
 \addto\captionsenglish{\renewcommand{\refname}{REFERENCES}}
 
@@ -29,32 +30,6 @@
 {\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
 \titlespacing*{\paragraph}
 {0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
-
-%%formatting references chapter
-%\makeatletter
-%\renewenvironment{thebibliography}[1]
-%     {\section*{\bibname} % <-- this line was changed from \chapter* to \section*
-%      \@mkboth{\MakeUppercase\bibname}{\MakeUppercase\bibname}%
-%      \list{\@biblabel{\@arabic\c@enumiv}}%
-%           {\settowidth\labelwidth{\@biblabel{#1}}%
-%            \leftmargin\labelwidth
-%            \advance\leftmargin\labelsep
-%            \@openbib@code
-%            \usecounter{enumiv}%
-%            \let\p@enumiv\@empty
-%            \renewcommand\theenumiv{\@arabic\c@enumiv}}%
-%      \sloppy
-%      \clubpenalty4000
-%      \@clubpenalty \clubpenalty
-%      \widowpenalty4000%
-%      \sfcode`\.\@m}
-%		
-%     {\def\@noitemerr
-%       {\@latex@warning{Empty `thebibliography' environment}}%
-%      \endlist}
-%\makeatother
-%%end formating references
-
 
 
 \begin{document}
@@ -89,13 +64,13 @@ This article encourages the use of open source technologies, due to the growth o
 The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors / actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses the Abstract Factory pattern to ensure that sensors / actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Pyton as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
 
 \end{abstract}
-\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} % NOT required for Proceedings
+\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} 
 
 \section*{Introduction}
-The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{Armstrong} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016\cite{carvalho2006grandes}, published by the Brazilian Computer Society (SBC).
+The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{Armstrong} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the Brazilian Computer Society (SBC).
 \newline
 \newline
-Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi\cite{Trapp,wirth2014making}.
+Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
 \newline
 \newline
 Raspberry Pi is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and / or for those who must be fed by battery. The platform allows you to use high-level programming languages that are quite widespread as C / C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
@@ -105,7 +80,10 @@ If we seek a way to access the Raspberry Pi bus we shall find a lot of papers in
 \newline
 \newline
 The developer must have a degree of experience that can be considered basic to a computer professional, but advanced for those who are not.
-\newline This paper is structured as follow:
+\newline
+\newline 
+This paper is structured as follow:
+
 \begin{itemize}
 \item Section 2 present several technologies involved in the preparation of this monograph, aimed to introduce important concepts of Computer area in which the context of the project is inserted
 \item Section 3 shows correlated works
@@ -116,15 +94,16 @@ The developer must have a degree of experience that can be considered basic to a
 
 \section{THEORETICAL BACKGROUND}
 In this section the main concepts studied are presented, which provided subsidies for the development of the proposed project.
+
 \subsection{General Context}
 The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991} in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a computer. He believed that in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use the computer without realizing or require specific technical knowledge. \cite{weiser1994world}
+
 \begin{figure}[h]
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/era.png}
     \caption{Ages of Computing}
     \label{fig:era}
 \end{figure}
-\newline
-\newline
+
 The passage of time has shown that betting Weiser was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and the various types of applications on non-conventional computing devices, are just some of the examples that can confirm: the Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
 \newline
 \newline
@@ -157,7 +136,7 @@ Research in Ubiquitous Computing approach about the technologies and infrastruct
 \item how to allow systems involving limited processing resources and energy, to work well?
 \end{itemize}
 
-Generally, ubiquitous applications receive sensor data from other service providers devices, manage user actions, provide support mobility and use context information to perform tasks [6]\cite{doesntfit}. A ubiquitous system itself has a set of requirements, peculiarities and challenges that influence the design, implementation, deployment and evaluation of its project. \cite{krumm2009} These are cornerstones of UbiComp and quite different from those used in the development of systems for PC’s. Among these points, we can cite as an example.:
+Generally, ubiquitous applications receive sensor data from other service providers devices, manage user actions, provide support mobility and use context information to perform tasks \cite{doesntfit}. A ubiquitous system itself has a set of requirements, peculiarities and challenges that influence the design, implementation, deployment and evaluation of its project. \cite{krumm2009} These are cornerstones of UbiComp and quite different from those used in the development of systems for PC’s. Among these points, we can cite as an example.:
 
 \begin{enumerate}
 \item Resource-Constrained Devices; 	
@@ -175,8 +154,7 @@ The Internet of Things (IoT) is a multidisciplinary field, covering a wide range
 The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of captured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object, which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet \cite{Kopetz:1997}.
 \newline
 \newline
-Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes the sensor data and supports a wireless communication link to the Internet[H. Kopetz, Real-Time Systems. Design Principles for Distributed Embedded
-Applications. Kluwer Academic Publications, 1997].
+Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes the sensor data and supports a wireless communication link to the Internet \cite{Kopetz:1997}.
 
 \subsection{Hardware}
 One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, microcontrollers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
@@ -191,7 +169,7 @@ According to \cite{borges2010automaccao}, when the sensors operate directly, tra
 An actuator as well as a sensor is a transducer that converts one form of energy into another, and can also do the opposite \cite{borges2010automaccao}. In other words, rather than just  transform parts of a physical quantity into an electrical signal, it can transform an electrical signal into a physical quantity such as motion, magnetism, heat, among others. For example, the relays are electromechanical devices that work with small power, but are able to control external circuits that involve high currents. They are basically composed of a coil and a set of contacts. When a current flows through the coil it creates a magnetic field that attracts and closes the contacts, remaining as long as power supply in the coil. As a result, it allows the passage of energy through the relay.
 
 \subsubsection{Arduino}
-Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux.
+Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
 \newline
 \newline
 Arduino is a platform that popularizes the concept of free hardware. In the book Getting Started with Arduino, Massimo Banzi describes the Arduino as a physical open-source computing platform based on a simple board with input/output pins that implements the Processing language. It is a small but powerful board constituted by a microcontroller that can be easily programmed via a Universal Serial Bus interface (USB) and able to build electronic devices and interesting systems.
@@ -214,8 +192,9 @@ The fact that both the hardware and the Arduino software be developed in an open
 Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in [19].
 
 \subsubsection{BeagleBone}
-The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip.[7] The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
-\newline\newline
+The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip \cite{coley2009take}.The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
+\newline
+\newline
 BeagleBone is an \$89 Manufacturer suggested retail price (MSRP), credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
 
 \subsubsection{Raspberry Pi}
@@ -242,8 +221,8 @@ Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 a
 The original RPi is based on the Broadcom BCM2835 system on a chip (SoC),\cite{Broadcom} which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,\cite{Brose} and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.\cite{raspOrg} The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage. \cite{Elinux}
 \newline
 \newline
-In 2014, the Raspberry Pi Foundation launched the Compute Module, which packages a BCM2835 with 512 MB RAM and an eMMC flash chip into a module for use as a part of embedded systems. \cite{raspNewProduct}
-The Foundation provides Debian and Arch Linux ARM distributions for download.[12] Tools are available for Python as the main programming language, with support for BBC BASIC (via the RISC OS image or the Brandy Basic clone for Linux),\cite{Jaguar} C, C++, Java, Perl and Ruby.
+In 2014, the Raspberry Pi Foundation launched the Compute Module, which packages a BCM2835 with 512 MB RAM and an eMMC flash chip into a module for use as a part of embedded systems \cite{raspNewProduct}.
+The Foundation provides Debian and Arch Linux ARM distributions for download. Tools are available for Python as the main programming language, with support for BBC BASIC (via the RISC OS image or the Brandy Basic clone for Linux),\cite{Jaguar} C, C++, Java, Perl and Ruby.
 \newline
 \newline
 Some other features presents on RPI:
@@ -262,12 +241,6 @@ The power requirements of the Raspberry Pi increase as you make use of the vario
 
 \paragraph{Processor}
 The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),\cite{Broadcom} which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU,\cite{Brose} and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
-%[1]"BCM2835 Media Processor; Broadcom". Broadcom.com. 1 September 2011. Retrieved 6 May 2012.http://www.broadcom.com/products/BCM2835
-%[8]Brose, Moses (30 January 2012). "Broadcom BCM2835 SoC has the most powerful mobile GPU in the world?". Grand MAX. Archived from the original on 13 April 2012. Retrieved 13 April 2012.https://web.archive.org/web/20120413184701/http://www.grandmax.net/2012/01/broadcom-bcm2835-soc-has-powerful.html
-%[9] "Model B now ships with 512MB of RAM". Raspberrypi.org. Retrieved 15 October 2012.http://www.raspberrypi.org/model-b-now-ships-with-512mb-of-ram/
-%[10] "Verified USB Peripherals and SDHC Cards;". Elinux.org. Retrieved 6 May 2012.http://elinux.org/RPi_VerifiedPeripherals
-%[11] http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/
-%[14] "Brandy Basic". Jaguar.orpheusweb.co.uk. 26 July 2005. Retrieved 6 May 2012. http://jaguar.orpheusweb.co.uk/branpage.html
 
 \paragraph{General Purpose Input/Output}
 Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
@@ -278,7 +251,6 @@ The GPIO pins are available on the PCB via a header and allow you to interface t
 
 \paragraph{Inputs and Outputs}
 The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper we will present only the pins availlable in the model B.The pins are divided into:
-%http://www.raspberrypi.org/documentation/usage/gpio/README.md
 
 \begin{itemize}
 \item Digital pin to input or output (programmable) - 17 pins;	
@@ -305,15 +277,15 @@ RPi pins have some special characteristics which can be used from the software f
 
 \begin{itemize}
 
-\item PWM - Pulse Width Modulation \cite{barr2001pulse}: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12;
+\item PWM - Pulse Width Modulation : Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12 \cite{barr2001pulse};
 
-\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data) \cite{Uart};%http://pi.gadgetoid.com/pinout/uart
+\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data) \cite{Uart};
 
-\item SPI Port - Serial Peripheral Interface \cite{rooke2001system}: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1) \cite{Spi}.
-%http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md
+\item SPI Port - Serial Peripheral Interface : These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1) \cite{Spi};
 
-\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL) \cite{I2c}
-%https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c
+
+\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL) \cite{I2c}.
+
 \end{itemize}
 
 \subsection{Software}
@@ -322,7 +294,7 @@ This section presents all software solutions which are involved with the propose
 \subsubsection{Operating systems}
 Raspberry Pi primarily uses Linux-kernel-based operating systems.
 
-The ARM11 chip at the heart of the Pi (pre-Pi 2) is based on version 6 of the ARM. The current releases of several popular versions of Linux, including Ubuntu,[65] will not run on the ARM11. It is not possible to run Windows on the original Raspberry Pi, though the new Raspberry Pi 2 will be able to run Windows 10.[67] The Raspberry Pi 2 currently only supports Ubuntu Snappy Core, Raspbian, OpenELEC and RISC OS.
+The ARM11 chip at the heart of the Pi (pre-Pi 2) is based on version 6 of the ARM. The current releases of several popular versions of Linux, including Ubuntu \cite{Gareth}, will not run on the ARM11. It is not possible to run Windows on the original Raspberry Pi, though the new Raspberry Pi 2 will be able to run Windows 10.\cite{Kevin} The Raspberry Pi 2 currently only supports Ubuntu Snappy Core, Raspbian, OpenELEC and RISC OS.
 \newline
 \newline
 The install manager for the Raspberry Pi is NOOBS. The operating systems included with NOOBS are:
@@ -335,37 +307,27 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 \item Puppy Linux;
 \item Raspbmc and the XBMC open source digital media center;
 \item RISC OS – The operating system of the first ARM-based computer;
-\item Raspbian (recommended for Raspberry Pi and used in this project)[74] – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs.[77]
+\item Raspbian (recommended for Raspberry Pi and used in this project)\cite{Raspbian} – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs.\cite{PiStore}
 \begin{itemize}
-\item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian.[78][79]
-\item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions.[80] on 16 April 2014 a GUI shell for Weston called Maynard was released.
-\item PiBang Linux is derived from Raspbian.[81]
-\item Raspbian for Robots[82] - A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.
-\end{itemize}
-%[65]Gareth Halfacree. "Raspberry Pi review: Eben Upton reveals all". linuxuser.co.uk.http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all
-%[67] Dallas, Kevin (2 February 2015). "Windows 10 Coming to Raspberry Pi 2". Building Apps for Windows. Microsoft. Retrieved 2 February 2015.http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/
-%[74]"Raspbian – Debian optimized for the Raspberry Pi hardware".http://www.raspbian.org/
-%[77]"Introducing the Pi Store". Retrieved 16 September 2014.http://www.raspberrypi.org/introducing-the-pi-store/
-%[78]Yau, Lawrence. "Raspbian Server Edition Version 2.4". The Rantings and Ravings of a Madman. sirlagz.net - Lawrence Yau. Retrieved 4 July 2013.http://sirlagz.net/2013/06/13/raspbian-server-edition-2-4/
-%[79]Raspbian wheezy". Downloads. Raspberry Pi Foundation. Retrieved 10 January 2013.http://www.raspberrypi.org/downloads
-%[80]Eben Upton (24 May 2013). "Wayland". Raspberry Pi. Retrieved 25 May 2013.http://www.raspberrypi.org/archives/4053
-%[81]"Inspired by CrunchBang Linux, and based on Raspbian. Features the Openbox desktop environment".http://www.pibanglinux.org/
-%[82]"A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.".http://sourceforge.net/projects/dexterindustriesraspbianflavor/
+\item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian.\cite{Yau,Raspbianwheezy}
+\item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions.\cite{EbenUpton} on 16 April 2014 a GUI shell for Weston called Maynard was released.
+\item PiBang Linux is derived from Raspbian.\cite{Pibanglinux}
+\item Raspbian for Robots\cite{DexterIndustries} - A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.
 \end{itemize}
 
-A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix.
-%"Other operating systems" http://en.wikipedia.org/wiki/Raspberry_Pi#cite_note-RaspbianServerEdition-78 
+\end{itemize}
+
+A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix ~\nameref{sec:RPiOS} \footnote{\url{http://en.wikipedia.org/wiki/Raspberry_Pi\#cite_note-RaspbianServerEdition-78}}.
+
 
 \subsubsection{WiringPi}
 WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers \cite{wiring}. Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
 
 \subsubsection{Python}
-Python is considered a very high level language because its syntax is simple and its dynamic typingin addition to being interpreted which makes it great for scripting and robust for various paradigms including object orientation. With all these benefits of language, Python still surprises to be an open source software being available for all major operating systems.
-[] % [http://www.enucomp.com.br/2012/conteudos/artigos/arduinoPython.pdf]
-
+Python is considered a very high level language because its syntax is simple and its dynamic typing, besides being interpreted, which makes it great for scripting and robust for various paradigms including object orientation. With all these benefits of language, Python still surprises to be an open source software being available for all major operating systems. \cite{dearduino}
 
 \subsubsection{GPIO in Python}
-The easiest way to control the GPIO pins is using the module RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide. Once installed using the pins is as easy as below: 
+The easiest way to control the GPIO pins is using the module RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide\footnote{\url{http://sourceforge.net/p/raspberry-gpio-python/wiki/install/}}. Once installed using the pins is as easy as below: 
 
 
 \renewcommand{\theFancyVerbLine}{
@@ -395,7 +357,6 @@ The easiest way to control the GPIO pins is using the module RPi.GPIO Python lib
 
 Any RPi.GPIO script must be run as root because this library needs to acces /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
 
-%installation guide: http://sourceforge.net/p/raspberry-gpio-python/wiki/install/
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
 The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure~\ref{fig:ModelAB}.
@@ -1132,17 +1093,35 @@ Some suggestions can be seen below:
 \appendix
 %Appendix A
 \section{Headings in Appendices}
-The rules about hierarchical headings discussed above for
-the body of the article are different in the appendices.
-In the \textbf{appendix} environment, the command
-\textbf{section} is used to
-indicate the start of each Appendix, with alphabetic order
-designation (i.e. the first is A, the second B, etc.) and
-a title (if you include one).  So, if you need
-hierarchical structure
-\textit{within} an Appendix, start with \textbf{subsection} as the
-highest level. Here is an outline of the body of this
-document in Appendix-appropriate form:
+
+
+
+
+%%%% OTHER RASPBERRY SO'S
+
+\subsection{Other operating systems}\label{sec:RPiOS}
+\begin{itemize}
+\item Xbian– Using the Kodi (formerly XBMC) open source digital media center;
+\item openSUSE;
+\item Raspberry Pi Fedora Remix;
+\item Slackware ARM – Version 13.37 and later runs on the Raspberry Pi without modification.
+\item FreeBSD and NetBSD;
+\item Plan 9 from Bell Labs and Inferno(in beta);
+\item Moebius – A light ARM HF distribution based on Debian;
+\item OpenWrt – Primarily used on embedded devices to route network traffic;
+\item Kali Linux – A Debian-derived distro designed for digital forensics and penetration testing;
+\item Instant WebKiosk – An operating system for digital signage purposes (web and media views);
+\item Ark OS – Website and email self-hosting;
+\item Minepion – Dedicated operating system for mining cryptocurrency;
+\item Kano OS;
+\item Nard SDK For industrial embedded systems;
+\item Sailfish OS with Raspberry Pi 2;
+\item Tiny Core Linux – a minimal Linux operating system focused on providing a base system using BusyBox and FLTK;
+\item IPFire – a dedicated firewall/router distribution for the protection of a SOHO LAN;
+\end{itemize}
+
+
 \balancecolumns
 % That's all folks!
+
 \end{document}

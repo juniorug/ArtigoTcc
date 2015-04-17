@@ -1,23 +1,68 @@
-This is BibTeX, Version 0.99d (TeX Live 2014)
+This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: sigproc-sp.aux
 The style file: abbrv.bst
 Database file #1: sigproc.bib
-I was expecting a `,' or a `}'---line 269 of file sigproc.bib
+I was expecting a `,' or a `}'---line 281 of file sigproc.bib
  : 
  : @misc{Spi,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 277 of file sigproc.bib
+I was expecting a `,' or a `}'---line 289 of file sigproc.bib
  : 
  : @misc{I2c,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 288 of file sigproc.bib
+I was expecting a `,' or a `}'---line 297 of file sigproc.bib
  : 
- : %Manoelllll
+ : %%%%%%%%%%%%%%%%%
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 306 of file sigproc.bib
+ : 
+ : %67
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 307 of file sigproc.bib
+ : @misc{Gareth
+ :             ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 324 of file sigproc.bib
+ : 
+ : %77
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 333 of file sigproc.bib
+ : 
+ : %78
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 342 of file sigproc.bib
+ : 
+ : %79
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 351 of file sigproc.bib
+ : 
+ : %80
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 360 of file sigproc.bib
+ : 
+ : %81
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 369 of file sigproc.bib
+ : 
+ : %82
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 380 of file sigproc.bib
+ : 
+ : %%%%%%%%%%%%%%%%%
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Kevin"
 Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
 while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
@@ -55,45 +100,47 @@ while executing---line 1090 of file abbrv.bst
 Warning--empty title in Armstrong
 Warning--empty journal in krishnakumarframework
 Warning--empty year in krishnakumarframework
-You've used 30 entries,
+Warning--empty journal in netodesenvolvimento
+Warning--empty year in netodesenvolvimento
+You've used 39 entries,
             2118 wiz_defined-function locations,
-            666 strings with 7990 characters,
-and the built_in function-call counts, 7335 in all, are:
-= -- 722
-> -- 250
+            710 strings with 9463 characters,
+and the built_in function-call counts, 9285 in all, are:
+= -- 910
+> -- 313
 < -- 4
-+ -- 108
-- -- 74
-* -- 353
-:= -- 1242
-add.period$ -- 101
-call.type$ -- 30
-change.case$ -- 123
++ -- 136
+- -- 92
+* -- 438
+:= -- 1571
+add.period$ -- 127
+call.type$ -- 39
+change.case$ -- 159
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 296
-empty$ -- 683
-format.name$ -- 74
-if$ -- 1573
+cite$ -- 46
+duplicate$ -- 366
+empty$ -- 879
+format.name$ -- 92
+if$ -- 1991
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 18
-newline$ -- 162
-num.names$ -- 60
-pop$ -- 207
+int.to.str$ -- 39
+missing$ -- 20
+newline$ -- 206
+num.names$ -- 78
+pop$ -- 272
 preamble$ -- 1
-purify$ -- 96
+purify$ -- 123
 quote$ -- 0
-skip$ -- 219
+skip$ -- 281
 stack$ -- 0
-substring$ -- 266
-swap$ -- 50
+substring$ -- 331
+swap$ -- 58
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
-warning$ -- 5
-while$ -- 73
-width$ -- 32
-write$ -- 330
-(There were 19 error messages)
+type$ -- 150
+warning$ -- 7
+while$ -- 93
+width$ -- 41
+write$ -- 418
+(There were 28 error messages)
