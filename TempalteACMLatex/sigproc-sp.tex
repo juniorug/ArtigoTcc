@@ -5,7 +5,6 @@
 \usepackage{minted}
 \usepackage{listings}
 \usepackage{graphicx,url}
-%\usepackage{hyperref}
 \usepackage[hidelinks]{hyperref}
 
 \usepackage{fancyhdr}
@@ -719,7 +718,7 @@ The Virtual Machine style is applied when we imagine the layers between the hard
 The envent-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
 
 \subsubsection{Architectural Pattern}
-This pooject was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications.Second[20] ,a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers [5]: 
+This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications.Second[20] ,a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
 \item Then context operators, which process this information; 
@@ -1087,10 +1086,11 @@ Some suggestions can be seen below:
 
 \section{Units and scales}\label{sec:Units}
 Table \ref{table:units} shows units and scales provided by libsensorPy.
+
 \begin{table}[h]
 \caption{Units and scales}
 \label{table:units}
-\begin{tabular}{|l|l|l|}
+\begin{tabular}{|l|l|p{2.4cm}|}
 \hline
 \textbf{Sensor Family} & \textbf{Default units}     & \textbf{Other units provided} \\ \hline
 Acelerometer  & G                 & m/s2                 \\ \hline
@@ -1107,9 +1107,10 @@ Ultrassonic   & Centimeter (cm)   & \\
 \end{table}
 
 
-\section{Implemented Sensors }\label{sec:Implem}
+\section{Implemented Sensors}\label{sec:Implem}
 Table \ref{table:lis} shows the list of implemented sensors.
-\begin{table*}[h]
+
+\begin{table*}[ht]
 \centering
 \caption{List of implemented sensors}
 \label{table:lis}
@@ -1142,6 +1143,15 @@ Composite       & BMP085          & BMP085Composite      & bmp085CompositeExampl
 \end{tabular}
 \end{table*}
 
+\section{Raspberry Pi, Models and Specifications}\label{sec:Implem}
+Figure~\ref{fig:modelSpec} shows all Raspberry Pi's models and specifications.
+\begin{figure*}[h]
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/modelSpecification.png}
+    %\caption{Raspberry Pi, Models and Specifications}
+	\caption[Caption for LOF]{Raspberry Pi, Models and Specifications\protect\footnotemark}    
+    \label{fig:modelSpec}
+\end{figure*}
+\footnotetext{\url{http://en.wikipedia.org/wiki/Raspberry_Pi}}
 
 \balancecolumns
 % That's all folks!
