@@ -41,14 +41,14 @@
 \author{
 % 1st. author
 \alignauthor
-Edivaldo M. F. de Jesus Jr\titlenote{Aluno do curso de An\'alise e Desenvolvimento de Sistemas(ADS)}\\
+Edivaldo M. F. de Jesus Jr\titlenote{Student from the course of Analysis and Systems Development (ADS).}\\
        \affaddr{Instituto Federal da Bahia}\\
        \affaddr{Rua Em\'idio dos Santos, S/N}\\
        \affaddr{Barbalho, Salvador Bahia}\\
        \email{juniorug@gmail.com}
 % 2nd. author
 \alignauthor
-Manoel C. M. Neto\titlenote{Doutor em Ci\^encia da Computa\c{c}\~ao e Professor do Curso de An\'alise e Desenvolvimento de Sistemas}\\
+Manoel C. M. Neto\titlenote{Ph.D. in Computer Science, Professor and Researcher from the course of Analysis and Systems Development.}\\
        \affaddr{Instituto Federal da Bahia}\\
        \affaddr{Rua Em\'idio dos Santos, S/N}\\
        \affaddr{Barbalho, Salvador Bahia}\\
@@ -61,19 +61,19 @@ Manoel C. M. Neto\titlenote{Doutor em Ci\^encia da Computa\c{c}\~ao e Professor 
 \begin{abstract}
 
 This article encourages the use of open source technologies, due to the growth of free movement of hardware, inferring the possibility of an alternative for engineers and professionals to develop their projects and provide the dissemination of knowledge.
-The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors / actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses the Abstract Factory pattern to ensure that sensors / actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Pyton as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
+The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors/actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses the Abstract Factory pattern to ensure that sensors/actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
 
 \end{abstract}
-\keywords{Ubiquitous Computing,Internet of Things, Raspberry Pi, Sensor, Python} 
+\keywords{Ubiquitous Computing, Internet of Things, Raspberry Pi, Sensor, Python.} 
 
 \section*{Introduction}
-The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{Armstrong} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the Brazilian Computer Society (SBC).
+The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{Armstrong} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
 \newline
 \newline
 Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
 \newline
 \newline
-Raspberry Pi is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and / or for those who must be fed by battery. The platform allows you to use high-level programming languages that are quite widespread as C / C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
+Raspberry Pi is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and/or for those who must be fed by battery. The platform allows the use high-level programming languages that are quite widespread as C/C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
 \newline
 \newline
 If we seek a way to access the Raspberry Pi bus we shall find a lot of papers in Python. Which incidentally, brings the acronym of the device name (Pi from Python). However, we cannot find any library that abstracts the details of wiring a sensor or actuator to the Raspberry allowing the user takes care just in read the data already processed and/or converted.
@@ -85,10 +85,10 @@ The developer must have a degree of experience that can be considered basic to a
 This paper is structured as follow:
 
 \begin{itemize}
-\item Section 2 present several technologies involved in the preparation of this monograph, aimed to introduce important concepts of Computer area in which the context of the project is inserted
-\item Section 3 shows correlated works
-\item Section 4 presents the details of the executed implementation
-\item Sections 5 and 6 address the testing methodologies used and the results obtained during system validation. 
+\item Section 2 present several technologies involved in the preparation of this article, aimed to introduce important concepts of Computer area in which the context of the project is inserted;
+\item Section 3 shows correlated works;
+\item Section 4 presents the details of the executed implementation;
+\item Sections 5 and 6 address the testing methodologies used and the results obtained during system validation; 
 \item The last section presents the conclusions.
 \end{itemize}
 
@@ -120,7 +120,7 @@ An important conceptual limitation of mobile computing is that the computational
 The concept of pervasive computing implies that the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow you to control, configure and tune the application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
 
 \subsection{Ubiquitous Computing}
-As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous is an adjective originated from Latin (ubiquu) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
+As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous is an adjective originated from Latin (\textit{ubiquu}) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
 \begin{figure}[h]
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/ubiq.png}
     \caption{Ubiquitous Computing: intersection between pervasive and mobile computing}
@@ -128,15 +128,15 @@ As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a compute
 \end{figure}
 \newline
 \newline
-Research in Ubiquitous Computing approach about the technologies and infrastructure that enable the deployment of ubiquitous applications through a number of issues including the following:
+Research in ubiquitous computing approach about the technologies and infrastructure that enable the deployment of ubiquitous applications through a number of issues including the following:
 
 \begin{itemize}
-\item how to design hardware and operating systems for sensor platforms?
-\item how to allow devices to find each other and to use your services?
-\item how to allow systems involving limited processing resources and energy, to work well?
+\item How to design hardware and operating systems for sensor platforms?
+\item How to allow devices to find each other and to use your services?
+\item How to allow systems involving limited processing resources and energy, to work well?
 \end{itemize}
 
-Generally, ubiquitous applications receive sensor data from other service providers devices, manage user actions, provide support mobility and use context information to perform tasks \cite{doesntfit}. A ubiquitous system itself has a set of requirements, peculiarities and challenges that influence the design, implementation, deployment and evaluation of its project. \cite{krumm2009} These are cornerstones of UbiComp and quite different from those used in the development of systems for PC’s. Among these points, we can cite as an example.:
+Generally, ubiquitous applications receive sensor data from other service providers devices, manage user actions, provide support mobility and use context information to perform tasks \cite{doesntfit}. A ubiquitous system itself has a set of requirements, peculiarities and challenges that influence the design, implementation, deployment and evaluation of its project \cite{krumm2009}. These are cornerstones of UbiComp and quite different from those used in the development of systems for PC's. Among these points, we can cite as an example:
 
 \begin{enumerate}
 \item Resource-Constrained Devices; 	
@@ -148,16 +148,16 @@ Generally, ubiquitous applications receive sensor data from other service provid
 \end{enumerate}
 
 \subsection{Internet of Things}
-The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (eg, routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing internet of things’ applications are potentially diverse. Monitoring of environmental and personal health, monitoring and control of industrial processes, including agriculture, smart spaces and smart cities are just some examples of the IoT applications \cite{krishnakumarframework}.
+The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (e.g., routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing Internet of things' applications are potentially diverse. Monitoring of environmental and personal health, monitoring and control of industrial processes, including agriculture, smart spaces and smart cities are just some examples of the IoT applications \cite{krishnakumarframework}.
 \newline
 \newline
 The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of captured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object, which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet \cite{Kopetz:1997}.
 \newline
 \newline
-Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes the sensor data and supports a wireless communication link to the Internet \cite{Kopetz:1997}.
+Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the Internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes the sensor data and supports a wireless communication link to the Internet \cite{Kopetz:1997}.
 
 \subsection{Hardware}
-One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, microcontrollers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
+One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, micro-controllers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
 
 \subsubsection{Sensors and Actuators}
 Sensors are devices that allow us to capture information from the environment in which they are inserted, such as temperature, pressure, presence, humidity, smoke detector, light intensity, among others. In general, the sensors work transforming parts of a physical quantity into an electrical signal, which in turn can be interpreted by electronic devices \cite{borges2010automaccao}. In other words, sensors are components that allow an electronic device to interact with the real world.
@@ -169,18 +169,18 @@ According to \cite{borges2010automaccao}, when the sensors operate directly, tra
 An actuator as well as a sensor is a transducer that converts one form of energy into another, and can also do the opposite \cite{borges2010automaccao}. In other words, rather than just  transform parts of a physical quantity into an electrical signal, it can transform an electrical signal into a physical quantity such as motion, magnetism, heat, among others. For example, the relays are electromechanical devices that work with small power, but are able to control external circuits that involve high currents. They are basically composed of a coil and a set of contacts. When a current flows through the coil it creates a magnetic field that attracts and closes the contacts, remaining as long as power supply in the coil. As a result, it allows the passage of energy through the relay.
 
 \subsubsection{Arduino}
-Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
+Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a micro-controller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
 \newline
 \newline
-Arduino is a platform that popularizes the concept of free hardware. In the book Getting Started with Arduino, Massimo Banzi describes the Arduino as a physical open-source computing platform based on a simple board with input/output pins that implements the Processing language. It is a small but powerful board constituted by a microcontroller that can be easily programmed via a Universal Serial Bus interface (USB) and able to build electronic devices and interesting systems.
+Arduino is a platform that popularizes the concept of free hardware. In the book Getting Started with Arduino, Massimo Banzi describes the Arduino as a physical open-source computing platform based on a simple board with input/output pins that implements the Processing language. It is a small but powerful board constituted by a micro-controller that can be easily programmed via a Universal Serial Bus interface (USB) and able to build electronic devices and interesting systems.
 \newline
 \newline
 Working with the construction of a hardware requires much time and effort, because is necessary to create new circuits, use various components such as resistors and capacitors and many welds. Using Arduino board abstracts much of this construction process, making it simpler, allowing people from different fields of knowledge being able to build their projects. The platform is widely used worldwide for offering advantages such as:
 
 
 \begin{itemize}
-\item A multiplatform environment that can run all major operating systems such as Windows, Linux and MacOS.
-\item Is an open-source hardware, ie, the circuit design is available so that if someone is interested in creating your own card, just buy the necessary components.		
+\item A multi-platform environment that can run all major operating systems such as Windows, Linux and MacOS.
+\item Is an open-source hardware, i.e., the circuit design is available so that if someone is interested in creating your own card, just buy the necessary components.		
 \item Hardware cost is low.					
 \item Is possible program it via a USB cable instead of a serial port. Remember that today's computers do not have serial ports.	
 \item It has a development environment with intuitive interface for easy use.
@@ -243,14 +243,14 @@ The power requirements of the Raspberry Pi increase as you make use of the vario
 The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),\cite{Broadcom} which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU,\cite{Brose} and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
 
 \paragraph{General Purpose Input/Output}
-Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
+Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, micro-controllers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
 \newline
 \newline
 Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM (Pulse Width Modulation), UART (Universal asynchronous receiver/transmitter) and SPI (Serial Peripheral Interface). Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others \cite{Brose}.
 The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
 
 \paragraph{Inputs and Outputs}
-The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper we will present only the pins availlable in the model B.The pins are divided into:
+The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper we will present only the pins available in the model B.The pins are divided into:
 
 \begin{itemize}
 \item Digital pin to input or output (programmable) - 17 pins;	
@@ -261,13 +261,13 @@ The number and options of input and output from a Raspberry Pi depend on the mod
 The first item on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Raspberry Pi is coupled to the sensors to capture environmental information. Among the 17 digital input / output pins there are 2 pins that match the serial communication module UART (Universal asynchronous receiver/transmitter). This module allows communication between a computer (for example) and the Raspberry Pi (see Special Pins section). All pins have more than one function, pins can be input or output, and the roles of each are defined in the code of possible programs that can be run on the RPi.
 
 \paragraph{Digital Inputs}
-All 17 programable pins can be used as digital inputs. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off).
+All 17 programmable pins can be used as digital inputs. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off).
 \newline
 \newline
 From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). You can not know how much voltage is being applied to the pin.
 
 \paragraph{Analog Inputs}
-The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a microcontroller due to the available Linux versions not being true real-time. 
+The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a micro-controller due to the available Linux versions not being true real-time. 
 
 \paragraph{Digital outputs}
 With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. You can program the RPi for all 17 digital outputs.
@@ -321,7 +321,7 @@ A list of other operating systems that can be installed on Raspberry Pi but are 
 
 
 \subsubsection{WiringPi}
-WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers \cite{wiring}. Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Pyton. This last will be used in this paper from the wrapper raspberry-gpio-python.
+WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers \cite{wiring}. Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Python. This last will be used in this paper from the wrapper raspberry-gpio-python.
 
 \subsubsection{Python}
 Python is considered a very high level language because its syntax is simple and its dynamic typing, besides being interpreted, which makes it great for scripting and robust for various paradigms including object orientation. With all these benefits of language, Python still surprises to be an open source software being available for all major operating systems. \cite{dearduino}
@@ -355,7 +355,7 @@ The easiest way to control the GPIO pins is using the module RPi.GPIO Python lib
   GPIO.output(8, True)
 \end{minted}
 
-Any RPi.GPIO script must be run as root because this library needs to acces /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
+Any RPi.GPIO script must be run as root because this library needs to access /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
 
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
@@ -387,15 +387,15 @@ As with other platforms, Raspberry Pi allows coupling several sensors whose hand
 This may be a consequence of run under the Linux kernel which is not suitable for real time applications - it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
 \newline
 \newline
-The library proposed reconciles the use of an integrated circuit platform with microcontroller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
-Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the microcontroller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
+The library proposed reconciles the use of an integrated circuit platform with micro-controller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
+Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the micro-controller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
 
 \section{RELATED WORK}
 As mentioned in section~\ref{sec:justification}, there is no specific library to work with python applied to Raspberry IP, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-PrivateEyePi\cite{Privateeyepi} is a project developed for security/automation that uses binds programming and eletronics.
+PrivateEyePi\cite{Privateeyepi} is a project developed for security/automation that uses binds programming and electronics.
 This is an open source project that is free of charge and can be copied, shared and modified without restriction.
 The user can use the Raspberry Pi or an tiny wireless Arduino to connect sensors and send data over the Internet.
 \newline
@@ -450,7 +450,7 @@ Once having a board instance, it’s possible to access its pins through the boa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
-\cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides backends for Python. The module named "serial" automatically selects the appropriate backend.
+\cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
 \newline
 \newline
 Features:
@@ -462,7 +462,7 @@ Features:
 \item File like API with “read” and “write” ("readline" etc. also supported).
 \item The files in this package are 100\% pure Python.
 \item The port is set up for binary transmission. No NULL byte stripping, carriage return-linefeed translation(CR-LF) etc. (which are many times enabled for POSIX.) This makes this module universally useful.
-\item Compatible with io library (Python 2.6+)
+\item Compatible with I/O library (Python 2.6+)
 \item RFC 2217 client (experimental), server provided in the examples
 \end{itemize}
 
@@ -471,7 +471,7 @@ This work \cite{dearduino}, describes the use of LM35 (temperature sensor) and a
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %http://playground.arduino.cc/Main/DHTLib
-Arduino DHTLib \footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's famly, such as DHT11, DHT21, DHT22 DHT33 e DHT44, applied to Arduino. 
+Arduino DHTLib \footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22 DHT33 e DHT44, applied to Arduino. 
 \newline
 \newline
 The DHT11/21/22 has three lines, GND, +5V and a single data line. By means of a handshake the values are clocked out over the single digital line. Handshake for DHT21/22 is identical, but data format are different. The library is rewritten from scratch and is not compatible with earlier DHT libraries to be able to support both DHT's and stay as simple as possible and to minimize footprint.
@@ -488,7 +488,7 @@ The \textit{readXX()} functions return:
 \begin{itemize}
 \item DHTLIB\_OK (0) : if the sensor sample and its checksum is OK.
 \item DHTLIB\_ERROR\_CHECKSUM (-1) : if the checksum test failed. This means that data was received but may be incorrect.
-\item DHTLIB\_ERROR\_TIMEOUT (-2) : if a timeout occured, communication failed.
+\item DHTLIB\_ERROR\_TIMEOUT (-2) : if a timeout occurred, communication failed.
 \end{itemize}
 
 In case of a DHTLIB\_ERROR\_TIMEOUT, humidity and temperature will get the value DHTLIB\_INVALID\_VALUE. In case of DHTLIB\_ERROR\_CHECKSUM the values of humidity and temperature are left unchanged as it is impossible to determine which byte failed in the checksum. It is up to the programmer to decide what to do. One can compare with previous value, but better reread the sensor.
@@ -496,7 +496,7 @@ In case of a DHTLIB\_ERROR\_TIMEOUT, humidity and temperature will get the value
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %https://code.google.com/p/arduino-new-ping/
-NewPing Library for Arduino\footnote{\url{https://code.google.com/p/arduino-new-ping/}}  is an ultrasonic sensor library for arduino that was developed to work with the sensors SR04, SRF05, SRF06, DYP-ME007 and Parallax PING)))\textsuperscript{TM}. It is written with c++ and intended to use with Sketches (Software written using Arduino). 
+NewPing Library for Arduino\footnote{\url{https://code.google.com/p/arduino-new-ping/}}  is an ultrasonic sensor library for Arduino that was developed to work with the sensors SR04, SRF05, SRF06, DYP-ME007 and Parallax PING)))\textsuperscript{TM}. It is written with c++ and intended to use with Sketches (Software written using Arduino). 
 \newline
 \newline
 Features:
@@ -526,13 +526,13 @@ This library provides a collection of python scripts to work with sensors, provi
 Despite being a library with a considerable amount of sensors, if the user wants to change the type of sensor in a project, it is necessary review the documentation of the new sensor to be used because the library does not use a standard for equivalent sensors.
 
 \section{PROPOSED MODEL}
-Many small embedded systems exist to collect data from sensors, analyse the data, and either take an appropriate action or send that sensor data to another system for processing. One of the many challenges of embedded systems design is the fact that parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
+Many small embedded systems exist to collect data from sensors, analyses the data, and either take an appropriate action or send that sensor data to another system for processing. One of the many challenges of embedded systems design is the fact that parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
 \newline
 \newline
-Creating new drivers is a relatively easy task, but integrating them into existing systems is both error prone and time consuming since sensors rarely use the exact same units of measurement. By reducing all data to a single sensors/event family type and settling on specific, standardised SI units for each sensor family the same sensor types return values that are comparable with any other similar sensor. This enables users to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
+Creating new drivers is a relatively easy task, but integrating them into existing systems is both error prone and time consuming since sensors rarely use the exact same units of measurement. By reducing all data to a single sensors/event family type and settling on specific, standardized SI units for each sensor family the same sensor types return values that are comparable with any other similar sensor. This enables users to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
 \newline
 \newline
-LibsensorPy is an extensible library, which allows the user to interact with environment through sensors and actuators coupled to the Raspberry Pi as well as add new sensors / actuators and easy way to practice. Often programmers, who have no knowledge in electronics, and engineers who do not have programming experience need to create ubiquitous systems, requiring a lot of work to implement system's abstractions, configure logic connections between sensors and the microcontroller, capture, understand and process the data in order to make them readable.
+LibsensorPy is an extensible library, which allows the user to interact with environment through sensors and actuators coupled to the Raspberry Pi as well as add new sensors / actuators and easy way to practice. Often programmers, who have no knowledge in electronics, and engineers who do not have programming experience need to create ubiquitous systems, requiring a lot of work to implement system's abstractions, configure logic connections between sensors and the micro-controller, capture, understand and process the data in order to make them readable.
 \newline
 \newline 
 With the proposed system, the user only need to worry about using the data that the solution delivery already processed since the system provides the abstractions of the main necessary resources for the processing and, if desired, inform the library in which pins the sensors are connected, if the user does not want to use the default configuration of each sensor. Conversions between units of measure are also provided, facilitating and universalizing the use of the library.
@@ -545,10 +545,10 @@ This is imporant useful for two reasons:
 
 \begin{enumerate}
 \item Users can use the data right away because it's already converted to SI units that is understandable and can compare, rather than meaningless values like 0..1023.
-\item Because SI units are standardised in the sensor library, users can also do quick sanity checks working with new sensors, or drop in any comparable sensor if needed better sensitivity or if a lower cost unit becomes available, etc.
+\item Because SI units are standardized in the sensor library, users can also do quick sanity checks working with new sensors, or drop in any comparable sensor if needed better sensitivity or if a lower cost unit becomes available, etc.
 \end{enumerate}
 
-Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardised SI values and measurable units and conversions for each sensor can be seen in appendix~\ref{sec:Units}.
+Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardized SI values and measurable units and conversions for each sensor can be seen in appendix~\ref{sec:Units}.
 \newline
 \newline
 By reducing all data to a single sensors 'type' and settling on specific, for each sensor family, the same sensor types return values that are comparable with any other similar sensor. This enables the user to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
@@ -610,7 +610,7 @@ In the table \ref{table:rf} are defined the main functional requirements order t
  \hline 
  RF05 & Allow the creation of composite sensors, enabling a single sensor to measure more than one physical greatness; & User \\
  \hline 
- RF06 & Allow configuration of a set of conditions (events) que, When met, trigger an action. & User \\
+ RF06 & Allow configuration of a set of conditions (events) that, When met, trigger an action. & User \\
 \hline  
 \end{tabular}
 \end{table}
@@ -625,7 +625,7 @@ Are characterized as non-functional requirements for the proper functioning of l
  \hline  
  Id & Non-Functional Requirements & Category \\
  \hline  
- RNF01 & The library must allow adition of new sensors/families; & Extensibility\\
+ RNF01 & The library must allow addition of new sensors/families; & Extensibility\\
  \hline  
  RNF02 & The data reported by the application must be faithful to that presented in the environment; & Confidence \\
  \hline 
@@ -644,7 +644,7 @@ After some research about what could be the problem, we found that we cannot ass
 %fonte: http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
 \newline
 \newline
-These sensors need to wait microsseconds between send a signal to the sensor and get back the data readed from it, And because of this not real time property from both java and the raspberry pi, we couldn’t read data from those sensors. After that we moved on to change the programming language and decided to use python, especially because it’s the recommended programming language by the Raspberry Pi developers.
+These sensors need to wait microseconds between send a signal to the sensor and get back the data read from it, And because of this not real time property from both Java and the raspberry pi, we couldn't read data from those sensors. After that we moved on to change the programming language and decided to use python, especially because it's the recommended programming language by the Raspberry Pi developers.
 
 \subsection{Architecture}
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
@@ -702,7 +702,7 @@ The libsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by the Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedures call and event . The Procedure Call connectors model the control flow by invocation techniques and perform data transfer between the components involved through the use of parameters. Examples of Procedure Call connectors include functions, procedures,  object oriented methods, callback and system calls
 \newline
 \newline
-The Virtual Machine style is applied when we imagine the layers between the hardware and the Raspberry py libsensorPy library using procedure calls as connectors between the layers. We have thus the layers:
+The Virtual Machine style is applied when we imagine the layers between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. We have thus the layers:
 \begin{itemize}
 \item Physical: GPIO
 \item Operating System
@@ -798,7 +798,7 @@ Check /etc/modprobe.d/raspi-blacklist.conf if using Raspbian, and comment "black
 And adding a \# (if its not there), on these informations: \textit{blacklist i2c-bcm2708} and \textit{blacklist spi-bcm2708}.
 \newline
 \newline
-For Wheezy or something-other-than-Occidentalis, add the following lines to /etc/modules: 
+For Wheezy or something-other-than-Occidentals, add the following lines to /etc/modules: 
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -853,7 +853,7 @@ and finally install libsensorPy:
 
 
 \subsection{How to extend the library}
-The Abstract Factory pattern, how it was implemented in this solution allows the extension of the library easily, following the  open/closed principle, becoming it easy to modify and avoiding the user application does not suffer from the impact of these changes. This requires user programming skills. The user can add new sensors, events and new factories. To add new sensors, simply, besides implement the sensor class, create a concrete factory that inherits from the factory refering to the sensor family to be added and overwrite the createSensor () method, making this method to create the new sensor, if desired, or call the create method of the superclass sensor, ensuring system compatibility.
+The Abstract Factory pattern, how it was implemented in this solution allows the extension of the library easily, following the  open/closed principle, becoming it easy to modify and avoiding the user application does not suffer from the impact of these changes. This requires user programming skills. The user can add new sensors, events and new factories. To add new sensors, simply, besides implement the sensor class, create a concrete factory that inherits from the factory referring to the sensor family to be added and overwrite the \textit{createSensor()} method, making this method to create the new sensor, if desired, or call the create method of the superclass sensor, ensuring system compatibility.
 \newline
 \newline
 To add a new sensor family just create a new factory that implements the abstract methods of AbstractSensorFactory interface. If desired, is possible also to create an abstract family class for this , if there is not in  the library, creating thus a "contract", where the attributes are specified, methods and functions that the concrete sensors classes of this family are required to implement .
@@ -1032,7 +1032,7 @@ The result of the case study was satisfactory. The tested sensors worked as expe
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
-We tested the sensors DHT11Temperature, DHT11Humidity, DHT11Composite and HCSR04. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplares on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
+We tested the sensors DHT11Temperature, DHT11Humidity, DHT11Composite and HCSR04. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplars on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
 \newline
 \newline
 Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
@@ -1083,12 +1083,14 @@ Some suggestions can be seen below:
 \item IPFire – a dedicated firewall/router distribution for the protection of a SOHO LAN;
 \end{itemize}
 
+\newpage
 
 \section{Units and scales}\label{sec:Units}
 Table \ref{table:units} shows units and scales provided by libsensorPy.
 
-\begin{table}[h]
+\begin{table}[hf]
 \caption{Units and scales}
+\centering
 \label{table:units}
 \begin{tabular}{|l|l|p{2.4cm}|}
 \hline
@@ -1110,7 +1112,7 @@ Ultrassonic   & Centimeter (cm)   & \\
 \section{Implemented Sensors}\label{sec:Implem}
 Table \ref{table:lis} shows the list of implemented sensors.
 
-\begin{table*}[ht]
+\begin{table}[ht]
 \centering
 \caption{List of implemented sensors}
 \label{table:lis}
@@ -1141,17 +1143,19 @@ Composite       & BMP085          & BMP085Composite      & bmp085CompositeExampl
                 & DHT22           & DHT22Composite       & dht22CompositeExample.py       \\
                 & LSM303D         & LSM303DComposite     & lsm303dCompositeExample.py    \\ \hline
 \end{tabular}
-\end{table*}
+\end{table}
 
+
+\clearpage
 \section{Raspberry Pi, Models and Specifications}\label{sec:Implem}
 Figure~\ref{fig:modelSpec} shows all Raspberry Pi's models and specifications.
-\begin{figure*}[h]
+\begin{figure}[hf]
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/modelSpecification.png}
-    %\caption{Raspberry Pi, Models and Specifications}
 	\caption[Caption for LOF]{Raspberry Pi, Models and Specifications\protect\footnotemark}    
     \label{fig:modelSpec}
-\end{figure*}
+\end{figure}
 \footnotetext{\url{http://en.wikipedia.org/wiki/Raspberry_Pi}}
+
 
 \balancecolumns
 % That's all folks!
