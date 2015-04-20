@@ -1,89 +1,89 @@
-This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: sigproc-sp.aux
+The top-level auxiliary file: libsensorPy.aux
 The style file: abbrv.bst
-Database file #1: sigproc.bib
-I was expecting a `,' or a `}'---line 286 of file sigproc.bib
+Database file #1: libsensorPy.bib
+I was expecting a `,' or a `}'---line 265 of file libsensorPy.bib
  : 
  : @misc{Spi,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 294 of file sigproc.bib
+I was expecting a `,' or a `}'---line 273 of file libsensorPy.bib
  : 
  : @misc{I2c,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 303 of file sigproc.bib
+I was expecting a `,' or a `}'---line 281 of file libsensorPy.bib
  : 
  : @misc{DamienCassou,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 311 of file sigproc.bib
+I was expecting a `,' or a `}'---line 289 of file libsensorPy.bib
  : 
  : @article{DanielPace,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 328 of file sigproc.bib
+I was expecting a `,' or a `}'---line 304 of file libsensorPy.bib
  : 
- : %67
+ : @misc{Kevin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 337 of file sigproc.bib
+I was expecting a `,' or a `}'---line 312 of file libsensorPy.bib
  : 
- : %74
+ : @misc{Raspbian,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 346 of file sigproc.bib
+I was expecting a `,' or a `}'---line 320 of file libsensorPy.bib
  : 
- : %77
+ : @misc{PiStore,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 355 of file sigproc.bib
+I was expecting a `,' or a `}'---line 328 of file libsensorPy.bib
  : 
- : %78
+ : @misc{Yau,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 364 of file sigproc.bib
+I was expecting a `,' or a `}'---line 336 of file libsensorPy.bib
  : 
- : %79
+ : @misc{Raspbianwheezy,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 373 of file sigproc.bib
+I was expecting a `,' or a `}'---line 344 of file libsensorPy.bib
  : 
- : %80
+ : @misc{EbenUpton,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 382 of file sigproc.bib
+I was expecting a `,' or a `}'---line 352 of file libsensorPy.bib
  : 
- : %81
+ : @misc{Pibanglinux,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 391 of file sigproc.bib
+I was expecting a `,' or a `}'---line 360 of file libsensorPy.bib
  : 
- : %82
+ : @misc{DexterIndustries,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 401 of file sigproc.bib
+I was expecting a `,' or a `}'---line 368 of file libsensorPy.bib
  : 
  : @article{dearduino,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 415 of file sigproc.bib
+I was expecting a `,' or a `}'---line 381 of file libsensorPy.bib
  : 
  : @misc{Pigpio,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 424 of file sigproc.bib
+I was expecting a `,' or a `}'---line 390 of file libsensorPy.bib
  : 
- : %Manoelllll
+ : @article{netodesenvolvimento,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 437 of file sigproc.bib
+I was expecting a `,' or a `}'---line 401 of file libsensorPy.bib
  : 
  : @misc{Privateeyepi,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Illegal end of database file---line 452 of file sigproc.bib
+Illegal end of database file---line 416 of file libsensorPy.bib
  : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  :                                                                        
 I'm skipping whatever remains of this entry
@@ -135,7 +135,7 @@ Warning--empty journal in netodesenvolvimento
 Warning--empty year in netodesenvolvimento
 You've used 48 entries,
             2118 wiz_defined-function locations,
-            752 strings with 11520 characters,
+            751 strings with 11515 characters,
 and the built_in function-call counts, 11620 in all, are:
 = -- 1130
 > -- 418

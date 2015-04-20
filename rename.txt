@@ -1,0 +1,9 @@
+total 28
+drwxr-xr-x 5 edivaldo edivaldo 4096 Abr 20 15:02 .
+drwxr-xr-x 9 edivaldo edivaldo 4096 Abr  6 11:31 ..
+drwxr-xr-x 5 edivaldo edivaldo 4096 Abr 16 09:41 documentos
+drwxr-xr-x 8 edivaldo edivaldo 4096 Abr 20 14:45 .git
+-rw-r--r-- 1 edivaldo edivaldo   12 Abr  6 11:33 README.md
+-rw-r--r-- 1 edivaldo edivaldo    0 Abr 20 15:02 rename.txt
+drwxr-xr-x 6 edivaldo edivaldo 4096 Abr 20 15:02 TempalteACMLatex
+-rw-r--r-- 1 edivaldo edivaldo  723 Abr 20 15:01 texput.log
