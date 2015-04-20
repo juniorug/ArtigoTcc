@@ -192,10 +192,10 @@ The fact that both the hardware and the Arduino software be developed in an open
 Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in [19].
 
 \subsubsection{BeagleBone}
-The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip \cite{coley2009take}.The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
+The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip\cite{coley2009take}. The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
 \newline
 \newline
-BeagleBone is an \$89 Manufacturer suggested retail price (MSRP), credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
+BeagleBone is an \$89 Manufacturer suggested retail price (MSRP) credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
 
 \subsubsection{Raspberry Pi}
 Raspberry Pi(RPi) is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer\cite{raspberryfoundation}. In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
@@ -204,7 +204,7 @@ Raspberry Pi(RPi) is a small computer, approximately with the size of a credit c
 This computer came up with the intention of reconnecting children and youth in computer programming and stimulate the creation of new projects so there is not only the consumption of the technology created by the market. While in the 1990s there was a growth in the number of children and youth who developed programming skills, starting in the 2000s, this number started to decline.\cite{raspberryAbout}.
 \newline
 \newline
-With the realization that, year by year, the students were moving away from programming and reducing the development of skills in computer science. The researchers Eben Upton, Rob Mullins, Jack Lang and Alan Mycrof, from the Computer Laboratory of University of Cambridge had the idea of creating a platform that would allow to reconcile the programming students  and handling computers.\cite{dennis2013raspberry} From 2006 to 2008, early versions of what is now the Raspberry Pi was developed. From 2008, with the expansion and emphasis on mobile devices, the devices are becoming more efficient and cheaper which enabled the launch of the Raspberry Pi model B to the public in February 2012 for \$ 35.
+With the realization that, year by year, the students were moving away from programming and reducing the development of skills in computer science. The researchers Eben Upton, Rob Mullins, Jack Lang and Alan Mycrof, from the Computer Laboratory of University of Cambridge had the idea of creating a platform that would allow to reconcile the programming students  and handling computers\cite{dennis2013raspberry}. From 2006 to 2008, early versions of what is now the Raspberry Pi was developed. From 2008, with the expansion and emphasis on mobile devices, the devices are becoming more efficient and cheaper which enabled the launch of the Raspberry Pi model B to the public in February 2012 for \$ 35.
 \newline
 \newline
 The proposal of the Raspberry Pi is therefore be a low-cost computer, with the ability to interact with the outside world through the sensor coupling. As seen previously, it was thought to be used in the educational environment, in order to assist and encourage the teaching of programming and help understand the operation of computers. However, the Raspberry Pi has been used by people of all ages and interests in various projects, for example, projects involving automation, sensing and robotics, games, multimedia, networks and servers.
@@ -218,11 +218,11 @@ Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 a
 \end{figure}
 
 \paragraph{Features}
-The original RPi is based on the Broadcom BCM2835 system on a chip (SoC),\cite{Broadcom} which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU,\cite{Brose} and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB.\cite{raspOrg} The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage. \cite{Elinux}
+The original RPi is based on the Broadcom BCM2835 system on a chip (SoC)\cite{Broadcom}, which includes an ARM1176JZF-S 700 MHz processor, VideoCore IV GPU\cite{Brose}, and was originally shipped with 256 megabytes of RAM, later upgraded (models B and B+) to 512 MB\cite{raspOrg}. The system has Secure Digital (SD) (models A and B) or MicroSD (models A+ and B+) sockets for boot media and persistent storage\cite{Elinux}.
 \newline
 \newline
 In 2014, the Raspberry Pi Foundation launched the Compute Module, which packages a BCM2835 with 512 MB RAM and an eMMC flash chip into a module for use as a part of embedded systems \cite{raspNewProduct}.
-The Foundation provides Debian and Arch Linux ARM distributions for download. Tools are available for Python as the main programming language, with support for BBC BASIC (via the RISC OS image or the Brandy Basic clone for Linux),\cite{Jaguar} C, C++, Java, Perl and Ruby.
+The Foundation provides Debian and Arch Linux ARM distributions for download. Tools are available for Python as the main programming language, with support for BBC BASIC (via the RISC OS image or the Brandy Basic clone for Linux)\cite{Jaguar}, C, C++, Java, Perl and Ruby.
 \newline
 \newline
 Some other features presents on RPI:
@@ -240,7 +240,7 @@ The device is powered by 5v micro USB. Exactly how much current (mA) the Raspber
 The power requirements of the Raspberry Pi increase as you make use of the various interfaces on the Raspberry Pi. The GPIO pins can draw 50mA safely (that is 50mA distributed across all the pins! An individual GPIO pin can only safely draw 16mA), the HDMI port uses 50mA, the camera module requires 250mA, and keyboards and mice can take as little as 100mA or over 1000mA! Check the power rating of the devices you plan to connect to the Pi and purchase a power supply accordingly. If you’re not sure, buy a powered hub.
 
 \paragraph{Processor}
-The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC),\cite{Broadcom} which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU,\cite{Brose} and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
+The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC)\cite{Broadcom}, which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU\cite{Brose}, and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
 
 \paragraph{General Purpose Input/Output}
 Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, micro-controllers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
@@ -250,7 +250,7 @@ Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM (Pul
 The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
 
 \paragraph{Inputs and Outputs}
-The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper we will present only the pins available in the model B.The pins are divided into:
+The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper we will present only the pins available in the model B. The pins are divided into:
 
 \begin{itemize}
 \item Digital pin to input or output (programmable) - 17 pins;	
@@ -258,7 +258,7 @@ The number and options of input and output from a Raspberry Pi depend on the mod
 \item Power pins (gnd, 5V, 3.3V) - 9 pins;
 \end{itemize}
 
-The first item on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Raspberry Pi is coupled to the sensors to capture environmental information. Among the 17 digital input / output pins there are 2 pins that match the serial communication module UART (Universal asynchronous receiver/transmitter). This module allows communication between a computer (for example) and the Raspberry Pi (see Special Pins section). All pins have more than one function, pins can be input or output, and the roles of each are defined in the code of possible programs that can be run on the RPi.
+The first item on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Raspberry Pi is coupled to the sensors to capture environmental information. Among the 17 digital input/output pins there are 2 pins that match the serial communication module UART (Universal asynchronous receiver/transmitter). This module allows communication between a computer (for example) and the Raspberry Pi (see Special Pins section). All pins have more than one function, pins can be input or output, and the roles of each are defined in the code of possible programs that can be run on the RPi.
 
 \paragraph{Digital Inputs}
 All 17 programmable pins can be used as digital inputs. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off).
@@ -284,7 +284,7 @@ RPi pins have some special characteristics which can be used from the software f
 \item SPI Port - Serial Peripheral Interface : These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1) \cite{Spi};
 
 
-\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working.Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL) \cite{I2c}.
+\item I2C Bus - Inter-Integrated Circuit: The I2C bus allows multiple devices to be connected to the Raspberry Pi, each with a unique address, that can often be set by changing jumper settings on the module. It is very useful to be able to see which devices are connected to the RPi as a way of making sure everything is working. Are used for this purpose the pins 3 for Serial Data Line(SDA) and pin 5 for Serial Clock Line(SCL) \cite{I2c}.
 
 \end{itemize}
 
@@ -292,9 +292,7 @@ RPi pins have some special characteristics which can be used from the software f
 This section presents all software solutions which are involved with the proposed model.
 
 \subsubsection{Operating systems}
-Raspberry Pi primarily uses Linux-kernel-based operating systems.
-
-The ARM11 chip at the heart of the Pi (pre-Pi 2) is based on version 6 of the ARM. The current releases of several popular versions of Linux, including Ubuntu \cite{Gareth}, will not run on the ARM11. It is not possible to run Windows on the original Raspberry Pi, though the new Raspberry Pi 2 will be able to run Windows 10.\cite{Kevin} The Raspberry Pi 2 currently only supports Ubuntu Snappy Core, Raspbian, OpenELEC and RISC OS.
+Raspberry Pi primarily uses Linux-kernel-based operating systems. The ARM11 chip at the heart of the Pi (pre-Pi 2) is based on version 6 of the ARM. The current releases of several popular versions of Linux, including Ubuntu \cite{Gareth}, will not run on the ARM11. It is not possible to run Windows on the original Raspberry Pi, though the new Raspberry Pi 2 will be able to run Windows 10\cite{Kevin}. The Raspberry Pi 2 currently only supports Ubuntu Snappy Core, Raspbian, OpenELEC and RISC OS.
 \newline
 \newline
 The install manager for the Raspberry Pi is NOOBS. The operating systems included with NOOBS are:
@@ -1145,13 +1143,13 @@ Composite       & BMP085          & BMP085Composite      & bmp085CompositeExampl
 \end{tabular}
 \end{table}
 
-
 \clearpage
 \section{Raspberry Pi, Models and Specifications}\label{sec:Implem}
 Figure~\ref{fig:modelSpec} shows all Raspberry Pi's models and specifications.
-\begin{figure}[hf]
+\begin{figure}[h]
+	\centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/modelSpecification.png}
-	\caption[Caption for LOF]{Raspberry Pi, Models and Specifications\protect\footnotemark}    
+	\caption[Caption for LOF]{Models and Specifications\protect\footnotemark}    
     \label{fig:modelSpec}
 \end{figure}
 \footnotetext{\url{http://en.wikipedia.org/wiki/Raspberry_Pi}}
