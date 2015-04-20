@@ -305,11 +305,11 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 \item Puppy Linux;
 \item Raspbmc and the XBMC open source digital media center;
 \item RISC OS – The operating system of the first ARM-based computer;
-\item Raspbian (recommended for Raspberry Pi and used in this project)\cite{Raspbian} – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs.\cite{PiStore}
+\item Raspbian (recommended for Raspberry Pi and used in this project)\cite{Raspbian} – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs\cite{PiStore}.
 \begin{itemize}
-\item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian.\cite{Yau,Raspbianwheezy}
-\item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions.\cite{EbenUpton} on 16 April 2014 a GUI shell for Weston called Maynard was released.
-\item PiBang Linux is derived from Raspbian.\cite{Pibanglinux}
+\item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian\cite{Yau,Raspbianwheezy}.
+\item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions\cite{EbenUpton}. On 16 April 2014 a GUI shell for Weston called Maynard was released.
+\item PiBang Linux is derived from Raspbian\cite{Pibanglinux}.
 \item Raspbian for Robots\cite{DexterIndustries} - A fork of Raspbian for robotics projects with LEGO, Grove, and Arduino.
 \end{itemize}
 
@@ -322,7 +322,7 @@ A list of other operating systems that can be installed on Raspberry Pi but are 
 WiringPi is a library for access to GPIO interface written in C. Its use can be performed with C, C ++, or other programming languages through wrappers \cite{wiring}. Wrapper is an outer layer that extends WiringPi and can be implemented in different programming languages. This will allow the programmer to carry out projects not only in C or C ++, but also in language implemented by the wrapper. There are wrappers being developed in various languages such as Java, Ruby and Python. This last will be used in this paper from the wrapper raspberry-gpio-python.
 
 \subsubsection{Python}
-Python is considered a very high level language because its syntax is simple and its dynamic typing, besides being interpreted, which makes it great for scripting and robust for various paradigms including object orientation. With all these benefits of language, Python still surprises to be an open source software being available for all major operating systems. \cite{dearduino}
+Python is considered a very high level language because its syntax is simple and its dynamic typing, besides being interpreted, which makes it great for scripting and robust for various paradigms including object orientation. With all these benefits of language, Python still surprises to be an open source software being available for all major operating systems\cite{dearduino}.
 
 \subsubsection{GPIO in Python}
 The easiest way to control the GPIO pins is using the module RPi.GPIO Python library. The RPi.GPIO module is installed by default in Raspbian, but if needed, installing the library is easy if followed the RPi.GPIO Installation Guide\footnote{\url{http://sourceforge.net/p/raspberry-gpio-python/wiki/install/}}. Once installed using the pins is as easy as below: 
@@ -353,7 +353,7 @@ The easiest way to control the GPIO pins is using the module RPi.GPIO Python lib
   GPIO.output(8, True)
 \end{minted}
 
-Any RPi.GPIO script must be run as root because this library needs to access /dev/mem and for safety reasons, it is not recommended to provide access permission to this directory.
+Any RPi.GPIO script must be run as root because this library needs to access \textit{/dev/mem} and for safety reasons, it is not recommended to provide access permission to this directory.
 
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
@@ -389,7 +389,7 @@ The library proposed reconciles the use of an integrated circuit platform with m
 Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the micro-controller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
 
 \section{RELATED WORK}
-As mentioned in section~\ref{sec:justification}, there is no specific library to work with python applied to Raspberry IP, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
+As mentioned in section~\ref{sec:justification}, there is no specific library to work with python applied to Raspberry Pi, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -401,7 +401,7 @@ The user can use the Raspberry Pi or an tiny wireless Arduino to connect sensors
 PrivateEyePi Provides tutorials for users explaining how to build, wire, convert the sensor to a wireless battery operated IOT device and how to connect it to the Internet. The project also provides a cloud based alarm system where the client can group sensors using zones. Zones can be activated and alarms triggered based on rules that can be defined.
 \newline
 \newline
-Some sensors, like relay switches, can be controlled through The Internet. users can also control the alarm system through the PrivateEyePi web based dashboard, which allows monitor the status of sensors and view temperature and humidity readings in real time from The Internet. This dashboard can be seen in figure~\ref{fig:PrivateEye}.
+Some sensors, like relay switches, can be controlled through The Internet. Users can also control the alarm system through the PrivateEyePi web based dashboard, which allows monitor the status of sensors and view temperature and humidity readings in real time from The Internet. This dashboard can be seen in figure~\ref{fig:PrivateEye}.
 \newline
 \newline
  Historical information is provided by the analytics module. The library provides also a sophisticated rules engine that permit create rules that are processed in real time to create alerts. Those methods require parameters like sensor values, time of day, days of week, alarm activated/deactivated to define rules specific to individual sensors.     
@@ -418,7 +418,7 @@ Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermomete
 Pingo\footnote{\url{http://www.pingo.io/docs/}} is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
 \newline
 \newline
-To use pingo, the first step is to instantiate a Board. Each Pingo driver is a concrete board subclass.Two such classes are \textit{pingo.rpi.RaspberryPi} and \textit{pingo.arduino.ArduinoFirmata}. Pingo can automatically detect the board in most common cases.  \textit{pingo.detect.MyBoard()} will return an suitable board instance if the script is running on a supported board. If Pingo is running on an unsupported machine (eg. a notebook), it will try to find a connected Arduino using the Firmata protocol via USB and – if successful – will return a \textit{pingo.arduino.ArduinoFirmata} instance.
+To use pingo, the first step is to instantiate a Board. Each Pingo driver is a concrete board subclass. Two such classes are \textit{pingo.rpi.RaspberryPi} and \textit{pingo.arduino.ArduinoFirmata}. Pingo can automatically detect the board in most common cases.  \textit{pingo.detect.MyBoard()} will return an suitable board instance if the script is running on a supported board. If Pingo is running on an unsupported machine (eg. a notebook), it will try to find a connected Arduino using the Firmata protocol via USB and – if successful – will return a \textit{pingo.arduino.ArduinoFirmata} instance.
 \newline
 \newline
 Once having a board instance, it’s possible to access its pins through the board.pins dictionary:
@@ -448,7 +448,7 @@ Once having a board instance, it’s possible to access its pins through the boa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
-\cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
+\citep{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
 \newline
 \newline
 Features:
