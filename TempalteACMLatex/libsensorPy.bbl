@@ -260,6 +260,11 @@ Raspbian.
 \newblock \url{http://www.raspbian.org/}, note = "[Online; accessed
   25-March-2015]", September 2014.
 
+\bibitem{taylor2009software}
+R.~N. Taylor, N.~Medvidovic, and E.~M. Dashofy.
+\newblock {\em Software architecture: foundations, theory, and practice}.
+\newblock Wiley Publishing, 2009.
+
 \bibitem{Trapp}
 B.~Trapp.
 \newblock Raspberry pi: The perfect home server. linux j.

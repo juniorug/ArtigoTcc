@@ -382,7 +382,7 @@ Pigpio provides all the standard gpio features and in addition it provides hardw
 As with other platforms, Raspberry Pi allows coupling several sensors whose handling can be made from raspberry-gpio-python or any other API available. On other platforms, such as the Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as a development language for Raspberry Pi.
 \newline
 \newline
-This may be a consequence of run under the Linux kernel which is not suitable for real time applications - it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
+This may be a consequence of run under the Linux kernel which is not suitable for real time applications, it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
 \newline
 \newline
 The library proposed reconciles the use of an integrated circuit platform with micro-controller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
@@ -401,7 +401,7 @@ The user can use the Raspberry Pi or an tiny wireless Arduino to connect sensors
 PrivateEyePi Provides tutorials for users explaining how to build, wire, convert the sensor to a wireless battery operated IOT device and how to connect it to the Internet. The project also provides a cloud based alarm system where the client can group sensors using zones. Zones can be activated and alarms triggered based on rules that can be defined.
 \newline
 \newline
-Some sensors, like relay switches, can be controlled through The Internet. Users can also control the alarm system through the PrivateEyePi web based dashboard, which allows monitor the status of sensors and view temperature and humidity readings in real time from The Internet. This dashboard can be seen in figure~\ref{fig:PrivateEye}.
+Some sensors, like relay switches, can be controlled through the Internet. Users can also control the alarm system through the PrivateEyePi web based dashboard, which allows monitor the status of sensors and view temperature and humidity readings in real time from the Internet. This dashboard can be seen in figure~\ref{fig:PrivateEye}.
 \newline
 \newline
  Historical information is provided by the analytics module. The library provides also a sophisticated rules engine that permit create rules that are processed in real time to create alerts. Those methods require parameters like sensor values, time of day, days of week, alarm activated/deactivated to define rules specific to individual sensors.     
@@ -448,37 +448,37 @@ Once having a board instance, it’s possible to access its pins through the boa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
-\cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
+The work from \cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
 \newline
 \newline
 Features:
 \begin{itemize}
 \item Same class based interface on all supported platforms.
 \item Access to the port settings through Python properties.
-\item Support for different byte sizes, stop bits, parity and flow control with RTS/CTS(Request to Send / Clear to Send) and/or Xon/Xoff.
+\item Support for different byte sizes, stop bits, parity and flow control with RTS/CTS(Request to Send/Clear to Send) and/or Xon/Xoff.
 \item Working with or without receive timeout.
 \item File like API with “read” and “write” ("readline" etc. also supported).
 \item The files in this package are 100\% pure Python.
-\item The port is set up for binary transmission. No NULL byte stripping, carriage return-linefeed translation(CR-LF) etc. (which are many times enabled for POSIX.) This makes this module universally useful.
+\item The port is set up for binary transmission. No NULL byte stripping, carriage return-linefeed translation(CR-LF) etc. (which are many times enabled for POSIX). This makes this module universally useful.
 \item Compatible with I/O library (Python 2.6+)
-\item RFC 2217 client (experimental), server provided in the examples
+\item RFC 2217 client (experimental), server provided in the examples.
 \end{itemize}
 
-This work \cite{dearduino}, describes the use of LM35 (temperature sensor) and a Light Dependent Resistor.
+That work \cite{dearduino}, describes the use of LM35 (temperature sensor) and a Light Dependent Resistor.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %http://playground.arduino.cc/Main/DHTLib
-Arduino DHTLib \footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22 DHT33 e DHT44, applied to Arduino. 
+Arduino DHTLib \footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22, DHT33 e DHT44, applied to Arduino. 
 \newline
 \newline
 The DHT11/21/22 has three lines, GND, +5V and a single data line. By means of a handshake the values are clocked out over the single digital line. Handshake for DHT21/22 is identical, but data format are different. The library is rewritten from scratch and is not compatible with earlier DHT libraries to be able to support both DHT's and stay as simple as possible and to minimize footprint.
 \newline
 \newline
-The interface supports only one function for reading the humidity and temperature from the sensors and store it in two members of the class. The read() function verifies the checksum of the data transmission and it has a time out function. If there is a checksum error the values of temperature and/or humidity might still be valid.
+The interface supports only one function for reading the humidity and temperature from the sensors and store it in two members of the class. The \textit{read()} function verifies the checksum of the data transmission and it has a time out function. If there is a checksum error the values of temperature and/or humidity might still be valid.
 \newline
 \newline
-The class has 6 read functions read11(PIN), read(PIN) and readxx(PIN) which have essentially the same interface. They read the DHT connected to PIN, and fill the two class members temperature and humidity. Multiple reads from these class members (Humidity and Temperature) will return the same (previous) values until a new read is done.
+The class has 6 read functions \textit{read11(PIN)}, \textit{read(PIN)} and \textit{readxx(PIN)} which have essentially the same interface. They read the DHT connected to PIN, and fill the two class members temperature and humidity. Multiple reads from these class members (Humidity and Temperature) will return the same (previous) values until a new read is done.
 \newline
 \newline
 The \textit{readXX()} functions return:
@@ -504,7 +504,7 @@ Features:
 \item Doesn't lag for a full second if no ping echo is received like all other ultrasonic libraries.
 \item Ping sensors consistently and reliably at up to 30 times per second.
 \item Timer interrupt method for event-driven sketches.
-\item Built-in digital filter method ping\_median() for easy error correction.
+\item Built-in digital filter method \textit{ping\_median()} for easy error correction.
 \item Uses port registers when accessing pins for faster execution and smaller code size.
 \item Allows setting of a maximum distance where pings beyond that distance are read as no ping "clear".
 \item Ease of using multiple sensors (example sketch that pings 15 sensors).
@@ -549,13 +549,10 @@ This is imporant useful for two reasons:
 Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardized SI values and measurable units and conversions for each sensor can be seen in appendix~\ref{sec:Units}.
 \newline
 \newline
-By reducing all data to a single sensors 'type' and settling on specific, for each sensor family, the same sensor types return values that are comparable with any other similar sensor. This enables the user to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
+The purpose of this work is the focus on library's usability and the abstraction from the way that this library interacts with the sensors/actuators to capture the data, besides contributing to the open source community and the growing community of developers for the Raspberry Pi.
 \newline
 \newline
-The purpose of this work is the focus on library's usability and the abstraction from the way that this library interacts with the sensors / actuators to capture the data, besides contributing to the open source community and the growing community of developers for the Raspberry Pi.
-\newline
-\newline
-The technologies used to develop the tool were basically the Python language and RPI.GPIO and PigPio modules that provide connection abstractions to basic pins and the special pins I2C, UART and SPI PWM.
+The technologies used to develop the tool were basically the Python language and RPI.GPIO and PigPio modules that provide connection abstractions to basic pins and the special pins I2C, UART, SPI and PWM.
 
 \subsection{Method/Methodology}
 To develop this project we adopted the object-oriented analysis and design (OOAD). OOAD is a popular technical approach to analyzing, designing an application, system, or business by applying the object-oriented (OO) paradigm and visual modeling throughout the development life cycles to foster better stakeholder communication and product quality.
@@ -567,9 +564,7 @@ According to the popular guide Unified Process, OOAD in modern software engineer
 The object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, we should check that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of your work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
 \newline
 \newline
-Using Object-oriented modeling, we divided the work in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used.
-
-The benefits of OOM are:
+Using Object-oriented modeling, we divided the work in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used. The benefits of OOM are:
 
 \subsubsection{Efficient and effective communication}
 
@@ -602,7 +597,7 @@ In the table \ref{table:rf} are defined the main functional requirements order t
  \hline 
  RF02 & Manipulate data sent by the sensors, turning them into readable data to the user; & User \\
  \hline 
- RF03 & Allow additions of new sensors / actuators and factories via inheritance; & User \\
+ RF03 & Allow additions of new sensors/actuators and factories via inheritance; & User \\
  \hline 
  RF04 & Allow the user to set the pins to be used for connection between sensor and Raspberry; & User \\
  \hline 
@@ -635,23 +630,24 @@ Are characterized as non-functional requirements for the proper functioning of l
 \end{table}
 
 \subsection{Why not to use Java}
-At the beginning of this project we decide to develop the library using Java as the programming language, Since These libraries do not yet exist formally for those who want to use Java as a development language. We thought that it could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors,the DHT11 and HC-SR04, when tried to test, we got no data from the sensors.
+At the beginning of this project we decide to develop the library using Java as the programming language, Since These libraries do not yet exist formally for those who want to use Java as a development language. We thought that it could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors, the DHT11 and HC-SR04, when tried to test, we got no data from the sensors.
 \newline
 \newline
-After some research about what could be the problem, we found that we cannot assume that invoking sleep will suspend the thread for precisely the time period specified, since Thread.sleep() and the Thread.Join() methods are dependent on the operating system and the version of the JVM \cite{Oracle}.
+After some research about what could be the problem, we found that we cannot assume that invoking sleep will suspend the thread for precisely the time period specified, since \textit{Thread.sleep()} and the \textit{Thread.Join()} methods are dependent on the operating system and the version of the JVM \cite{Oracle}.
 %fonte: http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
 \newline
 \newline
-These sensors need to wait microseconds between send a signal to the sensor and get back the data read from it, And because of this not real time property from both Java and the raspberry pi, we couldn't read data from those sensors. After that we moved on to change the programming language and decided to use python, especially because it's the recommended programming language by the Raspberry Pi developers.
+These sensors need to wait microseconds between send a signal to the sensor and get back the data read from it, And because of this not real time property from both Java and the Raspberry Pi, we couldn't read data from those sensors. After that we moved on to change the programming language and decided to use python, especially because it's the recommended programming language by the Raspberry Pi developers.
 
 \subsection{Architecture}
-The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For this, the system must be configured with one of multiple product families (family sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
+The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For that, the system must be configured with one of multiple product families (family of sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
 \begin{figure*}[ht]
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram.png}
     \caption{Class diagram}
     \label{fig:classDiagram}
 \end{figure*}
-
+\newline
+\newline
 Main components:
 \begin{itemize}
 \item AbstractSensorFactory: Declares an interface for operations that create abstract sensors and events;
@@ -666,16 +662,15 @@ Main components:
 A single instance of the concrete factory is created at run-time, using the Singleton pattern. This factory creates products with a particular implementation. To create other products from a different family, one should use a different factory. The concrete factory class being used appears only once in the application, facilitating changes. The product family changes all at once, promoting consistency across products, ensuring that used objects are all of the same family, represented by the concrete factory being used.
 \newline
 \newline
-Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors.
+Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors. The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
+\newline
 \begin{figure*}[ht]
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/composite.png}
     \caption{Composite class diagram}
     \label{fig:composite}
 \end{figure*}
 
-The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
-\newline
-\newline
+
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
 \begin{figure*}[ht]
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
@@ -697,7 +692,7 @@ The libsensorPy presents characteristics of three architectural styles:
 \item Layered Style: Virtual Machine.
 \end{itemize}
 
-The traditional style adopted reflects the basic relationships of organization and control flow between components provided by the Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedures call and event . The Procedure Call connectors model the control flow by invocation techniques and perform data transfer between the components involved through the use of parameters. Examples of Procedure Call connectors include functions, procedures,  object oriented methods, callback and system calls
+The traditional style adopted reflects the basic relationships of organization and control flow between components provided by the Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedure call and event. Procedure call connectors model the control flow by invocation techniques and perform data transfer between the components involved through the use of parameters. Examples of procedure call connectors include functions, procedures,  object oriented methods, callback and system calls.
 \newline
 \newline
 The Virtual Machine style is applied when we imagine the layers between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. We have thus the layers:
@@ -717,7 +712,7 @@ The Virtual Machine style is applied when we imagine the layers between the hard
 The envent-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
 
 \subsubsection{Architectural Pattern}
-This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications.Second\cite{taylor2009software} ,a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
+This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second\cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
 \item Then context operators, which process this information; 
@@ -763,7 +758,7 @@ Figure~\ref{fig:view} shows the library's structural view.
 \end{figure*}
 
 \subsection{What is needed to install libsensorPy}
-Before use libsensorPy is necessary the user configure and enable SPI and I2C ports on raspperry:
+Before use libsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -778,7 +773,7 @@ Before use libsensorPy is necessary the user configure and enable SPI and I2C po
 
 \end{minted}
 
-Check /etc/modprobe.d/raspi-blacklist.conf if using Raspbian, and comment "blacklist i2c-bcm2708" and "blacklist spi-bcm2708" by running:
+Check \textit{/etc/modprobe.d/raspi-blacklist.conf} if using Raspbian, and comment "blacklist i2c-bcm2708" and "blacklist spi-bcm2708" by running:
 
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
@@ -793,10 +788,10 @@ Check /etc/modprobe.d/raspi-blacklist.conf if using Raspbian, and comment "black
 
 \end{minted}
 
-And adding a \# (if its not there), on these informations: \textit{blacklist i2c-bcm2708} and \textit{blacklist spi-bcm2708}.
+And adding a \# (if its not there), on these informations: "blacklist i2c-bcm2708" and "blacklist spi-bcm2708".
 \newline
 \newline
-For Wheezy or something-other-than-Occidentals, add the following lines to /etc/modules: 
+For Wheezy or something-other-than-Occidentals, add the following lines to \textit{/etc/modules}: 
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -851,13 +846,13 @@ and finally install libsensorPy:
 
 
 \subsection{How to extend the library}
-The Abstract Factory pattern, how it was implemented in this solution allows the extension of the library easily, following the  open/closed principle, becoming it easy to modify and avoiding the user application does not suffer from the impact of these changes. This requires user programming skills. The user can add new sensors, events and new factories. To add new sensors, simply, besides implement the sensor class, create a concrete factory that inherits from the factory referring to the sensor family to be added and overwrite the \textit{createSensor()} method, making this method to create the new sensor, if desired, or call the create method of the superclass sensor, ensuring system compatibility.
+The Abstract Factory pattern, how it was implemented in this solution, allows the extension of the library easily, following the  open/closed principle, becoming it easy to modify and avoiding the user application does not suffer from the impact of these changes. This requires user programming skills. The user can add new sensors, events and new factories. To add new sensors, simply, besides implement the sensor class, create a concrete factory that inherits from the factory referring to the sensor family to be added and overwrite the \textit{createSensor()} method, making this method to create the new sensor, if desired, or call the create method of the superclass sensor, ensuring system compatibility.
 \newline
 \newline
 To add a new sensor family just create a new factory that implements the abstract methods of AbstractSensorFactory interface. If desired, is possible also to create an abstract family class for this , if there is not in  the library, creating thus a "contract", where the attributes are specified, methods and functions that the concrete sensors classes of this family are required to implement .
 \newline
 \newline
-Follows an example of how to extend the library: the HCSR04 class was implemented to create objects of the ultrasonic sensor HC-SR04. Being the family of ultrasonic sensors, this class was created as a subclass of UltrasonicSensor abstract class, which has the abstract methods \textit{distance\_in\_cm()} and \textit{setup()}  to be implemented. It has also created a concrete factory ExtendedUltrasonicSensorFactory, which inherits the UltrasonicSensorFactory class and overrides the \textit{createSensor()} method, as seen following:
+Follows an example of how to extend the library: The HCSR04 class was implemented to create objects of the ultrasonic sensor HC-SR04. Being the family of ultrasonic sensors, this class was created as a subclass of UltrasonicSensor abstract class, which has the abstract methods \textit{distance\_in\_cm()} and \textit{setup()}  to be implemented. It has also created a concrete factory ExtendedUltrasonicSensorFactory, which inherits the UltrasonicSensorFactory class and overrides the \textit{createSensor()} method, as seen following:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \renewcommand{\theFancyVerbLine}{
@@ -884,7 +879,7 @@ Follows an example of how to extend the library: the HCSR04 class was implemente
       classdocs
       '''
 
-      def __init__(self,trigger=18,echo=27):
+      def __init__(self, trigger = 18, echo = 27):
           '''
           Constructor
           '''
@@ -1037,7 +1032,7 @@ Analyzing the results obtained, it is concluded that the libsensorPy help the de
 
 
 \section{CONCLUSION AND FUTURE WORK}
-This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language and on Github \footnote{\url{https://github.com/juniorug/libsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language and the source code is availlable on Github \footnote{\url{https://github.com/juniorug/libsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
 \newline
 \newline
 Its goal is to facilitate the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that system's type, using design patterns and following the SOLID principles.

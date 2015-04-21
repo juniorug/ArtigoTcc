@@ -78,16 +78,15 @@ I was expecting a `,' or a `}'---line 390 of file libsensorPy.bib
  : @article{netodesenvolvimento,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 401 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 400 of file libsensorPy.bib
  : 
- : @misc{Privateeyepi,
+ : @book{taylor2009software,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Illegal end of database file---line 416 of file libsensorPy.bib
+Illegal end of database file---line 417 of file libsensorPy.bib
  : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  :                                                                        
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "taylor2009software"
 Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
 while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
@@ -133,45 +132,45 @@ Warning--empty journal in krishnakumarframework
 Warning--empty year in krishnakumarframework
 Warning--empty journal in netodesenvolvimento
 Warning--empty year in netodesenvolvimento
-You've used 48 entries,
+You've used 49 entries,
             2118 wiz_defined-function locations,
-            751 strings with 11515 characters,
-and the built_in function-call counts, 11620 in all, are:
-= -- 1130
-> -- 418
+            754 strings with 11646 characters,
+and the built_in function-call counts, 11902 in all, are:
+= -- 1154
+> -- 436
 < -- 5
-+ -- 180
-- -- 126
-* -- 557
-:= -- 1958
-add.period$ -- 153
-call.type$ -- 48
-change.case$ -- 203
++ -- 187
+- -- 132
+* -- 574
+:= -- 2008
+add.period$ -- 156
+call.type$ -- 49
+change.case$ -- 208
 chr.to.int$ -- 0
-cite$ -- 57
-duplicate$ -- 451
-empty$ -- 1086
-format.name$ -- 126
-if$ -- 2490
+cite$ -- 58
+duplicate$ -- 463
+empty$ -- 1108
+format.name$ -- 132
+if$ -- 2548
 int.to.chr$ -- 0
-int.to.str$ -- 48
-missing$ -- 23
-newline$ -- 249
-num.names$ -- 96
-pop$ -- 348
+int.to.str$ -- 49
+missing$ -- 25
+newline$ -- 254
+num.names$ -- 98
+pop$ -- 358
 preamble$ -- 1
-purify$ -- 158
+purify$ -- 163
 quote$ -- 0
-skip$ -- 356
+skip$ -- 362
 stack$ -- 0
-substring$ -- 409
-swap$ -- 76
+substring$ -- 414
+swap$ -- 77
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 186
+type$ -- 188
 warning$ -- 9
-while$ -- 114
-width$ -- 50
-write$ -- 504
+while$ -- 116
+width$ -- 51
+write$ -- 514
 (There were 35 error messages)

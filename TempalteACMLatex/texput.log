@@ -1,21 +1,21 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.28)  18 APR 2015 22:28
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.31)  21 APR 2015 18:17
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
-**libsensorPy.tex
+**sigproc-sp
 
 ! Emergency stop.
-<*> libsensorPy.tex
-               
-*** (job aborted, file error in nonstop mode)
+<*> sigproc-sp
+              
+End of file on the terminal!
 
  
 Here is how much of TeX's memory you used:
- 3 strings out of 494933
- 109 string characters out of 6178446
- 46299 words of memory out of 5000000
- 3343 multiletter control sequences out of 15000+600000
+ 3 strings out of 494984
+ 111 string characters out of 6179648
+ 45906 words of memory out of 5000000
+ 3329 multiletter control sequences out of 15000+600000
  3640 words of font info for 14 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
+ 16 hyphenation exceptions out of 8191
  0i,0n,0p,1b,6s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!
