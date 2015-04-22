@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.3.31)  21 APR 2015 19:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  22 APR 2015 10:04
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **libsensorPy.tex
 (./libsensorPy.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 5 languages loaded.
+Babel <3.9f> and hyphenation patterns for 3 languages loaded.
 (./acm_proc_article-sp.cls
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
@@ -427,7 +427,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box30
 \enitdp@description=\count110
 )
-(/usr/local/share/texmf/tex/latex/minted/minted.sty
+(/usr/share/texlive/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2011/09/17 v1.7 Yet another Pygments shim for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
@@ -1629,7 +1629,7 @@ Overfull \hbox (154.07747pt too wide) in paragraph at lines 1112--1139
 
 [21
 
-] <pictures/modelSpecification.png, id=531, 1123.19624pt x 768.8725pt>
+] <pictures/modelSpecification.png, id=534, 1123.19624pt x 768.8725pt>
 File: pictures/modelSpecification.png Graphic file (type png)
 
 <use pictures/modelSpecification.png>
@@ -1665,10 +1665,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1156.
  ) 
 Here is how much of TeX's memory you used:
- 10596 strings out of 494984
- 148737 string characters out of 6179648
- 257341 words of memory out of 5000000
- 13399 multiletter control sequences out of 15000+600000
+ 10597 strings out of 495007
+ 148770 string characters out of 6180696
+ 257245 words of memory out of 5000000
+ 13392 multiletter control sequences out of 15000+600000
  55935 words of font info for 79 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  41i,13n,43p,1223b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1684,10 +1684,10 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on libsensorPy.pdf (22 pages, 2577812 bytes).
+Output written on libsensorPy.pdf (22 pages, 2578135 bytes).
 PDF statistics:
- 617 PDF objects out of 1000 (max. 8388607)
- 545 compressed objects within 6 object streams
- 161 named destinations out of 1000 (max. 500000)
+ 620 PDF objects out of 1000 (max. 8388607)
+ 548 compressed objects within 6 object streams
+ 162 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 
