@@ -67,7 +67,7 @@ The convergence of radio technologies, microprocessors and personal digital elec
 \keywords{Ubiquitous Computing, Internet of Things, Raspberry Pi, Sensor, Python.} 
 
 \section*{Introduction}
-The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{Armstrong} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
+The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{NSF} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
 \newline
 \newline
 Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
@@ -189,7 +189,7 @@ Working with the construction of a hardware requires much time and effort, becau
 The fact that both the hardware and the Arduino software be developed in an open, patent-free, allows its projects to be recreated in different ways. The adoption of open hardware concept motivates those who create projects to contribute with functions and libraries for the Arduino. Is knowledge about knowledge, the same principle of free software.
 \newline
 \newline
-Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in [19].
+Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in \cite{Eletronica}.
 
 \subsubsection{BeagleBone}
 The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip\cite{coley2009take}. The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
@@ -642,7 +642,7 @@ These sensors need to wait microseconds between send a signal to the sensor and 
 \subsection{Architecture}
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For that, the system must be configured with one of multiple product families (family of sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
 \begin{figure*}[ht]
-    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram.png}
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram2.png}
     \caption{Class diagram}
     \label{fig:classDiagram}
 \end{figure*}
@@ -679,7 +679,7 @@ The interactions between the user and the library are described in the use case 
 \end{figure*}
 
 \begin{figure*}[t]
-    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
     \caption{Sequence diagram}
     \label{fig:sequence}
 \end{figure*}

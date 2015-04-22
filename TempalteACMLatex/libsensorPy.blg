@@ -3,174 +3,149 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: libsensorPy.aux
 The style file: abbrv.bst
 Database file #1: libsensorPy.bib
-I was expecting a `,' or a `}'---line 265 of file libsensorPy.bib
+You're missing a field name---line 12 of file libsensorPy.bib
+ : 
+ : % AUTHOR = "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al.",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--entry type for "Eletronica" isn't style-file defined
+--line 128 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 282 of file libsensorPy.bib
  : 
  : @misc{Spi,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 273 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 290 of file libsensorPy.bib
  : 
  : @misc{I2c,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 281 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 298 of file libsensorPy.bib
  : 
  : @misc{DamienCassou,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 289 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 306 of file libsensorPy.bib
  : 
  : @article{DanielPace,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 304 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 321 of file libsensorPy.bib
  : 
  : @misc{Kevin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 312 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 329 of file libsensorPy.bib
  : 
  : @misc{Raspbian,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 320 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 337 of file libsensorPy.bib
  : 
  : @misc{PiStore,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 328 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 345 of file libsensorPy.bib
  : 
  : @misc{Yau,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 336 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 353 of file libsensorPy.bib
  : 
  : @misc{Raspbianwheezy,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 344 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 361 of file libsensorPy.bib
  : 
  : @misc{EbenUpton,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 352 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 369 of file libsensorPy.bib
  : 
  : @misc{Pibanglinux,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 360 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 377 of file libsensorPy.bib
  : 
  : @misc{DexterIndustries,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 368 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 385 of file libsensorPy.bib
  : 
  : @article{dearduino,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 381 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 398 of file libsensorPy.bib
  : 
  : @misc{Pigpio,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 390 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 407 of file libsensorPy.bib
  : 
  : @article{netodesenvolvimento,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 400 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 417 of file libsensorPy.bib
  : 
  : @book{taylor2009software,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Illegal end of database file---line 417 of file libsensorPy.bib
+Illegal end of database file---line 434 of file libsensorPy.bib
  : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  :                                                                        
 I'm skipping whatever remains of this entry
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1049 of file abbrv.bst
 Too many commas in name 1 of "Damien Cassou, Émile Balland, Charles Consel, Julia Lawall" for entry DamienCassou
 while executing---line 1049 of file abbrv.bst
+Warning--empty journal in NSF
 Warning--there's a number but no volume in borges2010automaccao
 Too many commas in name 1 of "Damien Cassou, Émile Balland, Charles Consel, Julia Lawall" for entry DamienCassou
 while executing---line 1090 of file abbrv.bst
 Warning--empty journal in dearduino
 Warning--empty year in dearduino
 Warning--empty journal in doesntfit
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Too many commas in name 1 of "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al." for entry Armstrong
-while executing---line 1090 of file abbrv.bst
-Warning--empty title in Armstrong
 Warning--empty journal in krishnakumarframework
 Warning--empty year in krishnakumarframework
 Warning--empty journal in netodesenvolvimento
 Warning--empty year in netodesenvolvimento
-You've used 49 entries,
+You've used 50 entries,
             2118 wiz_defined-function locations,
-            754 strings with 11646 characters,
-and the built_in function-call counts, 11902 in all, are:
-= -- 1154
-> -- 436
+            758 strings with 11802 characters,
+and the built_in function-call counts, 12415 in all, are:
+= -- 1193
+> -- 494
 < -- 5
-+ -- 187
-- -- 132
-* -- 574
-:= -- 2008
-add.period$ -- 156
-call.type$ -- 49
-change.case$ -- 208
++ -- 210
+- -- 154
+* -- 617
+:= -- 2101
+add.period$ -- 159
+call.type$ -- 50
+change.case$ -- 222
 chr.to.int$ -- 0
-cite$ -- 58
-duplicate$ -- 463
-empty$ -- 1108
-format.name$ -- 132
-if$ -- 2548
+cite$ -- 59
+duplicate$ -- 470
+empty$ -- 1130
+format.name$ -- 154
+if$ -- 2644
 int.to.chr$ -- 0
-int.to.str$ -- 49
+int.to.str$ -- 50
 missing$ -- 25
-newline$ -- 254
-num.names$ -- 98
-pop$ -- 358
+newline$ -- 259
+num.names$ -- 100
+pop$ -- 376
 preamble$ -- 1
-purify$ -- 163
+purify$ -- 175
 quote$ -- 0
-skip$ -- 362
+skip$ -- 372
 stack$ -- 0
-substring$ -- 414
+substring$ -- 419
 swap$ -- 77
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 188
+type$ -- 192
 warning$ -- 9
-while$ -- 116
-width$ -- 51
-write$ -- 514
-(There were 35 error messages)
+while$ -- 118
+width$ -- 52
+write$ -- 523
+(There were 20 error messages)

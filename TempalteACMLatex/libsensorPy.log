@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  22 APR 2015 10:04
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  22 APR 2015 11:45
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -923,7 +923,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 195--199
 
  []
 
-<pictures/RaspiModelB.png, id=229, 1279.02844pt x 1127.71312pt>
+<pictures/RaspiModelB.png, id=230, 1279.02844pt x 1127.71312pt>
 File: pictures/RaspiModelB.png Graphic file (type png)
 
 <use pictures/RaspiModelB.png>
@@ -1040,7 +1040,7 @@ runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
- <pictures/ModelAB.png, id=305, 752.8125pt x 355.3275pt>
+ <pictures/ModelAB.png, id=307, 752.8125pt x 355.3275pt>
 File: pictures/ModelAB.png Graphic file (type png)
 
 <use pictures/ModelAB.png>
@@ -1066,7 +1066,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 382--390
 
  []
 
-<pictures/dashboardPrivateeye.png, id=338, 737.75626pt x 557.08125pt>
+<pictures/dashboardPrivateeye.png, id=340, 737.75626pt x 557.08125pt>
 File: pictures/dashboardPrivateeye.png Graphic file (type png)
 
 <use pictures/dashboardPrivateeye.png>
@@ -1292,12 +1292,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 633--641
 
  []
 
-[11] <pictures/ClassDiagram.png, id=386, 1370.87157pt x 877.02657pt>
-File: pictures/ClassDiagram.png Graphic file (type png)
+[11] <pictures/ClassDiagram2.png, id=388, 438.6789pt x 280.6485pt>
+File: pictures/ClassDiagram2.png Graphic file (type png)
 
-<use pictures/ClassDiagram.png>
-Package pdftex.def Info: pictures/ClassDiagram.png used on input line 645.
-(pdftex.def)             Requested size: 504.0pt x 322.43387pt.
+<use pictures/ClassDiagram2.png>
+Package pdftex.def Info: pictures/ClassDiagram2.png used on input line 645.
+(pdftex.def)             Requested size: 504.0pt x 322.45206pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 643--653
 
@@ -1313,7 +1313,7 @@ Overfull \hbox (2.82265pt too wide) in paragraph at lines 658--659
 \T1/aer/m/n/9 Sen-sor, Ab-strac-tAc-tu-a-tor and Ab-stractEvent in-ter-faces
  []
 
-<pictures/composite.png, id=388, 822.82407pt x 423.08063pt>
+<pictures/composite.png, id=390, 822.82407pt x 423.08063pt>
 File: pictures/composite.png Graphic file (type png)
 
 <use pictures/composite.png>
@@ -1329,14 +1329,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 662--672
 
  []
 
-<pictures/UseCaseDiagram.png, id=391, 1085.55562pt x 576.65437pt>
+<pictures/UseCaseDiagram.png, id=393, 1085.55562pt x 576.65437pt>
 File: pictures/UseCaseDiagram.png Graphic file (type png)
 
 <use pictures/UseCaseDiagram.png>
 Package pdftex.def Info: pictures/UseCaseDiagram.png used on input line 676.
 (pdftex.def)             Requested size: 504.0pt x 267.72795pt.
 
-<pictures/SequenceDiagram3.png, id=392, 1072.75781pt x 633.11531pt>
+<pictures/SequenceDiagram3.png, id=394, 1072.75781pt x 633.11531pt>
 File: pictures/SequenceDiagram3.png Graphic file (type png)
 
 <use pictures/SequenceDiagram3.png>
@@ -1352,7 +1352,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 695--700
 
  []
 
-<pictures/machinelayers.png, id=393, 516.93124pt x 313.17pt>
+<pictures/machinelayers.png, id=395, 516.93124pt x 313.17pt>
 File: pictures/machinelayers.png Graphic file (type png)
 
 <use pictures/machinelayers.png>
@@ -1364,7 +1364,7 @@ Overfull \hbox (3.03136pt too wide) in paragraph at lines 715--717
  []
 
 [12 <./pictures/machinelayers.png (PNG copy)>]
-<pictures/senseComputeControl.png, id=405, 509.905pt x 362.35374pt>
+<pictures/senseComputeControl.png, id=407, 509.905pt x 362.35374pt>
 File: pictures/senseComputeControl.png Graphic file (type png)
 
 <use pictures/senseComputeControl.png>
@@ -1375,7 +1375,7 @@ Package pdftex.def Info: pictures/senseComputeControl.png used on input line 72
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./pictures/ClassDiagram.png> <./pictures/senseComputeControl.png>]
+[13 <./pictures/ClassDiagram2.png> <./pictures/senseComputeControl.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 738--746
 
  []
@@ -1385,7 +1385,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 738--746
 
  []
 
-<pictures/VisaoEstrutural.png, id=425, 1081.03876pt x 639.89063pt>
+<pictures/VisaoEstrutural.png, id=427, 1081.03876pt x 639.89063pt>
 File: pictures/VisaoEstrutural.png Graphic file (type png)
 
 <use pictures/VisaoEstrutural.png>
@@ -1497,7 +1497,7 @@ runsystem(rm libsensorPy.out.pyg)...executed.
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-<pictures/tests.png, id=438, 981.6675pt x 345.29pt>
+<pictures/tests.png, id=440, 981.6675pt x 345.29pt>
 File: pictures/tests.png Graphic file (type png)
  <use pictures/tests.png>
 Package pdftex.def Info: pictures/tests.png used on input line 924.
@@ -1515,7 +1515,7 @@ runsystem(rm libsensorPy.out.pyg)...executed.
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-<pictures/survey2.png, id=439, 1245.65375pt x 721.69624pt>
+<pictures/survey2.png, id=441, 1245.65375pt x 721.69624pt>
 File: pictures/survey2.png Graphic file (type png)
 
 <use pictures/survey2.png>
@@ -1593,7 +1593,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1035--1046
  []
 
 (./libsensorPy.bbl
-Overfull \hbox (6.72821pt too wide) in paragraph at lines 56--62
+Overfull \hbox (6.72821pt too wide) in paragraph at lines 63--69
 \T1/aett/bx/n/9 architecturedriven-[]programming-[]for-[]sensecompute / 
  []
 
@@ -1629,7 +1629,7 @@ Overfull \hbox (154.07747pt too wide) in paragraph at lines 1112--1139
 
 [21
 
-] <pictures/modelSpecification.png, id=534, 1123.19624pt x 768.8725pt>
+] <pictures/modelSpecification.png, id=536, 1123.19624pt x 768.8725pt>
 File: pictures/modelSpecification.png Graphic file (type png)
 
 <use pictures/modelSpecification.png>
@@ -1665,10 +1665,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1156.
  ) 
 Here is how much of TeX's memory you used:
- 10597 strings out of 495007
- 148770 string characters out of 6180696
- 257245 words of memory out of 5000000
- 13392 multiletter control sequences out of 15000+600000
+ 10599 strings out of 495007
+ 148790 string characters out of 6180696
+ 257272 words of memory out of 5000000
+ 13393 multiletter control sequences out of 15000+600000
  55935 words of font info for 79 fonts, out of 8000000 for 9000
  16 hyphenation exceptions out of 8191
  41i,13n,43p,1223b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1684,10 +1684,10 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on libsensorPy.pdf (22 pages, 2578135 bytes).
+Output written on libsensorPy.pdf (22 pages, 2578393 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 162 named destinations out of 1000 (max. 500000)
+ 623 PDF objects out of 1000 (max. 8388607)
+ 551 compressed objects within 6 object streams
+ 163 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

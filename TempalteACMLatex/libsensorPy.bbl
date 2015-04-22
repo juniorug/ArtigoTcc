@@ -7,6 +7,13 @@ Adafruit.
   \url{https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c},
   note = "[Online; accessed 15-March-2015]", September 2014.
 
+\bibitem{NSF}
+J.~A. Armstrong, P.~A. Ferguson, M.~K. Gaillard, M.~Greenwood, S.~V. Jaskolski,
+  A.~K. Jones, G.~M. Langford, J.~Lubchenco, E.~L. Menger, J.~A. Miller~Jr,
+  et~al.
+\newblock National science foundation.
+\newblock 2001.
+
 \bibitem{barr2001pulse}
 M.~Barr.
 \newblock Pulse width modulation.
@@ -121,6 +128,11 @@ G.~Halfacree.
   \url{http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all},
   note = "[Online; accessed 25-February-2015]", 2014.
 
+\bibitem{Eletronica}
+O.~Henrique B.~Filho.
+\newblock Componentes eletronicos e unidades de medida, conceitos basicos,
+  2012.
+
 \bibitem{DexterIndustries}
 D.~Industries.
 \newblock A fork of raspbian for robotics projects with lego, grove, and
@@ -128,11 +140,6 @@ D.~Industries.
 \newblock
   \url{http://sourceforge.net/projects/dexterindustriesraspbianflavor/}, note =
   "[Online; accessed 25-March-2015]", June 2013.
-
-\bibitem{Armstrong}
-M.~K. G. M. G. S. V. J. A. K. J. G. M. L. J. L. E. L. M. J. A. M. J. e.~a.
-  J.~A.~Armstrong, P. A.~Ferguson.
-\newblock {\em National science foundation}, 2001.
 
 \bibitem{Jaguar}
 Jaguar.orpheusweb.co.uk.
