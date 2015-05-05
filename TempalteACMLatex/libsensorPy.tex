@@ -99,6 +99,7 @@ In this section the main concepts studied are presented, which provided subsidie
 The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991} in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a computer. He believed that in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use the computer without realizing or require specific technical knowledge. \cite{weiser1994world}
 
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/era.png}
     \caption{Ages of Computing}
     \label{fig:era}
@@ -122,6 +123,7 @@ The concept of pervasive computing implies that the computer is embedded invisib
 \subsection{Ubiquitous Computing}
 As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous is an adjective originated from Latin (\textit{ubiquu}) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/ubiq.png}
     \caption{Ubiquitous Computing: intersection between pervasive and mobile computing}
     \label{fig:ubiq}
@@ -212,6 +214,7 @@ The proposal of the Raspberry Pi is therefore be a low-cost computer, with the a
 \newline
 Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 and the B and B+ models, which costs \$ 35. As for the price, there is not much difference between the hardware models. The main differences are the amount of USB ports (1, 2 and 4 in the models A, B and B +, respectively), the Ethernet port (model A does not have) and ram (256MB on the model A against 512 for the others).
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
     \caption{Raspberry Pi Components, model B. \protect\cite{raspberryFaq}}
     \label{fig:raspi}
@@ -360,6 +363,7 @@ Any RPi.GPIO script must be run as root because this library needs to access \te
 The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure~\ref{fig:ModelAB}.
 
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
     \caption{GPIO pins.\protect\cite{gpioHeader}}
     \label{fig:ModelAB}
@@ -408,6 +412,7 @@ Some sensors, like relay switches, can be controlled through the Internet. Users
 Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermometer, DHT22 for temperature and humidity readings and a generic water sensor.
 %PICTURE FONT: http://projects.privateeyepi.com/
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/dashboardPrivateeye.png}
     \caption{PrivateEyePi web based dashboard.\protect\cite{Privateeyepi}}
     \label{fig:PrivateEye}
@@ -642,6 +647,7 @@ These sensors need to wait microseconds between send a signal to the sensor and 
 \subsection{Architecture}
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For that, the system must be configured with one of multiple product families (family of sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
 \begin{figure*}[ht]
+\centering
     \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/ClassDiagram2.png}
     \caption{Class diagram}
     \label{fig:classDiagram}
@@ -665,6 +671,7 @@ A single instance of the concrete factory is created at run-time, using the Sing
 Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors. The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
 \newline
 \begin{figure*}[ht]
+\centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/composite.png}
     \caption{Composite class diagram}
     \label{fig:composite}
@@ -673,12 +680,14 @@ Due to some sensors belong to more than one family (measure more than one physic
 
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
 \begin{figure*}[ht]
+\centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
     \caption{Use Case diagram}
     \label{fig:useCase}
 \end{figure*}
 
 \begin{figure*}[t]
+\centering
     \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
     \caption{Sequence diagram}
     \label{fig:sequence}
@@ -704,6 +713,7 @@ The Virtual Machine style is applied when we imagine the layers between the hard
 \end{itemize}
 
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
     \caption{LibsensorPy's layers}
     \label{fig:layers}
@@ -722,6 +732,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 
 %PICTURE FONT: http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecomputecontrol-applications
 \begin{figure}[h]
+\centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
     \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
     \label{fig:scc}
@@ -752,6 +763,7 @@ The application follows the five basic principles of design oriented to objects,
 
 Figure~\ref{fig:view} shows the library's structural view.
 \begin{figure*}[ht]
+\centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
     \caption{libsensorPy's structural view}
     \label{fig:view}
