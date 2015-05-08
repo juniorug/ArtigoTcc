@@ -3,91 +3,15 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: libsensorPy.aux
 The style file: abbrv.bst
 Database file #1: libsensorPy.bib
-Warning--entry type for "Eletronica" isn't style-file defined
---line 142 of file libsensorPy.bib
-I was expecting a `,' or a `}'---line 296 of file libsensorPy.bib
+You're missing a field name---line 107 of file libsensorPy.bib
  : 
- : @misc{Spi,
+ : % AUTHOR = "Pingo Team",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 304 of file libsensorPy.bib
+You're missing a field name---line 115 of file libsensorPy.bib
  : 
- : @misc{I2c,
+ : % AUTHOR = "Arduino Playground",
 (Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 312 of file libsensorPy.bib
- : 
- : @misc{DamienCassou,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 320 of file libsensorPy.bib
- : 
- : @article{DanielPace,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 335 of file libsensorPy.bib
- : 
- : @misc{Kevin,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 343 of file libsensorPy.bib
- : 
- : @misc{Raspbian,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 351 of file libsensorPy.bib
- : 
- : @misc{PiStore,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 359 of file libsensorPy.bib
- : 
- : @misc{Yau,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 367 of file libsensorPy.bib
- : 
- : @misc{Raspbianwheezy,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 375 of file libsensorPy.bib
- : 
- : @misc{EbenUpton,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 383 of file libsensorPy.bib
- : 
- : @misc{Pibanglinux,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 391 of file libsensorPy.bib
- : 
- : @misc{DexterIndustries,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 399 of file libsensorPy.bib
- : 
- : @article{dearduino,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 412 of file libsensorPy.bib
- : 
- : @misc{Pigpio,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 421 of file libsensorPy.bib
- : 
- : @article{netodesenvolvimento,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 431 of file libsensorPy.bib
- : 
- : @book{taylor2009software,
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Illegal end of database file---line 448 of file libsensorPy.bib
- : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
- :                                                                        
 I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Damien Cassou, Émile Balland, Charles Consel, Julia Lawall" for entry DamienCassou
 while executing---line 1049 of file abbrv.bst
@@ -102,45 +26,45 @@ Warning--empty journal in krishnakumarframework
 Warning--empty year in krishnakumarframework
 Warning--empty journal in netodesenvolvimento
 Warning--empty year in netodesenvolvimento
-You've used 52 entries,
+You've used 50 entries,
             2118 wiz_defined-function locations,
-            770 strings with 12134 characters,
-and the built_in function-call counts, 12855 in all, are:
-= -- 1237
-> -- 508
+            766 strings with 11450 characters,
+and the built_in function-call counts, 12599 in all, are:
+= -- 1235
+> -- 494
 < -- 5
-+ -- 217
-- -- 158
-* -- 633
-:= -- 2175
-add.period$ -- 167
-call.type$ -- 52
-change.case$ -- 230
++ -- 210
+- -- 154
+* -- 617
+:= -- 2143
+add.period$ -- 179
+call.type$ -- 50
+change.case$ -- 222
 chr.to.int$ -- 0
-cite$ -- 61
-duplicate$ -- 484
-empty$ -- 1174
-format.name$ -- 158
-if$ -- 2740
+cite$ -- 59
+duplicate$ -- 470
+empty$ -- 1130
+format.name$ -- 154
+if$ -- 2686
 int.to.chr$ -- 0
-int.to.str$ -- 52
+int.to.str$ -- 50
 missing$ -- 25
-newline$ -- 271
-num.names$ -- 104
-pop$ -- 392
+newline$ -- 279
+num.names$ -- 100
+pop$ -- 376
 preamble$ -- 1
-purify$ -- 181
+purify$ -- 175
 quote$ -- 0
-skip$ -- 384
+skip$ -- 350
 stack$ -- 0
-substring$ -- 430
-swap$ -- 79
+substring$ -- 419
+swap$ -- 77
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 200
+type$ -- 192
 warning$ -- 9
-while$ -- 122
-width$ -- 54
-write$ -- 547
-(There were 19 error messages)
+while$ -- 118
+width$ -- 52
+write$ -- 563
+(There were 4 error messages)

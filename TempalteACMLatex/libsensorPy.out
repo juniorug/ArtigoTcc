@@ -14,31 +14,26 @@
 \BOOKMARK [3][-]{subsubsection.1.7.2}{WiringPi}{subsection.1.7}% 14
 \BOOKMARK [3][-]{subsubsection.1.7.3}{Python}{subsection.1.7}% 15
 \BOOKMARK [3][-]{subsubsection.1.7.4}{GPIO in Python}{subsection.1.7}% 16
-\BOOKMARK [1][-]{section.2}{JUSTIFICATION}{}% 17
-\BOOKMARK [1][-]{section.3}{RELATED WORK}{}% 18
-\BOOKMARK [2][-]{subsection.3.1}{PrivateEyePi}{section.3}% 19
-\BOOKMARK [2][-]{subsection.3.2}{Pingo}{section.3}% 20
-\BOOKMARK [2][-]{subsection.3.3}{PySerial}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.4}{DHTLib}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.5}{NewPing}{section.3}% 23
-\BOOKMARK [2][-]{subsection.3.6}{Adafruit Raspberry Pi Python Code}{section.3}% 24
-\BOOKMARK [1][-]{section.4}{PROPOSED MODEL}{}% 25
-\BOOKMARK [2][-]{subsection.4.1}{Method/Methodology}{section.4}% 26
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Efficient and effective communication}{subsection.4.1}% 27
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Useful and stable abstraction}{subsection.4.1}% 28
-\BOOKMARK [2][-]{subsection.4.2}{Functional Requirements}{section.4}% 29
-\BOOKMARK [2][-]{subsection.4.3}{Non-functional Requirements}{section.4}% 30
-\BOOKMARK [2][-]{subsection.4.4}{Why not to use Java}{section.4}% 31
-\BOOKMARK [2][-]{subsection.4.5}{Architecture}{section.4}% 32
-\BOOKMARK [3][-]{subsubsection.4.5.1}{Architectural Style}{subsection.4.5}% 33
-\BOOKMARK [3][-]{subsubsection.4.5.2}{Architectural Pattern}{subsection.4.5}% 34
-\BOOKMARK [2][-]{subsection.4.6}{What is needed to install libsensorPy}{section.4}% 35
-\BOOKMARK [2][-]{subsection.4.7}{How to extend the library}{section.4}% 36
-\BOOKMARK [2][-]{subsection.4.8}{Case Study}{section.4}% 37
-\BOOKMARK [2][-]{subsection.4.9}{Case Study results}{section.4}% 38
-\BOOKMARK [1][-]{section.5}{CONCLUSION AND FUTURE WORK}{}% 39
-\BOOKMARK [1][-]{section.6}{REFERENCES}{}% 40
-\BOOKMARK [1][-]{appendix.A}{Other operating systems}{}% 41
-\BOOKMARK [1][-]{appendix.B}{Units and scales}{}% 42
-\BOOKMARK [1][-]{appendix.C}{Implemented Sensors}{}% 43
-\BOOKMARK [1][-]{appendix.D}{Raspberry Pi, Models and Specifications}{}% 44
+\BOOKMARK [1][-]{section.2}{RELATED WORK}{}% 17
+\BOOKMARK [2][-]{subsection.2.1}{PrivateEyePi}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.2}{Pingo}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.3}{PySerial}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.4}{DHTLib}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.5}{NewPing}{section.2}% 22
+\BOOKMARK [2][-]{subsection.2.6}{Adafruit Raspberry Pi Python Code}{section.2}% 23
+\BOOKMARK [2][-]{subsection.2.7}{Discussions and Observations}{section.2}% 24
+\BOOKMARK [1][-]{section.3}{PROPOSED MODEL}{}% 25
+\BOOKMARK [2][-]{subsection.3.1}{Method/Methodology}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.2}{Why not to use Java}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.3}{Architecture of LibsensorPy}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Architectural Style}{subsection.3.3}% 29
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Architectural Pattern}{subsection.3.3}% 30
+\BOOKMARK [2][-]{subsection.3.4}{What is needed to install LibsensorPy?}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.5}{How to extend the library}{section.3}% 32
+\BOOKMARK [2][-]{subsection.3.6}{Case Study}{section.3}% 33
+\BOOKMARK [1][-]{section.4}{CONCLUSION AND FUTURE WORK}{}% 34
+\BOOKMARK [1][-]{section.5}{REFERENCES}{}% 35
+\BOOKMARK [1][-]{appendix.A}{Other operating systems}{}% 36
+\BOOKMARK [1][-]{appendix.B}{Units and scales}{}% 37
+\BOOKMARK [1][-]{appendix.C}{Implemented Sensors}{}% 38
+\BOOKMARK [1][-]{appendix.D}{Raspberry Pi, Models and Specifications}{}% 39

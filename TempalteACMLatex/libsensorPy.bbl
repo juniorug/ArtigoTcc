@@ -5,7 +5,8 @@ Adafruit.
 \newblock Configuring i2c.
 \newblock
   \url{https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c},
-  note = "[Online; accessed 15-March-2015]", September 2014.
+  September 2014.
+\newblock [Online; accessed 15-March-2015].
 
 \bibitem{NSF}
 J.~A. Armstrong, P.~A. Ferguson, M.~K. Gaillard, M.~Greenwood, S.~V. Jaskolski,
@@ -57,7 +58,8 @@ K.~Dallas.
 \newblock Windows 10 coming to raspberry pi 2. building apps for windows.
 \newblock
   \url{http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/},
-  note = "[Online; accessed 25-March-2015]", February 2014.
+  February 2014.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{DamienCassou}
 C.~C. J.~L. Damien~Cassou, Émile~Balland.
@@ -65,7 +67,8 @@ C.~C. J.~L. Damien~Cassou, Émile~Balland.
   applications.
 \newblock
   \url{http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecompute/control-applications},
-  note = "[Online; accessed 19-March-2015]", May 2010.
+  May 2010.
+\newblock [Online; accessed 19-March-2015].
 
 \bibitem{DanielPace}
 M.~A. P.~A. Daniel Pace~Schmitz.
@@ -118,28 +121,33 @@ R.~P. FOUNDATION.
 \bibitem{Uart}
 Gadgetoid.
 \newblock Pinout: Uart.
-\newblock \url{http://pi.gadgetoid.com/pinout/uart}, note = "[Online; accessed
-  15-March-2015]", July 2014.
+\newblock \url{http://pi.gadgetoid.com/pinout/uart}, July 2014.
+\newblock [Online; accessed 15-March-2015].
 
 \bibitem{Gareth}
 G.~Halfacree.
 \newblock Raspberry pi review: Eben upton reveals all.
 \newblock
   \url{http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all},
-  note = "[Online; accessed 25-February-2015]", 2014.
+  2014.
+\newblock [Online; accessed 25-February-2015].
 
 \bibitem{Eletronica}
 O.~Henrique B.~Filho.
-\newblock Componentes eletronicos e unidades de medida, conceitos basicos,
+\newblock Componentes eletronicos e unidades de medida, conceitos basicos.
+\newblock
+  \url{http://www.hardware.com.br/tutoriais/componentes-eletronicos-unidades-medida-conceitos-basicos/},
   2012.
+\newblock [Online; accessed 22-September-2014].
 
 \bibitem{DexterIndustries}
 D.~Industries.
 \newblock A fork of raspbian for robotics projects with lego, grove, and
   arduino.
 \newblock
-  \url{http://sourceforge.net/projects/dexterindustriesraspbianflavor/}, note =
-  "[Online; accessed 25-March-2015]", June 2013.
+  \url{http://sourceforge.net/projects/dexterindustriesraspbianflavor/}, June
+  2013.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{Jaguar}
 Jaguar.orpheusweb.co.uk.
@@ -172,8 +180,8 @@ M.~C.~M. Neto.
 Oracle.
 \newblock Concurrency in java.
 \newblock
-  \url{http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html},
-  note = "[Online; accessed 11-January-2015]".
+  \url{http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html}.
+\newblock [Online; accessed 11-January-2015].
 
 \bibitem{wiring}
 W.~PI.
@@ -185,33 +193,29 @@ W.~PI.
 Pibanglinux.org.
 \newblock Inspired by crunchbang linux, and based on raspbian. features the
   openbox desktop environment.
-\newblock \url{http://www.pibanglinux.org/}, note = "[Online; accessed
-  25-March-2015]", May 2013.
+\newblock \url{http://www.pibanglinux.org/}, May 2013.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{Pigpio}
 Pigpio.
 \newblock Pigpio, a python module for the raspberry which talks to the pigpio
   daemon to allow control of the general purpose input outputs.
-\newblock \url{http://abyz.co.uk/rpi/pigpio/python.html}, note = "[Online;
-  accessed 25-March-2015]", February 2015.
-
-\bibitem{DHTLib}
-A.~Playground.
-\newblock A library for reading both values from dht sensors.
-\newblock \url{http://playground.arduino.cc/Main/DHTLib}, January 2015.
-\newblock [Online; accessed 15-march-2015].
+\newblock \url{http://abyz.co.uk/rpi/pigpio/python.html}, February 2015.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{Privateeyepi}
 Privateeyepi.com.
-\newblock A home automation and monitoring project for raspberry pi, March
-  2015.
+\newblock A home automation and monitoring project for raspberry pi.
+\newblock \url{http://projects.privateeyepi.com/}, March 2015.
+\newblock [Online; accessed 08-March-2015].
 
 \bibitem{gpioHeader}
 Raspberrypi-spy.co.uk.
 \newblock Simple guide to the rpi-gpio header and pins.
 \newblock
   \url{http://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/},
-  note = "[Online; accessed 25-March-2015]", June 2012.
+  June 2012.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{raspOrg}
 Raspberrypi.org.
@@ -232,15 +236,16 @@ Raspberrypi.org.
 \bibitem{Raspbianwheezy}
 Raspberrypi.org.
 \newblock Raspbian wheezy.
-\newblock \url{http://www.raspberrypi.org/downloads}, note = "[Online; accessed
-  25-March-2015]", January 2013.
+\newblock \url{http://www.raspberrypi.org/downloads}, January 2013.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{Spi}
 Raspberrypi.org.
 \newblock Raspberri pi spi.
 \newblock
   \url{http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md},
-  note = "[Online; accessed 15-March-2015]", July 2014.
+  July 2014.
+\newblock [Online; accessed 15-March-2015].
 
 \bibitem{raspberryAbout}
 b.~RASPBERY PI~FUNDATION.
@@ -264,26 +269,20 @@ Raspberypi.org.
 \bibitem{PiStore}
 Raspbian.
 \newblock Introducing the pi store.
-\newblock \url{http://www.raspberrypi.org/introducing-the-pi-store/}, note =
-  "[Online; accessed 25-March-2015]", September 2014.
+\newblock \url{http://www.raspberrypi.org/introducing-the-pi-store/}, September
+  2014.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{Raspbian}
 Raspbian.
 \newblock Raspbian – debian optimized for the raspberry pi hardware.
-\newblock \url{http://www.raspbian.org/}, note = "[Online; accessed
-  25-March-2015]", September 2014.
+\newblock \url{http://www.raspbian.org/}, September 2014.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{taylor2009software}
 R.~N. Taylor, N.~Medvidovic, and E.~M. Dashofy.
 \newblock {\em Software architecture: foundations, theory, and practice}.
 \newblock Wiley Publishing, 2009.
-
-\bibitem{Pingo}
-P.~Team.
-\newblock Pingo, a uniform api to program devices like the raspberry pi,
-  pcduino, intel galileo etc.
-\newblock \url{http://www.pingo.io/docs/}, October 2014.
-\newblock [Online; accessed 14-march-2015].
 
 \bibitem{Trapp}
 B.~Trapp.
@@ -294,8 +293,8 @@ B.~Trapp.
 \bibitem{EbenUpton}
 E.~Upton.
 \newblock Wayland.
-\newblock \url{http://www.raspberrypi.org/archives/4053}, note = "[Online;
-  accessed 25-March-2015]", May 2013.
+\newblock \url{http://www.raspberrypi.org/archives/4053}, May 2013.
+\newblock [Online; accessed 25-March-2015].
 
 \bibitem{weiser1991}
 M.~Weiser.
@@ -323,6 +322,7 @@ L.~Yau.
 \newblock Raspbian server edition version 2.4. the rantings and ravings of a
   madman.
 \newblock \url{http://sirlagz.net/2013/06/13/raspbian-server-edition-2-4/},
-  note = "[Online; accessed 25-March-2015]", July 2013.
+  July 2013.
+\newblock [Online; accessed 25-March-2015].
 
 \end{thebibliography}

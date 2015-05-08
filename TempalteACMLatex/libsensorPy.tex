@@ -61,17 +61,17 @@ Manoel C. M. Neto\titlenote{Ph.D. in Computer Science, Professor and Researcher 
 \maketitle
 \begin{abstract}
 
-This article encourages the use of open source technologies, due to the growth of free movement of hardware, inferring the possibility of an alternative for engineers and professionals to develop their projects and provide the dissemination of knowledge.
 The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors/actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses the Abstract Factory pattern to ensure that sensors/actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as development language applied to the Raspberry Pi.  The project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
 
 \end{abstract}
 \keywords{Ubiquitous Computing, Internet of Things, Raspberry Pi, Sensor, Python.} 
 
 \section*{Introduction}
-The Ubiquitous computing (UbiComp) in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{NSF} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
+\label{sec:Introduction}
+The Ubiquitous Computing (UbiComp) in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{NSF} and is also present in the report \textit{Grandes Desafios da Pesquisa em Computação no Brasil 2006-2016}\cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
 \newline
 \newline
-Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
+Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support on the network in a transparent manner, safety, context treatment, efficient use of energy, presentation of multimedia content, among others. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid the user need to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
 \newline
 \newline
 Raspberry Pi is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and/or for those who must be fed by battery. The platform allows the use high-level programming languages that are quite widespread as C/C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
@@ -85,15 +85,13 @@ The developer must have a degree of experience that can be considered basic to a
 \newline 
 This paper is structured as follow:
 
-\begin{itemize}
-\item Section 2 present several technologies involved in the preparation of this article, aimed to introduce important concepts of Computer area in which the context of the project is inserted;
-\item Section 3 shows correlated works;
-\item Section 4 presents the details of the executed implementation;
-\item Sections 5 and 6 address the testing methodologies used and the results obtained during system validation; 
-\item The last section presents the conclusions.
-\end{itemize}
+Section~\ref{sec:theoreticalBackground} present several technologies involved in the preparation of this article, aimed to introduce important concepts of Computer area in which the context of the project is inserted. Section~\ref{sec:relatedWork} shows correlated works. Section~\ref{sec:proposedModel} presents the details of the executed implementation. The last section presents the conclusions.
+
+
+
 
 \section{THEORETICAL BACKGROUND}
+\label{sec:theoreticalBackground}
 In this section the main concepts studied are presented, which provided subsidies for the development of the proposed project.
 
 \subsection{General Context}
@@ -384,19 +382,10 @@ Pigpio \cite{Pigpio} is a Python module for the Raspberry which talks to the pig
 \newline
 Pigpio provides all the standard gpio features and in addition it provides hardware timed PWM suitable for servos, LEDs, and motors and samples/timestamps gpios 0-31 up to 1 million times per second (default 200 thousand).
 
-\section{JUSTIFICATION}
-\label{sec:justification}
-As with other platforms, Raspberry Pi allows coupling several sensors whose handling can be made from raspberry-gpio-python or any other API available. On other platforms, such as the Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as a development language for Raspberry Pi.
-\newline
-\newline
-This may be a consequence of run under the Linux kernel which is not suitable for real time applications, it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
-\newline
-\newline
-The library proposed reconciles the use of an integrated circuit platform with microcontroller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
-Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the microcontroller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
 
 \section{RELATED WORK}
-As mentioned in section~\ref{sec:justification}, there is no specific library to work with python applied to Raspberry Pi, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
+\label{sec:relatedWork}
+As mentioned in the introduction, there is no specific library to work with python applied to Raspberry Pi, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -418,15 +407,15 @@ Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermomete
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/dashboardPrivateeye.png}
-    \caption{PrivateEyePi web based dashboard.\protect\cite{Privateeyepi}}
+    \caption{PrivateEyePi web based dashboard\protect\cite{Privateeyepi}}.
     \label{fig:PrivateEye}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Pingo}
-%\footnote{\url{http://www.pingo.io/docs/}}
-Pingo\cite{Pingo} is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
+%\footnote{\url{http://www.pingo.io/docs/}} ou /cite{Pingo}
+Pingo\footnote{\url{http://www.pingo.io/docs/}} is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
 \newline
 \newline
 To use pingo, the first step is to instantiate a Board. Each Pingo driver is a concrete board subclass. Two such classes are \textit{pingo.rpi.RaspberryPi} and \textit{pingo.arduino.ArduinoFirmata}. Pingo can automatically detect the board in most common cases.  \textit{pingo.detect.MyBoard()} will return an suitable board instance if the script is running on a supported board. If Pingo is running on an unsupported machine (eg. a notebook), it will try to find a connected Arduino using the Firmata protocol via USB and – if successful – will return a \textit{pingo.arduino.ArduinoFirmata} instance.
@@ -482,7 +471,8 @@ That work \cite{dearduino}, describes the use of LM35 (temperature sensor) and a
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %http://playground.arduino.cc/Main/DHTLib
 \subsection{DHTLib}
-Arduino DHTLib\cite{DHTLib} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22, DHT33 e DHT44, applied to Arduino. 
+%\footnote{\url{http://playground.arduino.cc/Main/DHTLib}} ou \cite{DHTLib}
+Arduino DHTLib\footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22, DHT33 e DHT44, applied to Arduino. 
 \newline
 \newline
 The DHT11/21/22 has three lines, GND, +5V and a single data line. By means of a handshake the values are clocked out over the single digital line. Handshake for DHT21/22 is identical, but data format are different. The library is rewritten from scratch and is not compatible with earlier DHT libraries to be able to support both DHT's and stay as simple as possible and to minimize footprint.
@@ -538,7 +528,19 @@ This library provides a collection of python scripts to work with sensors, provi
 \newline
 Despite being a library with a considerable amount of sensors, if the user wants to change the type of sensor in a project, it is necessary review the documentation of the new sensor to be used because the library does not use a standard for equivalent sensors.
 
+\subsection{Discussions and Observations}
+\label{sec:justification}
+As with other platforms, Raspberry Pi allows coupling several sensors whose handling can be made from raspberry-gpio-python or any other API available. On other platforms, such as the Arduino, the APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as a development language for Raspberry Pi.
+\newline
+\newline
+This may be a consequence of run under the Linux kernel which is not suitable for real time applications, it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
+\newline
+\newline
+The library proposed reconciles the use of an integrated circuit platform with microcontroller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions. Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the microcontroller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
+
+
 \section{PROPOSED MODEL}
+\label{sec:proposedModel}
 Many small embedded systems exist to collect data from sensors, analyses the data, and either take an appropriate action or send that sensor data to another system for processing. One of the many challenges of embedded systems design is the fact that parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
 \newline
 \newline
@@ -554,7 +556,7 @@ With the proposed system, the user only need to worry about using the data that 
 LibsensorPy provides a simple abstraction layer between user's application and the actual sensor Hardware, allowing to drop in any comparable sensor with only one or two lines of code to change in the project that uses the library. This change is essentially in the constructor since the functions to read data and get information about the sensor are defined in the family sensor class, e.g. UltrasonicSensor class.
 \newline
 \newline
-This is imporant useful for two reasons:
+This is important useful for two reasons:
 
 \begin{enumerate}
 \item Users can use the data right away because it's already converted to SI units that is understandable and can compare, rather than meaningless values like 0..1023.
@@ -579,13 +581,20 @@ According to the popular guide Unified Process, OOAD in modern software engineer
 The object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, we should check that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of your work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
 \newline
 \newline
-Using Object-oriented modeling, we divided the work in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used. The benefits of OOM are:
+Using Object-oriented modeling, the work is divided in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used. The benefits of OOM are:
 
-\subsubsection{Efficient and effective communication}
+%\subsubsection{Efficient and effective communication}
+\begin{itemize}
+\item Efficient and effective communication:
+\end{itemize}
 
 Users typically have difficulties in understanding comprehensive documents and programming language codes well. Visual model diagrams can be more understandable and can allow users and stakeholders to give developers feedback on the appropriate requirements and structure of the system. A key goal of the object-oriented approach is to decrease the "semantic gap" between the system and the real world, and to have the system be constructed using terminology that is almost the same as the stakeholders use in everyday business. Object-oriented modeling is an essential tool to facilitate this.
-
-\subsubsection{Useful and stable abstraction}
+\newline
+\newline
+\begin{itemize}
+\item Useful and stable abstraction:
+\end{itemize}
+%\subsubsection{Useful and stable abstraction}
 
 Modeling helps coding. A goal of most modern software methodologies is to first address "what" questions and then address "how" questions, i.e. first determine the functionality the system is to provide without consideration of implementation constraints, and then consider how to make specific solutions to these abstract requirements, and refine them into detailed designs and codes by constraints such as technology and budget. Object-oriented modeling enables this by producing abstract and accessible descriptions of both system requirements and designs, i.e. models that define their essential structures and behaviors like processes and objects, which are important and valuable development assets with higher abstraction levels above concrete and complex source code.
 \newline
@@ -598,7 +607,7 @@ Patterns used:
 \item Composite;
 \end{itemize}
 
-\subsection{Functional Requirements}
+%\subsection{Functional Requirements}
 In the table \ref{table:rf} are defined the main functional requirements order to be able to meet all the objectives proposed by libsensorPy library:
  
 \begin{table}[h]
@@ -612,18 +621,16 @@ In the table \ref{table:rf} are defined the main functional requirements order t
  \hline 
  RF02 & Manipulate data sent by the sensors, turning them into readable data to the user; & User \\
  \hline 
- RF03 & Allow additions of new sensors/actuators and factories via inheritance; & User \\
+ RF03 & Allow the user to set the pins to be used for connection between sensor and Raspberry; & User \\
  \hline 
- RF04 & Allow the user to set the pins to be used for connection between sensor and Raspberry; & User \\
+ RF04 & Allow the creation of composite sensors, enabling a single sensor to measure more than one physical greatness; & User \\
  \hline 
- RF05 & Allow the creation of composite sensors, enabling a single sensor to measure more than one physical greatness; & User \\
- \hline 
- RF06 & Allow configuration of a set of conditions (events) that, When met, trigger an action. & User \\
+ RF05 & Allow configuration of a set of conditions (events) that, When met, trigger an action. & User \\
 \hline  
 \end{tabular}
 \end{table}
 
-\subsection{Non-functional Requirements}
+%\subsection{Non-functional Requirements}
 Are characterized as non-functional requirements for the proper functioning of libsensorPy, the items in table \ref{table:rnf}.
 
 \begin{table}[h]
@@ -645,7 +652,7 @@ Are characterized as non-functional requirements for the proper functioning of l
 \end{table}
 
 \subsection{Why not to use Java}
-At the beginning of this project we decide to develop the library using Java as the programming language, Since These libraries do not yet exist formally for those who want to use Java as a development language. We thought that it could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors, the DHT11 and HC-SR04, when tried to test, we got no data from the sensors.
+At the beginning of this project we decide to develop the library using Java as the programming language, since these libraries do not yet exist formally for those who want to use Java as a development language. We thought that it could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors, the DHT11 and HC-SR04, when tried to test, we got no data from the sensors.
 \newline
 \newline
 After some research about what could be the problem, we found that we cannot assume that invoking sleep will suspend the thread for precisely the time period specified, since \textit{Thread.sleep()} and the \textit{Thread.Join()} methods are dependent on the operating system and the version of the JVM \cite{Oracle}.
@@ -654,7 +661,7 @@ After some research about what could be the problem, we found that we cannot ass
 \newline
 These sensors need to wait microseconds between send a signal to the sensor and get back the data read from it, And because of this not real time property from both Java and the Raspberry Pi, we couldn't read data from those sensors. After that we moved on to change the programming language and decided to use python, especially because it's the recommended programming language by the Raspberry Pi developers.
 
-\subsection{Architecture}
+\subsection{Architecture of LibsensorPy}
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For that, the system must be configured with one of multiple product families (family of sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
 \begin{figure*}[ht]
 \centering
@@ -678,7 +685,7 @@ Main components:
 A single instance of the concrete factory is created at run-time, using the Singleton pattern. This factory creates products with a particular implementation. To create other products from a different family, one should use a different factory. The concrete factory class being used appears only once in the application, facilitating changes. The product family changes all at once, promoting consistency across products, ensuring that used objects are all of the same family, represented by the concrete factory being used.
 \newline
 \newline
-Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so , were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors. The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
+Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so, were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors. The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. We can see this structure in figure~\ref{fig:composite}.
 \newline
 \begin{figure*}[ht]
 \centering
@@ -714,7 +721,7 @@ The libsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by the Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedure call and event. Procedure call connectors model the control flow by invocation techniques and perform data transfer between the components involved through the use of parameters. Examples of procedure call connectors include functions, procedures,  object oriented methods, callback and system calls.
 \newline
 \newline
-The Virtual Machine style is applied when we imagine the layers between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. We have thus the layers:
+The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. The system has thus the layers:
 \begin{itemize}
 \item Physical: GPIO
 \item Operating System
@@ -732,7 +739,7 @@ The Virtual Machine style is applied when we imagine the layers between the hard
 The envent-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
 
 \subsubsection{Architectural Pattern}
-This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second\cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
+This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second \cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
 \item Then context operators, which process this information; 
@@ -775,12 +782,12 @@ Figure~\ref{fig:view} shows the library's structural view.
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
-    \caption{libsensorPy's structural view}
+    \caption{LibsensorPy's structural view}
     \label{fig:view}
 \end{figure*}
 
-\subsection{What is needed to install libsensorPy}
-Before use libsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
+\subsection{What is needed to install LibsensorPy?}
+Before use LibsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
 \renewcommand{\theFancyVerbLine}{
   \sffamily\textcolor[rgb]{0.5,0.5,0.5}{\scriptsize\arabic{FancyVerbLine}}}
 \begin{minted}[mathescape,
@@ -855,7 +862,7 @@ install pip:
   sudo apt-get install python-pip
 \end{minted}
 
-and finally install libsensorPy:
+and finally install LibsensorPy:
 \begin{minted}[mathescape,
                linenos,
                numbersep=0pt,
@@ -863,7 +870,7 @@ and finally install libsensorPy:
                frame=lines,
                framesep=2mm]{bash}
 
-  sudo pip install libsensorPy
+  sudo pip install LibsensorPy
 \end{minted}
 
 
@@ -994,7 +1001,7 @@ Follows an example of how to extend the library: The HCSR04 class was implemente
     		\caption{LibsensorPy's satisfaction survey}  
     		\label{fig:survey}  	
 \end{figure*}
-In this work the case study began with software verification tests which consisted of functional tests of libsensorPy. These tests were performed as the system was being implemented.
+In this work the case study began with software verification tests which consisted of functional tests of LibsensorPy. These tests were performed as the system was being implemented.
 \newline
 \newline
 Verification tests are related to the system specification, the purpose of these tests is to verify the compliance with the library's functional requirements. The tests were performed based on test cases.
@@ -1035,32 +1042,34 @@ Below is presented \textit{dht11CompositeExample.py}, an example of how to use t
 Was then given to continue the study validation tests. These tests were performed after development's completion of LibsensorPy, and was based on the library's availability to the people who are involved in ubiquitous systems development activities.
 \newline
 \newline
-This library was presented to a post graduation student in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether libsensorPy meets the user needs.
+This library was presented to a post graduation student in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether LibsensorPy meets the user needs.
 \newline
 \newline
-At the end of the presentation this student were invited to complete the satisfaction of libsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
+At the end of the presentation this student were invited to complete the satisfaction of LibsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
+\newline
+\newline
 
+%\subsection{Case Study results}
 
-\subsection{Case Study results}
-
-The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. The interviewed, during the case study, confirmed that libsensorPy meets your needs. However, this students made some notifications about show more use examples.
+The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. The interviewed, during the case study, confirmed that LibsensorPy meets your needs. However, this students made some notifications about show more use examples.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
 We tested the sensors DHT11Temperature, DHT11Humidity, DHT11Composite and HCSR04. Figure~\ref{fig:results} shows the results obtained. We would like to test more sensors but we just had these exemplars on hand. From HCSR04 we tested first with a distant object, and on the second reading we put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
 \newline
 \newline
-Analyzing the results obtained, it is concluded that the libsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
+Analyzing the results obtained, it is concluded that the LibsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize the current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
 
 
 \section{CONCLUSION AND FUTURE WORK}
-This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language. The latest version can be downloaded and installed using: 
+\label{sec:conclusion}
+This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/LibsensorPy/LibsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language. The latest version can be downloaded and installed using: 
 \newline
 \newline
-\textit{sudo pip install libsensorPy}
+\textit{sudo pip install LibsensorPy}
 \newline
 \newline
-The source code is availlable on Github \footnote{\url{https://github.com/juniorug/libsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. All documentation can be found at the official website\footnote{\url{http://libsensorpy.com}}.
+The source code is availlable on Github \footnote{\url{https://github.com/juniorug/LibsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. All documentation can be found at the official website\footnote{\url{http://LibsensorPy.com}}.
 \newline
 \newline
 Its goal is to facilitate the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that system's type, using design patterns and following the SOLID principles.
@@ -1077,7 +1086,7 @@ Some suggestions can be seen below:
 \end{itemize}
 
 \bibliographystyle{abbrv}
-\bibliography{libsensorPy}  % libsensorPy.bib is the name of the Bibliography in this case
+\bibliography{libsensorPy}  % LibsensorPy.bib is the name of the Bibliography in this case
 
 \appendix
 
@@ -1107,7 +1116,7 @@ Some suggestions can be seen below:
 \newpage
 
 \section{Units and scales}\label{sec:Units}
-Table \ref{table:units} shows units and scales provided by libsensorPy.
+Table \ref{table:units} shows units and scales provided by LibsensorPy.
 
 \begin{table}[hf]
 \caption{Units and scales}
