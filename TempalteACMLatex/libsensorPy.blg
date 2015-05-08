@@ -1,96 +1,91 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2014/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: libsensorPy.aux
 The style file: abbrv.bst
 Database file #1: libsensorPy.bib
-You're missing a field name---line 12 of file libsensorPy.bib
- : 
- : % AUTHOR = "J. A. Armstrong, P. A. Ferguson, M. K. Gaillard, M. Greenwood, S. V. Jaskolski, A. K. Jones, G. M. Langford, J. Lubchenco, E. L. Menger, J. A. Miller Jr, et al.",
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
 Warning--entry type for "Eletronica" isn't style-file defined
---line 128 of file libsensorPy.bib
-I was expecting a `,' or a `}'---line 282 of file libsensorPy.bib
+--line 142 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 296 of file libsensorPy.bib
  : 
  : @misc{Spi,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 290 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 304 of file libsensorPy.bib
  : 
  : @misc{I2c,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 298 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 312 of file libsensorPy.bib
  : 
  : @misc{DamienCassou,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 306 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 320 of file libsensorPy.bib
  : 
  : @article{DanielPace,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 321 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 335 of file libsensorPy.bib
  : 
  : @misc{Kevin,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 329 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 343 of file libsensorPy.bib
  : 
  : @misc{Raspbian,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 337 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 351 of file libsensorPy.bib
  : 
  : @misc{PiStore,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 345 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 359 of file libsensorPy.bib
  : 
  : @misc{Yau,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 353 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 367 of file libsensorPy.bib
  : 
  : @misc{Raspbianwheezy,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 361 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 375 of file libsensorPy.bib
  : 
  : @misc{EbenUpton,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 369 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 383 of file libsensorPy.bib
  : 
  : @misc{Pibanglinux,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 377 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 391 of file libsensorPy.bib
  : 
  : @misc{DexterIndustries,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 385 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 399 of file libsensorPy.bib
  : 
  : @article{dearduino,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 398 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 412 of file libsensorPy.bib
  : 
  : @misc{Pigpio,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 407 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 421 of file libsensorPy.bib
  : 
  : @article{netodesenvolvimento,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 417 of file libsensorPy.bib
+I was expecting a `,' or a `}'---line 431 of file libsensorPy.bib
  : 
  : @book{taylor2009software,
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Illegal end of database file---line 434 of file libsensorPy.bib
+Illegal end of database file---line 448 of file libsensorPy.bib
  : %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  :                                                                        
 I'm skipping whatever remains of this entry
@@ -107,45 +102,45 @@ Warning--empty journal in krishnakumarframework
 Warning--empty year in krishnakumarframework
 Warning--empty journal in netodesenvolvimento
 Warning--empty year in netodesenvolvimento
-You've used 50 entries,
+You've used 52 entries,
             2118 wiz_defined-function locations,
-            758 strings with 11802 characters,
-and the built_in function-call counts, 12415 in all, are:
-= -- 1193
-> -- 494
+            770 strings with 12134 characters,
+and the built_in function-call counts, 12855 in all, are:
+= -- 1237
+> -- 508
 < -- 5
-+ -- 210
-- -- 154
-* -- 617
-:= -- 2101
-add.period$ -- 159
-call.type$ -- 50
-change.case$ -- 222
++ -- 217
+- -- 158
+* -- 633
+:= -- 2175
+add.period$ -- 167
+call.type$ -- 52
+change.case$ -- 230
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 470
-empty$ -- 1130
-format.name$ -- 154
-if$ -- 2644
+cite$ -- 61
+duplicate$ -- 484
+empty$ -- 1174
+format.name$ -- 158
+if$ -- 2740
 int.to.chr$ -- 0
-int.to.str$ -- 50
+int.to.str$ -- 52
 missing$ -- 25
-newline$ -- 259
-num.names$ -- 100
-pop$ -- 376
+newline$ -- 271
+num.names$ -- 104
+pop$ -- 392
 preamble$ -- 1
-purify$ -- 175
+purify$ -- 181
 quote$ -- 0
-skip$ -- 372
+skip$ -- 384
 stack$ -- 0
-substring$ -- 419
-swap$ -- 77
+substring$ -- 430
+swap$ -- 79
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
+type$ -- 200
 warning$ -- 9
-while$ -- 118
-width$ -- 52
-write$ -- 523
-(There were 20 error messages)
+while$ -- 122
+width$ -- 54
+write$ -- 547
+(There were 19 error messages)

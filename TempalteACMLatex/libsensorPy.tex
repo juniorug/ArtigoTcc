@@ -3,8 +3,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
 \usepackage{minted}
+\usepackage{float}
 \usepackage{listings}
-\usepackage{fixltx2e}
+%\usepackage{fixltx2e}
 \usepackage{graphicx,url}
 \usepackage[hidelinks,breaklinks]{hyperref}
 \PassOptionsToPackage{hyphens}{url}
@@ -16,7 +17,6 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{1pt}
 \pagenumbering{arabic}
-%\fancyfoot[RE,LO]{\textcolor{blue}{Download and install libsensorPy: sudo pip install libsensorPy}}
 \fancyfoot[LE,RO]{\thepage}
 
 \newcommand{\subparagraph}{}
@@ -36,7 +36,7 @@
 \begin{document}
 \thispagestyle{empty}
 
-\title{An Extendable Python Library To Manipulate Sensors Coupled To The Raspberry Pi}
+\title{LibsensorPy: An Extendable Python Library To Manipulate Sensors Coupled To The Raspberry Pi}
 
 \numberofauthors{2} 
 \author{
@@ -68,7 +68,7 @@ The convergence of radio technologies, microprocessors and personal digital elec
 \keywords{Ubiquitous Computing, Internet of Things, Raspberry Pi, Sensor, Python.} 
 
 \section*{Introduction}
-The UbiComp in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{NSF} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
+The Ubiquitous computing (UbiComp) in its several ramifications and applications, is treated by many as the twenty-first century's new paradigm of computing. It is the area of computing that studies the coupling of the physical world to the world of information and provides an abundance of services and applications, allowing users, machines, data and objects of physical space interact with each other seamlessly. The theme is considered one of the great challenges of research in Computer Science by the National Science Foundation (NSF)\cite{NSF} and is also present in Computing search Grand Challenges report in Brazil from 2006 to 2016 \cite{carvalho2006grandes}, published by the SBC (Brazilian Computer Society - \textit{Sociedade Brasileira de Computa{\c{c}}{\~a}o}).
 \newline
 \newline
 Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support within the network transparently, safety, context treatment, efficient use of energy, presentation of multimedia content and so on. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid that the user needs to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
@@ -77,7 +77,7 @@ Researches on ubiquitous computing are being held on topics such as: basic acces
 Raspberry Pi is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and/or for those who must be fed by battery. The platform allows the use high-level programming languages that are quite widespread as C/C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
 \newline
 \newline
-If we seek a way to access the Raspberry Pi bus we shall find a lot of papers in Python. Which incidentally, brings the acronym of the device name (Pi from Python). However, we cannot find any library that abstracts the details of wiring a sensor or actuator to the Raspberry allowing the user takes care just in read the data already processed and/or converted.
+A brief search about how to access the Raspberry Pi bus will bring  a lot of papers in Python. Which incidentally, introduce the acronym of the device name (Pi from Python). However, any library that abstracts the details of wiring a sensor or actuator to the Raspberry allowing the user takes care just in read the data already processed and/or converted will not be found.
 \newline
 \newline
 The developer must have a degree of experience that can be considered basic to a computer professional, but advanced for those who are not.
@@ -98,6 +98,12 @@ In this section the main concepts studied are presented, which provided subsidie
 
 \subsection{General Context}
 The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991} in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a computer. He believed that in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use the computer without realizing or require specific technical knowledge. \cite{weiser1994world}
+\newline
+\newline
+
+The passage of time has shown that betting Weiser was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and the various types of applications on non-conventional computing devices, are just some of the examples that can confirm: the Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
+\newline
+\newline
 
 \begin{figure}[h]
 \centering
@@ -106,14 +112,10 @@ The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991}
     \label{fig:era}
 \end{figure}
 
-The passage of time has shown that betting Weiser was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and the various types of applications on non-conventional computing devices, are just some of the examples that can confirm: the Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
-\newline
-\newline
-
 Terms such as ubiquitous computing, pervasive computing, nomadic computing, invisible computing, mobile computing and many others, have been used often interchangeably, although they differ conceptually and employing different organization of ideas and management of computer services. Insofar as each area progresses, these concepts will be better understood and its definitions will become clearer. This section presents the key concepts needed to understand the UbiComp besides presenting some project examples in the literature.
 
 \subsection{Mobile Computing}
-Mobile computing is based on the ability of a user to load or move (physically) computer services wherever it moves. In this context, the computer becomes an ever-present device that expands the ability of a user to use the services it offers, regardless of their location. Combined with the ability to access the network, mobile computing has transformed the computing an activity that can be taken almost anywhere.
+Mobile computing is based on the ability of a user to load or move (physically) computer services wherever it moves. In this context, the computer becomes an ever-present device that expands the ability of a user to use the services it offers, regardless of their location. Combined with the ability to access the network, mobile computing has transformed the computing an activity that can be taken almost anywhere \cite{netodesenvolvimento}.
 \newline
 \newline
 An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means that a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing .
@@ -122,7 +124,7 @@ An important conceptual limitation of mobile computing is that the computational
 The concept of pervasive computing implies that the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow you to control, configure and tune the application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
 
 \subsection{Ubiquitous Computing}
-As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous is an adjective originated from Latin (\textit{ubiquu}) which means "that is at the same time everywhere". Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
+Ubiquitous is an adjective originated from Latin (\textit{ubiquu}) which means "that is at the same time everywhere". As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/ubiq.png}
@@ -139,7 +141,7 @@ Research in ubiquitous computing approach about the technologies and infrastruct
 \item How to allow systems involving limited processing resources and energy, to work well?
 \end{itemize}
 
-Generally, ubiquitous applications receive sensor data from other service providers devices, manage user actions, provide support mobility and use context information to perform tasks \cite{doesntfit}. A ubiquitous system itself has a set of requirements, peculiarities and challenges that influence the design, implementation, deployment and evaluation of its project \cite{krumm2009}. These are cornerstones of UbiComp and quite different from those used in the development of systems for PC's. Among these points, we can cite as an example:
+Generally, ubiquitous applications receive sensor data from other service providers devices, manage user actions, provide support mobility and use context information to perform tasks \cite{doesntfit}. A ubiquitous system itself has a set of requirements, peculiarities and challenges that influence the design, implementation, deployment and evaluation of its project \cite{krumm2009}. These are cornerstones of UbiComp and quite different from those used in the development of systems for PC's. Among these points, can be cited as an example \cite{krumm2009}:
 
 \begin{enumerate}
 \item Resource-Constrained Devices; 	
@@ -151,7 +153,7 @@ Generally, ubiquitous applications receive sensor data from other service provid
 \end{enumerate}
 
 \subsection{Internet of Things}
-The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (e.g., routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing Internet of things' applications are potentially diverse. Monitoring of environmental and personal health, monitoring and control of industrial processes, including agriculture, smart spaces and smart cities are just some examples of the IoT applications \cite{krishnakumarframework}.
+The Internet of Things (IoT) is a multidisciplinary field, covering a wide range of subjects, from purely technical issues (e.g., routing protocols, semantic queries) to a mixture of technical and social problems (security, privacy, usability) as well as social and business topics. The existing Internet of things applications are potentially diverse. Environmental and personal health monitoring, monitoring and control of industrial processes including agriculture, smart spaces, and smart cities are just some of the examples of IoT applications \cite{krishnakumarframework}.
 \newline
 \newline
 The connection of physical things to the Internet makes it possible to access remote sensor data and to control the physical world from a distance. The mash-up of captured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond the services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object, which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet \cite{Kopetz:1997}.
@@ -160,7 +162,7 @@ The connection of physical things to the Internet makes it possible to access re
 Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the Internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes the sensor data and supports a wireless communication link to the Internet \cite{Kopetz:1997}.
 
 \subsection{Hardware}
-One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, micro-controllers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
+One of the fundamental requirements for developing ubiquitous systems is the use of hardware such as sensors, microcontrollers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for the development of ubiquitous systems.
 
 \subsubsection{Sensors and Actuators}
 Sensors are devices that allow us to capture information from the environment in which they are inserted, such as temperature, pressure, presence, humidity, smoke detector, light intensity, among others. In general, the sensors work transforming parts of a physical quantity into an electrical signal, which in turn can be interpreted by electronic devices \cite{borges2010automaccao}. In other words, sensors are components that allow an electronic device to interact with the real world.
@@ -172,10 +174,10 @@ According to \cite{borges2010automaccao}, when the sensors operate directly, tra
 An actuator as well as a sensor is a transducer that converts one form of energy into another, and can also do the opposite \cite{borges2010automaccao}. In other words, rather than just  transform parts of a physical quantity into an electrical signal, it can transform an electrical signal into a physical quantity such as motion, magnetism, heat, among others. For example, the relays are electromechanical devices that work with small power, but are able to control external circuits that involve high currents. They are basically composed of a coil and a set of contacts. When a current flows through the coil it creates a magnetic field that attracts and closes the contacts, remaining as long as power supply in the coil. As a result, it allows the passage of energy through the relay.
 
 \subsubsection{Arduino}
-Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a micro-controller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
+Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
 \newline
 \newline
-Arduino is a platform that popularizes the concept of free hardware. In the book Getting Started with Arduino, Massimo Banzi describes the Arduino as a physical open-source computing platform based on a simple board with input/output pins that implements the Processing language. It is a small but powerful board constituted by a micro-controller that can be easily programmed via a Universal Serial Bus interface (USB) and able to build electronic devices and interesting systems.
+Arduino is a platform that popularizes the concept of free hardware. In the book Getting Started with Arduino, Massimo Banzi describes the Arduino as a physical open-source computing platform based on a simple board with input/output pins that implements the Processing language. It is a small but powerful board constituted by a microcontroller that can be easily programmed via a Universal Serial Bus interface (USB) and able to build electronic devices and interesting systems.
 \newline
 \newline
 Working with the construction of a hardware requires much time and effort, because is necessary to create new circuits, use various components such as resistors and capacitors and many welds. Using Arduino board abstracts much of this construction process, making it simpler, allowing people from different fields of knowledge being able to build their projects. The platform is widely used worldwide for offering advantages such as:
@@ -195,7 +197,7 @@ The fact that both the hardware and the Arduino software be developed in an open
 Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in \cite{Eletronica}.
 
 \subsubsection{BeagleBone}
-The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBoard was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip\cite{coley2009take}. The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
+The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBone Black was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip\cite{coley2009take}. The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. It is also sold to the public under the Creative Commons share-alike license. The board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
 \newline
 \newline
 BeagleBone is an \$89 Manufacturer suggested retail price (MSRP) credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
@@ -204,7 +206,7 @@ BeagleBone is an \$89 Manufacturer suggested retail price (MSRP) credit-card-siz
 Raspberry Pi(RPi) is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer\cite{raspberryfoundation}. In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
 \newline
 \newline
-This computer came up with the intention of reconnecting children and youth in computer programming and stimulate the creation of new projects so there is not only the consumption of the technology created by the market. While in the 1990s there was a growth in the number of children and youth who developed programming skills, starting in the 2000s, this number started to decline.\cite{raspberryAbout}.
+This computer came up with the intention of reconnecting children and youth in computer programming and stimulate the creation of new projects so there is not only the consumption of the technology created by the market. While in the 1990s there was a growth in the number of children and youth who developed programming skills, starting in the 2000s, this number started to decline \cite{raspberryAbout}.
 \newline
 \newline
 With the realization that, year by year, the students were moving away from programming and reducing the development of skills in computer science. The researchers Eben Upton, Rob Mullins, Jack Lang and Alan Mycrof, from the Computer Laboratory of University of Cambridge had the idea of creating a platform that would allow to reconcile the programming students  and handling computers\cite{dennis2013raspberry}. From 2006 to 2008, early versions of what is now the Raspberry Pi was developed. From 2008, with the expansion and emphasis on mobile devices, the devices are becoming more efficient and cheaper which enabled the launch of the Raspberry Pi model B to the public in February 2012 for \$ 35.
@@ -247,7 +249,7 @@ The power requirements of the Raspberry Pi increase as you make use of the vario
 The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC)\cite{Broadcom}, which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU\cite{Brose}, and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
 
 \paragraph{General Purpose Input/Output}
-Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, micro-controllers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
+Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
 \newline
 \newline
 Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM (Pulse Width Modulation), UART (Universal asynchronous receiver/transmitter) and SPI (Serial Peripheral Interface). Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others \cite{Brose}.
@@ -271,7 +273,7 @@ All 17 programmable pins can be used as digital inputs. When a pin is programmed
 From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). You can not know how much voltage is being applied to the pin.
 
 \paragraph{Analog Inputs}
-The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a micro-controller due to the available Linux versions not being true real-time. 
+The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a microcontroller due to the available Linux versions not being true real-time. 
 
 \paragraph{Digital outputs}
 With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. You can program the RPi for all 17 digital outputs.
@@ -309,7 +311,7 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 \item Puppy Linux;
 \item Raspbmc and the XBMC open source digital media center;
 \item RISC OS – The operating system of the first ARM-based computer;
-\item Raspbian (recommended for Raspberry Pi and used in this project)\cite{Raspbian} – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs\cite{PiStore}.
+\item Raspbian\footnote{Recommended for Raspberry Pi and used in this project} \cite{Raspbian} – Maintained independently of the Foundation; based on the ARM hard-float (armhf) Debian 7 'Wheezy' architecture port originally designed for ARMv7 and later processors (with Jazelle RCT/ ThumbEE, VFPv3, and NEON SIMD extensions), compiled for the more limited ARMv6 instruction set of the Raspberry Pi. A minimum size of 4 GB SD card is required. There is a Pi Store for exchanging programs\cite{PiStore}.
 \begin{itemize}
 \item The Raspbian Server Edition is a stripped version with fewer software packages bundled as compared to the usual desktop computer oriented Raspbian\cite{Yau,Raspbianwheezy}.
 \item The Wayland display server protocol enable the efficient use of the GPU for hardware accelerated GUI drawing functions\cite{EbenUpton}. On 16 April 2014 a GUI shell for Weston called Maynard was released.
@@ -319,7 +321,7 @@ The install manager for the Raspberry Pi is NOOBS. The operating systems include
 
 \end{itemize}
 
-A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix~\ref{sec:RPiOS} \footnote{\url{http://en.wikipedia.org/wiki/Raspberry_Pi\#cite_note-RaspbianServerEdition-78}}.
+A list of other operating systems that can be installed on Raspberry Pi but are not included with NOOBS can be found in the appendix~\ref{sec:RPiOS}\footnote{\url{http://en.wikipedia.org/wiki/Raspberry_Pi\#cite_note-RaspbianServerEdition-78}}.
 
 
 \subsubsection{WiringPi}
@@ -366,7 +368,7 @@ The GPIO.BOARD option specifies that you are referring to the pins by the number
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins.\protect\cite{gpioHeader}}
+    \caption{GPIO pins \protect\cite{gpioHeader}}.
     \label{fig:ModelAB}
 \end{figure}
 
@@ -390,14 +392,15 @@ As with other platforms, Raspberry Pi allows coupling several sensors whose hand
 This may be a consequence of run under the Linux kernel which is not suitable for real time applications, it is multitasking O/S and another process may be given priority over the CPU, causing jitter in the program \cite{Oracle}.
 \newline
 \newline
-The library proposed reconciles the use of an integrated circuit platform with micro-controller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
-Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the micro-controller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
+The library proposed reconciles the use of an integrated circuit platform with microcontroller , thereby strengthening the use of free hardware, aiming to solve problems of a physical nature, with several components used to the extent that platform, allowing it to have a greater range of utility, potentiating their functions.
+Among the components which have greater relevance are the sensors that capture and process variations in the environment into electrical signals that are identified by the circuit platform. With the use of a high-level programming language make the communication interface between the computer and the microcontroller, capturing the data sent to the computer, allowing the user to make the necessary analysis.
 
 \section{RELATED WORK}
 As mentioned in section~\ref{sec:justification}, there is no specific library to work with python applied to Raspberry Pi, which provides a wide variety of sensors but there are some projects of such libraries for Arduino, and libraries for a particular set of sensors, which will be shown below.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{PrivateEyePi}
 PrivateEyePi\cite{Privateeyepi} is a project developed for security/automation that uses binds programming and electronics.
 This is an open source project that is free of charge and can be copied, shared and modified without restriction.
 The user can use the Raspberry Pi or an tiny wireless Arduino to connect sensors and send data over the Internet.
@@ -418,10 +421,12 @@ Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermomete
     \caption{PrivateEyePi web based dashboard.\protect\cite{Privateeyepi}}
     \label{fig:PrivateEye}
 \end{figure}
-\newline
-\newline
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-Pingo\footnote{\url{http://www.pingo.io/docs/}} is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
+
+\subsection{Pingo}
+%\footnote{\url{http://www.pingo.io/docs/}}
+Pingo\cite{Pingo} is an uniform python API to program devices like the Raspberry Pi, Arduino, pcDuino, Intel Galileo etc. It's an object-oriented API where each board is an instance of a Board subclass. Every board has a dictionary called pins which lists all GPIO pins on the board. Each pin is an instance of a Pin subclass with attributes that users can inspect to learn about its capabilities.
 \newline
 \newline
 To use pingo, the first step is to instantiate a Board. Each Pingo driver is a concrete board subclass. Two such classes are \textit{pingo.rpi.RaspberryPi} and \textit{pingo.arduino.ArduinoFirmata}. Pingo can automatically detect the board in most common cases.  \textit{pingo.detect.MyBoard()} will return an suitable board instance if the script is running on a supported board. If Pingo is running on an unsupported machine (eg. a notebook), it will try to find a connected Arduino using the Firmata protocol via USB and – if successful – will return a \textit{pingo.arduino.ArduinoFirmata} instance.
@@ -454,7 +459,8 @@ Once having a board instance, it’s possible to access its pins through the boa
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %[Jefferson Jardem Izaias de Souza1 , Luís Bruno Pereira do Nascimento1 , Paulo Rodrigues dos Santos Filho2]
-The work from \cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
+\subsection{PySerial}
+The work from\cite{dearduino} describes a library that uses python called pySerial using serial port to communicate with Arduino mainly, but also with Python running on Windows, Linux, BSD (possibly any POSIX compliant system), Jython and IronPython (.NET and Mono). It encapsulates the access for the serial port and provides back-ends for Python. The module named "serial" automatically selects the appropriate back-end.
 \newline
 \newline
 Features:
@@ -475,7 +481,8 @@ That work \cite{dearduino}, describes the use of LM35 (temperature sensor) and a
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %http://playground.arduino.cc/Main/DHTLib
-Arduino DHTLib \footnote{\url{http://playground.arduino.cc/Main/DHTLib}} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22, DHT33 e DHT44, applied to Arduino. 
+\subsection{DHTLib}
+Arduino DHTLib\cite{DHTLib} is a library for reading temperature and humidity from the sensors of HDT11's family, such as DHT11, DHT21, DHT22, DHT33 e DHT44, applied to Arduino. 
 \newline
 \newline
 The DHT11/21/22 has three lines, GND, +5V and a single data line. By means of a handshake the values are clocked out over the single digital line. Handshake for DHT21/22 is identical, but data format are different. The library is rewritten from scratch and is not compatible with earlier DHT libraries to be able to support both DHT's and stay as simple as possible and to minimize footprint.
@@ -500,6 +507,7 @@ In case of a DHTLIB\_ERROR\_TIMEOUT, humidity and temperature will get the value
 \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %https://code.google.com/p/arduino-new-ping/
+\subsection{NewPing}
 NewPing Library for Arduino\footnote{\url{https://code.google.com/p/arduino-new-ping/}}  is an ultrasonic sensor library for Arduino that was developed to work with the sensors SR04, SRF05, SRF06, DYP-ME007 and Parallax PING)))\textsuperscript{TM}. It is written with c++ and intended to use with Sketches (Software written using Arduino). 
 \newline
 \newline
@@ -521,6 +529,7 @@ Features:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code
+\subsection{Adafruit Raspberry Pi Python Code}
 Adafruit's Raspberry-Pi Python Code Library\footnote{\url{https://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code}} is the most closed work with this paper. It is a growing collection of libraries and example python scripts written by Limor Fried, Kevin Townsend and Mikey Sklar under BSD license for controlling a variety of Adafruit electronics with a Raspberry Pi.
 \newline
 \newline
@@ -536,7 +545,7 @@ Many small embedded systems exist to collect data from sensors, analyses the dat
 Creating new drivers is a relatively easy task, but integrating them into existing systems is both error prone and time consuming since sensors rarely use the exact same units of measurement. By reducing all data to a single sensors/event family type and settling on specific, standardized SI units for each sensor family the same sensor types return values that are comparable with any other similar sensor. This enables users to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
 \newline
 \newline
-LibsensorPy is an extensible library, which allows the user to interact with environment through sensors and actuators coupled to the Raspberry Pi as well as add new sensors / actuators and easy way to practice. Often programmers, who have no knowledge in electronics, and engineers who do not have programming experience need to create ubiquitous systems, requiring a lot of work to implement system's abstractions, configure logic connections between sensors and the micro-controller, capture, understand and process the data in order to make them readable.
+LibsensorPy is an extensible library, which allows the user to interact with environment through sensors and actuators coupled to the Raspberry Pi as well as add new sensors / actuators and easy way to practice. Often programmers, who have no knowledge in electronics, and engineers who do not have programming experience need to create ubiquitous systems, requiring a lot of work to implement system's abstractions, configure logic connections between sensors and the microcontroller, capture, understand and process the data in order to make them readable.
 \newline
 \newline 
 With the proposed system, the user only need to worry about using the data that the solution delivery already processed since the system provides the abstractions of the main necessary resources for the processing and, if desired, inform the library in which pins the sensors are connected, if the user does not want to use the default configuration of each sensor. Conversions between units of measure are also provided, facilitating and universalizing the use of the library.
@@ -713,7 +722,7 @@ The Virtual Machine style is applied when we imagine the layers between the hard
 \item LibsensorPy
 \end{itemize}
 
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
     \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
     \caption{LibsensorPy's layers}
@@ -732,7 +741,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 \end{enumerate}
 
 %PICTURE FONT: http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecomputecontrol-applications
-\begin{figure}[H]
+\begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
     \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}

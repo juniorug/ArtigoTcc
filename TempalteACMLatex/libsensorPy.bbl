@@ -195,6 +195,12 @@ Pigpio.
 \newblock \url{http://abyz.co.uk/rpi/pigpio/python.html}, note = "[Online;
   accessed 25-March-2015]", February 2015.
 
+\bibitem{DHTLib}
+A.~Playground.
+\newblock A library for reading both values from dht sensors.
+\newblock \url{http://playground.arduino.cc/Main/DHTLib}, January 2015.
+\newblock [Online; accessed 15-march-2015].
+
 \bibitem{Privateeyepi}
 Privateeyepi.com.
 \newblock A home automation and monitoring project for raspberry pi, March
@@ -271,6 +277,13 @@ Raspbian.
 R.~N. Taylor, N.~Medvidovic, and E.~M. Dashofy.
 \newblock {\em Software architecture: foundations, theory, and practice}.
 \newblock Wiley Publishing, 2009.
+
+\bibitem{Pingo}
+P.~Team.
+\newblock Pingo, a uniform api to program devices like the raspberry pi,
+  pcduino, intel galileo etc.
+\newblock \url{http://www.pingo.io/docs/}, October 2014.
+\newblock [Online; accessed 14-march-2015].
 
 \bibitem{Trapp}
 B.~Trapp.
