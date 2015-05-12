@@ -1,20 +1,20 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.28)  11 MAY 2015 23:10
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  12 MAY 2015 11:59
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
 **libsensorPy.tex
 (./libsensorPy.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 7 languages loaded.
+LaTeX2e <2011/06/27>
+Babel <3.9f> and hyphenation patterns for 3 languages loaded.
 (./acm_proc_article-sp.cls
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
@@ -186,22 +186,24 @@ LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
 File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
-Package: babel 2014/03/24 3.9k The Babel package
+Package: babel 2013/05/16 v3.9f The Babel package
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
 Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
-File: babel.def 2014/03/24 3.9k Babel common definitions
+File: babel.def 2013/05/16 v3.9f Babel common definitions
 \babel@savecnt=\count109
 \U@D=\dimen123
 )
+\l@british = a dialect from \language\l@english 
+\l@UKenglish = a dialect from \language\l@english 
 \l@canadian = a dialect from \language\l@american 
 \l@australian = a dialect from \language\l@british 
 \l@newzealand = a dialect from \language\l@british 
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks36
 \inpenc@posthook=\toks37
 
@@ -439,7 +441,7 @@ Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix
 \c@FancyVerbLine=\count112
 \FV@StepNumber=\count113
 \FV@OutFile=\write3
-) (/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
@@ -475,8 +477,8 @@ Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bdimen=\dimen126
 \calc@Askip=\skip45
 \calc@Bskip=\skip46
-LaTeX Info: Redefining \setlength on input line 75.
-LaTeX Info: Redefining \addtolength on input line 76.
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
 \calc@Ccount=\count117
 \calc@Cskip=\skip47
 )
@@ -544,21 +546,21 @@ runsystem(rm libsensorPy.aex)...executed.
 \lst@maxwidth=\dimen130
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
-File: lstmisc.sty 2014/03/04 1.5c (Carsten Heinz)
+File: lstmisc.sty 2013/07/10 1.5 (Carsten Heinz)
 \c@lstnumber=\count125
 \lst@skipnumbers=\count126
 \lst@framebox=\box36
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
-File: listings.cfg 2014/03/04 1.5c listings configuration
+File: listings.cfg 2013/06/27 1.5pre1 listings configuration
 ))
-Package: listings 2014/03/04 1.5c (Carsten Heinz)
+Package: listings 2013/07/10 1.5 (Carsten Heinz)
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
 )
-(/usr/local/share/texmf/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
@@ -608,7 +610,7 @@ Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 \Hy@linkcounter=\count127
 \Hy@pagecounter=\count128
 
-(/usr/local/share/texmf/tex/latex/hyperref/pd1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
@@ -652,7 +654,7 @@ Package hyperref Warning: Option `pdfpagelabels' is turned off
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/share/texmf/tex/latex/hyperref/hpdftex.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count134
 \c@bookmark@seq@number=\count135
@@ -755,7 +757,7 @@ Package hyperref Warning: Height of page (\paperheight) is invalid (0.0pt),
 (hyperref)                using 11in.
 
 Package hyperref Info: Link coloring OFF on input line 36.
-(/usr/local/share/texmf/tex/latex/hyperref/nameref.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
@@ -1067,16 +1069,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--384
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--392
+
+ []
+
 [7 <./pictures/ModelAB.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 388--392
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--392
-
- []
-
 <pictures/dashboardPrivateeye.png, id=347, 737.75626pt x 557.08125pt>
 File: pictures/dashboardPrivateeye.png Graphic file (type png)
 
@@ -1110,9 +1113,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--413
 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
@@ -1145,12 +1145,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--457
 
  []
 
-[8 <./pictures/dashboardPrivateeye.png>]
+
 Overfull \hbox (1.46344pt too wide) in paragraph at lines 463--464
 \T1/aer/m/n/9 byte strip-ping, car-riage return-linefeed translation(CR-
  []
 
-
+[8 <./pictures/dashboardPrivateeye.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 468--473
 
  []
@@ -1327,17 +1327,7 @@ Overfull \hbox (6.37938pt too wide) in paragraph at lines 628--641
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 644--652
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 644--652
-
- []
-
-<pictures/ClassDiagram2.png, id=388, 438.6789pt x 280.6485pt>
+<pictures/ClassDiagram2.png, id=387, 438.6789pt x 280.6485pt>
 File: pictures/ClassDiagram2.png Graphic file (type png)
 
 <use pictures/ClassDiagram2.png>
@@ -1353,12 +1343,12 @@ Overfull \hbox (3.27457pt too wide) in paragraph at lines 666--667
 []\T1/aer/m/n/9 ConcreteFactories: Im-ple-ment op-er-a-tions to cre-ate con-
  []
 
-[11]
+
 Overfull \hbox (2.82265pt too wide) in paragraph at lines 670--671
 \T1/aer/m/n/9 Sen-sor, Ab-strac-tAc-tu-a-tor and Ab-stractEvent in-ter-faces
  []
 
-<pictures/composite.png, id=397, 822.82407pt x 423.08063pt>
+<pictures/composite.png, id=389, 822.82407pt x 423.08063pt>
 File: pictures/composite.png Graphic file (type png)
 
 <use pictures/composite.png>
@@ -1374,14 +1364,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 674--685
 
  []
 
-<pictures/UseCaseDiagram.png, id=400, 1085.55562pt x 576.65437pt>
+[11] <pictures/UseCaseDiagram.png, id=399, 1085.55562pt x 576.65437pt>
 File: pictures/UseCaseDiagram.png Graphic file (type png)
 
 <use pictures/UseCaseDiagram.png>
 Package pdftex.def Info: pictures/UseCaseDiagram.png used on input line 690.
 (pdftex.def)             Requested size: 504.0pt x 267.72795pt.
 
-<pictures/SequenceDiagram3.png, id=401, 1072.75781pt x 633.11531pt>
+<pictures/SequenceDiagram3.png, id=400, 1072.75781pt x 633.11531pt>
 File: pictures/SequenceDiagram3.png Graphic file (type png)
 
 <use pictures/SequenceDiagram3.png>
@@ -1397,30 +1387,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 710--715
 
  []
 
-[12 <./pictures/ClassDiagram2.png>]
-<pictures/machinelayers.png, id=410, 516.93124pt x 313.17pt>
+<pictures/machinelayers.png, id=401, 516.93124pt x 313.17pt>
 File: pictures/machinelayers.png Graphic file (type png)
 
 <use pictures/machinelayers.png>
 Package pdftex.def Info: pictures/machinelayers.png used on input line 723.
 (pdftex.def)             Requested size: 201.59692pt x 122.13101pt.
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
 Overfull \hbox (3.03136pt too wide) in paragraph at lines 731--733
 \T1/aer/m/n/9 Sense-Compute-Control (SCC). This pat-tern is typ-i-cally used
  []
 
-<pictures/senseComputeControl.png, id=413, 509.905pt x 362.35374pt>
-File: pictures/senseComputeControl.png Graphic file (type png)
+[12 <./pictures/ClassDiagram2.png>]
+<pictures/senseComputeControl2.png, id=414, 509.905pt x 362.35374pt>
+File: pictures/senseComputeControl2.png Graphic file (type png)
 
-<use pictures/senseComputeControl.png>
-Package pdftex.def Info: pictures/senseComputeControl.png used on input line 74
-2.
+<use pictures/senseComputeControl2.png>
+Package pdftex.def Info: pictures/senseComputeControl2.png used on input line 7
+42.
 (pdftex.def)             Requested size: 226.79846pt x 161.17226pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[13 <./pictures/composite.png> <./pictures/machinelayers.png (PNG copy)>]
+ [13 <./pictures/composite.png> <./pictures/machinelayers.png (PNG copy)> <./pi
+ctures/senseComputeControl2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 755--763
 
  []
@@ -1430,24 +1421,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 755--763
 
  []
 
-<pictures/VisaoEstrutural.png, id=431, 1081.03876pt x 639.89063pt>
+<pictures/VisaoEstrutural.png, id=435, 1081.03876pt x 639.89063pt>
 File: pictures/VisaoEstrutural.png Graphic file (type png)
 
 <use pictures/VisaoEstrutural.png>
 Package pdftex.def Info: pictures/VisaoEstrutural.png used on input line 773.
 (pdftex.def)             Requested size: 504.0pt x 298.32718pt.
-\openout3 = `libsensorPy.pyg'.
-
-runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
-cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
--o libsensorPy.out.pyg libsensorPy.pyg)...executed.
-
- (./libsensorPy.out.pyg [14 <./pictures/UseCaseDiagram.png> <./pictures/senseCo
-mputeControl.png>])
-runsystem(rm libsensorPy.out.pyg)...executed.
-
-runsystem(rm libsensorPy.pyg)...executed.
-
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
@@ -1466,7 +1445,18 @@ cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm"
 -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
 
-(./libsensorPy.out.pyg
+(./libsensorPy.out.pyg)
+runsystem(rm libsensorPy.out.pyg)...executed.
+
+runsystem(rm libsensorPy.pyg)...executed.
+
+\openout3 = `libsensorPy.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
+cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
+-o libsensorPy.out.pyg libsensorPy.pyg)...executed.
+
+ (./libsensorPy.out.pyg
 Underfull \hbox (badness 10000) in paragraph at lines 809--1
 
  []
@@ -1493,7 +1483,7 @@ runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
 cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
 -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
- (./libsensorPy.out.pyg)
+ (./libsensorPy.out.pyg [14 <./pictures/UseCaseDiagram.png>])
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
@@ -1530,41 +1520,39 @@ Overfull \hbox (1.70624pt too wide) in paragraph at lines 867--874
 ts the
  []
 
-[15 <./pictures/SequenceDiagram3.png>]
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
 escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
 " -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
- (./libsensorPy.out.pyg
+(./libsensorPy.out.pyg [15 <./pictures/SequenceDiagram3.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <./pictures/VisaoEstrutural.png>])
+)
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-<pictures/tests.png, id=452, 981.6675pt x 345.29pt>
-File: pictures/tests.png Graphic file (type png)
- <use pictures/tests.png>
-Package pdftex.def Info: pictures/tests.png used on input line 942.
-(pdftex.def)             Requested size: 453.59692pt x 159.54659pt.
+<pictures/tests2.png, id=448, 978.65625pt x 343.2825pt>
+File: pictures/tests2.png Graphic file (type png)
+
+<use pictures/tests2.png>
+Package pdftex.def Info: pictures/tests2.png used on input line 942.
+(pdftex.def)             Requested size: 453.59692pt x 159.11137pt.
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
 escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
 " -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
-
-(./libsensorPy.out.pyg)
+ (./libsensorPy.out.pyg [16 <./pictures/VisaoEstrutural.png>])
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
-
-<pictures/survey2.png, id=453, 1245.65375pt x 721.69624pt>
+ <pictures/survey2.png, id=454, 1245.65375pt x 721.69624pt>
 File: pictures/survey2.png Graphic file (type png)
 
 <use pictures/survey2.png>
@@ -1657,15 +1645,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
-[17] (./libsensorPy.bbl
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./pictures/tests2.png>] (./libsensorPy.bbl [18 <./pictures/survey2.png>]
 Overfull \hbox (6.72821pt too wide) in paragraph at lines 65--72
 \T1/aett/bx/n/9 architecturedriven-[]programming-[]for-[]sensecompute / 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [18 <./pictures/tests.png>]
 Overfull \hbox (57.45241pt too wide) in paragraph at lines 136--142
 \T1/aett/bx/n/9 componentes-[]eletronicos-[]unidades-[]medida-[]conceitos-[]bas
 icos/$[]\T1/aer/m/n/9 , 
@@ -1677,10 +1665,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [19 <./pictures/survey2.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-)
+ [19])
 Overfull \hbox (2.32967pt too wide) in paragraph at lines 1097--1098
 []\T1/aer/m/n/9 Minepion ^^U Ded-i-cated op-er-at-ing sys-tem for min-ing cryp-
 
@@ -1703,7 +1688,7 @@ Overfull \hbox (154.07747pt too wide) in paragraph at lines 1138--1165
 
 [21
 
-] <pictures/modelSpecification.png, id=545, 1123.19624pt x 768.8725pt>
+] <pictures/modelSpecification.png, id=546, 1123.19624pt x 768.8725pt>
 File: pictures/modelSpecification.png Graphic file (type png)
 
 <use pictures/modelSpecification.png>
@@ -1727,9 +1712,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 1182.
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1182.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1182.
 
-Package rerunfilecheck Info: File `libsensorPy.out' has not changed.
-(rerunfilecheck)             Checksum: 44131C7BC84D69B620687126AAC8016B;2504.
 
+
+Package rerunfilecheck Warning: File `libsensorPy.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `libsensorPy.out':
+(rerunfilecheck)             Before: 44131C7BC84D69B620687126AAC8016B;2504
+(rerunfilecheck)             After:  451E3A8F7BA7E3CA997AF4C6BE2DE779;2435.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1739,29 +1730,38 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1182.
  ) 
 Here is how much of TeX's memory you used:
- 10629 strings out of 494933
- 149241 string characters out of 6178446
- 260152 words of memory out of 5000000
- 13443 multiletter control sequences out of 15000+600000
+ 10607 strings out of 495007
+ 148937 string characters out of 6180696
+ 258478 words of memory out of 5000000
+ 13398 multiletter control sequences out of 15000+600000
  55935 words of font info for 79 fonts, out of 8000000 for 9000
- 38 hyphenation exceptions out of 8191
- 41i,13n,43p,1223b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf
--dist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/urw/times/utmri8a.pfb>
-Output written on libsensorPy.pdf (22 pages, 2638356 bytes).
+ 16 hyphenation exceptions out of 8191
+ 41i,13n,43p,1223b,563s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{subsection.3.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.3.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmss8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/urw/times/utmri8a.pfb>
+Output written on libsensorPy.pdf (22 pages, 2349498 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
- 560 compressed objects within 6 object streams
- 164 named destinations out of 1000 (max. 500000)
+ 633 PDF objects out of 1000 (max. 8388607)
+ 561 compressed objects within 6 object streams
+ 166 named destinations out of 1000 (max. 500000)
  380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

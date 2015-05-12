@@ -217,7 +217,7 @@ Currently there are three  Raspberry Pi models: The model A, which costs \$ 25 a
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/RaspiModelB.png}
-    \caption{Raspberry Pi Components, model B. \protect\cite{raspberryFaq}}
+    \caption{Raspberry Pi Components, model B\protect\cite{raspberryFaq}}
     \label{fig:raspi}
 \end{figure}
 
@@ -366,7 +366,7 @@ The GPIO.BOARD option specifies that you are referring to the pins by the number
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins \protect\cite{gpioHeader}}.
+    \caption{GPIO pins \protect\cite{gpioHeader}}
     \label{fig:ModelAB}
 \end{figure}
 
@@ -407,7 +407,7 @@ Sensors that PrivateEyePi provides PIR motion sensor, DS18B20 digital thermomete
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/dashboardPrivateeye.png}
-    \caption{PrivateEyePi web based dashboard\protect\cite{Privateeyepi}}.
+    \caption{PrivateEyePi web based dashboard\protect\cite{Privateeyepi}}
     \label{fig:PrivateEye}
 \end{figure}
 
@@ -640,15 +640,15 @@ In the table \ref{table:rf} are defined the main functional requirements in orde
 \end{tabular}
 \end{table}
 
-\subsection{Why not to use Java}
-At the beginning of this project was decided to develop the library using Java as the programming language, since these libraries do not yet exist formally for those who want to use Java as a development language. It could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors, the DHT11 and HC-SR04, when tried to test, no data were provided from the sensors.
-\newline
-\newline
-After some research about what could be the problem, was found that is not possible to assume that invoking sleep will suspend the thread for precisely the time period specified, since \textit{Thread.sleep()} and the \textit{Thread.Join()} methods are dependent on the operating system and the version of the JVM \cite{Oracle}.
-%fonte: http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
-\newline
-\newline
-These sensors need to wait microseconds between send a signal to the sensor and get back the data read from it, And because of this not real time property from both Java and the Raspberry Pi, the library couldn't read data from those sensors. After that the project was moved on to change the programming language and was decided to use python, especially because it's the recommended programming language by the Raspberry Pi developers.
+%\subsection{Why not to use Java}
+%At the beginning of this project was decided to develop the library using Java as the programming language, since these libraries do not yet exist formally for those who want to use Java as a development language. It could be a consequence of the recent adoption of the use of Java for Raspberry (when compared with other APIs and platforms). But after implement the first sensors, the DHT11 and HC-SR04, when tried to test, no data were provided from the sensors.
+%\newline
+%\newline
+%After some research about what could be the problem, was found that is not possible to assume that invoking sleep will suspend the thread for precisely the time period specified, since \textit{Thread.sleep()} and the \textit{Thread.Join()} methods are dependent on the operating system and the version of the JVM \cite{Oracle}.
+%%fonte: http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html
+%\newline
+%\newline
+%These sensors need to wait microseconds between send a signal to the sensor and get back the data read from it, And because of this not real time property from both Java and the Raspberry Pi, the library couldn't read data from those sensors. After that the project was moved on to change the programming language and was decided to use python, especially because it's the recommended programming language by the Raspberry Pi developers.
 
 \subsection{Architecture of LibsensorPy}
 The system consists of a module that implements the abstract factory pattern, guaranteeing the independence of how products are created, composed and represented. For that, the system must be configured with one of multiple product families (family of sensors). It provides one product class library: sensors, actuators and events related to the family of each sensor, but are only revealed their interfaces, not their implementations. Figure~\ref{fig:classDiagram} shows the main class diagram.
@@ -739,7 +739,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 %PICTURE FONT: http://pt.slideshare.net/DamienCassou/architecturedriven-programming-for-sensecomputecontrol-applications
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl.png}
+    \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl2.png}
     \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
     \label{fig:scc}
 \end{figure}
@@ -939,7 +939,7 @@ Follows an example of how to extend the library: The HCSR04 class was implemente
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{figure*}[ht]
     \centering
-    	\includegraphics[width=0.9\textwidth]{pictures/tests.png}
+    	\includegraphics[width=0.9\textwidth]{pictures/tests2.png}
     		\caption{Testing the sensors}  
     		\label{fig:results}  	
 \end{figure*}
