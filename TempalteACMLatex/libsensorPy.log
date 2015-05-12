@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.28)  8 MAY 2015 00:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014/Debian) (preloaded format=pdflatex 2015.3.28)  11 MAY 2015 23:10
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -843,7 +843,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--105
 
  []
 
-<pictures/era.png, id=186, 322.20375pt x 212.795pt>
+<pictures/era.png, id=182, 322.20375pt x 212.795pt>
 File: pictures/era.png Graphic file (type png)
  <use pictures/era.png>
 Package pdftex.def Info: pictures/era.png used on input line 108.
@@ -853,7 +853,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
  []
 
-<pictures/ubiq.png, id=193, 341.275pt x 154.5775pt>
+<pictures/ubiq.png, id=189, 341.275pt x 154.5775pt>
 File: pictures/ubiq.png Graphic file (type png)
  <use pictures/ubiq.png>
 Package pdftex.def Info: pictures/ubiq.png used on input line 128.
@@ -930,7 +930,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 198--202
 
  []
 
-<pictures/RaspiModelB.png, id=240, 1279.02844pt x 1127.71312pt>
+<pictures/RaspiModelB.png, id=236, 1279.02844pt x 1127.71312pt>
 File: pictures/RaspiModelB.png Graphic file (type png)
 
 <use pictures/RaspiModelB.png>
@@ -1051,7 +1051,7 @@ runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
- <pictures/ModelAB.png, id=317, 752.8125pt x 355.3275pt>
+ <pictures/ModelAB.png, id=313, 752.8125pt x 355.3275pt>
 File: pictures/ModelAB.png Graphic file (type png)
 
 <use pictures/ModelAB.png>
@@ -1077,7 +1077,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 388--392
 
  []
 
-<pictures/dashboardPrivateeye.png, id=351, 737.75626pt x 557.08125pt>
+<pictures/dashboardPrivateeye.png, id=347, 737.75626pt x 557.08125pt>
 File: pictures/dashboardPrivateeye.png Graphic file (type png)
 
 <use pictures/dashboardPrivateeye.png>
@@ -1141,12 +1141,6 @@ runsystem(rm libsensorPy.out.pyg)...executed.
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-Overfull \hbox (9.87129pt too wide) in paragraph at lines 452--457
-\T1/aer/m/n/9 py-Se-rial us-ing se-rial port to com-mu-ni-cate with Ar-duino ma
-inly,
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 452--457
 
  []
@@ -1167,270 +1161,293 @@ Underfull \hbox (badness 10000) in paragraph at lines 468--473
  []
 
 
-Overfull \hbox (3.87619pt too wide) in paragraph at lines 475--488
+Overfull \hbox (3.87619pt too wide) in paragraph at lines 475--489
 \T1/aer/m/n/9 hu-mid-ity from the sen-sors of HDT11's fam-ily, such as DHT11,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--488
+Underfull \hbox (badness 10000) in paragraph at lines 475--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--488
+Underfull \hbox (badness 10000) in paragraph at lines 475--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--488
+Underfull \hbox (badness 10000) in paragraph at lines 475--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 475--488
+Underfull \hbox (badness 10000) in paragraph at lines 475--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--500
+Underfull \hbox (badness 10000) in paragraph at lines 475--489
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--500
+Underfull \hbox (badness 10000) in paragraph at lines 490--495
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--506
-
- []
-
-
-Overfull \hbox (2.41713pt too wide) in paragraph at lines 506--507
+Overfull \hbox (2.41713pt too wide) in paragraph at lines 495--496
 \T1/aer/m/n/9 SRF05, SRF06, DYP-ME007, Par-al-lax PING)))$[]$ and
  []
 
 
-Overfull \hbox (3.58044pt too wide) in paragraph at lines 517--518
+Overfull \hbox (3.58044pt too wide) in paragraph at lines 506--507
 []\T1/aer/m/n/9 Actively de-vel-oped with fea-tures be-ing added and bugs/
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--523
+Underfull \hbox (badness 10000) in paragraph at lines 512--512
 [][][][]$\T1/aett/bx/n/9 https : / / github . com / adafruit /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--530
+Underfull \hbox (badness 10000) in paragraph at lines 512--519
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 523--530
+Underfull \hbox (badness 10000) in paragraph at lines 512--519
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--529
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 522--529
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 533--540
+Underfull \hbox (badness 10000) in paragraph at lines 533--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 533--540
+Underfull \hbox (badness 10000) in paragraph at lines 533--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--560
+Underfull \hbox (badness 10000) in paragraph at lines 533--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--560
+Underfull \hbox (badness 10000) in paragraph at lines 533--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--560
+Underfull \hbox (badness 10000) in paragraph at lines 533--549
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--560
+Underfull \hbox (badness 10000) in paragraph at lines 555--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 544--560
+Underfull \hbox (badness 10000) in paragraph at lines 555--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 566--573
+Underfull \hbox (badness 10000) in paragraph at lines 555--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 566--573
+Overfull \hbox (1.13213pt too wide) in paragraph at lines 555--574
+\T1/aer/m/n/9 To de-velop this project was adopted the object-oriented anal-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 555--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--585
+Underfull \hbox (badness 10000) in paragraph at lines 555--574
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--585
-
- []
-
-
-Overfull \hbox (3.12096pt too wide) in paragraph at lines 575--585
+Overfull \hbox (3.12096pt too wide) in paragraph at lines 555--574
 \T1/aer/m/n/9 the en-tire soft-ware life-cy-cle. When ex-am-in-ing object-orien
 ted
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 575--585
+Underfull \hbox (badness 10000) in paragraph at lines 555--574
 
  []
 
 [10]
-Underfull \hbox (badness 10000) in paragraph at lines 591--595
+Underfull \hbox (badness 10000) in paragraph at lines 580--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--595
+Underfull \hbox (badness 10000) in paragraph at lines 580--584
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 599--604
+Underfull \hbox (badness 10000) in paragraph at lines 588--593
 
  []
 
 
-Overfull \hbox (1.16124pt too wide) in paragraph at lines 616--631
+Overfull \hbox (1.16124pt too wide) in paragraph at lines 606--621
 [][] 
  []
 
 
-Overfull \hbox (6.37938pt too wide) in paragraph at lines 639--652
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (6.37938pt too wide) in paragraph at lines 628--641
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--663
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--652
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 655--663
+Underfull \hbox (badness 10000) in paragraph at lines 644--652
 
  []
 
-[11] <pictures/ClassDiagram2.png, id=398, 438.6789pt x 280.6485pt>
+<pictures/ClassDiagram2.png, id=388, 438.6789pt x 280.6485pt>
 File: pictures/ClassDiagram2.png Graphic file (type png)
 
 <use pictures/ClassDiagram2.png>
-Package pdftex.def Info: pictures/ClassDiagram2.png used on input line 668.
+Package pdftex.def Info: pictures/ClassDiagram2.png used on input line 657.
 (pdftex.def)             Requested size: 504.0pt x 322.45206pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 665--676
+Underfull \hbox (badness 10000) in paragraph at lines 654--665
 
  []
 
 
-Overfull \hbox (3.27457pt too wide) in paragraph at lines 677--678
+Overfull \hbox (3.27457pt too wide) in paragraph at lines 666--667
 []\T1/aer/m/n/9 ConcreteFactories: Im-ple-ment op-er-a-tions to cre-ate con-
  []
 
-
-Overfull \hbox (2.82265pt too wide) in paragraph at lines 681--682
+[11]
+Overfull \hbox (2.82265pt too wide) in paragraph at lines 670--671
 \T1/aer/m/n/9 Sen-sor, Ab-strac-tAc-tu-a-tor and Ab-stractEvent in-ter-faces
  []
 
-<pictures/composite.png, id=400, 822.82407pt x 423.08063pt>
+<pictures/composite.png, id=397, 822.82407pt x 423.08063pt>
 File: pictures/composite.png Graphic file (type png)
 
 <use pictures/composite.png>
-Package pdftex.def Info: pictures/composite.png used on input line 692.
+Package pdftex.def Info: pictures/composite.png used on input line 681.
 (pdftex.def)             Requested size: 504.0pt x 259.14398pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--696
+Underfull \hbox (badness 10000) in paragraph at lines 674--685
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 685--696
+Underfull \hbox (badness 10000) in paragraph at lines 674--685
 
  []
 
-<pictures/UseCaseDiagram.png, id=403, 1085.55562pt x 576.65437pt>
+<pictures/UseCaseDiagram.png, id=400, 1085.55562pt x 576.65437pt>
 File: pictures/UseCaseDiagram.png Graphic file (type png)
 
 <use pictures/UseCaseDiagram.png>
-Package pdftex.def Info: pictures/UseCaseDiagram.png used on input line 701.
+Package pdftex.def Info: pictures/UseCaseDiagram.png used on input line 690.
 (pdftex.def)             Requested size: 504.0pt x 267.72795pt.
 
-<pictures/SequenceDiagram3.png, id=404, 1072.75781pt x 633.11531pt>
+<pictures/SequenceDiagram3.png, id=401, 1072.75781pt x 633.11531pt>
 File: pictures/SequenceDiagram3.png Graphic file (type png)
 
 <use pictures/SequenceDiagram3.png>
-Package pdftex.def Info: pictures/SequenceDiagram3.png used on input line 708.
+Package pdftex.def Info: pictures/SequenceDiagram3.png used on input line 697.
 (pdftex.def)             Requested size: 504.0pt x 297.4483pt.
 
-Overfull \hbox (1.149pt too wide) in paragraph at lines 716--717
+Overfull \hbox (1.149pt too wide) in paragraph at lines 705--706
 []\T1/aer/m/n/9 Traditional, in-flu-enced by pro-gram-ming lan-guage: OO; 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 721--726
+Underfull \hbox (badness 10000) in paragraph at lines 710--715
 
  []
 
-<pictures/machinelayers.png, id=405, 516.93124pt x 313.17pt>
+[12 <./pictures/ClassDiagram2.png>]
+<pictures/machinelayers.png, id=410, 516.93124pt x 313.17pt>
 File: pictures/machinelayers.png Graphic file (type png)
 
 <use pictures/machinelayers.png>
-Package pdftex.def Info: pictures/machinelayers.png used on input line 734.
+Package pdftex.def Info: pictures/machinelayers.png used on input line 723.
 (pdftex.def)             Requested size: 201.59692pt x 122.13101pt.
 
-Overfull \hbox (3.03136pt too wide) in paragraph at lines 742--744
+Overfull \hbox (3.03136pt too wide) in paragraph at lines 731--733
 \T1/aer/m/n/9 Sense-Compute-Control (SCC). This pat-tern is typ-i-cally used
  []
 
-[12 <./pictures/machinelayers.png (PNG copy)>]
-<pictures/senseComputeControl.png, id=417, 509.905pt x 362.35374pt>
+<pictures/senseComputeControl.png, id=413, 509.905pt x 362.35374pt>
 File: pictures/senseComputeControl.png Graphic file (type png)
 
 <use pictures/senseComputeControl.png>
-Package pdftex.def Info: pictures/senseComputeControl.png used on input line 75
-3.
+Package pdftex.def Info: pictures/senseComputeControl.png used on input line 74
+2.
 (pdftex.def)             Requested size: 226.79846pt x 161.17226pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[13 <./pictures/ClassDiagram2.png> <./pictures/senseComputeControl.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 766--774
+[13 <./pictures/composite.png> <./pictures/machinelayers.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 755--763
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 766--774
+Underfull \hbox (badness 10000) in paragraph at lines 755--763
 
  []
 
-<pictures/VisaoEstrutural.png, id=437, 1081.03876pt x 639.89063pt>
+<pictures/VisaoEstrutural.png, id=431, 1081.03876pt x 639.89063pt>
 File: pictures/VisaoEstrutural.png Graphic file (type png)
 
 <use pictures/VisaoEstrutural.png>
-Package pdftex.def Info: pictures/VisaoEstrutural.png used on input line 784.
+Package pdftex.def Info: pictures/VisaoEstrutural.png used on input line 773.
 (pdftex.def)             Requested size: 504.0pt x 298.32718pt.
+\openout3 = `libsensorPy.pyg'.
+
+runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
+cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
+-o libsensorPy.out.pyg libsensorPy.pyg)...executed.
+
+ (./libsensorPy.out.pyg [14 <./pictures/UseCaseDiagram.png> <./pictures/senseCo
+mputeControl.png>])
+runsystem(rm libsensorPy.out.pyg)...executed.
+
+runsystem(rm libsensorPy.pyg)...executed.
+
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
@@ -1449,19 +1466,8 @@ cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm"
 -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
 
-(./libsensorPy.out.pyg)
-runsystem(rm libsensorPy.out.pyg)...executed.
-
-runsystem(rm libsensorPy.pyg)...executed.
-
-\openout3 = `libsensorPy.pyg'.
-
-runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
-cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
--o libsensorPy.out.pyg libsensorPy.pyg)...executed.
-
- (./libsensorPy.out.pyg
-Underfull \hbox (badness 10000) in paragraph at lines 820--1
+(./libsensorPy.out.pyg
+Underfull \hbox (badness 10000) in paragraph at lines 809--1
 
  []
 
@@ -1498,49 +1504,52 @@ runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
 cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
 -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
- (./libsensorPy.out.pyg
-[14 <./pictures/composite.png>])
+ (./libsensorPy.out.pyg)
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--885
+Underfull \hbox (badness 10000) in paragraph at lines 867--874
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 878--885
+Underfull \hbox (badness 10000) in paragraph at lines 867--874
 
  []
 
 
-Overfull \hbox (6.48787pt too wide) in paragraph at lines 878--885
+Overfull \hbox (6.48787pt too wide) in paragraph at lines 867--874
 \T1/aer/m/n/9 Follows an ex-am-ple of how to ex-tend the li-brary: The HCSR04
  []
 
 
-Overfull \hbox (1.70624pt too wide) in paragraph at lines 878--885
+Overfull \hbox (1.70624pt too wide) in paragraph at lines 867--874
 \T1/aer/m/n/9 fac-tory Ex-tend-edUl-tra-son-ic-Sen-sor-Fac-tory, which in-her-i
 ts the
  []
 
+[15 <./pictures/SequenceDiagram3.png>]
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
 escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
 " -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
-(./libsensorPy.out.pyg [15 <./pictures/UseCaseDiagram.png>])
+ (./libsensorPy.out.pyg
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./pictures/VisaoEstrutural.png>])
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-<pictures/tests.png, id=450, 981.6675pt x 345.29pt>
+<pictures/tests.png, id=452, 981.6675pt x 345.29pt>
 File: pictures/tests.png Graphic file (type png)
  <use pictures/tests.png>
-Package pdftex.def Info: pictures/tests.png used on input line 953.
+Package pdftex.def Info: pictures/tests.png used on input line 942.
 (pdftex.def)             Requested size: 453.59692pt x 159.54659pt.
 \openout3 = `libsensorPy.pyg'.
 
@@ -1555,107 +1564,100 @@ runsystem(rm libsensorPy.out.pyg)...executed.
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-<pictures/survey2.png, id=451, 1245.65375pt x 721.69624pt>
+<pictures/survey2.png, id=453, 1245.65375pt x 721.69624pt>
 File: pictures/survey2.png Graphic file (type png)
 
 <use pictures/survey2.png>
-Package pdftex.def Info: pictures/survey2.png used on input line 1000.
+Package pdftex.def Info: pictures/survey2.png used on input line 989.
 (pdftex.def)             Requested size: 504.0pt x 291.99907pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1011
+Underfull \hbox (badness 10000) in paragraph at lines 993--1000
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1004--1011
+Underfull \hbox (badness 10000) in paragraph at lines 993--1000
 
  []
 
-[16 <./pictures/SequenceDiagram3.png>]
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
 escape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm
 " -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
- (./libsensorPy.out.pyg)
+(./libsensorPy.out.pyg)
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1040
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1042--1051
+Underfull \hbox (badness 10000) in paragraph at lines 1031--1040
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1054--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1051
 
  []
 
 
-Overfull \hbox (3.0753pt too wide) in paragraph at lines 1054--1062
-\T1/aer/m/n/9 We tested the sen-sors DHT11Temperature, DHT11Humidity,
+Overfull \hbox (2.82169pt too wide) in paragraph at lines 1043--1051
+\T1/aer/m/n/9 The sen-sors HCSR04, DHT11Temperature, DHT11Humidity
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1054--1062
+Underfull \hbox (badness 10000) in paragraph at lines 1043--1051
 
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./pictures/VisaoEstrutural.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1066
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
 [][][][]$\T1/aett/bx/n/9 https : / / pypi . python . org / packages / source / 
 l /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1066--1083
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
-(./libsensorPy.bbl [18 <./pictures/tests.png>]
+[17] (./libsensorPy.bbl
 Overfull \hbox (6.72821pt too wide) in paragraph at lines 65--72
 \T1/aett/bx/n/9 architecturedriven-[]programming-[]for-[]sensecompute / 
  []
@@ -1663,7 +1665,7 @@ Overfull \hbox (6.72821pt too wide) in paragraph at lines 65--72
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [18 <./pictures/tests.png>]
 Overfull \hbox (57.45241pt too wide) in paragraph at lines 136--142
 \T1/aett/bx/n/9 componentes-[]eletronicos-[]unidades-[]medida-[]conceitos-[]bas
 icos/$[]\T1/aer/m/n/9 , 
@@ -1672,41 +1674,44 @@ icos/$[]\T1/aer/m/n/9 ,
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [19 <./pictures/survey2.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 )
-Overfull \hbox (2.32967pt too wide) in paragraph at lines 1108--1109
+Overfull \hbox (2.32967pt too wide) in paragraph at lines 1097--1098
 []\T1/aer/m/n/9 Minepion ^^U Ded-i-cated op-er-at-ing sys-tem for min-ing cryp-
 
  []
 
 [20]
-Underfull \hbox (badness 10000) in paragraph at lines 1127--1127
+Underfull \hbox (badness 10000) in paragraph at lines 1116--1116
 []\T1/aer/bx/n/9 Other units
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1135--1135
+Underfull \hbox (badness 10000) in paragraph at lines 1124--1124
 []\T1/aer/m/n/9 Fahrenheit,
  []
 
 
-Overfull \hbox (154.07747pt too wide) in paragraph at lines 1149--1176
+Overfull \hbox (154.07747pt too wide) in paragraph at lines 1138--1165
  [][] 
  []
 
 [21
 
-] <pictures/modelSpecification.png, id=554, 1123.19624pt x 768.8725pt>
+] <pictures/modelSpecification.png, id=545, 1123.19624pt x 768.8725pt>
 File: pictures/modelSpecification.png Graphic file (type png)
 
 <use pictures/modelSpecification.png>
-Package pdftex.def Info: pictures/modelSpecification.png used on input line 118
-3.
+Package pdftex.def Info: pictures/modelSpecification.png used on input line 117
+2.
 (pdftex.def)             Requested size: 504.0pt x 345.00394pt.
 
-Overfull \hbox (264.0pt too wide) in paragraph at lines 1183--1184
+Overfull \hbox (264.0pt too wide) in paragraph at lines 1172--1173
  [][] 
  []
 
@@ -1716,14 +1721,14 @@ AED: lastpage setting LastPage
 
 
  <./pictures/modelSpecification.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1182.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1182.
  (./libsensorPy.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1193.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1182.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1182.
 
 Package rerunfilecheck Info: File `libsensorPy.out' has not changed.
-(rerunfilecheck)             Checksum: 9A298898C22E60A2B0B89859F900BBEF;2575.
+(rerunfilecheck)             Checksum: 44131C7BC84D69B620687126AAC8016B;2504.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1731,13 +1736,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1193.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1182.
  ) 
 Here is how much of TeX's memory you used:
- 10631 strings out of 494933
- 149271 string characters out of 6178446
- 262156 words of memory out of 5000000
- 13444 multiletter control sequences out of 15000+600000
+ 10629 strings out of 494933
+ 149241 string characters out of 6178446
+ 260152 words of memory out of 5000000
+ 13443 multiletter control sequences out of 15000+600000
  55935 words of font info for 79 fonts, out of 8000000 for 9000
  38 hyphenation exceptions out of 8191
  41i,13n,43p,1223b,557s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1753,10 +1758,10 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on libsensorPy.pdf (22 pages, 2639051 bytes).
+Output written on libsensorPy.pdf (22 pages, 2638356 bytes).
 PDF statistics:
- 641 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 165 named destinations out of 1000 (max. 500000)
- 388 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 560 compressed objects within 6 object streams
+ 164 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 

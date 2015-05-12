@@ -22,18 +22,17 @@
 \BOOKMARK [2][-]{subsection.2.5}{NewPing}{section.2}% 22
 \BOOKMARK [2][-]{subsection.2.6}{Adafruit Raspberry Pi Python Code}{section.2}% 23
 \BOOKMARK [2][-]{subsection.2.7}{Discussions and Observations}{section.2}% 24
-\BOOKMARK [1][-]{section.3}{PROPOSED MODEL}{}% 25
-\BOOKMARK [2][-]{subsection.3.1}{Method/Methodology}{section.3}% 26
-\BOOKMARK [2][-]{subsection.3.2}{Why not to use Java}{section.3}% 27
-\BOOKMARK [2][-]{subsection.3.3}{Architecture of LibsensorPy}{section.3}% 28
-\BOOKMARK [3][-]{subsubsection.3.3.1}{Architectural Style}{subsection.3.3}% 29
-\BOOKMARK [3][-]{subsubsection.3.3.2}{Architectural Pattern}{subsection.3.3}% 30
-\BOOKMARK [2][-]{subsection.3.4}{What is needed to install LibsensorPy?}{section.3}% 31
-\BOOKMARK [2][-]{subsection.3.5}{How to extend the library}{section.3}% 32
-\BOOKMARK [2][-]{subsection.3.6}{Case Study}{section.3}% 33
-\BOOKMARK [1][-]{section.4}{CONCLUSION AND FUTURE WORK}{}% 34
-\BOOKMARK [1][-]{section.5}{REFERENCES}{}% 35
-\BOOKMARK [1][-]{appendix.A}{Other operating systems}{}% 36
-\BOOKMARK [1][-]{appendix.B}{Units and scales}{}% 37
-\BOOKMARK [1][-]{appendix.C}{Implemented Sensors}{}% 38
-\BOOKMARK [1][-]{appendix.D}{Raspberry Pi, Models and Specifications}{}% 39
+\BOOKMARK [1][-]{section.3}{LIBSENSORPY}{}% 25
+\BOOKMARK [2][-]{subsection.3.1}{Why not to use Java}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.2}{Architecture of LibsensorPy}{section.3}% 27
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Architectural Style}{subsection.3.2}% 28
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Architectural Pattern}{subsection.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.3}{What is needed to install LibsensorPy?}{section.3}% 30
+\BOOKMARK [2][-]{subsection.3.4}{How to extend the library}{section.3}% 31
+\BOOKMARK [2][-]{subsection.3.5}{Case Study}{section.3}% 32
+\BOOKMARK [1][-]{section.4}{CONCLUSION AND FUTURE WORK}{}% 33
+\BOOKMARK [1][-]{section.5}{REFERENCES}{}% 34
+\BOOKMARK [1][-]{appendix.A}{Other operating systems}{}% 35
+\BOOKMARK [1][-]{appendix.B}{Units and scales}{}% 36
+\BOOKMARK [1][-]{appendix.C}{Implemented Sensors}{}% 37
+\BOOKMARK [1][-]{appendix.D}{Raspberry Pi, Models and Specifications}{}% 38
