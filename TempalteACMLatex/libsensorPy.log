@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  12 MAY 2015 12:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  12 MAY 2015 16:41
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1742,7 +1742,7 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on libsensorPy.pdf (22 pages, 2348311 bytes).
+Output written on libsensorPy.pdf (22 pages, 2348257 bytes).
 PDF statistics:
  627 PDF objects out of 1000 (max. 8388607)
  555 compressed objects within 6 object streams
