@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  12 MAY 2015 12:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.4.20)  12 MAY 2015 12:24
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -845,11 +845,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 102--105
 
  []
 
-<pictures/era.png, id=178, 322.20375pt x 212.795pt>
+<pictures/era.png, id=178, 271.76532pt x 192.72pt>
 File: pictures/era.png Graphic file (type png)
  <use pictures/era.png>
 Package pdftex.def Info: pictures/era.png used on input line 108.
-(pdftex.def)             Requested size: 201.59692pt x 133.14589pt.
+(pdftex.def)             Requested size: 201.59692pt x 142.96637pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 116--120
 
@@ -910,7 +910,10 @@ Overfull \hbox (2.17592pt too wide) in paragraph at lines 175--182
 cts.
  []
 
-[3 <./pictures/ubiq.png>]
+
+Underfull \vbox (badness 1337) has occurred while \output is active []
+
+ [3 <./pictures/ubiq.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 192--196
 
  []
@@ -963,20 +966,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 204--223
 
  []
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 225--234
-
- []
-
 [4]
+Underfull \hbox (badness 10000) in paragraph at lines 225--234
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--234
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 241--245
 
  []
@@ -1001,7 +1001,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 299--303
 
  []
 
-
+[6]
 Overfull \hbox (3.53459pt too wide) in paragraph at lines 312--314
 []\T1/aer/m/n/9 Raspbian[][][] [[]42[]] ^^U Main-tained in-de-pen-dently of the
  Foun-
@@ -1012,7 +1012,7 @@ Overfull \hbox (3.3204pt too wide) in paragraph at lines 312--314
 \T1/aer/m/n/9 ARMv7 and later pro-ces-sors (with Jazelle RCT/ Thum-
  []
 
-[6]
+
 Overfull \hbox (6.40686pt too wide) in paragraph at lines 314--315
 \T1/aer/m/n/9 pared to the usual desk-top com-puter ori-ented Rasp-
  []
@@ -1069,17 +1069,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 380--384
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--392
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 388--392
-
- []
-
 [7 <./pictures/ModelAB.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 388--392
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 388--392
+
+ []
+
 <pictures/dashboardPrivateeye.png, id=343, 737.75626pt x 557.08125pt>
 File: pictures/dashboardPrivateeye.png Graphic file (type png)
 
@@ -1113,6 +1112,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 393--413
 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 \openout3 = `libsensorPy.pyg'.
 
 runsystem(pygmentize -l python -f latex -F tokenmerge  -F gobble:n=0    -P math
@@ -1145,12 +1147,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 452--457
 
  []
 
-
+[8 <./pictures/dashboardPrivateeye.png>]
 Overfull \hbox (1.46344pt too wide) in paragraph at lines 463--464
 \T1/aer/m/n/9 byte strip-ping, car-riage return-linefeed translation(CR-
  []
 
-[8 <./pictures/dashboardPrivateeye.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 468--473
 
  []
@@ -1397,12 +1399,11 @@ Package pdftex.def Info: pictures/machinelayers.png used on input line 723.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
+[12 <./pictures/ClassDiagram2.png>]
 Overfull \hbox (3.03136pt too wide) in paragraph at lines 731--733
 \T1/aer/m/n/9 Sense-Compute-Control (SCC). This pat-tern is typ-i-cally used
  []
 
-[12 <./pictures/ClassDiagram2.png>]
 <pictures/senseComputeControl2.png, id=408, 509.905pt x 362.35374pt>
 File: pictures/senseComputeControl2.png Graphic file (type png)
 
@@ -1472,7 +1473,7 @@ runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
 cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
 -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
- (./libsensorPy.out.pyg)
+ (./libsensorPy.out.pyg [14 <./pictures/UseCaseDiagram.png>])
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
@@ -1483,7 +1484,8 @@ runsystem(pygmentize -l bash -f latex -F tokenmerge  -F gobble:n=0    -P mathes
 cape      -P linenos -P "verboptions= ,numbersep=0pt,frame=lines,framesep=2mm" 
 -o libsensorPy.out.pyg libsensorPy.pyg)...executed.
 
- (./libsensorPy.out.pyg [14 <./pictures/UseCaseDiagram.png>])
+
+(./libsensorPy.out.pyg)
 runsystem(rm libsensorPy.out.pyg)...executed.
 
 runsystem(rm libsensorPy.pyg)...executed.
@@ -1614,7 +1616,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1043--1051
 
  []
 
-
+[17 <./pictures/tests2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 1055--1055
 [][][][]$\T1/aett/bx/n/9 https : / / pypi . python . org / packages / source / 
 l /
@@ -1645,10 +1647,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1055--1072
 
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [17 <./pictures/tests2.png>] (./libsensorPy.bbl [18 <./pictures/survey2.png>]
+(./libsensorPy.bbl [18 <./pictures/survey2.png>]
 Overfull \hbox (6.72821pt too wide) in paragraph at lines 65--72
 \T1/aett/bx/n/9 architecturedriven-[]programming-[]for-[]sensecompute / 
  []
@@ -1743,7 +1742,7 @@ m/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9
 hare/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fon
 ts/type1/urw/times/utmri8a.pfb>
-Output written on libsensorPy.pdf (22 pages, 2349430 bytes).
+Output written on libsensorPy.pdf (22 pages, 2348311 bytes).
 PDF statistics:
  627 PDF objects out of 1000 (max. 8388607)
  555 compressed objects within 6 object streams
