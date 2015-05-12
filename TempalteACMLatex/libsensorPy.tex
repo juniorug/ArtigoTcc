@@ -74,7 +74,7 @@ The Ubiquitous Computing (UbiComp) in its several ramifications and applications
 Researches on ubiquitous computing are being held on topics such as: basic access to any wireless device, mobility support on the network in a transparent manner, safety, context treatment, efficient use of energy, presentation of multimedia content, among others. This work is focused on building intelligent interactive environments. In these environments, the fundamental idea is to create ways to avoid the user need to go to the computer/device, allowing many of these working at a distance. The use of platforms to integrate the devices that make up these environments is one of the key points to create it. Currently there are some options to fill this gap. This text emphasizes one: the project Raspberry Pi \cite{Trapp,wirth2014making}.
 \newline
 \newline
-Raspberry Pi is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and/or for those who must be fed by battery. The platform allows the use high-level programming languages that are quite widespread as C/C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
+Raspberry Pi(RPi) is a widely used platform for professionals who are interested in the field of ubiquitous applications. It provides basic interfaces for creating small projects and/or for those who must be fed by battery. The platform allows the use high-level programming languages that are quite widespread as C/C ++, Python and Java. The Raspberry allows the development of a range of projects. For example, home automation (turn on and off electrical devices, remote control for TV, Air-conditioners, etc.), eBook and Audiobook readers and so on.
 \newline
 \newline
 A brief search about how to access the Raspberry Pi bus will bring  a lot of papers in Python. Which incidentally, introduce the acronym of the device name (Pi from Python). However, any library that abstracts the details of wiring a sensor or actuator to the Raspberry allowing the user takes care just in read the data already processed and/or converted will not be found.
@@ -119,7 +119,7 @@ Mobile computing is based on the ability of a user to load or move (physically) 
 An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means that a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing .
 
 \subsection{Pervasive Computing}
-The concept of pervasive computing implies that the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow you to control, configure and tune the application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
+The concept of pervasive computing implies that the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow controlling, configuring and tuning the application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
 
 \subsection{Ubiquitous Computing}
 Ubiquitous is an adjective originated from Latin (\textit{ubiquu}) which means "that is at the same time everywhere". As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between the Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
@@ -135,7 +135,7 @@ Research in ubiquitous computing approach about the technologies and infrastruct
 
 \begin{itemize}
 \item How to design hardware and operating systems for sensor platforms?
-\item How to allow devices to find each other and to use your services?
+\item How to allow devices to find each other and to use their services?
 \item How to allow systems involving limited processing resources and energy, to work well?
 \end{itemize}
 
@@ -183,7 +183,7 @@ Working with the construction of a hardware requires much time and effort, becau
 
 \begin{itemize}
 \item A multi-platform environment that can run all major operating systems such as Windows, Linux and MacOS.
-\item It is an open-source hardware, i.e., the circuit design is available so that if someone is interested in creating your own card, just buy the necessary components.		
+\item It is an open-source hardware, i.e., the circuit design is available so that if someone is interested in creating their own card, just buy the necessary components.		
 \item Hardware cost is low.					
 \item It is possible program it via a USB cable instead of a serial port. Remember that today's computers do not have serial ports.	
 \item It has a development environment with intuitive interface for easy use.
@@ -201,7 +201,7 @@ The BeagleBoard is a low-power open-source hardware single-board computer produc
 BeagleBone is an \$89 Manufacturer suggested retail price (MSRP) credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
 
 \subsubsection{Raspberry Pi}
-Raspberry Pi(RPi) is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer\cite{raspberryfoundation}. In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
+Raspberry Pi is a small computer, approximately with the size of a credit card. It can be used to do many things that are done by a common personal computer\cite{raspberryfoundation}. In addition, it can also be used in electronic projects because it has a hardware interface: The general purpose input/output port (GPIO). The Raspberry Pi Foundation, creator of the project, is an educational charity headquartered in the UK and aims to help and encourage the teaching of computer science in schools.
 \newline
 \newline
 This computer came up with the intention of reconnecting children and youth in computer programming and stimulate the creation of new projects so there is not only the consumption of the technology created by the market. While in the 1990s there was a growth in the number of children and youth who developed programming skills, starting in the 2000s, this number started to decline \cite{raspberryAbout}.
@@ -234,24 +234,24 @@ Some other features presents on RPI:
 \item Display Serial Interface Connector (DSI): This connector receives a flat-ribbon cable of 15 pins that can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen;	
 \item Camera Serial Interface(CSI) Connector: This port allows a camera module be directly coupled to the card;
 \item P2 and P3 connectors: These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used;
-\item Pin Protection: Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components you attach to them as there is a risk you will permanently damage your Pi. Short circuits and wiring mistakes could also ruin your day so double check everything. A multimeter is probably going to help a lot here as you can double check wiring before you connect to the Pi.
+\item Pin Protection: Most of the pins in the header go directly to the Broadcom chip. It is important to carefully design the components what can be attached to the pins as there is a risk of permanently damage the RPi. Short circuits and wiring mistakes could also shatter the board, so double check everything. A multimeter is probably going to help a lot here as the developer can double check wiring before connect to the RPi.
 \end{itemize}
 
 \paragraph{Power Supply}
 The device is powered by 5v micro USB. Exactly how much current (mA) the Raspberry Pi requires is dependent on what the project hook up to it. Purchasing a 1.2A (1200mA) power supply from a reputable retailer will provide to the user with ample power to run the Raspberry Pi for most applications, though may want to get a 2.5A (2500mA) if necessary to use all 4 USB ports on the Model B without using an external powered USB hub.
 \newline
 \newline
-The power requirements of the Raspberry Pi increase as you make use of the various interfaces on the Raspberry Pi. The GPIO pins can draw 50mA safely (that is 50mA distributed across all the pins! An individual GPIO pin can only safely draw 16mA), the HDMI port uses 50mA, the camera module requires 250mA, and keyboards and mice can take as little as 100mA or over 1000mA! Check the power rating of the devices you plan to connect to the Pi and purchase a power supply accordingly. If you’re not sure, buy a powered hub.
+The power requirements of the Raspberry Pi increase as much as are used the various interfaces on the Raspberry Pi. The GPIO pins can draw 50mA safely (that is 50mA distributed across all the pins! An individual GPIO pin can only safely draw 16mA), the HDMI port uses 50mA, the camera module requires 250mA, and keyboards and mice can take as little as 100mA or over 1000mA. Check the power rating of the devices  what are planed to connect to the Pi and a power supply must be purchased accordingly.
 
 \paragraph{Processor}
 The System on a chip(SoC) used in the first generation Raspberry Pi is somewhat equivalent to the chip used in older smartphones (such as iPhone / 3G / 3GS). The Raspberry Pi is based on the Broadcom BCM2835 system on a chip (SoC)\cite{Broadcom}, which includes an 700 MHz ARM1176JZF-S processor, VideoCore IV GPU\cite{Brose}, and RAM. It has a Level 2 cache of 128 KB, used primarily by the GPU. The SoC is stacked underneath the RAM chip, so only its edge is visible.
 
 \paragraph{General Purpose Input/Output}
-Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, you can consider the GPIO pins as switches that can be turned on/off.
+Another important aspect of hardware from Raspberry is the group of GPIO pins. These pins are programmable ports to input and output data used to provide an interface between the board and peripherals, microcontrollers/microprocessors, sensors, actuators, etc. The GPIO interface is fundamental for building intelligent interactive environments. It is the interface between the Raspberry and the real world. In simple terms, the GPIO pins can be considered as switches that can be turned on/off.
 \newline
 \newline
 Similarly to the Arduino, besides the GPIO, the Raspberry also supports PWM (Pulse Width Modulation), UART (Universal asynchronous receiver/transmitter) and SPI (Serial Peripheral Interface). Of the 26 pins available, 17 are reserved for GPIO and 8 are used for power and ground. Figure 2.6 shows the GPIO interface. The pins can be used via code written in a programming compatible language like Python, Scratch, Java, among others \cite{Brose}.
-The GPIO pins are available on the PCB via a header and allow you to interface the Pi to the real world.
+The GPIO pins are available on the PCB via a header and allow the Pi to interface with the real world.
 
 \paragraph{Inputs and Outputs}
 The number and options of input and output from a Raspberry Pi depend on the model used. Models RPi A+, B+ and 2B GPIO J8 have 40-pin as pinout. Models A and B have only the first 26 pins \cite{raspUsage}. In this paper will be presented only the pins available in the model B. The pins are divided into:
@@ -265,16 +265,16 @@ The number and options of input and output from a Raspberry Pi depend on the mod
 The first item on the list are the useful pins. They are the ones that are available for a programmer use. Is through these pins that the Raspberry Pi is coupled to the sensors to capture environmental information. Among the 17 digital input/output pins there are 2 pins that match the serial communication module UART (Universal asynchronous receiver/transmitter). This module allows communication between a computer (for example) and the Raspberry Pi (see Special Pins section). All pins have more than one function, pins can be input or output, and the roles of each are defined in the code of possible programs that can be run on the RPi.
 
 \paragraph{Digital Inputs}
-All 17 programmable pins can be used as digital inputs. When a pin is programmed to function as digital input, you use a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, you can know if the pin is in a "high" or "low" state (on or off).
+All 17 programmable pins can be used as digital inputs. When a pin is programmed to function as digital input, can be used a command that, when executed, performs the "reading" of the voltage applied to it. Then, after running this command, the user  will know if the pin is in a "high" or "low" state (on or off).
 \newline
 \newline
-From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). You can not know how much voltage is being applied to the pin.
+From the electrical point of view, the program can tell if a pin is fed with 0 (zero) or 5 Volts. This function is usually used to identify whether a button is pressed or a sensor is capturing some environmental information. Note that the digital input function delivers only the values 0 or 1 (no voltage or with voltage). It is not  known how much voltage is being applied to the pin.
 
 \paragraph{Analog Inputs}
-The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the R-Pi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a microcontroller due to the available Linux versions not being true real-time. 
+The Raspberry Pi does not have analog pins as Arduino, but is possible to use a traditional analog-to-digital converter(ADC) chip connecting to the RPi via SPI or I2C. For example the Microchip MCP3424 (I2C interface) which has 4 differential inputs. All ADC should work on the R-Pi, except that the timing is not as good as a microcontroller due to the available Linux versions not being true real-time. 
 
 \paragraph{Digital outputs}
-With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. You can program the RPi for all 17 digital outputs.
+With a digital output is possible only two types of values (0 or 5 volts, 1 or 0, etc.). From a pin programmed as digital output is possible for example light up an LED, connecting a relay, trigger a motor, etc. All 17 digital outputs from the RPi can be programmed.
 
 \paragraph{Special Pins}
 RPi pins have some special characteristics which can be used from the software functions encoded by a software programmer. Are they:
@@ -283,7 +283,7 @@ RPi pins have some special characteristics which can be used from the software f
 
 \item PWM - Pulse Width Modulation: Treated as analog output, it is actually a digital output that generates an alternating signal (between 0 and 1) where the time that the pin is in level 1 (on) is controlled. It is used, for example, for engine speed control, or generate voltages with values controlled by the program. For the PWM communication may use pin 12 \cite{barr2001pulse};
 
-\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, you can connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data) \cite{Uart};
+\item UART - Universal asynchronous receiver/transmitter: One pin(TxD) is used to transmit and another(RxD) to receive data in serial asynchronous format. For example, to connect a data transmission module via bluetooth and allow communication with the Arduino remotely. Are reserved for UART pins 15 (RXD receives data) and 14 (TXD sends data) \cite{Uart};
 
 \item SPI Port - Serial Peripheral Interface: These are pins that allow synchronous serial communication faster than UART. They allow for example to connect memory cards (SD) and many other things. Are used for this purpose the pins 19 as Master Output, Slave Input (MOSI), 21 as Master Input, Slave Output(MISO), 23 as Serial Clock(SCLK), 24 as Chip Select0(CE0) e 26 as Chip Select1(CE1) \cite{Spi};
 
@@ -361,7 +361,7 @@ Any RPi.GPIO script must be run as root because this library needs to access \te
 
 
 \paragraph{GPIO.BOARD and GPIO.BCM}
-The GPIO.BOARD option specifies that you are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure~\ref{fig:ModelAB}.
+The GPIO.BOARD option specifies that the user are referring to the pins by the number of the pin the the plug - i.e the numbers printed on the board (e.g. P1) and in the middle of the diagram on figure~\ref{fig:ModelAB}.
 
 \begin{figure}[h]
 \centering
@@ -370,14 +370,14 @@ The GPIO.BOARD option specifies that you are referring to the pins by the number
     \label{fig:ModelAB}
 \end{figure}
 
-The GPIO.BCM option means that you are referring to the pins by the "Broadcom SOC channel" number, these are the numbers after "GPIO" in the green rectangles around the outside of the diagram above.
+The GPIO.BCM option means that the program is referring to the pins by the "Broadcom SOC channel" number, these are the numbers after "GPIO" in the green rectangles around the outside of the diagram above.
 \newline
 \newline
-Unfortunately the BCM numbers changed between versions of the Model B, and you'll need to work out which one you have guide here. So it may be safer to use the BOARD numbers if you are going to use more than one pi in a project.
+Unfortunately the BCM numbers changed between versions of the Model B, and is necessary to work out which one will be used. So it may be safer to use the BOARD numbers if more than one pi will be used in a project.
 
 \paragraph{Pigpio}
 %http://abyz.co.uk/rpi/pigpio/python.html
-Pigpio \cite{Pigpio} is a Python module for the Raspberry which talks to the pigpio daemon to allow control of the general purpose input outputs (GPIOs). Pigpio Python scripts may be run on Windows, Macs, and Linux machines. Only the pigpio daemon needs to be running on the Pi.
+Pigpio \cite{Pigpio} is a Python module for the Raspberry which talks to the pigpio daemon to allow control of the general purpose input outputs (GPIOs). Pigpio Python scripts may be run on Windows, Macs, and Linux machines. Only the pigpio daemon needs to be running on the RPi.
 \newline
 \newline
 Pigpio provides all the standard gpio features and in addition it provides hardware timed PWM suitable for servos, LEDs, and motors and samples/timestamps gpios 0-31 up to 1 million times per second (default 200 thousand).
@@ -567,7 +567,7 @@ To develop this project was adopted the object-oriented analysis and design (OOA
 According to the popular guide Unified Process, OOAD in modern software engineering is best conducted in an iterative and incremental way. Iteration by iteration, the outputs of OOAD activities, analysis models for Object-oriented analysis (OOA) and design models for Object- oriented design (OOD) respectively, were refined and evolved continuously driven by key factors like usability and efficiency.
 \newline
 \newline
-The object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, should be checked that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of your work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
+The object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, should be checked that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of the work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
 \newline
 \newline
 Using Object-oriented modeling, the work is divided in two aspects: The modeling of dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were the two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used. The benefits of OOM are:
@@ -1040,7 +1040,7 @@ At the end of the presentation this student were invited to complete the satisfa
 
 %\subsection{Case Study results}
 
-The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. The interviewed, during the case study, confirmed that LibsensorPy meets your needs. However, this students made some notifications about show more use examples.
+The result of the case study was satisfactory. The tested sensors worked as expected, and the data reported were consistent with environment. The interviewed, during the case study, confirmed that LibsensorPy meets the user needs. However, this students made some notifications about show more use examples.
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
