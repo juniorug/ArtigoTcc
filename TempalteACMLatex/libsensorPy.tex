@@ -366,7 +366,7 @@ The GPIO.BOARD option specifies that the user are referring to the pins by the n
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins\protect\cite{gpioHeader}}
+    \caption{GPIO pins \protect\cite{gpioHeader}}
     \label{fig:ModelAB}
 \end{figure}
 
@@ -683,6 +683,19 @@ Due to some sensors belong to more than one family (measure more than one physic
 
 
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
+    \caption{Use Case diagram}
+    \label{fig:useCase}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
+    \caption{Sequence diagram}
+    \label{fig:sequence}
+\end{figure*}
 
 \subsubsection{Architectural Style}
 The libsensorPy presents characteristics of three architectural styles: 
@@ -695,55 +708,24 @@ The libsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedure call and event. Procedure call connectors model the control flow by invocation techniques and perform data transfer between components involved through the use of parameters. Examples of procedure call connectors include functions, procedures,  object oriented methods, callback and system calls.
 \newline
 \newline
-The event-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
-\newline
-\newline
-Virtual Machine architectures have the goal of achieving the quality of portability. This software style simulate some functionality that is not native to the hardware and/or software on which it is implemented. 
-% retirar dois newlines
-\newline
-\newline
-The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. This architectural style reduces complexity, improves modularity, reusability, maintainability. The system has thus the layers:
+The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. The system has thus the layers:
 \begin{itemize}
-\item Physical: GPIO, sensors, actuators and power supply.
+\item Physical: GPIO
 \item Operating System
 \item RPi.GPIO
 \item LibsensorPy
-\item User applications
 \end{itemize}
 
-%\begin{figure}[h]
-%\centering
-%    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
-%    \caption{LibsensorPy's layers}
-%    \label{fig:layers}
-%\end{figure}
-
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/arq1.png}
-    \caption{Architecture of LibsensorPy}
-    \label{fig:scc}
+    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
+    \caption{LibsensorPy's layers}
+    \label{fig:layers}
 \end{figure}
+
+The event-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
 
 \subsubsection{Architectural Pattern}
-
-
-\begin{figure}[h]
-\centering
-    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/arq3.png}
-    \caption{Communication between layers}
-    \label{fig:scc}
-\end{figure}
-
-
-\begin{figure*}[ht]
-\centering
-    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
-    \caption{Use Case diagram}
-    \label{fig:useCase}
-\end{figure*}
-
-
 This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second \cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
@@ -756,7 +738,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl2.png}
-    \caption{Sense-Compute-Control environment\protect\cite{DamienCassou}}
+    \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
     \label{fig:scc}
 \end{figure}
 
@@ -783,23 +765,13 @@ The application follows the five basic principles of design oriented to objects,
 \item Dependency Inversion Principle;
 \end{itemize} 
 
-
 Figure~\ref{fig:view} shows the library's structural view.
-
-\begin{figure*}[t]
-\centering
-    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
-    \caption{Sequence diagram}
-    \label{fig:sequence}
-\end{figure*}
-
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
     \caption{LibsensorPy's structural view}
     \label{fig:view}
 \end{figure*}
-
 
 \subsection{What is needed to install LibsensorPy?}
 Before use LibsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
@@ -1078,16 +1050,19 @@ Analyzing the results obtained, was concluded that the LibsensorPy help the deve
 
 \section{CONCLUSION AND FUTURE WORK}
 \label{sec:conclusion}
-The LibsensorPy is an open source Python library designed to facilitate the creation of ubiquitous and embedded applications that use sensors and actuators to capture and process environmental data.
+This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/LibsensorPy/LibsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language. The latest version can be downloaded and installed using: 
 \newline
 \newline
-Its goal is to simplify the creation of these systems using the Raspberry Pi and has the advantage of considerably reducing the amount of code lines, as well as increasing abstraction of how to use the hardware components.
+\textit{sudo pip install LibsensorPy}
 \newline
 \newline
-Its differential in relation to related work presented is the ease of exchanging physical sensors or actuators with few changes in the source code, provide in addition to standard units of measure, other commonly used units. Another Advantage is allow users to configure events that when met, trigger an action.
+The source code is availlable on Github \footnote{\url{https://github.com/juniorug/LibsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. All documentation can be found at the official website\footnote{\url{http://LibsensorPy.com}}.
 \newline
 \newline
-These characteristics abstracts technical and behaviors specific to that system's type, using design patterns and following the SOLID principles, minimizing the development time of Ubiquitous applications.
+Its goal is to simplify the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to that system's type, using design patterns and following the SOLID principles.
+\newline
+\newline
+The library's differential is the use of Abstract Factory pattern, allowing sensors and events from the same family work together, to be easily exchanged if necessary and the same type of sensors may be replaced without being necessary changes in existing code. The library also provides basic and composite  sensors according to the client's needs, as well as a set of events related to specific types of sensors and unit conversions.
 \newline
 \newline
 Some suggestions can be seen below:
