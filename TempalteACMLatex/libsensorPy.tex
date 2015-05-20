@@ -98,8 +98,7 @@ In this section the main concepts studied are presented, which provided subsidie
 The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991} in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a PC. He believed in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use computers without realizing or require specific technical knowledge. \cite{weiser1994world}
 \newline
 \newline
-
-The passage of time has shown Weiser's bet was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and various types of applications on non-conventional computing devices, are just some of the examples that can confirm: Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
++The passage of time has shown Weiser's bet was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and various types of applications on non-conventional computing devices, are just some of the examples that can confirm: Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
 \newline
 \newline
 
@@ -116,7 +115,7 @@ Terms such as ubiquitous computing, pervasive computing, nomadic computing, invi
 Mobile computing is based on the ability of a user to load or move (physically) computer services wherever it moves. In this context, the computer becomes an ever-present device that expands the ability of a user to use the services it offers, regardless of their location. Combined with the ability to access network, mobile computing has transformed the computing an activity that can be taken almost anywhere \cite{netodesenvolvimento}.
 \newline
 \newline
-An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing .
+An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing.
 
 \subsection{Pervasive Computing}
 The concept of pervasive computing implies the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow controlling, configuring and tuning application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
@@ -231,7 +230,7 @@ The Foundation provides Debian and Arch Linux ARM distributions for download. To
 \newline
 Some other features presents on RPI:
 \begin{itemize}
-\item Display Serial Interface Connector (DSI): This connector receives a flat-ribbon cable of 15 pins and can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen;	
+\item Display Serial Interface Connector (DSI): This connector receives a flat-ribbon cable of 15 pins and can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen;		
 \item Camera Serial Interface(CSI) Connector: This port allows a camera module be directly coupled to the card;
 \item P2 and P3 connectors: These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used;
 \item Pin Protection: Most of the pins in the header go directly to the Broadcom chip. Carefully design the components what can be attached to the pins is very important as there is a risk of permanently damage the RPi. Short circuits and wiring mistakes could also shatter the board, so double check everything. A multimeter is probably going to help a lot here as the developer can double check wiring before connect to the RPi.
@@ -366,7 +365,7 @@ The GPIO.BOARD option specifies that the user are referring to the pins by the n
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins \protect\cite{gpioHeader}}
+    \caption{GPIO pins\protect\cite{gpioHeader}}
     \label{fig:ModelAB}
 \end{figure}
 
@@ -683,19 +682,6 @@ Due to some sensors belong to more than one family (measure more than one physic
 
 
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
-\begin{figure*}[ht]
-\centering
-    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
-    \caption{Use Case diagram}
-    \label{fig:useCase}
-\end{figure*}
-
-\begin{figure*}[t]
-\centering
-    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
-    \caption{Sequence diagram}
-    \label{fig:sequence}
-\end{figure*}
 
 \subsubsection{Architectural Style}
 The libsensorPy presents characteristics of three architectural styles: 
@@ -708,24 +694,55 @@ The libsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedure call and event. Procedure call connectors model the control flow by invocation techniques and perform data transfer between components involved through the use of parameters. Examples of procedure call connectors include functions, procedures,  object oriented methods, callback and system calls.
 \newline
 \newline
-The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. The system has thus the layers:
+The event-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
+\newline
+\newline
+Virtual Machine architectures have the goal of achieving the quality of portability. This software style simulate some functionality that is not native to the hardware and/or software on which it is implemented. 
+% retirar dois newlines
+\newline
+\newline
+The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. This architectural style reduces complexity, improves modularity, reusability, maintainability. The system has thus the layers:
 \begin{itemize}
-\item Physical: GPIO
+\item Physical: GPIO, sensors, actuators and power supply.
 \item Operating System
 \item RPi.GPIO
 \item LibsensorPy
+\item User applications
 \end{itemize}
+
+%\begin{figure}[h]
+%\centering
+%    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
+%    \caption{LibsensorPy's layers}
+%    \label{fig:layers}
+%\end{figure}
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
-    \caption{LibsensorPy's layers}
-    \label{fig:layers}
+    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/arq1.png}
+    \caption{Architecture of LibsensorPy}
+    \label{fig:scc}
 \end{figure}
 
-The event-based style is an architectural style based on implicit invocation and provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
-
 \subsubsection{Architectural Pattern}
+
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/arq3.png}
+    \caption{Communication between layers}
+    \label{fig:scc}
+\end{figure}
+
+
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
+    \caption{Use Case diagram}
+    \label{fig:useCase}
+\end{figure*}
+
+
 This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second \cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
@@ -738,7 +755,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl2.png}
-    \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
+    \caption{Sense-Compute-Control environment\protect\cite{DamienCassou}}
     \label{fig:scc}
 \end{figure}
 
@@ -765,13 +782,23 @@ The application follows the five basic principles of design oriented to objects,
 \item Dependency Inversion Principle;
 \end{itemize} 
 
+
 Figure~\ref{fig:view} shows the library's structural view.
+
+\begin{figure*}[t]
+\centering
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
+    \caption{Sequence diagram}
+    \label{fig:sequence}
+\end{figure*}
+
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
     \caption{LibsensorPy's structural view}
     \label{fig:view}
 \end{figure*}
+
 
 \subsection{What is needed to install LibsensorPy?}
 Before use LibsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
@@ -1050,19 +1077,16 @@ Analyzing the results obtained, was concluded that the LibsensorPy help the deve
 
 \section{CONCLUSION AND FUTURE WORK}
 \label{sec:conclusion}
-This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/LibsensorPy/LibsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language. The latest version can be downloaded and installed using: 
+The LibsensorPy is an open source Python library designed to facilitate the creation of ubiquitous and embedded applications that use sensors and actuators to capture and process environmental data.
 \newline
 \newline
-\textit{sudo pip install LibsensorPy}
+Its goal is to simplify the creation of these systems using the Raspberry Pi and has the advantage of considerably reducing the amount of code lines, as well as increasing abstraction of how to use the hardware components.
 \newline
 \newline
-The source code is availlable on Github \footnote{\url{https://github.com/juniorug/LibsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. All documentation can be found at the official website\footnote{\url{http://LibsensorPy.com}}.
+Its differential in relation to related work presented is the ease of exchanging physical sensors or actuators with few changes in the source code, provide in addition to standard units of measure, other commonly used units. Another Advantage is allow users to configure events that when met, trigger an action.
 \newline
 \newline
-Its goal is to simplify the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to system's type, using design patterns and following the SOLID principles.
-\newline
-\newline
-The library's differential is the use of Abstract Factory pattern, allowing sensors and events from the same family work together, to be easily exchanged if necessary and the same type of sensors may be replaced without being necessary changes in existing code. The library also provides basic and composite  sensors according to the client's needs, as well as a set of events related to specific types of sensors and unit conversions.
+These characteristics abstracts technical and behaviors specific to that system's type, using design patterns and following the SOLID principles, minimizing the development time of Ubiquitous applications.
 \newline
 \newline
 Some suggestions can be seen below:
