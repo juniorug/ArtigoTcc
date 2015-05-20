@@ -704,10 +704,11 @@ Virtual Machine architectures have the goal of achieving the quality of portabil
 \newline
 The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. This architectural style reduces complexity, improves modularity, reusability, maintainability. The system has thus the layers:
 \begin{itemize}
-\item Physical: GPIO
+\item Physical: GPIO, sensors, actuators and power supply.
 \item Operating System
 \item RPi.GPIO
 \item LibsensorPy
+\item User applications
 \end{itemize}
 
 %\begin{figure}[h]
@@ -729,7 +730,7 @@ The Virtual Machine style is applied between the hardware and the libsensorPy li
 
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.55\textwidth,natwidth=610,natheight=642]{pictures/arq2.png}
+    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/arq3.png}
     \caption{Communication between layers}
     \label{fig:scc}
 \end{figure}
