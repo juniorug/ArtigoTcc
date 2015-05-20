@@ -710,20 +710,38 @@ The Virtual Machine style is applied between the hardware and the libsensorPy li
 \item LibsensorPy
 \end{itemize}
 
+%\begin{figure}[h]
+%\centering
+%    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
+%    \caption{LibsensorPy's layers}
+%    \label{fig:layers}
+%\end{figure}
+
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
-    \caption{LibsensorPy's layers}
-    \label{fig:layers}
+    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/arq1.png}
+    \caption{Architecture of LibsensorPy}
+    \label{fig:scc}
 \end{figure}
 
 \subsubsection{Architectural Pattern}
+
+
+\begin{figure}[h]
+\centering
+    \includegraphics[width=0.55\textwidth,natwidth=610,natheight=642]{pictures/arq2.png}
+    \caption{Communication between layers}
+    \label{fig:scc}
+\end{figure}
+
+
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
     \caption{Use Case diagram}
     \label{fig:useCase}
 \end{figure*}
+
 
 This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second \cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
@@ -737,15 +755,10 @@ This project was developed under the architectural pattern Sense-Compute-Control
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl2.png}
-    \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
+    \caption{Sense-Compute-Control environment\protect\cite{DamienCassou}}
     \label{fig:scc}
 \end{figure}
-\begin{figure*}[t]
-\centering
-    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
-    \caption{Sequence diagram}
-    \label{fig:sequence}
-\end{figure*}
+
 Each layer corresponds to a separate class of components: 
 \begin{itemize}
 \item Sensors send information sensed from the environment to the context operator layer through data sources. Sensors can both push data to context operators and respond to context operator requests. The term "sensor" is used both for entities that actively retrieve information from the environment, such as system probes, and entities that store information previously collected from the environment, such as databases.
@@ -769,13 +782,23 @@ The application follows the five basic principles of design oriented to objects,
 \item Dependency Inversion Principle;
 \end{itemize} 
 
+
 Figure~\ref{fig:view} shows the library's structural view.
+
+\begin{figure*}[t]
+\centering
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
+    \caption{Sequence diagram}
+    \label{fig:sequence}
+\end{figure*}
+
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
     \caption{LibsensorPy's structural view}
     \label{fig:view}
 \end{figure*}
+
 
 \subsection{What is needed to install LibsensorPy?}
 Before use LibsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
