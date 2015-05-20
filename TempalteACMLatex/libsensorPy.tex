@@ -61,7 +61,7 @@ Manoel C. M. Neto\titlenote{Ph.D. in Computer Science, Professor and Researcher 
 \maketitle
 \begin{abstract}
 
-The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors/actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses Abstract Factory pattern to ensure that sensors/actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as development language applied to the Raspberry Pi. This project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
+The convergence of radio technologies, microprocessors and personal digital electronic devices is leading to the concept of ubiquitous computing in which intelligent, mobile and stationary devices, coordinate with each other to provide for users immediate and universal access to new services transparently, aimed at increasing human capabilities. This work is intended to be inserted in this context and aims to define, implement and validate the design and implementation of an extensible Python library for manipulating sensors/actuators coupled to the Raspberry Pi using the raspberry-GPIO-python module. The library, called libsensorPy, uses Abstract Factory pattern to ensure sensors/actuators and events from the same family being used in conjunction with guaranteed way. On other platforms, such as Arduino, APIs provide libraries that encapsulate the complexity of implementation and offer only the interface to use. These libraries do not yet exist formally for those who want to use Python as development language applied to the Raspberry Pi. This project also presents the results obtained using some of the implemented sensors, system modeling and results described and analyzed.
 
 \end{abstract}
 \keywords{Ubiquitous Computing, Internet of Things, Raspberry Pi, Sensor, Python.} 
@@ -95,11 +95,11 @@ Section~\ref{sec:theoreticalBackground} present several technologies involved in
 In this section the main concepts studied are presented, which provided subsidies for the development of the proposed project.
 
 \subsection{General Context}
-The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991} in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a PC. He believed that in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use computers without realizing or require specific technical knowledge. \cite{weiser1994world}
+The term Ubiquitous Computing was first defined by Mark Weiser \cite{weiser1991} in the late 80. At this time, Weiser predicted an increasing in functionality and availability of computing services to end users and, on the other hand, he predicted a decreased visibility of these services. For Weiser, the computing would not be exclusive of a PC. He believed in the future there would be several different devices connected to each other. At a time when users were using PCs (desktops) and that knowledge needed to operate a computer,  Weiser bet on a future where the focus of the users would be the task itself, and not the tool used. In this way, they would use computers without realizing or require specific technical knowledge. \cite{weiser1994world}
 \newline
 \newline
 
-The passage of time has shown that Weiser's bet was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and various types of applications on non-conventional computing devices, are just some of the examples that can confirm: Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
+The passage of time has shown Weiser's bet was right. For Weiser, \cite{weiser1997coming} evolution of computing has gone through two ages to reach to ubiquitous computing. The first was called the age of mainframe, where many people shared the same computer. The second era was the PC, where each computer was used by one person. Currently, the evolution of distributed information systems, the network connections type options'  expansion, mobile computing and various types of applications on non-conventional computing devices, are just some of the examples that can confirm: Ubiquitous Computing (the third age) is already a reality. Figure~\ref{fig:era} shows a chart with the ages of computing.
 \newline
 \newline
 
@@ -116,10 +116,10 @@ Terms such as ubiquitous computing, pervasive computing, nomadic computing, invi
 Mobile computing is based on the ability of a user to load or move (physically) computer services wherever it moves. In this context, the computer becomes an ever-present device that expands the ability of a user to use the services it offers, regardless of their location. Combined with the ability to access network, mobile computing has transformed the computing an activity that can be taken almost anywhere \cite{netodesenvolvimento}.
 \newline
 \newline
-An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means that a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing .
+An important conceptual limitation of mobile computing is that the computational model used in most applications does not change while users are moving. It means a device is not able to obtain information on the physical context in which computation occurs, and consequently also can not adapt to the new context correctly. A solution to accommodate the changing context would pass to users the responsibility to monitor and manually configure an application / device to the extent that it moves. However, this solution is not well accepted by most users. This limitation was one of the inspirations for pervasive computing .
 
 \subsection{Pervasive Computing}
-The concept of pervasive computing implies that the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow controlling, configuring and tuning application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
+The concept of pervasive computing implies the computer is embedded invisibly in the environment to the user \cite{krumm2009}. In this conception, the computer has the ability to: i) obtain environmental information in which it is embedded and ii) use it to build dynamically computational models that allow controlling, configuring and tuning application to better suit the needs of a device or user. For this to be possible, the key point is the ability of computers be able to act as "smart" in the environment where users move. This environment is usually populated by computational sensors and services.
 
 \subsection{Ubiquitous Computing}
 Ubiquitous is an adjective originated from Latin (\textit{ubiquu}) which means "that is at the same time everywhere". As can be seen in figure~\ref{fig:ubiq}, the UbiComp can be defined as a computer area positioned between Mobile Computing and Pervasive Computing \cite{de2003computaccao,krumm2009}. Ubiquitous computing benefits from the advances in mobile and pervasive computing and arises from the need to integrate mobility with the functionality of pervasive computing. The term ubiquitous computing will be used here as a junction of pervasive computing and mobile computing. The justification to perform a distinction of these terms is a device that is embedded in an environment, not necessarily is mobile.
@@ -157,7 +157,7 @@ The Internet of Things (IoT) is a multidisciplinary field, covering a wide range
 The connection of physical things to the Internet makes it possible to access remote sensor data and to control physical world from a distance. The mash-up of captured data with data retrieved from other sources, e.g., with data that is contained in the Web, gives rise to new synergistic services that go beyond services that can be provided by an isolated embedded system. The Internet of Things is based on this vision. A smart object, which is the building block of the Internet of Things, is just another name for an embedded system that is connected to the Internet \cite{Kopetz:1997}.
 \newline
 \newline
-Everyday physical things that are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the Internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes sensor data and supports a wireless communication link to the Internet \cite{Kopetz:1997}.
+Everyday physical things are enhanced by a small electronic device to provide local intelligence and connectivity to the cyberspace established by the Internet. The small electronic device, a \textit{computational component} that is attached to a \textit{physical thing}, bridges the gap between the physical world and the information world. A \textit{smart object} is thus a \textit{cyber-physical system} or an \textit{embedded system} consisting of a \textit{thing} (the physical entity) and a \textit{component} (the computer) that processes sensor data and supports a wireless communication link to the Internet \cite{Kopetz:1997}.
 
 \subsection{Hardware}
 One fundamental requirement for developing ubiquitous systems is the use of hardware such as sensors, microcontrollers, communication devices (network cards, Bluetooth, etc.) and storage, among others. For example, sensors allow transform use of interactive environments from more transparent interfaces. Currently, there are some platforms that allow insert and control various types of sensors, using of communication interfaces and storage units. This section presents and details the main hardware devices available for development of ubiquitous systems.
@@ -172,7 +172,7 @@ According to \cite{borges2010automaccao}, when sensors operate directly, transfo
 An actuator as well as a sensor is a transducer that converts one form of energy into another, and can also do the opposite \cite{borges2010automaccao}. In other words, rather than just  transform parts of a physical quantity into an electrical signal, it can transform an electrical signal into a physical quantity such as motion, magnetism, heat, among others. For example, relays are electromechanical devices that work with small power, but are able to control external circuits that involve high currents. They are basically composed of a coil and a set of contacts. When a current flows through the coil it creates a magnetic field that attracts and closes the contacts, remaining as long as power supply in the coil. As a result, it allows the passage of energy through the relay.
 
 \subsubsection{Arduino}
-Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so that they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
+Arduino was created in 2005 by Massimo Banzi and David Mellis in Italy with the goal of use as an electronic learning tool and programming for design students, so they would use in art projects, interactivity and robotics. Electronic learning was expensive: a microcontroller was costing 100 euros. So they decided to make their own board. Sought employees and thus created an efficient technology, accessible and compatible with Windows, Mac and Linux \cite{netodesenvolvimento}.
 \newline
 \newline
 Arduino is a platform that popularizes the concept of free hardware. In the book Getting Started with Arduino, Massimo Banzi describes the Arduino as a physical open-source computing platform based on a simple board with input/output pins that implements the Processing language. Constituted by a microcontroller, this small but powerful board can be easily programmed via a Universal Serial Bus interface (USB) and able to build electronic devices and interesting systems.
@@ -183,7 +183,7 @@ Working with construction of a hardware requires much time and effort, because i
 
 \begin{itemize}
 \item A multi-platform environment that can run all major operating systems such as Windows, Linux and MacOS.
-\item An open-source hardware, i.e., the circuit design is available so that if someone is interested in creating their own card, just buy the necessary components.		
+\item An open-source hardware, i.e., the circuit design is available so if someone is interested in creating their own card, just buy the necessary components.		
 \item Hardware cost is low.					
 \item Can be programmable via a USB cable instead of a serial port. Remember that today's computers do not have serial ports.	
 \item It has a development environment with intuitive interface for easy use.
@@ -195,7 +195,7 @@ The fact that both the hardware and the Arduino software be developed in an open
 Note that there is not necessary advanced knowledge in electronics to use the platform. But for those who are interested in deepening the knowledge in this area, there are several available materials that can help, for example, in \cite{Eletronica}.
 
 \subsubsection{BeagleBone}
-The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBone Black was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip\cite{coley2009take}. The board was developed by a small team of engineers as an educational board that could be used in colleges around the world to teach open source hardware and software capabilities. Sold to the public under the Creative Commons share-alike license, the board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
+The BeagleBoard is a low-power open-source hardware single-board computer produced by Texas Instruments in association with Digi-Key and Newark element14. The BeagleBone Black was also designed with open source software development in mind, and as a way of demonstrating the Texas Instrument's OMAP3530 system-on-a-chip\cite{coley2009take}. The board was developed by a small team of engineers as an educational board and could be used in colleges around the world to teach open source hardware and software capabilities. Sold to the public under the Creative Commons share-alike license, the board was designed using Cadence OrCAD for schematics and Cadence Allegro for PCB manufacturing; no simulation software was used.
 \newline
 \newline
 BeagleBone is an \$89 Manufacturer suggested retail price (MSRP) credit-card-sized Linux computer that connects to the Internet and runs software such as Android 4.0 and Ubuntu. With plenty of I/O and processing power for real-time analysis provided by an AM335x 720MHz ARM\textregistered\, processor, BeagleBone can be complemented with cape plug-in boards to augment functionality.
@@ -231,7 +231,7 @@ The Foundation provides Debian and Arch Linux ARM distributions for download. To
 \newline
 Some other features presents on RPI:
 \begin{itemize}
-\item Display Serial Interface Connector (DSI): This connector receives a flat-ribbon cable of 15 pins that can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen;	
+\item Display Serial Interface Connector (DSI): This connector receives a flat-ribbon cable of 15 pins and can be used to communicate with an LCD or organic light-emitting diode (OLED) display screen;	
 \item Camera Serial Interface(CSI) Connector: This port allows a camera module be directly coupled to the card;
 \item P2 and P3 connectors: These two rows of connectors are JTAG connectors for test to Broadcom chip (P2) and LAN9512 network (P3). Due to the proprietary nature of Broadcom chipset, these connectors are unlikely to be of much used;
 \item Pin Protection: Most of the pins in the header go directly to the Broadcom chip. Carefully design the components what can be attached to the pins is very important as there is a risk of permanently damage the RPi. Short circuits and wiring mistakes could also shatter the board, so double check everything. A multimeter is probably going to help a lot here as the developer can double check wiring before connect to the RPi.
@@ -366,7 +366,7 @@ The GPIO.BOARD option specifies that the user are referring to the pins by the n
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins\protect\cite{gpioHeader}}
+    \caption{GPIO pins \protect\cite{gpioHeader}}
     \label{fig:ModelAB}
 \end{figure}
 
@@ -528,7 +528,7 @@ The library proposed reconciles the use of an integrated circuit platform with m
 
 \section{LIBSENSORPY}
 \label{sec:proposedModel}
-Many small embedded systems exist to collect data from sensors, analyses the data, and either take an appropriate action or send that sensor data to another system for processing. One of the many challenges of embedded systems design is the fact that parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
+Many small embedded systems exist to collect data from sensors, analyses the data, and either take an appropriate action or send sensor data to another system for processing. One of the many challenges of embedded systems design is the fact parts that are used today may be out of production tomorrow, or system requirements may change and may will be needed to choose a different sensor down the road.
 \newline
 \newline
 Creating new drivers is a relatively easy task, but integrating them into existing systems is both error prone and time consuming since sensors rarely use the exact same units of measurement. By reducing all data to a single sensors/event family type and settling on specific, standardized SI units for each sensor family the same sensor types return values that are comparable with any other similar sensor. This enables users to switch sensor models with very little impact on the rest of the system, which can help mitigate some of the risks and problems of sensor availability and code reuse.
@@ -537,7 +537,7 @@ Creating new drivers is a relatively easy task, but integrating them into existi
 LibsensorPy is an extensible library, which allows the user to interact with environment through sensors and actuators coupled to the Raspberry Pi as well as add new sensors / actuators and easy way to practice. Often programmers, who have no knowledge in electronics, and engineers who do not have programming experience need to create ubiquitous systems, requiring a lot of work to implement system's abstractions, configure logic connections between sensors and the microcontroller, capture, understand and process the data in order to make them readable.
 \newline
 \newline 
-With the proposed system, the user only need to worry about using the data that the solution delivery already processed since the system provides the abstractions of the main necessary resources for the processing and, if desired, inform the library in which pins the sensors are connected, if the user does not want to use default configuration of each sensor. Conversions between units of measure are also provided, facilitating and universalizing the use of the library.
+With the proposed system, the user only need to worry about using the data the solution delivery already processed since the system provides the abstractions of the main necessary resources for the processing and, if desired, inform the library in which pins the sensors are connected, if the user does not want to use default configuration of each sensor. Conversions between units of measure are also provided, facilitating and universalizing the use of the library.
 \newline
 \newline 
 LibsensorPy provides a simple abstraction layer between user's application and the actual sensor Hardware, allowing to drop in any comparable sensor with only one or two lines of code to change in the project that uses the library. This change is essentially in the constructor since the functions to read data and get information about the sensor are defined in the family sensor class, e.g. UltrasonicSensor class.
@@ -553,7 +553,7 @@ This is important useful for two reasons:
 Light sensors will always report units in lux, pressure sensors will always report units in hPa and so forth, freeing user up to focus on the data, rather than digging through the datasheet to understand what the sensor's raw numbers really mean. Also the library offer methods to convert the standard SI to other measurement unit, thus who are using the library can abstracts these conversions. A sheet of Standardized SI values and measurable units and conversions for each sensor can be seen in appendix~\ref{sec:Units}.
 \newline
 \newline
-The purpose of this work is the focus on library's usability and the abstraction from the way that this library interacts with sensors/actuators to capture data, besides contributing to the open source community and the growing community of developers for the Raspberry Pi.
+The purpose of this work is the focus on library's usability and the abstraction from the way this library interacts with sensors/actuators to capture data, besides contributing to the open source community and the growing community of developers for the Raspberry Pi.
 \newline
 \newline
 The technologies used to develop the tool were basically the Python language and RPI.GPIO and PigPio modules that provide connection abstractions to basic pins and the special pins I2C, UART, SPI and PWM.
@@ -565,7 +565,7 @@ To develop this project was adopted the object-oriented analysis and design (OOA
 According to the popular guide Unified Process, OOAD in modern software engineering is best conducted in an iterative and incremental way. Iteration by iteration, the outputs of OOAD activities, analysis models for Object-oriented analysis (OOA) and design models for Object- oriented design (OOD) respectively, were refined and evolved continuously driven by key factors like usability and efficiency.
 \newline
 \newline
-Object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, should be checked that the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of the work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
+Object-oriented approach is ambitious: it encompasses the entire software lifecycle. When examining object-oriented solutions, should be checked the method and language, as well as the supporting tools, apply to analysis and design as well as implementation and maintenance. The language, in particular, should be a vehicle for thought which will help through all stages of the work. In this context, Python was essentially fundamental since it provides fully object oriented functionalities that attend the project's requirements. 
 \newline
 \newline
 Using Object-oriented modeling, the work is divided in two aspects: Modeling dynamic behaviors like events and use cases, and the modeling of static structures like classes and components. OOA and OOD were two distinct abstract levels (i.e. the analysis level and the design level) during OOM. The Unified Modeling Language (UML), a popular international standard languages used for object-oriented modeling was used. The benefits of OOM are:
@@ -583,7 +583,7 @@ Users typically have difficulties in understanding comprehensive documents and p
 \end{itemize}
 %\subsubsection{Useful and stable abstraction}
 
-Modeling helps coding. A goal of most modern software methodologies is to first address "what" questions and then address "how" questions, i.e. first determine the functionality the system is to provide without consideration of implementation constraints, and then consider how to make specific solutions to these abstract requirements, and refine them into detailed designs and codes by constraints such as technology and budget. Object-oriented modeling enables this by producing abstract and accessible descriptions of both system requirements and designs, i.e. models that define their essential structures and behaviors like processes and objects, which are important and valuable development assets with higher abstraction levels above concrete and complex source code.
+Modeling helps coding. A goal of most modern software methodologies is to first address "what" questions and then address "how" questions, i.e. first determine the functionality the system is to provide without consideration of implementation constraints, and then consider how to make specific solutions to these abstract requirements, and refine them into detailed designs and codes by constraints such as technology and budget. Object-oriented modeling enables this by producing abstract and accessible descriptions of both system requirements and designs, i.e. models define their essential structures and behaviors like processes and objects, which are important and valuable development assets with higher abstraction levels above concrete and complex source code.
 \newline
 \newline
 Patterns used:
@@ -629,7 +629,7 @@ In the table \ref{table:rf} are defined the main functional requirements in orde
  \hline  
  RNF01 & The library must allow addition of new sensors/families; & Extensibility\\
  \hline  
- RNF02 & The data reported by the application must be faithful to that presented in the environment; & Confidence \\
+ RNF02 & The data reported by the application must be faithful with presented in the environment; & Confidence \\
  \hline 
  RNF03 & The library should be usable in any Raspberry Pi model ; & Portability \\
  \hline 
@@ -669,7 +669,7 @@ Main components:
 
 \end{itemize}
 
-A single instance of the concrete factory is created at run-time, using the Singleton pattern. This factory creates products with a particular implementation. To create other products from a different family, one should use a different factory. The concrete factory class being used appears only once in the application, facilitating changes. The product family changes all at once, promoting consistency across products, ensuring that used objects are all of the same family, represented by the concrete factory being used.
+A single instance of the concrete factory is created at run-time, using the Singleton pattern. This factory creates products with a particular implementation. To create other products from a different family, one should use a different factory. The concrete factory class being used appears only once in the application, facilitating changes. The product family changes all at once, promoting consistency across products, ensuring used objects are all of the same family, represented by the concrete factory being used.
 \newline
 \newline
 Due to some sensors belong to more than one family (measure more than one physical quantity), the library allows the use of composite-type sensors composed of basic sensors. This ability is facilitated by Python feature that allow multiple inheritance. For example, the DHT11 sensor is capable of measuring temperature and humidity so, were then created three sensors: Two basic sensor from distinct families (DHT11Temperature to measure temperature and DHT11Humidity to the family of humidity sensors) and a composite sensor (DHT11Composite) that aggregates the two basic sensors. The idea of the separation of basic and composite sensors is to allow the creation of lighter objects, if the user just want a sensor that measures only a physical quantity. The composite pattern structure allows basic and composite sensors being viewed by the user in the same way. This structure can see in figure~\ref{fig:composite}.
@@ -683,6 +683,19 @@ Due to some sensors belong to more than one family (measure more than one physic
 
 
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
+    \caption{Use Case diagram}
+    \label{fig:useCase}
+\end{figure*}
+
+\begin{figure*}[t]
+\centering
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
+    \caption{Sequence diagram}
+    \label{fig:sequence}
+\end{figure*}
 
 \subsubsection{Architectural Style}
 The libsensorPy presents characteristics of three architectural styles: 
@@ -695,55 +708,24 @@ The libsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedure call and event. Procedure call connectors model the control flow by invocation techniques and perform data transfer between components involved through the use of parameters. Examples of procedure call connectors include functions, procedures,  object oriented methods, callback and system calls.
 \newline
 \newline
-The event-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
-\newline
-\newline
-Virtual Machine architectures have the goal of achieving the quality of portability. This software style simulate some functionality that is not native to the hardware and/or software on which it is implemented. 
-% retirar dois newlines
-\newline
-\newline
-The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. This architectural style reduces complexity, improves modularity, reusability, maintainability. The system has thus the layers:
+The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. The system has thus the layers:
 \begin{itemize}
-\item Physical: GPIO, sensors, actuators and power supply.
+\item Physical: GPIO
 \item Operating System
 \item RPi.GPIO
 \item LibsensorPy
-\item User applications
 \end{itemize}
 
-%\begin{figure}[h]
-%\centering
-%    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
-%    \caption{LibsensorPy's layers}
-%    \label{fig:layers}
-%\end{figure}
-
 \begin{figure}[h]
 \centering
-    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/arq1.png}
-    \caption{Architecture of LibsensorPy}
-    \label{fig:scc}
+    \includegraphics[width=0.4\textwidth,natwidth=610,natheight=642]{pictures/machinelayers.png}
+    \caption{LibsensorPy's layers}
+    \label{fig:layers}
 \end{figure}
+
+The event-based style is an architectural style based on implicit invocation and provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
 
 \subsubsection{Architectural Pattern}
-
-
-\begin{figure}[h]
-\centering
-    \includegraphics[width=0.5\textwidth,natwidth=610,natheight=642]{pictures/arq3.png}
-    \caption{Communication between layers}
-    \label{fig:scc}
-\end{figure}
-
-
-\begin{figure*}[ht]
-\centering
-    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
-    \caption{Use Case diagram}
-    \label{fig:useCase}
-\end{figure*}
-
-
 This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second \cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
@@ -756,7 +738,7 @@ This project was developed under the architectural pattern Sense-Compute-Control
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/senseComputeControl2.png}
-    \caption{Sense-Compute-Control environment\protect\cite{DamienCassou}}
+    \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
     \label{fig:scc}
 \end{figure}
 
@@ -783,23 +765,13 @@ The application follows the five basic principles of design oriented to objects,
 \item Dependency Inversion Principle;
 \end{itemize} 
 
-
 Figure~\ref{fig:view} shows the library's structural view.
-
-\begin{figure*}[t]
-\centering
-    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
-    \caption{Sequence diagram}
-    \label{fig:sequence}
-\end{figure*}
-
 \begin{figure*}[ht]
 \centering
     \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/VisaoEstrutural.png}
     \caption{LibsensorPy's structural view}
     \label{fig:view}
 \end{figure*}
-
 
 \subsection{What is needed to install LibsensorPy?}
 Before use LibsensorPy is necessary to configure and enable SPI and I2C ports on raspperry:
@@ -1057,7 +1029,7 @@ Below is presented \textit{dht11CompositeExample.py}, an example of how to use t
 Was then given to continue the study validation tests. These tests were performed after development's completion of LibsensorPy, and was based on the library's availability to the people who are involved in ubiquitous systems development activities.
 \newline
 \newline
-This library was presented to a post graduation student in distributed and ubiquitous computing that are developing work in this area. The main objective was to determine whether LibsensorPy meets the user needs.
+This library was presented to a post graduation student in distributed and ubiquitous computing who are developing work in this area. The main objective was to determine whether LibsensorPy meets the user needs.
 \newline
 \newline
 At the end of the presentation this student were invited to complete the satisfaction of LibsensorPy's survey. Figure~\ref{fig:survey} shows satisfaction survey screen using Google Forms.
@@ -1070,7 +1042,7 @@ The result of the case study was satisfactory. Tested sensors worked as expected
 \newline
 \newline
 %%%%%%%%%%%%%%%%%%%%%%       MAIS CONTEUDO AQUIIIIIIIIIIIIIII %%%%%%%%%%%%%%%%%%%%%% 
-The sensors HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite were tested. Figure~\ref{fig:results} shows the results obtained. It would be tested more sensors but just these exemplars were available. The HCSR04 was tested first with a distant object, and on the second reading was put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee that they will probably work as expected.
+The sensors HCSR04, DHT11Temperature, DHT11Humidity and DHT11Composite were tested. Figure~\ref{fig:results} shows the results obtained. It would be tested more sensors but just these exemplars were available. The HCSR04 was tested first with a distant object, and on the second reading was put the object at fifteen centimeters from the sensor. Just as a reminder, all sensors implemented but not tested were developed based on their Datasheet and specifications, as a guarantee they will probably work as expected.
 \newline
 \newline
 Analyzing the results obtained, was concluded that the LibsensorPy help the development of ubiquitous systems using the Raspberry Pi platform and hence can minimize current problems faced by developers who have little knowledge of electronics discussed above. However, the suggestions received during the case study can be harnessed to the library improvement in future work.
@@ -1078,16 +1050,19 @@ Analyzing the results obtained, was concluded that the LibsensorPy help the deve
 
 \section{CONCLUSION AND FUTURE WORK}
 \label{sec:conclusion}
-The LibsensorPy is an open source Python library designed to facilitate the creation of ubiquitous and embedded applications that use sensors and actuators to capture and process environmental data.
+This work presents an extensible open source library, available at Python Package Index (PyPI)\footnote{\url{https://pypi.python.org/packages/source/l/LibsensorPy/LibsensorPy-0.0.7.tar.gz}}, the official third-party repository for the Python programming language. The latest version can be downloaded and installed using: 
 \newline
 \newline
-Its goal is to simplify the creation of these systems using the Raspberry Pi and has the advantage of considerably reducing the amount of code lines, as well as increasing abstraction of how to use the hardware components.
+\textit{sudo pip install LibsensorPy}
 \newline
 \newline
-Its differential in relation to related work presented is the ease of exchanging physical sensors or actuators with few changes in the source code, provide in addition to standard units of measure, other commonly used units. Another Advantage is allow users to configure events that when met, trigger an action.
+The source code is availlable on Github \footnote{\url{https://github.com/juniorug/LibsensorPy}}, the Git web-based repository hosting service, Which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features. All documentation can be found at the official website\footnote{\url{http://LibsensorPy.com}}.
 \newline
 \newline
-These characteristics abstracts technical and behaviors specific to that system's type, using design patterns and following the SOLID principles, minimizing the development time of Ubiquitous applications.
+Its goal is to simplify the creation of ubiquitous systems using the Raspberry Pi. The tool is implemented in Python and is designed to facilitate the inclusion of new sensors, families and factories of sensors, as well as ease of use by the user, abstracting technical and behaviors specific to system's type, using design patterns and following the SOLID principles.
+\newline
+\newline
+The library's differential is the use of Abstract Factory pattern, allowing sensors and events from the same family work together, to be easily exchanged if necessary and the same type of sensors may be replaced without being necessary changes in existing code. The library also provides basic and composite  sensors according to the client's needs, as well as a set of events related to specific types of sensors and unit conversions.
 \newline
 \newline
 Some suggestions can be seen below:
