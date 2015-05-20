@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: libsensorPy.aux
-The style file: abbrv.bst
+The style file: acm.bst
 Database file #1: libsensorPy.bib
 You're missing a field name---line 107 of file libsensorPy.bib
  : 
@@ -13,58 +13,58 @@ You're missing a field name---line 115 of file libsensorPy.bib
  : % AUTHOR = "Arduino Playground",
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
+Repeated entry---line 434 of file libsensorPy.bib
+ : @inproceedings{netodesenvolvimento
+ :                                   ,,
+I'm skipping whatever remains of this entry
 Too many commas in name 1 of "Damien Cassou, Émile Balland, Charles Consel, Julia Lawall" for entry DamienCassou
-while executing---line 1049 of file abbrv.bst
+while executing---line 1092 of file acm.bst
 Warning--empty journal in NSF
-Warning--there's a number but no volume in borges2010automaccao
 Too many commas in name 1 of "Damien Cassou, Émile Balland, Charles Consel, Julia Lawall" for entry DamienCassou
-while executing---line 1090 of file abbrv.bst
+while executing---line 1133 of file acm.bst
 Warning--empty journal in dearduino
-Warning--empty year in dearduino
 Warning--empty journal in doesntfit
 Warning--empty journal in krishnakumarframework
-Warning--empty year in krishnakumarframework
 Warning--empty journal in netodesenvolvimento
-Warning--empty year in netodesenvolvimento
 You've used 50 entries,
-            2118 wiz_defined-function locations,
-            766 strings with 11432 characters,
-and the built_in function-call counts, 12599 in all, are:
-= -- 1235
-> -- 494
-< -- 5
+            2253 wiz_defined-function locations,
+            797 strings with 11719 characters,
+and the built_in function-call counts, 12482 in all, are:
+= -- 1195
+> -- 485
+< -- 0
 + -- 210
 - -- 154
-* -- 617
-:= -- 2143
-add.period$ -- 179
+* -- 675
+:= -- 2081
+add.period$ -- 176
 call.type$ -- 50
 change.case$ -- 222
 chr.to.int$ -- 0
-cite$ -- 59
-duplicate$ -- 470
-empty$ -- 1130
+cite$ -- 55
+duplicate$ -- 486
+empty$ -- 1148
 format.name$ -- 154
-if$ -- 2686
+if$ -- 2655
 int.to.chr$ -- 0
 int.to.str$ -- 50
 missing$ -- 25
-newline$ -- 279
+newline$ -- 278
 num.names$ -- 100
-pop$ -- 376
+pop$ -- 371
 preamble$ -- 1
 purify$ -- 175
 quote$ -- 0
-skip$ -- 350
+skip$ -- 330
 stack$ -- 0
-substring$ -- 419
-swap$ -- 77
-text.length$ -- 5
+substring$ -- 375
+swap$ -- 119
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 192
-warning$ -- 9
-while$ -- 118
+type$ -- 190
+warning$ -- 5
+while$ -- 114
 width$ -- 52
-write$ -- 563
-(There were 4 error messages)
+write$ -- 551
+(There were 5 error messages)

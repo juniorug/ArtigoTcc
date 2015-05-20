@@ -1,7 +1,7 @@
 \begin{thebibliography}{10}
 
 \bibitem{I2c}
-Adafruit.
+{\sc Adafruit}.
 \newblock Configuring i2c.
 \newblock
   \url{https://learn.adafruit.com/adafruits-raspberry-pi-lesson-4-gpio-setup/configuring-i2c},
@@ -9,32 +9,31 @@ Adafruit.
 \newblock [Online; accessed 15-March-2015].
 
 \bibitem{NSF}
-J.~A. Armstrong, P.~A. Ferguson, M.~K. Gaillard, M.~Greenwood, S.~V. Jaskolski,
-  A.~K. Jones, G.~M. Langford, J.~Lubchenco, E.~L. Menger, J.~A. Miller~Jr,
-  et~al.
+{\sc Armstrong, J.~A., Ferguson, P.~A., Gaillard, M.~K., Greenwood, M.,
+  Jaskolski, S.~V., Jones, A.~K., Langford, G.~M., Lubchenco, J., Menger,
+  E.~L., Miller~Jr, J.~A., et~al.}
 \newblock National science foundation.
-\newblock 2001.
 
 \bibitem{barr2001pulse}
-M.~Barr.
-\newblock Pulse width modulation.
-\newblock {\em Embedded Systems Programming}, 14(10):103--104, 2001.
+{\sc Barr, M.}
+\newblock {\em Programming Embedded Systems}, 2~ed.
+\newblock O'Relly Media, 10 Fawcett Street, Cambridge, MA 02138, USA, 2006.
 
 \bibitem{borges2010automaccao}
-L.~P. Borges and R.~de~Carvalho~Dores.
+{\sc Borges, L.~P., and de~Carvalho~Dores, R.}
 \newblock Automa{\c{c}}{\~a}o predial sem fio utilizando bacnet/zigbee com foco
   em economia de energia.
 \newblock {\em Trabalho de Gradua{\c{c}}{\~a}o em Engenharia de Controle e
-  Automa{\c{c}}{\~a}o, Publica{\c{c}}{\~a}o FT. TG}, (06), 2010.
+  Automa{\c{c}}{\~a}o, Publica{\c{c}}{\~a}o FT. TG}, 06 (2010).
 
 \bibitem{Broadcom}
-Broadcom.
+{\sc Broadcom}.
 \newblock Bcm2835 media processor.
 \newblock \url{http://www.broadcom.com/products/BCM2835}, September 2012.
 \newblock [Online; accessed 06-May-2014].
 
 \bibitem{Brose}
-M.~Brose.
+{\sc Brose, M.}
 \newblock Broadcom bcm2835 soc has the most powerful mobile gpu in the world?
 \newblock
   \url{http://www.grandmax.net/2012/01/broadcom-bcm2835-soc-has-powerful.html},
@@ -42,19 +41,22 @@ M.~Brose.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{carvalho2006grandes}
-A.~d.~L. Carvalho, F.~d. Ponce~de Leon, et~al.
+{\sc Carvalho, A. d.~L., Ponce~de Leon, F.~d., et~al.}
 \newblock Grandes desafios da pesquisa em computa{\c{c}}{\~a}o no
   brasil--2006--2016.
-\newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o},
-  2006.
+\newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o\/}
+  (2006).
 
 \bibitem{coley2009take}
-G.~Coley.
+{\sc Coley, G.}
 \newblock Take advantage of open-source hardware.
-\newblock {\em EDN}, 54(16):20--23, 2009.
+\newblock
+  \url{http://www.edn.com/design/systems-design/4313253/Take-advantage-of-open-source-hardware},
+  2009.
+\newblock [Online; accessed 15-March-2015].
 
 \bibitem{Kevin}
-K.~Dallas.
+{\sc Dallas, K.}
 \newblock Windows 10 coming to raspberry pi 2. building apps for windows.
 \newblock
   \url{http://blogs.windows.com/buildingapps/2015/02/02/windows-10-coming-to-raspberry-pi-2/},
@@ -62,7 +64,7 @@ K.~Dallas.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{DamienCassou}
-C.~C. J.~L. Damien~Cassou, Émile~Balland.
+{\sc Damien~Cassou, Émile~Balland, C. C. J.~L.}
 \newblock Architecture-driven-programming for sense/compute/control
   applications.
 \newblock
@@ -71,61 +73,60 @@ C.~C. J.~L. Damien~Cassou, Émile~Balland.
 \newblock [Online; accessed 19-March-2015].
 
 \bibitem{DanielPace}
-M.~A. P.~A. Daniel Pace~Schmitz.
+{\sc Daniel Pace~Schmitz, M. A. P.~A.}
 \newblock Utiliza{\c{c}}{\~a}o dos princ{\'\i}pios solid na aplica{\c{c}}{\~a}o
   de padr{\~o}es de projeto.
-\newblock {\em Revista Engenharia de Software Magazine 50}, 2006.
+\newblock {\em Revista Engenharia de Software Magazine 50\/} (2006).
 
 \bibitem{de2003computaccao}
-R.~B. de~Araujo.
+{\sc de~Araujo, R.~B.}
 \newblock Computa{\c{c}}{\~a}o ub{\'\i}qua: Princ{\'\i}pios, tecnologias e
   desafios.
-\newblock In {\em XXI Simp{\'o}sio Brasileiro de Redes de Computadores},
-  volume~8, pages 11--13, 2003.
+\newblock In {\em XXI Simp{\'o}sio Brasileiro de Redes de Computadores\/}
+  (2003), vol.~8, pp.~11--13.
 
 \bibitem{dearduino}
-J.~J.~I. de~Souza, L.~B.~P. do~Nascimento, and P.~R. dos Santos~Filho.
+{\sc de~Souza, J. J.~I., do~Nascimento, L. B.~P., and dos Santos~Filho, P.~R.}
 \newblock Arduino e python: Do it yourself.
 
 \bibitem{dennis2013raspberry}
-A.~K. Dennis.
+{\sc Dennis, A.~K.}
 \newblock {\em Raspberry Pi Home Automation with Arduino}.
 \newblock Packt Publishing Ltd, 2013.
 
 \bibitem{doesntfit}
-O.~S. DOESn’t FIt~All.
+{\sc DOESn’t FIt~All, O.~S.}
 \newblock "innovations in ubicomp products.".
-\newblock 2013.
 
 \bibitem{edwards2009architecture}
-G.~Edwards, J.~Garcia, H.~Tajalli, D.~Popescu, N.~Medvidovic, G.~Sukhatme, and
-  B.~Petrus.
+{\sc Edwards, G., Garcia, J., Tajalli, H., Popescu, D., Medvidovic, N.,
+  Sukhatme, G., and Petrus, B.}
 \newblock Architecture-driven self-adaptation and self-management in robotics
   systems.
 \newblock In {\em Software Engineering for Adaptive and Self-Managing Systems,
-  2009. SEAMS'09. ICSE Workshop on}, pages 142--151. IEEE, 2009.
+  2009. SEAMS'09. ICSE Workshop on\/} (2009), IEEE, pp.~142--151.
 
 \bibitem{Elinux}
-Elinux.org.
+{\sc Elinux.org}.
 \newblock Verified usb peripherals and sdhc cards;.
 \newblock \url{http://elinux.org/RPi_VerifiedPeripherals}, May 2012.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{raspberryfoundation}
-R.~P. FOUNDATION.
+{\sc FOUNDATION, R.~P.}
 \newblock What is a raspberry pi?,. 2014a.
 \newblock \url{http://www.raspberrypi.org/help/what-is-a-raspberry-pi/},
   October 2014.
 \newblock [Online; accessed 04-October-2014].
 
 \bibitem{Uart}
-Gadgetoid.
+{\sc Gadgetoid}.
 \newblock Pinout: Uart.
 \newblock \url{http://pi.gadgetoid.com/pinout/uart}, July 2014.
 \newblock [Online; accessed 15-March-2015].
 
 \bibitem{Gareth}
-G.~Halfacree.
+{\sc Halfacree, G.}
 \newblock Raspberry pi review: Eben upton reveals all.
 \newblock
   \url{http://www.linuxuser.co.uk/features/raspberry-pi-interview-eban-upton-reveals-all},
@@ -133,7 +134,7 @@ G.~Halfacree.
 \newblock [Online; accessed 25-February-2015].
 
 \bibitem{Eletronica}
-O.~Henrique B.~Filho.
+{\sc Henrique B.~Filho, O.}
 \newblock Componentes eletronicos e unidades de medida, conceitos basicos.
 \newblock
   \url{http://www.hardware.com.br/tutoriais/componentes-eletronicos-unidades-medida/},
@@ -141,7 +142,7 @@ O.~Henrique B.~Filho.
 \newblock [Online; accessed 22-September-2014].
 
 \bibitem{DexterIndustries}
-D.~Industries.
+{\sc Industries, D.}
 \newblock A fork of raspbian for robotics projects with lego, grove, and
   arduino.
 \newblock
@@ -150,67 +151,67 @@ D.~Industries.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{Jaguar}
-Jaguar.orpheusweb.co.uk.
+{\sc Jaguar.orpheusweb.co.uk}.
 \newblock Brandy basic.
 \newblock \url{http://jaguar.orpheusweb.co.uk/branpage.html}, July 2005.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{Kopetz:1997}
-H.~Kopetz.
+{\sc Kopetz, H.}
 \newblock {\em Real-Time Systems: Design Principles for Distributed Embedded
-  Applications}.
-\newblock Kluwer Academic Publishers, Norwell, MA, USA, 1st edition, 1997.
+  Applications}, 1st~ed.
+\newblock Kluwer Academic Publishers, Norwell, MA, USA, 1997.
 
 \bibitem{krishnakumarframework}
-K.~Krishnakumar, J.~Gubbi, and R.~Buyya.
+{\sc Krishnakumar, K., Gubbi, J., and Buyya, R.}
 \newblock A framework for iot sensor data analytics and visualisation in cloud
   computing environments.
 
 \bibitem{krumm2009}
-J.~Krumm.
+{\sc Krumm, J.}
 \newblock {\em Ubiquitous computing fundamentals}.
 \newblock CRC Press, 2009.
 
 \bibitem{netodesenvolvimento}
-M.~C.~M. Neto.
+{\sc Neto, M. C.~M.}
 \newblock Desenvolvimento de aplica{\c{c}}{\~o}es ub{\'\i}quas com arduino e
   raspbery pi.
 
 \bibitem{Oracle}
-Oracle.
+{\sc Oracle}.
 \newblock Concurrency in java.
 \newblock
   \url{http://docs.oracle.com/javase/tutorial/essential/concurrency/sleep.html}.
 \newblock [Online; accessed 11-January-2015].
 
 \bibitem{wiring}
-W.~PI.
+{\sc PI, W.}
 \newblock Wiring pi - gpio interface library for the raspberry pi – about.
 \newblock \url{http://wiringpi.com/}, October 2014.
 \newblock [Online; accessed 02-October-2014].
 
 \bibitem{Pibanglinux}
-Pibanglinux.org.
+{\sc Pibanglinux.org}.
 \newblock Inspired by crunchbang linux, and based on raspbian. features the
   openbox desktop environment.
 \newblock \url{http://www.pibanglinux.org/}, May 2013.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{Pigpio}
-Pigpio.
+{\sc Pigpio}.
 \newblock Pigpio, a python module for the raspberry which talks to the pigpio
   daemon to allow control of the general purpose input outputs.
 \newblock \url{http://abyz.co.uk/rpi/pigpio/python.html}, February 2015.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{Privateeyepi}
-Privateeyepi.com.
+{\sc Privateeyepi.com}.
 \newblock A home automation and monitoring project for raspberry pi.
 \newblock \url{http://projects.privateeyepi.com/}, March 2015.
 \newblock [Online; accessed 08-March-2015].
 
 \bibitem{gpioHeader}
-Raspberrypi-spy.co.uk.
+{\sc Raspberrypi-spy.co.uk}.
 \newblock Simple guide to the rpi-gpio header and pins.
 \newblock
   \url{http://www.raspberrypi-spy.co.uk/2012/06/simple-guide-to-the-rpi-gpio-header-and-pins/},
@@ -218,7 +219,7 @@ Raspberrypi-spy.co.uk.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{raspOrg}
-Raspberrypi.org.
+{\sc Raspberrypi.org}.
 \newblock Model b now ships with 512mb of ram.
 \newblock
   \url{http://www.raspberrypi.org/model-b-now-ships-with-512mb-of-ram/},
@@ -226,7 +227,7 @@ Raspberrypi.org.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{raspNewProduct}
-Raspberrypi.org.
+{\sc Raspberrypi.org}.
 \newblock Raspberry-pi compute module new product.
 \newblock
   \url{http://www.raspberrypi.org/raspberry-pi-compute-module-new-product/},
@@ -234,13 +235,13 @@ Raspberrypi.org.
 \newblock [Online; accessed 13-March-2015].
 
 \bibitem{Raspbianwheezy}
-Raspberrypi.org.
+{\sc Raspberrypi.org}.
 \newblock Raspbian wheezy.
 \newblock \url{http://www.raspberrypi.org/downloads}, January 2013.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{Spi}
-Raspberrypi.org.
+{\sc Raspberrypi.org}.
 \newblock Raspberri pi spi.
 \newblock
   \url{http://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/README.md},
@@ -248,77 +249,77 @@ Raspberrypi.org.
 \newblock [Online; accessed 15-March-2015].
 
 \bibitem{raspberryAbout}
-b.~RASPBERY PI~FUNDATION.
+{\sc RASPBERY PI~FUNDATION, b.}
 \newblock About us. 2014b.
 \newblock \url{http://www.raspberrypi.org/about/}, October 2014.
 \newblock [Online; accessed 01-October-2014].
 
 \bibitem{raspberryFaq}
-c.~RASPBERY PI~FUNDATION.
+{\sc RASPBERY PI~FUNDATION, c.}
 \newblock Faqs. 2014c.
 \newblock \url{http://www.raspberrypi.org/help/faqs/}, October 2014.
 \newblock [Online; accessed 01-October-2014].
 
 \bibitem{raspUsage}
-Raspberypi.org.
+{\sc Raspberypi.org}.
 \newblock Gpio usage.
 \newblock \url{https://www.raspberrypi.org/documentation/usage/gpio/README.md},
   July 2014.
 \newblock [Online; accessed 15-March-2015].
 
 \bibitem{PiStore}
-Raspbian.
+{\sc Raspbian}.
 \newblock Introducing the pi store.
 \newblock \url{http://www.raspberrypi.org/introducing-the-pi-store/}, September
   2014.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{Raspbian}
-Raspbian.
+{\sc Raspbian}.
 \newblock Raspbian – debian optimized for the raspberry pi hardware.
 \newblock \url{http://www.raspbian.org/}, September 2014.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{taylor2009software}
-R.~N. Taylor, N.~Medvidovic, and E.~M. Dashofy.
+{\sc Taylor, R.~N., Medvidovic, N., and Dashofy, E.~M.}
 \newblock {\em Software architecture: foundations, theory, and practice}.
 \newblock Wiley Publishing, 2009.
 
 \bibitem{Trapp}
-B.~Trapp.
+{\sc Trapp, B.}
 \newblock Raspberry pi: The perfect home server. linux j.
-\newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o},
-  May 2013.
+\newblock {\em S{\~a}o Paulo: Sociedade Brasileira de Computa{\c{c}}{\~a}o\/}
+  (May 2013).
 
 \bibitem{EbenUpton}
-E.~Upton.
+{\sc Upton, E.}
 \newblock Wayland.
 \newblock \url{http://www.raspberrypi.org/archives/4053}, May 2013.
 \newblock [Online; accessed 25-March-2015].
 
 \bibitem{weiser1991}
-M.~Weiser.
+{\sc Weiser, M.}
 \newblock The computer for the 21st century.
-\newblock {\em Scientific american}, 265(3):94--104, 1991.
+\newblock {\em Scientific american 265}, 3 (1991), 94--104.
 
 \bibitem{weiser1994world}
-M.~Weiser.
+{\sc Weiser, M.}
 \newblock The world is not a desktop.
-\newblock {\em interactions}, 1(1):7--8, 1994.
+\newblock {\em interactions 1}, 1 (1994), 7--8.
 
 \bibitem{weiser1997coming}
-M.~Weiser and J.~S. Brown.
+{\sc Weiser, M., and Brown, J.~S.}
 \newblock The coming age of calm technology.
-\newblock In {\em Beyond calculation}, pages 75--85. Springer, 1997.
+\newblock In {\em Beyond calculation}. Springer, 1997, pp.~75--85.
 
 \bibitem{wirth2014making}
-M.~Wirth and J.~McCuaig.
+{\sc Wirth, M., and McCuaig, J.}
 \newblock Making programs with the raspberry pi.
 \newblock In {\em Proceedings of the Western Canadian Conference on Computing
-  Education}, page~17. ACM, 2014.
+  Education\/} (2014), ACM, p.~17.
 
 \bibitem{Yau}
-L.~Yau.
+{\sc Yau, L.}
 \newblock Raspbian server edition version 2.4. the rantings and ravings of a
   madman.
 \newblock \url{http://sirlagz.net/2013/06/13/raspbian-server-edition-2-4/},

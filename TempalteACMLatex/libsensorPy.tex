@@ -2,6 +2,7 @@
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
+\usepackage[multiple]{footmisc}
 \usepackage{minted}
 \usepackage{float}
 \usepackage{listings}
@@ -22,6 +23,19 @@
 \newcommand{\subparagraph}{}
 \usepackage{titlesec}
 \setcounter{secnumdepth}{4}
+
+
+%%%
+\let\oldFootnote\footnote
+\newcommand\nextToken\relax
+
+\renewcommand\footnote[1]{%
+    \oldFootnote{#1}\futurelet\nextToken\isFootnote}
+
+\newcommand\isFootnote{%
+    \ifx\footnote\nextToken\textsuperscript{,}\fi}
+%%%%
+
 
 
 \addto\captionsenglish{\renewcommand{\bibname}{REFERENCES}}
@@ -1077,7 +1091,7 @@ Analyzing the results obtained, was concluded that the LibsensorPy help the deve
 
 \section{CONCLUSION AND FUTURE WORK}
 \label{sec:conclusion}
-The LibsensorPy is an open source Python library designed to facilitate the creation of ubiquitous and embedded applications that use sensors and actuators to capture and process environmental data.
+LibsensorPy\footnote{\url{http://libsensorpy.com/}}\footnote{\url{https://pypi.python.org/packages/source/l/libsensorPy/libsensorPy-0.0.7.tar.gz}} is an open source Python library designed to facilitate the creation of ubiquitous and embedded applications that use sensors and actuators to capture and process environmental data.
 \newline
 \newline
 Its goal is to simplify the creation of these systems using the Raspberry Pi and has the advantage of considerably reducing the amount of code lines, as well as increasing abstraction of how to use the hardware components.
@@ -1096,7 +1110,7 @@ Some suggestions can be seen below:
 
 \end{itemize}
 
-\bibliographystyle{abbrv}
+\bibliographystyle{acm}
 \bibliography{libsensorPy}  % LibsensorPy.bib is the name of the Bibliography in this case
 
 \appendix
