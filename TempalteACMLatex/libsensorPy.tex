@@ -366,7 +366,7 @@ The GPIO.BOARD option specifies that the user are referring to the pins by the n
 \begin{figure}[h]
 \centering
     \includegraphics[width=0.45\textwidth,natwidth=610,natheight=642]{pictures/ModelAB.png}
-    \caption{GPIO pins \protect\cite{gpioHeader}}
+    \caption{GPIO pins\protect\cite{gpioHeader}}
     \label{fig:ModelAB}
 \end{figure}
 
@@ -683,19 +683,6 @@ Due to some sensors belong to more than one family (measure more than one physic
 
 
 The interactions between the user and the library are described in the use case diagram  in figure~\ref{fig:useCase}. The sequence diagram for the creation and capture of data by the sensor can be seen in figure~\ref{fig:sequence}.
-\begin{figure*}[ht]
-\centering
-    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
-    \caption{Use Case diagram}
-    \label{fig:useCase}
-\end{figure*}
-
-\begin{figure*}[t]
-\centering
-    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
-    \caption{Sequence diagram}
-    \label{fig:sequence}
-\end{figure*}
 
 \subsubsection{Architectural Style}
 The libsensorPy presents characteristics of three architectural styles: 
@@ -708,7 +695,14 @@ The libsensorPy presents characteristics of three architectural styles:
 The traditional style adopted reflects the basic relationships of organization and control flow between components provided by Python language. The only provided structure is a set of objects whose lifetime varies according to its uses. This library uses connectors type procedure call and event. Procedure call connectors model the control flow by invocation techniques and perform data transfer between components involved through the use of parameters. Examples of procedure call connectors include functions, procedures,  object oriented methods, callback and system calls.
 \newline
 \newline
-The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. The system has thus the layers:
+The event-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
+\newline
+\newline
+Virtual Machine architectures have the goal of achieving the quality of portability. This software style simulate some functionality that is not native to the hardware and/or software on which it is implemented. 
+% retirar dois newlines
+\newline
+\newline
+The Virtual Machine style is applied between the hardware and the libsensorPy library, using procedure calls as connectors between the layers. This architectural style reduces complexity, improves modularity, reusability, maintainability. The system has thus the layers:
 \begin{itemize}
 \item Physical: GPIO
 \item Operating System
@@ -723,9 +717,14 @@ The Virtual Machine style is applied between the hardware and the libsensorPy li
     \label{fig:layers}
 \end{figure}
 
-The event-based style is an architectural style based on implicit invocation that provides an indirect interaction between loosely coupled components facilitating the adaptation and improving system scalability. The components of the Event type (TemperatureEvent, SmokeEvent, etc.) communicate only via events transmitted by an event connector. This connector then relays the events for all components of the Observer type showing interest in the event in question (Observer pattern), thereby improving the efficiency of distribution of events.
-
 \subsubsection{Architectural Pattern}
+\begin{figure*}[ht]
+\centering
+    \includegraphics[width=1.0\textwidth,natwidth=610,natheight=642]{pictures/UseCaseDiagram.png}
+    \caption{Use Case diagram}
+    \label{fig:useCase}
+\end{figure*}
+
 This project was developed under the architectural pattern Sense-Compute-Control (SCC). This pattern is typically used in the structuring of embedded control applications. Second \cite{taylor2009software}, a Sense/Compute/Control (SCC) application is one that interacts with the physical environment. Such applications are pervasive in domains such as building automation, assisted living, and autonomic computing. SCC applications can be defined according to an architectural pattern involving four kinds of components, organized into layers \cite{edwards2009architecture}: 
 \begin{enumerate}
 \item Sensors at the bottom, which obtain information about the environment; 
@@ -741,7 +740,12 @@ This project was developed under the architectural pattern Sense-Compute-Control
     \caption{Sense-Compute-Control environment \protect\cite{DamienCassou}.}
     \label{fig:scc}
 \end{figure}
-
+\begin{figure*}[t]
+\centering
+    \includegraphics[resolution=300,width=1.0\textwidth,natwidth=610,natheight=642]{pictures/SequenceDiagram3.png}
+    \caption{Sequence diagram}
+    \label{fig:sequence}
+\end{figure*}
 Each layer corresponds to a separate class of components: 
 \begin{itemize}
 \item Sensors send information sensed from the environment to the context operator layer through data sources. Sensors can both push data to context operators and respond to context operator requests. The term "sensor" is used both for entities that actively retrieve information from the environment, such as system probes, and entities that store information previously collected from the environment, such as databases.
